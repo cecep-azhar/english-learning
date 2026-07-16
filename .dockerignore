@@ -1,0 +1,6 @@
+# Ignore non-essential files in Docker build
+pdf_content.txt
+*.md
+.git
+.gitignore
+.env

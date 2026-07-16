@@ -1,0 +1,214 @@
+D English for Software Engineers ( Complete Guide
+Panduan Lengkap Bahasa Inggris untuk Software Engineer | Interview 4 Presentation 4 Meeting 4 Client 4 Remote Worker
+1. “ Self-Introduction / Perkenalan Diri
+Elevator Pitch (30 detik)
+Situasi English Arti Indonesia
+Pembuka "Hi, I'm Cecep Azhar ( a full-stack developer specializing in Go, HTMX, and AI agent systems." "Hai, saya Cecep Azhar — full-stack developer spesialisasi Go, HTMX, dan sistem AI agent."
+Value prop "I help businesses automate workflows and build scalable web platforms." "Saya bantu bisnis otomasi alur kerja dan bangun platform web scalable."
+Closing "I've delivered 6+ products across 3 countries, available for new projects." "Saya sudah deliver 6+ produk di 3 negara, tersedia untuk proyek baru."
+Dialog: Perkenalan Diri Lengkap
+You: "Hi, my name is Cecep Azhar. I'm a full-stack developer from Indonesia with [X] years of experience."
+D“ "Hai, nama saya Cecep Azhar. Saya full-stack developer dari Indonesia dengan pengalaman [X] tahun."
+You: "My primary stack is Go with Echo, HTMX for frontend, and PostgreSQL."
+D“ "Stack utama saya Go dengan Echo, HTMX untuk frontend, dan PostgreSQL."
+You: "I've been building AI agent systems that automate customer support and workflows."
+D“ "Saya membangun sistem AI agent yang otomasi customer support dan alur kerja."
+You: "I run FathForce ( we go from solo developer to a full agency powered by AI."
+D“ "Saya jalankan FathForce ( dari developer solo jadi agensi penuh didukung AI."
+Common Follow-ups
+Pertanyaan Jawaban Arti
+"What do you do?" "I build web apps and AI-powered tools for businesses." "Saya bangun aplikasi web dan tools AI untuk bisnis."
+"What's your tech stack?" "Go/Echo, HTMX, Tailwind, PostgreSQL, LLM-based AI agents." "Go/Echo, HTMX, Tailwind, PostgreSQL, AI agent berbasis LLM."
+"How long?" "Over [X] years, focused on Go and AI for the past few." "Lebih dari [X] tahun, fokus Go dan AI beberapa tahun terakhir."
+"What projects?" "SaaS, e-commerce, WhatsApp bots, and custom AI agents." "SaaS, e-commerce, WhatsApp bot, dan AI agent custom."
+"Freelance?" "I run my own agency. Also available for consulting." "Saya punya agensi sendiri. Juga tersedia konsultasi."
+2. « Job Interview / Wawancara Kerja
+Pertanyaan Jawaban Arti
+"Tell me about
+yourself""I'm a full-stack dev with [X] years specializing in Go, PostgreSQL, HTMX, and recently AI agent systems." "Saya full-stack dev [X] tahun spesialisasi Go, PostgreSQL, HTMX, dan terakhir sistem AI
+agent."
+"Why hire you?" "I bring end-to-end capability ( DB design to deployment. I ship fast and communicate clearly." "Saya punya kemampuan end-to-end — desain DB sampai deployment. Cepat deliver,
+komunikasi jelas."
+"Strength?" "I'm pragmatic ( ship working software over over-engineering. Pick the right tools." "Saya pragmatis — deliver software yang works daripada over-engineering. Pilih tools tepat."
+"Weakness?" "I sometimes over-optimize before validation. I've learned to ship first, optimize later." "Kadang over-optimize sebelum validasi. Saya sudah belajar deliver dulu, optimasi
+belakangan."
+"Challenging project?" "Multi-tenant SaaS, 10K+ daily users. Challenge: data isolation + real-time. Solution: connection pooling,
+Redis, HTMX.""SaaS multi-tenant, 10K+ user/hari. Tantangan: isolasi data + real-time. Solusi: pooling, Redis,
+HTMX."
+"Tight deadlines?" "Break into small deliverables, prioritize MVP, communicate early if blocked." "Pecah jadi deliverable kecil, prioritaskan MVP, komunikasi awal kalau blocked."
+"5 years?" "Leading AI-powered product architecture. Bridging traditional SE with AI revolution." "Memimpin arsitektur produk AI. Menjembatani SE tradisional dengan revolusi AI."
+"Salary?" "$2,500-$3,500/month full-time, or $50-80/hour contract." "$2.500-$3.500/bulan full-time, atau $50-80/jam kontrak."
+Technical Interview Phrases
+Situasi English Arti
+Klarifikasi "Could you clarify the constraints? Speed, memory, or readability?" "Bisa jelaskan constraint-nya? Kecepatan, memori, atau keterbacaan?"
+Berpikir "Let me think... I'd identify the bottleneck, then compare approach A vs B." "Saya pikirkan... Saya identifikasi bottleneck, lalu bandingkan pendekatan A vs B."
+Tidak tahu "Haven't used that library, but the concept is similar to [X]. I can learn quickly." "Belum pakai library itu, tapi konsepnya mirip [X]. Saya bisa cepat belajar."
+Simpulkan "Summary: I'd use [X] because [reason]. Does that align?" "Ringkasan: Saya pakai [X] karena [alasan]. Sesuai?"
+3. « Portfolio Discussion / Diskusi Portofolio
+Dialog: Menampilkan Portofolio
+Interviewer: "Can you walk me through your recent projects?"
+D“ "Bisa ceritakan proyek terakhir kamu?"
+You: "My flagship project is GCC ( all-in-one business platform with Go, Echo, HTMX, PostgreSQL. Handles CRM, project management, and AI capabilities for 200+ users."
+D“ "Proyek unggulan saya GCC ( platform bisnis all-in-one dengan Go, Echo, HTMX, PostgreSQL. Handle CRM, manajemen proyek, dan AI untuk 200+ pengguna."
+You: "I also built FathStore (headless e-commerce), ProTool (internal dashboards), and several AI agents for customer support using LLMs and RAG pipelines."
+D“ "Saya juga bangun FathStore (e-commerce headless), ProTool (dashboard internal), dan beberapa AI agent untuk customer support pakai LLM dan RAG."
+You: "I'm proud that I reduced page load from 3.2s to under 800ms by switching from React to HTMX and optimizing DB queries."
+D“ "Saya bangga bisa kurangi page load dari 3,2s jadi di bawah 800ms dengan migrasi React ke HTMX dan optimasi query DB."
+Dialog: Kelebihan Diri (Strengths)
+Interviewer: "What are your key strengths?"
+D“ "Apa kekuatan utama kamu?"
+You: "First, fast learner ( I went from zero to production AI agents in 6 weeks. Second, pragmatic ( Go for perf, HTMX for simplicity. Third, full-stack solo ( DB to Docker to Cloudflare, very efficient for small
+teams."
+D“ "Pertama, cepat belajar ( dari nol sampai AI agent production dalam 6 minggu. Kedua, pragmatis ( Go untuk performa, HTMX untuk kesederhanaan. Ketiga, full-stack solo ( DB sampai Docker sampai Cloudflare, sangat efisien untuk tim
+kecil."
+Dialog: Kelemahan Diri (Weaknesses)
+Interviewer: "What's your biggest weakness?"
+D“ "Apa kelemahan terbesar kamu?"
+You: "I tend to take on too many things ( because I can do full-stack, I try to handle everything myself. I'm improving by delegating and building a small team. Also, I sometimes over-optimize before validation.
+Now I ship first, optimize later."
+D“ "Saya cenderung ambil terlalu banyak ( karena bisa full-stack, saya coba handle sendiri semua. Saya perbaiki dengan delegasi dan bangun tim kecil. Juga, kadang over-optimize sebelum validasi. Sekarang deliver dulu, optimasi belakangan."
+4. ‹ Salary Negotiation ($2,000+/month)
+Dialog: Negosiasi Gaji Full-time
+HR:"What are your salary expectations?"
+D“ "Berapa ekspektasi gaji kamu?"
+You: "Based on my SaaS experience, AI skills, and Go expertise, I'm looking at $2,500-$3,500/month."
+D“ "Berdasarkan pengalaman SaaS, keahlian AI, dan keahlian Go, saya minta $2.500-$3.500/bulan."
+HR:"That's above our budget. We were thinking around $2,000."
+D“ "Itu di atas budget kami. Kami berpikir sekitar $2.000."
+You: "I understand. However, I handle full-stack alone ( backend, frontend, DB, DevOps, AI ( no extra hires needed. The cost savings are significant."
+D“ "Saya paham. Tapi saya handle full-stack sendiri ( backend, frontend, DB, DevOps, AI ( tanpa rekrut tambahan. Penghematannya signifikan."
+You: "Could we start at $2,000 with a review after 3 months based on performance? If I deliver, we adjust to $2,500."
+D“ "Bisa mulai $2.000 dengan review setelah 3 bulan berdasarkan performa? Kalau saya deliver, kita naikkan ke $2.500."
+HR:"That works. $2,000 starting, performance review at 3 months."
+D“ "Oke. Mulai $2.000, review performa di 3 bulan."
+You: "Great. Can we document this in the offer letter?"
+D“ "Bagus. Bisa didokumentasikan di offer letter?"
+Dialog: Freelance/Contract
+Client: "What's your hourly rate?"
+D“ "Berapa tarif per jam kamu?"
+You: "$50/hour. For longer engagement (3+ months), I can do $45/hour. Or monthly retainer of $2,000 for up to 50 hours."
+D“ "$50/jam. Untuk kontrak panjang (3+ bulan), bisa $45/jam. Atau retainer bulanan $2.000 untuk maksimal 50 jam."
+
+Negotiation Power Phrases
+Situasi English Arti
+Set minimum "My minimum for this type of work is $2,000/month." "Minimum saya $2.000/bulan."
+Justify "This reflects my [X] years and specialized Go + AI skills." "Ini mencerminkan [X] tahun dan keahlian Go + AI saya."
+Anchor high "My standard is $80/hour, but I'm flexible for the right opportunity." "Standar saya $80/jam, tapi fleksibel untuk peluang tepat."
+Bundle "I include docs, deployment, and 30-day post-launch support." "Saya sertakan dokumentasi, deployment, dan support 30 hari pasca-launch."
+Decline "That's below my minimum. I need at least $2,000." "Itu di bawah minimum saya. Saya butuh minimal $2.000."
+5. › Grammar Essentials / Tata Bahasa
+Common Mistakes by Indonesians
+ﬁ Salah ﬂ Benar Arti Rule
+"I am agree" "I agree" Saya setuju Agree = verb
+"I will going to deploy" "I will deploy" Saya akan deploy Jangan campur future
+"I have many experience" "I have a lot of experience" Banyak pengalaman Experience = uncountable
+"Can you explain me?" "Explain it to me" Jelaskan ke saya Explain + to
+"I am working since 2020" "I have been working since 2020" Kerja sejak 2020 Since = present perfect
+"Discuss about it" "Discuss it" Bahas itu Discuss = transitive
+"I will revert you" "I'll get back to you" Saya balas kamu Revert B reply
+"Do the needful" "Handle this" Handle ini Outdated Indian English
+Present Perfect vs Past Simple
+Tense Kapan Contoh Arti
+Present Perfect Pengalaman sampai sekarang "I have built  6 products." "Saya sudah bangun 6 produk."
+Past Simple Selesai, waktu spesifik "I worked  at Company X 2020-2023." "Saya kerja di Company X 2020-2023."
+Phrasal Verbs for Devs
+Phrase Arti Contoh
+roll out deploy "Rolling out new feature tomorrow."
+break down gagal "Build broke down after commit."
+figure out pecahkan "Figured out the race condition."
+look into investigasi "I'll look into the memory leak."
+hand off transfer "Hand off to ops team."
+come up with ciptakan "Came up with better architecture."
+6. ° Presentation / Presentasi
+Fase English Arti
+Opening "Good morning everyone. Thank you for joining." "Selamat pagi semua. Terima kasih sudah bergabung."
+Agenda "Today I'll cover three main areas." "Hari ini saya bahas 3 area utama."
+Transition "Now let's move on to performance results." "Sekarang lanjut ke hasil performa."
+Explain "In simple terms, the server responds 3x faster." "Dalam istilah sederhana, server merespon 3x lebih cepat."
+Analogy "Think of it as a cache between app and database." "Anggap sebagai cache antara aplikasi dan database."
+Demo "Let me show you how this works in practice." "Saya tunjukkan bagaimana ini bekerja."
+Wrap up "To wrap up, here are the key takeaways." "Untuk menutup, ini poin pentingnya."
+Q&A "Happy to take questions. I'll follow up on anything I can't answer now." "Senang jawab pertanyaan. Saya follow up yang belum bisa dijawab sekarang."
+7. – Meeting & Project Evaluation
+Status Updates
+Situasi English Arti
+ON TRACK "On track. API complete, frontend 80% done." "On track. API selesai, frontend 80%."
+BEHIND "3 days behind due to auth integration." "Terlambat 3 hari karena integrasi auth."
+BLOCKED "Blocked on [X]. Need API keys from client." "Blocked di [X]. Butuh API key dari klien."
+AHEAD "Ahead of schedule. Can pull forward [feature]." "Lebih cepat. Bisa majukan [fitur]."
+Sprint Review & Feedback
+English Arti
+"Completed 12/15 story points this sprint." "Selesaikan 12/15 story point sprint ini."
+"What went well: CI/CD cut deploy time by 60%." "Yang baik: CI/CD potong waktu deploy 60%."
+"To improve: test coverage at 45%, target 70%." "Perbaikan: test coverage 45%, target 70%."
+"Great error logging ( very thorough." "Error logging bagus — sangat lengkap."
+"Suggestion: extract logic into reusable service." "Saran: ekstrak logika jadi service reusable."
+"I'll own [task], ready by Thursday." "Saya ambil [task], siap Kamis."
+"Let's circle back Friday." "Mari follow up Jumat."
+8. † Client Communication
+Fase English Arti
+Discovery "What pain points are you trying to solve?" "Masalah apa yang ingin dipecahkan?"
+Scope "Here's my proposal for the initial scope." "Ini usulan saya untuk scope awal."
+Price "For this complexity: $5,000, timeline 6 weeks." "Untuk kompleksitas ini: $5.000, timeline 6 minggu."
+Scope creep "Great idea. Let's add that as Phase 2." "Ide bagus. Tambah Fase 2."
+Late pay "Friendly reminder ( Invoice #[X] was due [date]." "Reminder — Invoice #[X] jatuh tempo [date]."
+Unrealistic "Need at least [X] weeks for quality delivery." "Butuh minimal [X] minggu untuk kualitas baik."
+Handoff "All deliverables complete. Here's the checklist." "Semua deliverable selesai. Ini checklist."
+Support "I offer 30-day post-launch support." "Saya tawarkan support 30 hari pasca-launch."
+Testimonial "Would you provide a testimonial?" "Bisa kasih testimoni?"
+9. ‡ Remote Worker Communication
+Dialog: Job Application
+Recruiter: "We found your profile. Interested in remote work?"
+D“ "Kami temukan profil kamu. Tertarik kerja remote?"
+You: "Absolutely! Working remotely for [X] years with clients in Indonesia, Singapore, and the US. Comfortable with async communication and timezone overlap."
+D“ "Tentu! Kerja remote [X] tahun dengan klien di Indonesia, Singapura, dan AS. Nyaman komunikasi async dan timezone overlap."
+You: "I use Slack, Notion, GitHub. Proactive with daily updates and thorough documentation."
+D“ "Saya pakai Slack, Notion, GitHub. Proaktif update harian dan dokumentasi lengkap."
+Dialog: Timezone
+Client: "We're in US (EST). Can you work our hours?"
+D“ "Kami di AS (EST). Bisa kerja jam kami?"
+You: "I'm in WIB (UTC+7), 12 hours behind EST. Available 8 PM - 12 AM WIB = your 8 AM - 12 PM EST. Flexible for important meetings."
+D“ "Saya WIB (UTC+7), selisih 12 jam. Available jam 8-12 malem WIB = jam 8-12 pagi EST. Fleksibel untuk meeting penting."
+
+Dialog: Payment & Invoicing
+Client: "How do you handle payments?"
+D“ "Bagaimana cara bayar?"
+You: "Monthly invoices with detailed hours. I accept Wise, PayPal, or bank transfer. For new clients: 30% deposit upfront, 70% on delivery. Net-15 terms."
+D“ "Invoice bulanan dengan detail jam. Saya terima Wise, PayPal, atau transfer bank. Klien baru: deposit 30% di muka, 70% saat deliver. Net-15."
+Dialog: Contract
+Client: "What contract are you looking for?"
+D“ "Kontrak seperti apa yang kamu cari?"
+You: "Monthly retainer ( [X] hours/month, minimum 3-month commitment. 14-day notice to end. All code and IP transfers to you."
+D“ "Monthly retainer ( [X] jam/bulan, komitmen minimal 3 bulan. Pemberitahuan 14 hari untuk berhenti. Semua kode dan IP milik Anda."
+Remote Work Phrases
+Situasi English Arti
+Update "PR #42 ready for review." "PR #42 siap di-review."
+Focus "Heads down on API refactor. Update EOD." "Fokus refactor API. Update akhir hari."
+OOO "OOO tomorrow. [Name] covers urgent." "Tidak ada besok. [Nama] cover urgent."
+Escalate "Escalating ( production DB showing degradation." "Eskalasi — DB production mulai degradasi."
+Sign off "Signing off. All tasks on track. See you tomorrow!" "Selesai hari ini. Semua task on track. Sampai besok!"
+10. ⚡ Quick Reference
+Filler Words to AVOID
+ﬁ Jangan ﬂ Pakai Arti
+"um, like, you know..." Pause silently Diam — lebih percaya diri
+"I think maybe perhaps..." "I believe..." "Saya yakin..."
+"I'm not sure but..." "Let me check." "Saya cek dulu."
+Power Words
+Weak ﬁ Strong ﬂ Arti
+"worked on" "architected", "designed" "mendesain"
+"helped with" "spearheaded", "led" "memimpin"
+"made faster" "reduced latency 60%" "kurangi latensi 60%"
+"good at" "proficient in", "expert" "ahli di"
+Metrics Language
+Fenomena Phrase Arti
+Naik "increased 200%" / "tripled" "naik 200%" / "3x lipat"
+Turun "reduced 80%" / "halved" "turun 80%" / "setengah"
+Waktu "cut from 5min to 30sec" "potong dari 5 menit jadi 30 detik"
+Biaya "saved $2K/month" "hemat $2K/bulan"
+User "scaled 100 to 10K DAU" "scale 100 jadi 10K DAU"
+CTA Templates
+Platform Template
+Upwork "Hi [Name], I read your project and can deliver. [X] years with Go/HTMX. Recent project [example] is relevant. Shall we call?"
+LinkedIn "Hi [Name], noticed you're working on [product]. I specialize in [skill]. Open to a brief chat?"
+Email "Hi [Name], following [company], love [feature]. I have ideas to improve [X]. Open to 15-min call?"
+
