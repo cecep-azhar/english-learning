@@ -163,7 +163,7 @@
     .btn-start:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(99,102,241,0.5); }
 
     /* CHAPTER VIEW */
-    .chapter-view { display: none; }
+    .chapter-view.hidden { display: none; }
     .chapter-header { margin-bottom: 24px; }
     .chapter-breadcrumb { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
     .chapter-title { font-size: 28px; font-weight: 800; color: var(--text-primary); margin-bottom: 4px; }
@@ -365,12 +365,12 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
           <path d="M3 12h18M3 6h18M3 18h18"/>
         </svg>
       </button>
-      <a href="#" class="logo" onclick="showWelcome(); return false;">
+      <a href="#" class="logo" id="logoLink">
         <div class="logo-icon">FF</div>
         <div class="logo-text">
           <span class="logo-title">English for Software Engineers</span>
@@ -382,7 +382,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
           </svg>
-          <input type="text" id="searchInput" placeholder="Search conversations..." oninput="handleSearch(this.value)">
+          <input type="text" id="searchInput" placeholder="Search conversations...">
         </div>
         <div class="progress-badge" id="progressBadge">
           <svg class="progress-ring" viewBox="0 0 36 36">
@@ -391,12 +391,12 @@
           </svg>
           <span id="progressText">0%</span>
         </div>
-        <button class="btn-clear" onclick="clearProgress()" title="Reset all progress">Reset</button>
+        <button class="btn-clear" id="resetBtn" title="Reset all progress">Reset</button>
       </div>
     </div>
   </header>
 
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
   <div class="app-layout">
     <nav class="sidebar" id="sidebar">
@@ -413,9 +413,9 @@
       </div>
 
       <div class="welcome-screen hidden" id="welcomeScreen">
-        <div class="welcome-icon">🚀</div>
+        <div class="welcome-icon">&#x1F680;</div>
         <h1 class="welcome-title">English for Software Engineers</h1>
-        <p class="welcome-desc">Master English for interviews, meetings, presentations, and remote work — tailored for software engineers.</p>
+        <p class="welcome-desc">Master English for interviews, meetings, presentations, and remote work &mdash; tailored for software engineers.</p>
         <div class="welcome-stats">
           <div class="stat-card">
             <div class="stat-value" id="totalChapters">0</div>
@@ -430,10 +430,10 @@
             <div class="stat-label">Completed</div>
           </div>
         </div>
-        <button class="btn-start" onclick="selectChapter(0)">Start Learning →</button>
+        <button class="btn-start" id="startBtn">Start Learning &rarr;</button>
       </div>
 
-      <div class="chapter-view" id="chapterView">
+      <div class="chapter-view hidden" id="chapterView">
         <div class="chapter-header">
           <div class="chapter-breadcrumb" id="chapterBreadcrumb">Chapter 1 of 10</div>
           <h2 class="chapter-title" id="chapterTitle"></h2>
@@ -441,7 +441,7 @@
         </div>
 
         <div class="loop-controls">
-          <button class="loop-btn loop-btn-play" id="loopPlayBtn" onclick="toggleLoop()" title="Play all conversations in this chapter (Space)">
+          <button class="loop-btn loop-btn-play" id="loopPlayBtn" title="Play all conversations in this chapter (Space)">
             <svg id="loopPlayIcon" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z"/>
             </svg>
@@ -456,7 +456,7 @@
           <div class="loop-options">
             <div class="speed-control">
               <label>Speed</label>
-              <select id="speedSelect" onchange="setPlaybackSpeed(this.value)">
+              <select id="speedSelect">
                 <option value="0.5">0.5x</option>
                 <option value="0.75">0.75x</option>
                 <option value="1" selected>1x</option>
@@ -465,12 +465,12 @@
                 <option value="2">2x</option>
               </select>
             </div>
-            <div class="lang-toggle">
-              <button class="active" onclick="setDisplayMode('both', this)">Both</button>
-              <button onclick="setDisplayMode('en', this)">EN</button>
-              <button onclick="setDisplayMode('id', this)">ID</button>
+            <div class="lang-toggle" id="langToggle">
+              <button class="active" data-mode="both">Both</button>
+              <button data-mode="en">EN</button>
+              <button data-mode="id">ID</button>
             </div>
-            <button class="repeat-toggle" id="repeatToggle" onclick="toggleRepeat()">
+            <button class="repeat-toggle" id="repeatToggle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/>
                 <path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>
@@ -488,87 +488,121 @@
   <div class="toast" id="toast"></div>
 
   <script>
-    // ==================== STATE ====================
-    let appData = null;          // raw data from scripts.json
-    let chapters = [];           // extracted chapters: [{name, items:[]}]
-    let currentChapter = null;   // currently selected chapter index
-    let displayMode = 'both';
-    let playbackSpeed = 1;
-    let repeatMode = false;
+    /* ==================== STATE ==================== */
+    var appData = null;
+    var chapters = [];
+    var currentChapter = null;
+    var displayMode = 'both';
+    var playbackSpeed = 1;
+    var repeatMode = false;
+    var isLooping = false;
+    var loopIndex = 0;
+    var loopPhase = 'en';
+    var currentAudio = null;
+    var loopCancelled = false;
+    var lineRepeatActive = false;
+    var lineRepeatNumId = null;
+    var searchTimeout = null;
+    var STORAGE_KEY = 'ff_english_progress';
+    var chapterIcons = ['\u{1F44B}','\u{1F4BC}','\u{1F4C2}','\u{1F4B0}','\u{1F4DA}','\u{1F3A4}','\u{1F4CA}','\u{1F91D}','\u{1F30D}','\u{26A1}','\u{1F4DD}','\u{1F527}','\u{1F9EA}','\u{1F3AF}','\u{1F3C6}'];
 
-    // Loop state
-    let isLooping = false;
-    let loopIndex = 0;           // index into current chapter's items
-    let loopPhase = 'en';        // 'en' or 'id'
-    let currentAudio = null;
-    let loopCancelled = false;
-
-    const STORAGE_KEY = 'ff_english_progress';
-    const chapterIcons = ['👋','💼','📂','💰','📚','🎤','📊','🤝','🌍','⚡','📝','🔧','🧪','🎯','🏆'];
-
-    // ==================== PROGRESS ====================
+    /* ==================== PROGRESS ==================== */
     function loadProgress() {
-      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
-      catch { return {}; }
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) return JSON.parse(raw);
+        return {};
+      } catch (e) {
+        return {};
+      }
     }
-    function saveProgress(p) { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); }
+
+    function saveProgress(p) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+    }
+
     function markComplete(numId) {
-      const p = loadProgress(); p[numId] = Date.now(); saveProgress(p); refreshAllUI();
+      var p = loadProgress();
+      p[numId] = Date.now();
+      saveProgress(p);
+      refreshAllUI();
     }
-    function isComplete(numId) { return !!loadProgress()[numId]; }
+
+    function isComplete(numId) {
+      return !!loadProgress()[numId];
+    }
+
     function getOverallProgress() {
       if (!appData) return { total: 0, done: 0, pct: 0 };
-      const p = loadProgress();
-      let total = appData.scripts.length;
-      let done = appData.scripts.filter(s => p[s.num_id]).length;
-      return { total, done, pct: total ? Math.round(done / total * 100) : 0 };
-    }
-    function getChapterProgress(chIdx) {
-      const p = loadProgress();
-      const items = chapters[chIdx].items;
-      let total = items.length, done = items.filter(s => p[s.num_id]).length;
-      return { total, done, pct: total ? Math.round(done / total * 100) : 0 };
+      var p = loadProgress();
+      var total = appData.scripts.length;
+      var done = 0;
+      for (var i = 0; i < appData.scripts.length; i++) {
+        if (p[appData.scripts[i].num_id]) done++;
+      }
+      return { total: total, done: done, pct: total ? Math.round(done / total * 100) : 0 };
     }
 
-    // ==================== INIT ====================
-    async function init() {
-      try {
-        const resp = await fetch('scripts.json');
-        if (!resp.ok) throw new Error('Failed to load scripts.json');
-        appData = await resp.json();
-        extractChapters();
-        renderSidebar();
-        refreshAllUI();
-        document.getElementById('loadingScreen').classList.add('hidden');
-        document.getElementById('welcomeScreen').classList.remove('hidden');
-      } catch (err) {
-        document.getElementById('loadingScreen').innerHTML =
-          '<div style="color:var(--danger);text-align:center;">' +
-          '<p style="font-size:18px;margin-bottom:8px;">⚠️ Failed to load data</p>' +
-          '<p style="font-size:13px;color:var(--text-muted);">' + err.message + '</p>' +
-          '<p style="font-size:13px;color:var(--text-muted);margin-top:8px;">Ensure scripts.json is in the same directory.</p></div>';
+    function getChapterProgress(chIdx) {
+      var p = loadProgress();
+      var items = chapters[chIdx].items;
+      var total = items.length;
+      var done = 0;
+      for (var i = 0; i < items.length; i++) {
+        if (p[items[i].num_id]) done++;
       }
+      return { total: total, done: done, pct: total ? Math.round(done / total * 100) : 0 };
+    }
+
+    /* ==================== INIT ==================== */
+    function init() {
+      fetch('scripts.json')
+        .then(function(resp) {
+          if (!resp.ok) throw new Error('Failed to load scripts.json');
+          return resp.json();
+        })
+        .then(function(data) {
+          appData = data;
+          extractChapters();
+          renderSidebar();
+          refreshAllUI();
+          document.getElementById('loadingScreen').classList.add('hidden');
+          document.getElementById('welcomeScreen').classList.remove('hidden');
+        })
+        .catch(function(err) {
+          var el = document.getElementById('loadingScreen');
+          el.innerHTML = '<div style="color:var(--danger);text-align:center;">' +
+            '<p style="font-size:18px;margin-bottom:8px;">&#x26A0;&#xFE0F; Failed to load data</p>' +
+            '<p style="font-size:13px;color:var(--text-muted);">' + err.message + '</p>' +
+            '<p style="font-size:13px;color:var(--text-muted);margin-top:8px;">Ensure scripts.json is in the same directory.</p></div>';
+        });
     }
 
     function extractChapters() {
-      // Group scripts by chapter string
-      const map = new Map();
-      for (const s of appData.scripts) {
-        const ch = s.chapter;
-        if (!map.has(ch)) map.set(ch, []);
-        map.get(ch).push(s);
+      var map = {};
+      var order = [];
+      for (var i = 0; i < appData.scripts.length; i++) {
+        var s = appData.scripts[i];
+        var ch = s.chapter;
+        if (!map[ch]) {
+          map[ch] = [];
+          order.push(ch);
+        }
+        map[ch].push(s);
       }
       chapters = [];
-      let idx = 0;
-      for (const [name, items] of map) {
-        chapters.push({ name, items, icon: chapterIcons[idx % chapterIcons.length] });
-        idx++;
+      for (var j = 0; j < order.length; j++) {
+        chapters.push({
+          name: order[j],
+          items: map[order[j]],
+          icon: chapterIcons[j % chapterIcons.length]
+        });
       }
     }
 
-    // ==================== RENDER ====================
+    /* ==================== RENDER ==================== */
     function refreshAllUI() {
-      const ov = getOverallProgress();
+      var ov = getOverallProgress();
       document.getElementById('progressText').textContent = ov.pct + '%';
       document.getElementById('progressCircle').setAttribute('stroke-dasharray', ov.pct + ', 100');
       document.getElementById('totalChapters').textContent = chapters.length;
@@ -579,20 +613,23 @@
     }
 
     function renderSidebar() {
-      const list = document.getElementById('chapterList');
+      var list = document.getElementById('chapterList');
       list.innerHTML = '';
-      chapters.forEach((ch, i) => {
-        const prog = getChapterProgress(i);
-        const li = document.createElement('li');
-        li.className = 'chapter-item' + (currentChapter === i ? ' active' : '');
-        li.onclick = () => selectChapter(i);
-        const shortName = ch.name.replace(/^\d+\.\s*/, '');
-        li.innerHTML =
-          '<span class="chapter-icon">' + ch.icon + '</span>' +
-          '<span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + shortName + '</span>' +
-          '<span class="chapter-progress' + (prog.pct === 100 ? ' complete' : '') + '">' + prog.pct + '%</span>';
-        list.appendChild(li);
-      });
+      for (var i = 0; i < chapters.length; i++) {
+        (function(idx) {
+          var ch = chapters[idx];
+          var prog = getChapterProgress(idx);
+          var li = document.createElement('li');
+          li.className = 'chapter-item' + (currentChapter === idx ? ' active' : '');
+          li.onclick = function() { selectChapter(idx); };
+          var shortName = ch.name.replace(/^\d+\.\s*/, '');
+          li.innerHTML =
+            '<span class="chapter-icon">' + ch.icon + '</span>' +
+            '<span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + escHtml(shortName) + '</span>' +
+            '<span class="chapter-progress' + (prog.pct === 100 ? ' complete' : '') + '">' + prog.pct + '%</span>';
+          list.appendChild(li);
+        })(i);
+      }
     }
 
     function selectChapter(idx) {
@@ -603,7 +640,8 @@
       document.getElementById('chapterBreadcrumb').textContent = 'Chapter ' + (idx + 1) + ' of ' + chapters.length;
       document.getElementById('chapterTitle').textContent = chapters[idx].name;
       document.getElementById('chapterSubtitle').textContent = chapters[idx].items.length + ' conversation lines';
-      loopIndex = 0; loopPhase = 'en';
+      loopIndex = 0;
+      loopPhase = 'en';
       renderChapterView();
       renderSidebar();
       document.getElementById('sidebar').classList.remove('open');
@@ -620,63 +658,69 @@
     }
 
     function renderChapterView() {
-      const container = document.getElementById('scriptSections');
+      var container = document.getElementById('scriptSections');
       container.innerHTML = '';
       if (currentChapter === null) return;
 
-      const ch = chapters[currentChapter];
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      var ch = chapters[currentChapter];
+      var query = document.getElementById('searchInput').value.toLowerCase().trim();
 
-      // Group by type
-      const groups = new Map();
-      for (const item of ch.items) {
-        // Filter
+      var groups = {};
+      var groupOrder = [];
+      for (var i = 0; i < ch.items.length; i++) {
+        var item = ch.items[i];
         if (query) {
-          const enMatch = item.en.toLowerCase().includes(query);
-          const trMatch = item.translation.toLowerCase().includes(query);
+          var enMatch = item.en.toLowerCase().indexOf(query) !== -1;
+          var trMatch = item.translation.toLowerCase().indexOf(query) !== -1;
           if (!enMatch && !trMatch) continue;
         }
-        const type = item.type || 'phrase';
-        if (!groups.has(type)) groups.set(type, []);
-        groups.get(type).push(item);
+        var type = item.type || 'phrase';
+        if (!groups[type]) {
+          groups[type] = [];
+          groupOrder.push(type);
+        }
+        groups[type].push(item);
       }
 
-      const typeLabels = {
+      var typeLabels = {
         phrase: 'Phrases & Sentences',
         dialog: 'Dialogues',
         qa: 'Q&A Pairs',
         templates: 'Templates'
       };
 
-      for (const [type, items] of groups) {
-        const section = document.createElement('div');
+      for (var g = 0; g < groupOrder.length; g++) {
+        var typeName = groupOrder[g];
+        var items = groups[typeName];
+        var section = document.createElement('div');
         section.className = 'section-block';
         section.innerHTML =
           '<div class="section-header">' +
-          '<h3 class="section-title">' + (typeLabels[type] || type) + '</h3>' +
+          '<h3 class="section-title">' + escHtml(typeLabels[typeName] || typeName) + '</h3>' +
           '<span class="section-count">' + items.length + ' lines</span></div>';
 
-        items.forEach((item, idx) => {
-          const card = document.createElement('div');
+        for (var j = 0; j < items.length; j++) {
+          var item = items[j];
+          var card = document.createElement('div');
           card.className = 'script-card';
           card.id = 'card-' + item.num_id;
 
-          const enHtml = query ? highlightSearch(item.en, query) : item.en;
-          const trHtml = query ? highlightSearch(item.translation, query) : item.translation;
-          const roleClass = item.role || 'you';
-          const roleLabel = roleClass === 'you' ? 'You' : roleClass === 'interviewer' ? 'Interviewer' : roleClass;
+          var enHtml = query ? highlightSearch(item.en, query) : escHtml(item.en);
+          var trHtml = query ? highlightSearch(item.translation, query) : escHtml(item.translation);
+          var roleClass = item.role || 'you';
+          var roleLabel = roleClass === 'you' ? 'You' : roleClass === 'interviewer' ? 'Interviewer' : roleClass;
 
           card.innerHTML =
             '<div class="line-row" data-num-id="' + item.num_id + '">' +
               '<div class="line-actions">' +
-                '<button class="play-line-btn" onclick="playLine(' + item.num_id + ')" title="Play">' +
+                '<button class="play-line-btn" data-play-id="' + item.num_id + '" title="Play">' +
                   '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>' +
                 '<span class="line-number">#' + item.num_id + '</span>' +
               '</div>' +
               '<div class="line-content">' +
-                '<span class="line-role ' + roleClass + '">' + roleLabel + '</span>' +
-                '<div class="line-en ' + (displayMode === 'id' ? 'hidden' : '') + '">' + enHtml + '</div>' +
-                '<div class="line-id ' + (displayMode === 'en' ? 'hidden' : '') + '">' + trHtml + '</div>' +
+                '<span class="line-role ' + escHtml(roleClass) + '">' + escHtml(roleLabel) + '</span>' +
+                '<div class="line-en' + (displayMode === 'id' ? ' hidden' : '') + '">' + enHtml + '</div>' +
+                '<div class="line-id' + (displayMode === 'en' ? ' hidden' : '') + '">' + trHtml + '</div>' +
               '</div>' +
               '<div class="line-completed-mark' + (isComplete(item.num_id) ? ' visible' : '') + '">' +
                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>' +
@@ -684,162 +728,210 @@
             '</div>';
 
           section.appendChild(card);
-        });
+        }
 
         container.appendChild(section);
       }
 
-      if (groups.size === 0 && query) {
-        container.innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:40px;">No matching results for "' + query + '"</p>';
+      if (groupOrder.length === 0 && query) {
+        container.innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:40px;">No matching results for "' + escHtml(query) + '"</p>';
       }
     }
 
-    // ==================== SEARCH ====================
-    let searchTimeout;
-    function handleSearch(v) {
+    /* ==================== SEARCH ==================== */
+    function handleSearch() {
       clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => { if (currentChapter !== null) renderChapterView(); }, 200);
+      searchTimeout = setTimeout(function() {
+        if (currentChapter !== null) renderChapterView();
+      }, 200);
     }
 
     function highlightSearch(text, query) {
-      if (!query) return text;
-      const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      return text.replace(new RegExp('(' + escaped + ')', 'gi'),
-        '<mark style="background:rgba(99,102,241,0.3);color:var(--text-primary);border-radius:2px;padding:0 2px;">$1</mark>');
+      if (!query) return escHtml(text);
+      var escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var safe = escHtml(text);
+      var re = new RegExp('(' + escaped + ')', 'gi');
+      return safe.replace(re, '<mark style="background:rgba(99,102,241,0.3);color:var(--text-primary);border-radius:2px;padding:0 2px;">$1</mark>');
     }
 
-    // ==================== DISPLAY / SPEED / REPEAT ====================
-    function setDisplayMode(mode, btn) {
+    function escHtml(s) {
+      if (!s) return '';
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    /* ==================== DISPLAY / SPEED / REPEAT ==================== */
+    function setDisplayMode(mode) {
       displayMode = mode;
-      document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      var btns = document.querySelectorAll('#langToggle button');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.toggle('active', btns[i].getAttribute('data-mode') === mode);
+      }
       if (currentChapter !== null) renderChapterView();
     }
+
     function setPlaybackSpeed(s) {
       playbackSpeed = parseFloat(s);
       if (currentAudio) currentAudio.playbackRate = playbackSpeed;
     }
+
     function toggleRepeat() {
       repeatMode = !repeatMode;
       document.getElementById('repeatToggle').classList.toggle('active', repeatMode);
+      if (!repeatMode && lineRepeatActive) {
+        stopCurrentAudio();
+        if (lineRepeatNumId) setLinePlaying(lineRepeatNumId, false);
+        document.getElementById('loopStatus').textContent = 'Ready to play';
+      }
+      showToast(repeatMode ? '🔁 Repeat ON — line will repeat' : 'Repeat OFF', 'info');
     }
 
-    // ==================== AUDIO ====================
+    /* ==================== AUDIO ==================== */
     function stopCurrentAudio() {
-      if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; currentAudio = null; }
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentAudio = null;
+      }
+      lineRepeatActive = false;
+      lineRepeatNumId = null;
     }
 
     function playLineAudio(numId, onEnd) {
       stopCurrentAudio();
-      const enAudio = new Audio('audio/' + numId + '.mp3');
+      var enAudio = new Audio('audio/' + numId + '.mp3');
       enAudio.playbackRate = playbackSpeed;
       currentAudio = enAudio;
 
-      enAudio.play().catch(() => {
-        // EN audio not found, try ID
+      enAudio.play().catch(function() {
         playIdAudio(numId, onEnd);
       });
 
-      enAudio.onended = () => { playIdAudio(numId, onEnd); };
+      enAudio.onended = function() { playIdAudio(numId, onEnd); };
     }
 
     function playIdAudio(numId, onEnd) {
-      const idAudio = new Audio('audio/' + numId + '_id.mp3');
+      var idAudio = new Audio('audio/' + numId + '_id.mp3');
       idAudio.playbackRate = playbackSpeed;
       currentAudio = idAudio;
-      idAudio.play().catch(() => {});
-      idAudio.onended = () => { if (onEnd) onEnd(); };
+      idAudio.play().catch(function() {});
+      idAudio.onended = function() { if (onEnd) onEnd(); };
     }
 
     function setLinePlaying(numId, playing) {
-      const card = document.getElementById('card-' + numId);
+      var card = document.getElementById('card-' + numId);
       if (!card) return;
-      const btn = card.querySelector('.play-line-btn');
+      var btn = card.querySelector('.play-line-btn');
       if (btn) {
         btn.classList.toggle('playing', playing);
-        btn.innerHTML = playing
-          ? '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>'
-          : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+        if (playing) {
+          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+        } else {
+          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+        }
       }
       card.classList.toggle('playing', playing);
     }
 
-    // Single line play
     function playLine(numId) {
       if (isLooping) stopLoop();
-      setLinePlaying(numId, true);
-
-      document.getElementById('loopStatus').textContent = 'Playing line #' + numId + '...';
-
-      // Play EN then ID
-      playLineAudio(numId, () => {
-        markComplete(numId);
+      // If clicking same line while repeat is active, stop it
+      if (lineRepeatActive && lineRepeatNumId === numId) {
+        stopCurrentAudio();
         setLinePlaying(numId, false);
         document.getElementById('loopStatus').textContent = 'Ready to play';
+        return;
+      }
+      stopCurrentAudio();
+      lineRepeatActive = repeatMode;
+      lineRepeatNumId = numId;
+      _playLineOnce(numId);
+    }
+
+    function _playLineOnce(numId) {
+      setLinePlaying(numId, true);
+      document.getElementById('loopStatus').textContent = 'Playing line #' + numId + '...' + (repeatMode ? ' \uD83D\uDD01' : '');
+      playLineAudio(numId, function() {
+        markComplete(numId);
+        if (lineRepeatActive && lineRepeatNumId === numId) {
+          // Repeat: play again after short pause
+          setTimeout(function() { _playLineOnce(numId); }, 800);
+        } else {
+          setLinePlaying(numId, false);
+          document.getElementById('loopStatus').textContent = 'Ready to play';
+        }
       });
     }
 
-    // ==================== LOOP ====================
+    /* ==================== LOOP ==================== */
     function toggleLoop() {
-      if (isLooping) stopLoop(); else startLoop();
+      if (isLooping) stopLoop();
+      else startLoop();
     }
 
     function startLoop() {
       if (currentChapter === null) return;
-      isLooping = true; loopCancelled = false;
-      loopIndex = 0; loopPhase = 'en';
-
+      isLooping = true;
+      loopCancelled = false;
+      loopIndex = 0;
+      loopPhase = 'en';
       document.getElementById('loopPlayBtn').classList.add('playing');
       document.getElementById('loopPlayIcon').innerHTML = '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';
-
       updateLoopProgress();
       playLoopItem();
     }
 
     function stopLoop() {
-      isLooping = false; loopCancelled = true; stopCurrentAudio();
+      isLooping = false;
+      loopCancelled = true;
+      stopCurrentAudio();
       document.getElementById('loopPlayBtn').classList.remove('playing');
       document.getElementById('loopPlayIcon').innerHTML = '<path d="M8 5v14l11-7z"/>';
-      document.querySelectorAll('.play-line-btn.playing').forEach(b => {
-        b.classList.remove('playing');
-        b.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-      });
-      document.querySelectorAll('.script-card.playing').forEach(c => c.classList.remove('playing'));
+      var playingBtns = document.querySelectorAll('.play-line-btn.playing');
+      for (var i = 0; i < playingBtns.length; i++) {
+        playingBtns[i].classList.remove('playing');
+        playingBtns[i].innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+      }
+      var playingCards = document.querySelectorAll('.script-card.playing');
+      for (var j = 0; j < playingCards.length; j++) {
+        playingCards[j].classList.remove('playing');
+      }
       document.getElementById('loopStatus').textContent = 'Ready to play';
     }
 
     function updateLoopProgress() {
       if (currentChapter === null) return;
-      const items = chapters[currentChapter].items;
-      const pct = items.length ? Math.round(loopIndex / items.length * 100) : 0;
+      var items = chapters[currentChapter].items;
+      var pct = items.length ? Math.round(loopIndex / items.length * 100) : 0;
       document.getElementById('loopProgressFill').style.width = pct + '%';
       document.getElementById('loopCounter').textContent = loopIndex + ' / ' + items.length + ' lines';
     }
 
     function playLoopItem() {
       if (loopCancelled || !isLooping || currentChapter === null) return;
-      const items = chapters[currentChapter].items;
+      var items = chapters[currentChapter].items;
 
       if (loopIndex >= items.length) {
         stopLoop();
-        showToast('🎉 Chapter complete! Great work!', 'success');
+        showToast('\uD83C\uDF89 Chapter complete! Great work!', 'success');
         return;
       }
 
-      const item = items[loopIndex];
+      var item = items[loopIndex];
 
-      // Clear previous
-      document.querySelectorAll('.play-line-btn.playing').forEach(b => {
-        b.classList.remove('playing');
-        b.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-      });
-      document.querySelectorAll('.script-card.playing').forEach(c => c.classList.remove('playing'));
+      var prevBtns = document.querySelectorAll('.play-line-btn.playing');
+      for (var i = 0; i < prevBtns.length; i++) {
+        prevBtns[i].classList.remove('playing');
+        prevBtns[i].innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+      }
+      var prevCards = document.querySelectorAll('.script-card.playing');
+      for (var j = 0; j < prevCards.length; j++) {
+        prevCards[j].classList.remove('playing');
+      }
 
-      // Highlight current
-      const card = document.getElementById('card-' + item.num_id);
+      var card = document.getElementById('card-' + item.num_id);
       if (card) {
         card.classList.add('playing');
-        const btn = card.querySelector('.play-line-btn');
+        var btn = card.querySelector('.play-line-btn');
         if (btn) {
           btn.classList.add('playing');
           btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
@@ -847,19 +939,19 @@
         card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
 
-      const text = loopPhase === 'en' ? item.en : item.translation;
-      const flag = loopPhase === 'en' ? '🇬🇧' : '🇮🇩';
-      document.getElementById('loopStatus').innerHTML = flag + ' ' + text.substring(0, 60) + (text.length > 60 ? '...' : '');
+      var text = loopPhase === 'en' ? item.en : item.translation;
+      var flag = loopPhase === 'en' ? '\uD83C\uDDEC\uD83C\uDDE7' : '\uD83C\uDDEE\uD83C\uDDE9';
+      var displayText = text.substring(0, 60);
+      if (text.length > 60) displayText = displayText + '...';
+      document.getElementById('loopStatus').textContent = flag + ' ' + displayText;
 
-      // Play appropriate audio
-      const audioUrl = loopPhase === 'en' ? 'audio/' + item.num_id + '.mp3' : 'audio/' + item.num_id + '_id.mp3';
+      var audioUrl = loopPhase === 'en' ? ('audio/' + item.num_id + '.mp3') : ('audio/' + item.num_id + '_id.mp3');
       stopCurrentAudio();
-      const audio = new Audio(audioUrl);
+      var audio = new Audio(audioUrl);
       audio.playbackRate = playbackSpeed;
       currentAudio = audio;
 
-      audio.play().catch(() => {
-        // Audio not found, move on
+      audio.play().catch(function() {
         onLoopAudioEnd();
       });
 
@@ -870,57 +962,86 @@
       if (loopCancelled || !isLooping) return;
 
       if (loopPhase === 'en') {
-        // Switch to Indonesian
         loopPhase = 'id';
         playLoopItem();
       } else {
-        // Done with this line
-        const items = chapters[currentChapter].items;
+        var items = chapters[currentChapter].items;
         if (loopIndex < items.length) markComplete(items[loopIndex].num_id);
 
         if (repeatMode) {
-          // Stay on same line
           loopPhase = 'en';
-          setTimeout(() => playLoopItem(), 800);
+          setTimeout(function() { playLoopItem(); }, 800);
         } else {
           loopIndex++;
           loopPhase = 'en';
           updateLoopProgress();
-          setTimeout(() => playLoopItem(), 500);
+          setTimeout(function() { playLoopItem(); }, 500);
         }
       }
     }
 
-    // ==================== SIDEBAR ====================
+    /* ==================== SIDEBAR ==================== */
     function toggleSidebar() {
       document.getElementById('sidebar').classList.toggle('open');
       document.getElementById('sidebarOverlay').classList.toggle('open');
     }
 
-    // ==================== CLEAR ====================
+    /* ==================== CLEAR ==================== */
     function clearProgress() {
       if (confirm('Reset all progress? This cannot be undone.')) {
         localStorage.removeItem(STORAGE_KEY);
-        stopLoop(); refreshAllUI();
+        stopLoop();
+        refreshAllUI();
         if (currentChapter !== null) renderChapterView();
         showToast('Progress reset', 'info');
       }
     }
 
-    // ==================== TOAST ====================
+    /* ==================== TOAST ==================== */
     function showToast(msg, type) {
-      const t = document.getElementById('toast');
-      t.textContent = msg; t.className = 'toast ' + (type || 'info') + ' show';
-      setTimeout(() => t.classList.remove('show'), 3000);
+      var t = document.getElementById('toast');
+      t.textContent = msg;
+      t.className = 'toast ' + (type || 'info') + ' show';
+      setTimeout(function() { t.classList.remove('show'); }, 3000);
     }
 
-    // ==================== KEYBOARD ====================
-    document.addEventListener('keydown', e => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
-      if (e.code === 'Space') { e.preventDefault(); toggleLoop(); }
+    /* ==================== EVENT LISTENERS ==================== */
+    document.getElementById('menuToggle').addEventListener('click', toggleSidebar);
+    document.getElementById('sidebarOverlay').addEventListener('click', toggleSidebar);
+    document.getElementById('logoLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      showWelcome();
+    });
+    document.getElementById('searchInput').addEventListener('input', handleSearch);
+    document.getElementById('resetBtn').addEventListener('click', clearProgress);
+    document.getElementById('loopPlayBtn').addEventListener('click', toggleLoop);
+    document.getElementById('speedSelect').addEventListener('change', function() { setPlaybackSpeed(this.value); });
+    document.getElementById('repeatToggle').addEventListener('click', toggleRepeat);
+    document.getElementById('startBtn').addEventListener('click', function() { selectChapter(0); });
+
+    document.getElementById('langToggle').addEventListener('click', function(e) {
+      if (e.target.tagName === 'BUTTON') {
+        setDisplayMode(e.target.getAttribute('data-mode'));
+      }
     });
 
-    // ==================== START ====================
+    document.getElementById('scriptSections').addEventListener('click', function(e) {
+      var btn = e.target.closest('.play-line-btn');
+      if (btn) {
+        var id = parseInt(btn.getAttribute('data-play-id'), 10);
+        if (id) playLine(id);
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        toggleLoop();
+      }
+    });
+
+    /* ==================== START ==================== */
     init();
   </script>
 </body>
