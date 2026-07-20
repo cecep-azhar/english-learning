@@ -769,6 +769,69 @@
         }
 
         /* Utilities */
+        /* Categories Section */
+        .categories {
+            padding: 6rem 0;
+            background: var(--bg-primary);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .category-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            border-top: 3px solid var(--cat-color, var(--accent-1));
+        }
+
+        .category-card:hover {
+            border-color: var(--cat-color, var(--accent-1));
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .category-card .btn {
+            padding: 0.625rem 1.5rem;
+            font-size: 0.875rem;
+        }
         .text-gradient {
             background: linear-gradient(135deg, var(--accent-1) 0%, var(--accent-2) 100%);
             -webkit-background-clip: text;
@@ -823,6 +886,84 @@
                 <div class="hero-buttons animate-in delay-3">
                     <a href="#pricing" class="btn btn-primary">Mulai Gratis Sekarang</a>
                     <a href="#solution" class="btn btn-secondary">Lihat Kurikulum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Kategori</span>
+                <h2>Pilih Kategori yang Kamu Butuhkan</h2>
+                <p>Pilih bidang yang sesuai dengan karir kamu dan mulai belajar bahasa Inggris yang relevan.</p>
+            </div>
+                <div class="category-card" style="--cat-color: #6366f1;">
+                    <div class="category-icon">📚</div>
+                    <h3>General English</h3>
+                    <p>English dasar untuk kehidupan sehari-hari</p>
+                    <a href="/app?category=general-english" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #3b82f6;">
+                    <div class="category-icon">💼</div>
+                    <h3>Business English</h3>
+                    <p>English untuk bisnis dan korporat</p>
+                    <a href="/app?category=business-english" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #10b981;">
+                    <div class="category-icon">💰</div>
+                    <h3>Finance English</h3>
+                    <p>English untuk keuangan dan investasi</p>
+                    <a href="/app?category=finance-english" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #f59e0b;">
+                    <div class="category-icon">📋</div>
+                    <h3>Administration</h3>
+                    <p>English untuk administrasi perkantoran</p>
+                    <a href="/app?category=administration" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #ec4899;">
+                    <div class="category-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>English untuk web designer dan UI/UX</p>
+                    <a href="/app?category=web-design" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #14b8a6;">
+                    <div class="category-icon">🔍</div>
+                    <h3>SEO Specialist</h3>
+                    <p>English untuk SEO dan digital marketing</p>
+                    <a href="/app?category=seo-specialist" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #8b5cf6;">
+                    <div class="category-icon">🖌️</div>
+                    <h3>Graphic Design</h3>
+                    <p>English untuk desainer grafis</p>
+                    <a href="/app?category=graphic-design" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #ef4444;">
+                    <div class="category-icon">🎬</div>
+                    <h3>Video Editing</h3>
+                    <p>English untuk video editor</p>
+                    <a href="/app?category=video-editing" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #06b6d4;">
+                    <div class="category-icon">🤖</div>
+                    <h3>Virtual Assistant</h3>
+                    <p>English untuk virtual assistant</p>
+                    <a href="/app?category=virtual-assistant" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #f97316;">
+                    <div class="category-icon">✍️</div>
+                    <h3>Copywriting</h3>
+                    <p>English untuk copywriter</p>
+                    <a href="/app?category=copywriting" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+                <div class="category-card" style="--cat-color: #22c55e;">
+                    <div class="category-icon">💻</div>
+                    <h3>Software Engineering</h3>
+                    <p>English untuk software developer</p>
+                    <a href="/app?category=software-engineering" class="btn btn-primary">Mulai Belajar</a>
                 </div>
             </div>
         </div>
@@ -1147,7 +1288,7 @@
         }, observerOptions);
 
         // Apply to cards
-        document.querySelectorAll('.problem-card, .skill-card, .feature-item, .testimonial-card, .pricing-card').forEach(el => {
+        document.querySelectorAll('.problem-card, .skill-card, .feature-item, .testimonial-card, .pricing-card, .category-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -1173,6 +1314,10 @@
 
         document.querySelectorAll('.pricing-card').forEach((el, i) => {
             el.style.transitionDelay = `${i * 0.1}s`;
+        });
+
+        document.querySelectorAll('.category-card').forEach((el, i) => {
+            el.style.transitionDelay = `${i * 0.05}s`;
         });
 
         // Navbar scroll effect

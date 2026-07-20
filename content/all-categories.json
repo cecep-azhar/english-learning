@@ -1,0 +1,4638 @@
+{
+  "categories": [
+    {
+      "id": "general",
+      "name": "General English",
+      "scripts": [
+        {
+          "num_id": "general_001",
+          "chapter": "Greetings",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Hi! Nice to meet you. I'm a remote developer.",
+          "translation": "Halo! Senang bertemu denganmu. Saya developer remote."
+        },
+        {
+          "num_id": "general_002",
+          "chapter": "Greetings",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How are you doing today?",
+          "translation": "Bagaimana kabarmu hari ini?"
+        },
+        {
+          "num_id": "general_003",
+          "chapter": "Greetings",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm doing great, thanks! Just finished a sprint.",
+          "translation": "Saya baik-baik saja, terima kasih! Baru selesai sprint."
+        },
+        {
+          "num_id": "general_004",
+          "chapter": "Greetings",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Good morning! Ready for the standup?",
+          "translation": "Selamat pagi! Siap untuk standup?"
+        },
+        {
+          "num_id": "general_005",
+          "chapter": "Greetings",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Long time no see! How's the new project?",
+          "translation": "Lama tidak bertemu! Bagaimana project barunya?"
+        },
+        {
+          "num_id": "general_006",
+          "chapter": "Greetings",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's going well! We're building a mobile app.",
+          "translation": "Berjalan lancar! Kami sedang membangun aplikasi mobile."
+        },
+        {
+          "num_id": "general_007",
+          "chapter": "Greetings",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "See you at the next meeting!",
+          "translation": "Sampai jumpa di pertemuan berikutnya!"
+        },
+        {
+          "num_id": "general_008",
+          "chapter": "Greetings",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What time zone are you in?",
+          "translation": "Kamu di timezone berapa?"
+        },
+        {
+          "num_id": "general_009",
+          "chapter": "Greetings",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm in GMT+7, same as Jakarta.",
+          "translation": "Saya di GMT+7, sama seperti Jakarta."
+        },
+        {
+          "num_id": "general_010",
+          "chapter": "Daily Conversation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I work from home most days.",
+          "translation": "Saya bekerja dari rumah kebanyakan hari."
+        },
+        {
+          "num_id": "general_011",
+          "chapter": "Daily Conversation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What do you do for a living?",
+          "translation": "Apa pekerjaan kamu?"
+        },
+        {
+          "num_id": "general_012",
+          "chapter": "Daily Conversation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm a full-stack developer working remotely.",
+          "translation": "Saya full-stack developer yang bekerja remote."
+        },
+        {
+          "num_id": "general_013",
+          "chapter": "Daily Conversation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "My internet connection is unstable today.",
+          "translation": "Koneksi internet saya tidak stabil hari ini."
+        },
+        {
+          "num_id": "general_014",
+          "chapter": "Daily Conversation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you prefer working in the morning or evening?",
+          "translation": "Kamu lebih suka kerja pagi atau malam?"
+        },
+        {
+          "num_id": "general_015",
+          "chapter": "Daily Conversation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm a night owl, so I code better after 8 PM.",
+          "translation": "Saya orang malam, jadi saya lebih produktif coding setelah jam 8 malam."
+        },
+        {
+          "num_id": "general_016",
+          "chapter": "Daily Conversation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let me share my screen.",
+          "translation": "Saya akan share layar saya."
+        },
+        {
+          "num_id": "general_017",
+          "chapter": "Daily Conversation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you hear me okay?",
+          "translation": "Apakah kamu bisa mendengar saya dengan jelas?"
+        },
+        {
+          "num_id": "general_018",
+          "chapter": "Daily Conversation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, loud and clear.",
+          "translation": "Ya, jelas sekali."
+        },
+        {
+          "num_id": "general_019",
+          "chapter": "Daily Conversation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to grab a coffee, be right back.",
+          "translation": "Saya perlu ambil kopi, sebentar ya."
+        },
+        {
+          "num_id": "general_020",
+          "chapter": "Travel",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'm traveling to Bali for a tech conference.",
+          "translation": "Saya akan pergi ke Bali untuk konferensi teknologi."
+        },
+        {
+          "num_id": "general_021",
+          "chapter": "Travel",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Where is the nearest coworking space?",
+          "translation": "Di mana coworking space terdekat?"
+        },
+        {
+          "num_id": "general_022",
+          "chapter": "Travel",
+          "type": "dialogue",
+          "role": "B",
+          "en": "There's one about 10 minutes from here.",
+          "translation": "Ada satu sekitar 10 menit dari sini."
+        },
+        {
+          "num_id": "general_023",
+          "chapter": "Travel",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to extend my hotel booking by two days.",
+          "translation": "Saya perlu memperpanjang booking hotel dua hari."
+        },
+        {
+          "num_id": "general_024",
+          "chapter": "Travel",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Is the WiFi good at your hotel?",
+          "translation": "Apakah WiFi bagus di hotel kamu?"
+        },
+        {
+          "num_id": "general_025",
+          "chapter": "Travel",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, it's fast enough for video calls.",
+          "translation": "Ya, cukup cepat untuk video call."
+        },
+        {
+          "num_id": "general_026",
+          "chapter": "Travel",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll be working from a cafe today.",
+          "translation": "Saya akan kerja dari cafe hari ini."
+        },
+        {
+          "num_id": "general_027",
+          "chapter": "Travel",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you recommend a good restaurant nearby?",
+          "translation": "Bisa rekomendasi restoran bagus di sekitar sini?"
+        },
+        {
+          "num_id": "general_028",
+          "chapter": "Travel",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, there's a great warung on the corner.",
+          "translation": "Tentu, ada warung bagus di pojokan."
+        },
+        {
+          "num_id": "general_029",
+          "chapter": "Food",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's order lunch via GoFood.",
+          "translation": "Ayo pesan makan siang lewat GoFood."
+        },
+        {
+          "num_id": "general_030",
+          "chapter": "Food",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What kind of food do you like?",
+          "translation": "Kamu suka makanan apa?"
+        },
+        {
+          "num_id": "general_031",
+          "chapter": "Food",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I love Indonesian food, especially nasi goreng.",
+          "translation": "Saya suka makanan Indonesia, terutama nasi goreng."
+        },
+        {
+          "num_id": "general_032",
+          "chapter": "Food",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I usually skip lunch when I'm deep in coding.",
+          "translation": "Saya biasanya lewatkan makan siang saat sedang fokus coding."
+        },
+        {
+          "num_id": "general_033",
+          "chapter": "Food",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you want to grab coffee after the meeting?",
+          "translation": "Mau ngopi setelah meeting?"
+        },
+        {
+          "num_id": "general_034",
+          "chapter": "Food",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure! I know a great coffee shop nearby.",
+          "translation": "Tentu! Saya tahu kedai kopi bagus di dekat sini."
+        },
+        {
+          "num_id": "general_035",
+          "chapter": "Food",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The food here is delicious and affordable.",
+          "translation": "Makanan di sini enak dan terjangkau."
+        },
+        {
+          "num_id": "general_036",
+          "chapter": "Food",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Are you vegetarian?",
+          "translation": "Kamu vegetarian?"
+        },
+        {
+          "num_id": "general_037",
+          "chapter": "Food",
+          "type": "dialogue",
+          "role": "B",
+          "en": "No, but I'm trying to eat healthier.",
+          "translation": "Tidak, tapi saya sedang mencoba makan lebih sehat."
+        },
+        {
+          "num_id": "general_038",
+          "chapter": "Shopping",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to buy a new keyboard.",
+          "translation": "Saya perlu membeli keyboard baru."
+        },
+        {
+          "num_id": "general_039",
+          "chapter": "Shopping",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Where did you buy your standing desk?",
+          "translation": "Di mana kamu beli meja berdiri kamu?"
+        },
+        {
+          "num_id": "general_040",
+          "chapter": "Shopping",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I ordered it from Tokopedia during the sale.",
+          "translation": "Saya pesan dari Tokopedia saat diskon."
+        },
+        {
+          "num_id": "general_041",
+          "chapter": "Shopping",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "How much does a good monitor cost?",
+          "translation": "Berapa harga monitor yang bagus?"
+        },
+        {
+          "num_id": "general_042",
+          "chapter": "Shopping",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you prefer mechanical or membrane keyboards?",
+          "translation": "Kamu lebih suka keyboard mekanis atau membran?"
+        },
+        {
+          "num_id": "general_043",
+          "chapter": "Shopping",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I prefer mechanical with blue switches.",
+          "translation": "Saya lebih suka mekanis dengan switch blue."
+        },
+        {
+          "num_id": "general_044",
+          "chapter": "Shopping",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let me check the reviews before buying.",
+          "translation": "Saya cek ulasannya dulu sebelum beli."
+        },
+        {
+          "num_id": "general_045",
+          "chapter": "Shopping",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Is there a warranty for this laptop?",
+          "translation": "Apakah ada garansi untuk laptop ini?"
+        },
+        {
+          "num_id": "general_046",
+          "chapter": "Shopping",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, it comes with a two-year warranty.",
+          "translation": "Ya, sudah termasuk garansi dua tahun."
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business English",
+      "scripts": [
+        {
+          "num_id": "business_001",
+          "chapter": "Meetings",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's kick off the meeting with a quick update.",
+          "translation": "Ayo mulai meeting dengan update singkat."
+        },
+        {
+          "num_id": "business_002",
+          "chapter": "Meetings",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can everyone join the Zoom call?",
+          "translation": "Bisakah semua orang join Zoom call?"
+        },
+        {
+          "num_id": "business_003",
+          "chapter": "Meetings",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm having audio issues, can you hear me now?",
+          "translation": "Saya ada masalah audio, bisa dengar saya sekarang?"
+        },
+        {
+          "num_id": "business_004",
+          "chapter": "Meetings",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's table this discussion for the next meeting.",
+          "translation": "Ayo tunda diskusi ini untuk meeting berikutnya."
+        },
+        {
+          "num_id": "business_005",
+          "chapter": "Meetings",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Who will take the meeting minutes?",
+          "translation": "Siapa yang akan mencatat hasil meeting?"
+        },
+        {
+          "num_id": "business_006",
+          "chapter": "Meetings",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll handle it. I'll share the notes on Slack.",
+          "translation": "Saya yang tanggung. Saya akan bagikan catatannya di Slack."
+        },
+        {
+          "num_id": "business_007",
+          "chapter": "Meetings",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's wrap up. Any final questions?",
+          "translation": "Ayo tutup. Ada pertanyaan terakhir?"
+        },
+        {
+          "num_id": "business_008",
+          "chapter": "Meetings",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can we schedule a follow-up for next week?",
+          "translation": "Bisa kita jadwalkan follow-up minggu depan?"
+        },
+        {
+          "num_id": "business_009",
+          "chapter": "Meetings",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, I'll send a calendar invite.",
+          "translation": "Tentu, saya akan kirim undangan kalender."
+        },
+        {
+          "num_id": "business_010",
+          "chapter": "Negotiation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "What's your best rate for this project?",
+          "translation": "Tarif terbaik kamu untuk project ini berapa?"
+        },
+        {
+          "num_id": "business_011",
+          "chapter": "Negotiation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "We need to find a middle ground on the budget.",
+          "translation": "Kita perlu menemukan titik tengah soal budget."
+        },
+        {
+          "num_id": "business_012",
+          "chapter": "Negotiation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I understand. Let me propose a flexible plan.",
+          "translation": "Saya mengerti. Saya usulkan rencana fleksibel."
+        },
+        {
+          "num_id": "business_013",
+          "chapter": "Negotiation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "That's below my minimum rate, unfortunately.",
+          "translation": "Itu di bawah tarif minimum saya, sayangnya."
+        },
+        {
+          "num_id": "business_014",
+          "chapter": "Negotiation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can we offer equity instead of full payment?",
+          "translation": "Bisa kami tawarkan ekuitas sebagai pengganti pembayaran penuh?"
+        },
+        {
+          "num_id": "business_015",
+          "chapter": "Negotiation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'd prefer a mix of cash and equity.",
+          "translation": "Saya lebih suka kombinasi cash dan ekuitas."
+        },
+        {
+          "num_id": "business_016",
+          "chapter": "Negotiation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let me think about it and get back to you.",
+          "translation": "Biarkan saya pikirkan dan saya kabari nanti."
+        },
+        {
+          "num_id": "business_017",
+          "chapter": "Negotiation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's included in the scope of work?",
+          "translation": "Apa yang termasuk dalam cakupan kerja?"
+        },
+        {
+          "num_id": "business_018",
+          "chapter": "Negotiation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Development, testing, and one month of support.",
+          "translation": "Pengembangan, testing, dan satu bulan support."
+        },
+        {
+          "num_id": "business_019",
+          "chapter": "Presentations",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Today I'll walk you through our tech stack.",
+          "translation": "Hari ini saya akan menjelaskan tech stack kami."
+        },
+        {
+          "num_id": "business_020",
+          "chapter": "Presentations",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you share the slide deck with the team?",
+          "translation": "Bisa share slide deck ke tim?"
+        },
+        {
+          "num_id": "business_021",
+          "chapter": "Presentations",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I've uploaded it to Google Drive.",
+          "translation": "Ya, saya sudah upload ke Google Drive."
+        },
+        {
+          "num_id": "business_022",
+          "chapter": "Presentations",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let me demo the new feature.",
+          "translation": "Saya perlihatkan demo fitur baru."
+        },
+        {
+          "num_id": "business_023",
+          "chapter": "Presentations",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What metrics will you be presenting?",
+          "translation": "Metrik apa yang akan kamu presentasikan?"
+        },
+        {
+          "num_id": "business_024",
+          "chapter": "Presentations",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Revenue growth, user retention, and churn rate.",
+          "translation": "Pertumbuhan pendapatan, retensi pengguna, dan churn rate."
+        },
+        {
+          "num_id": "business_025",
+          "chapter": "Presentations",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Any questions before I move to the next slide?",
+          "translation": "Ada pertanyaan sebelum saya lanjut ke slide berikutnya?"
+        },
+        {
+          "num_id": "business_026",
+          "chapter": "Presentations",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Your presentation was very clear, thank you.",
+          "translation": "Presentasimu sangat jelas, terima kasih."
+        },
+        {
+          "num_id": "business_027",
+          "chapter": "Presentations",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Thanks! I'll send the recording later.",
+          "translation": "Terima kasih! Saya akan kirim rekamannya nanti."
+        },
+        {
+          "num_id": "business_028",
+          "chapter": "Networking",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "What do you do for a living?",
+          "translation": "Apa pekerjaan kamu?"
+        },
+        {
+          "num_id": "business_029",
+          "chapter": "Networking",
+          "type": "dialogue",
+          "role": "A",
+          "en": "I'm a freelance developer specializing in React.",
+          "translation": "Saya developer freelance yang mengkhususkan diri di React."
+        },
+        {
+          "num_id": "business_030",
+          "chapter": "Networking",
+          "type": "dialogue",
+          "role": "B",
+          "en": "That's great! I'm looking for someone with those skills.",
+          "translation": "Bagus! Saya sedang mencari orang dengan keahlian itu."
+        },
+        {
+          "num_id": "business_031",
+          "chapter": "Networking",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Can I add you on LinkedIn?",
+          "translation": "Boleh saya tambah di LinkedIn?"
+        },
+        {
+          "num_id": "business_032",
+          "chapter": "Networking",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you attend any tech meetups?",
+          "translation": "Kamu ikut tech meetup nggak?"
+        },
+        {
+          "num_id": "business_033",
+          "chapter": "Networking",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I go to the Jakarta JS meetup every month.",
+          "translation": "Ya, saya datang ke Jakarta JS meetup tiap bulan."
+        },
+        {
+          "num_id": "business_034",
+          "chapter": "Networking",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'd love to collaborate on a project.",
+          "translation": "Saya ingin berkolaborasi dalam suatu project."
+        },
+        {
+          "num_id": "business_035",
+          "chapter": "Networking",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Here's my business card.",
+          "translation": "Ini kartu nama saya."
+        },
+        {
+          "num_id": "business_036",
+          "chapter": "Networking",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Thanks! I'll reach out to you on email.",
+          "translation": "Terima kasih! Saya akan hubungi kamu lewat email."
+        },
+        {
+          "num_id": "business_037",
+          "chapter": "Email",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll send you the project proposal by EOD.",
+          "translation": "Saya akan kirim proposal project sebelum akhir hari."
+        },
+        {
+          "num_id": "business_038",
+          "chapter": "Email",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Did you receive my email about the deadline?",
+          "translation": "Apakah kamu menerima email saya tentang deadline?"
+        },
+        {
+          "num_id": "business_039",
+          "chapter": "Email",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I'll review it and reply by tomorrow.",
+          "translation": "Ya, saya akan review dan balas besok."
+        },
+        {
+          "num_id": "business_040",
+          "chapter": "Email",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Please find the attached invoice.",
+          "translation": "Silakan lihat lampiran invoice."
+        },
+        {
+          "num_id": "business_041",
+          "chapter": "Email",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you CC me on that email thread?",
+          "translation": "Bisa kamu CC saya di thread email itu?"
+        },
+        {
+          "num_id": "business_042",
+          "chapter": "Email",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, I've added you to the CC list.",
+          "translation": "Tentu, saya sudah tambahkan kamu ke CC."
+        },
+        {
+          "num_id": "business_043",
+          "chapter": "Email",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Thanks for your prompt response.",
+          "translation": "Terima kasih atas respon cepatnya."
+        },
+        {
+          "num_id": "business_044",
+          "chapter": "Email",
+          "type": "dialogue",
+          "role": "A",
+          "en": "I'm following up on my previous email.",
+          "translation": "Saya follow up email saya sebelumnya."
+        },
+        {
+          "num_id": "business_045",
+          "chapter": "Email",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Apologies for the late reply. Here's my feedback.",
+          "translation": "Maaf atas keterlambatan balasan. Ini feedback saya."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance English",
+      "scripts": [
+        {
+          "num_id": "finance_001",
+          "chapter": "Accounting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to reconcile the monthly expenses.",
+          "translation": "Saya perlu merekonsiliasi pengeluaran bulanan."
+        },
+        {
+          "num_id": "finance_002",
+          "chapter": "Accounting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you send me the balance sheet?",
+          "translation": "Bisa kirim saya balance sheet-nya?"
+        },
+        {
+          "num_id": "finance_003",
+          "chapter": "Accounting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll prepare it by end of business today.",
+          "translation": "Saya akan siapkan sebelum akhir hari kerja."
+        },
+        {
+          "num_id": "finance_004",
+          "chapter": "Accounting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The profit and loss statement looks good.",
+          "translation": "Laporan laba rugi terlihat bagus."
+        },
+        {
+          "num_id": "finance_005",
+          "chapter": "Accounting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's our accounts receivable balance?",
+          "translation": "Berapa saldo accounts receivable kita?"
+        },
+        {
+          "num_id": "finance_006",
+          "chapter": "Accounting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's approximately two million rupiah.",
+          "translation": "Kurang lebih dua juta rupiah."
+        },
+        {
+          "num_id": "finance_007",
+          "chapter": "Accounting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll need the invoices sorted by date.",
+          "translation": "Saya perlu invoice diurutkan berdasarkan tanggal."
+        },
+        {
+          "num_id": "finance_008",
+          "chapter": "Accounting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Did we close the books for last month?",
+          "translation": "Sudahkah kita tutup buku bulan lalu?"
+        },
+        {
+          "num_id": "finance_009",
+          "chapter": "Accounting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, everything has been reconciled.",
+          "translation": "Ya, semuanya sudah direkonsiliasi."
+        },
+        {
+          "num_id": "finance_010",
+          "chapter": "Investing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'm diversifying my investment portfolio.",
+          "translation": "Saya sedang mendiversifikasi portofolio investasi saya."
+        },
+        {
+          "num_id": "finance_011",
+          "chapter": "Investing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Have you looked into index funds?",
+          "translation": "Sudahkah kamu melihat reksa dana indeks?"
+        },
+        {
+          "num_id": "finance_012",
+          "chapter": "Investing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I'm putting 30% of savings into them.",
+          "translation": "Ya, saya alokasikan 30% tabungan ke situ."
+        },
+        {
+          "num_id": "finance_013",
+          "chapter": "Investing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The return on investment was impressive this quarter.",
+          "translation": "Return on investment trimester ini mengesankan."
+        },
+        {
+          "num_id": "finance_014",
+          "chapter": "Investing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's your risk tolerance?",
+          "translation": "Seberapa besar toleransi risiko kamu?"
+        },
+        {
+          "num_id": "finance_015",
+          "chapter": "Investing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I prefer low-risk investments at this point.",
+          "translation": "Saya lebih suka investasi berisiko rendah saat ini."
+        },
+        {
+          "num_id": "finance_016",
+          "chapter": "Investing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Do you invest in stocks or crypto?",
+          "translation": "Kamu investasi di saham atau crypto?"
+        },
+        {
+          "num_id": "finance_017",
+          "chapter": "Investing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The stock market has been volatile lately.",
+          "translation": "Pasar saham akhir-akhir ini volatil."
+        },
+        {
+          "num_id": "finance_018",
+          "chapter": "Investing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm holding long-term and not panicking.",
+          "translation": "Saya hold jangka panjang dan tidak panik."
+        },
+        {
+          "num_id": "finance_019",
+          "chapter": "Banking",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to transfer funds to my business account.",
+          "translation": "Saya perlu mentransfer dana ke rekening bisnis saya."
+        },
+        {
+          "num_id": "finance_020",
+          "chapter": "Banking",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Which bank do you use for your freelance income?",
+          "translation": "Kamu pakai bank mana untuk penghasilan freelance?"
+        },
+        {
+          "num_id": "finance_021",
+          "chapter": "Banking",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I use Bank Mandiri for business and BCA for personal.",
+          "translation": "Saya pakai Bank Mandiri untuk bisnis dan BCA untuk pribadi."
+        },
+        {
+          "num_id": "finance_022",
+          "chapter": "Banking",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The international transfer takes 2-3 business days.",
+          "translation": "Transfer internasional membutuhkan 2-3 hari kerja."
+        },
+        {
+          "num_id": "finance_023",
+          "chapter": "Banking",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the exchange rate for USD to IDR today?",
+          "translation": "Berapa kurs USD ke IDR hari ini?"
+        },
+        {
+          "num_id": "finance_024",
+          "chapter": "Banking",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's around fifteen thousand per dollar.",
+          "translation": "Sekitar lima belas ribu per dolar."
+        },
+        {
+          "num_id": "finance_025",
+          "chapter": "Banking",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll set up automatic bill payments.",
+          "translation": "Saya akan atur pembayaran tagihan otomatis."
+        },
+        {
+          "num_id": "finance_026",
+          "chapter": "Banking",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you have a business credit line?",
+          "translation": "Kamu punya credit line bisnis?"
+        },
+        {
+          "num_id": "finance_027",
+          "chapter": "Banking",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, it helps with cash flow management.",
+          "translation": "Ya, ini membantu manajemen arus kas."
+        },
+        {
+          "num_id": "finance_028",
+          "chapter": "Budgeting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'm creating a monthly budget for my startup.",
+          "translation": "Saya sedang membuat anggaran bulanan untuk startup saya."
+        },
+        {
+          "num_id": "finance_029",
+          "chapter": "Budgeting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What percentage of income goes to tools and software?",
+          "translation": "Berapa persen penghasilan untuk tools dan software?"
+        },
+        {
+          "num_id": "finance_030",
+          "chapter": "Budgeting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "About 15% covers all my subscriptions.",
+          "translation": "Sekitar 15% untuk semua langganan saya."
+        },
+        {
+          "num_id": "finance_031",
+          "chapter": "Budgeting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We need to cut costs somewhere.",
+          "translation": "Kita perlu mengurangi biaya di suatu tempat."
+        },
+        {
+          "num_id": "finance_032",
+          "chapter": "Budgeting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How do you track your expenses?",
+          "translation": "Bagaimana kamu melacak pengeluaran?"
+        },
+        {
+          "num_id": "finance_033",
+          "chapter": "Budgeting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I use a spreadsheet and update it weekly.",
+          "translation": "Saya pakai spreadsheet dan update tiap minggu."
+        },
+        {
+          "num_id": "finance_034",
+          "chapter": "Budgeting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We're under budget this month, which is great.",
+          "translation": "Kami di bawah anggaran bulan ini, bagus sekali."
+        },
+        {
+          "num_id": "finance_035",
+          "chapter": "Budgeting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Should we allocate more to marketing?",
+          "translation": "Haruskah kita alokasikan lebih banyak ke marketing?"
+        },
+        {
+          "num_id": "finance_036",
+          "chapter": "Budgeting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, but only for high-ROI channels.",
+          "translation": "Ya, tapi hanya untuk channel dengan ROI tinggi."
+        },
+        {
+          "num_id": "finance_037",
+          "chapter": "Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll prepare the quarterly financial report.",
+          "translation": "Saya akan menyiapkan laporan keuangan trimester."
+        },
+        {
+          "num_id": "finance_038",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you break down the revenue by source?",
+          "translation": "Bisa kamu rincikan pendapatan berdasarkan sumber?"
+        },
+        {
+          "num_id": "finance_039",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Freelance projects bring 60%, and SaaS is 40%.",
+          "translation": "Proyek freelance membawa 60%, dan SaaS 40%."
+        },
+        {
+          "num_id": "finance_040",
+          "chapter": "Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The cash flow report is ready for review.",
+          "translation": "Laporan arus kas sudah siap untuk direview."
+        },
+        {
+          "num_id": "finance_041",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What were our biggest expenses this quarter?",
+          "translation": "Apa pengeluaran terbesar kami trimester ini?"
+        },
+        {
+          "num_id": "finance_042",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Cloud hosting and contractor payments.",
+          "translation": "Cloud hosting dan pembayaran kontraktor."
+        },
+        {
+          "num_id": "finance_043",
+          "chapter": "Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll include charts in the presentation.",
+          "translation": "Saya akan sertakan grafik dalam presentasi."
+        },
+        {
+          "num_id": "finance_044",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "When is the board meeting to discuss finances?",
+          "translation": "Kapan rapat dewan untuk membahas keuangan?"
+        },
+        {
+          "num_id": "finance_045",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's scheduled for Friday at 10 AM.",
+          "translation": "Dijadwalkan hari Jumat jam 10 pagi."
+        }
+      ]
+    },
+    {
+      "id": "admin",
+      "name": "Administration",
+      "scripts": [
+        {
+          "num_id": "admin_001",
+          "chapter": "Scheduling",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let me check my calendar for availability.",
+          "translation": "Saya cek kalender saya dulu untuk ketersediaan."
+        },
+        {
+          "num_id": "admin_002",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can we reschedule the meeting to Thursday?",
+          "translation": "Bisa kita reschedule meeting ke hari Kamis?"
+        },
+        {
+          "num_id": "admin_003",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Thursday works for me. I'll update the invite.",
+          "translation": "Kamis cocok untuk saya. Saya akan update undangannya."
+        },
+        {
+          "num_id": "admin_004",
+          "chapter": "Scheduling",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've blocked off 2-4 PM for focused work.",
+          "translation": "Saya sudah blokir jam 2-4 sore untuk kerja fokus."
+        },
+        {
+          "num_id": "admin_005",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What time zone should we use for the meeting?",
+          "translation": "Time zone mana yang harus kita pakai untuk meeting?"
+        },
+        {
+          "num_id": "admin_006",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Let's use UTC to avoid confusion.",
+          "translation": "Ayo pakai UTC agar tidak bingung."
+        },
+        {
+          "num_id": "admin_007",
+          "chapter": "Scheduling",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll set up the recurring weekly sync.",
+          "translation": "Saya akan atur sinkronisasi mingguan berulang."
+        },
+        {
+          "num_id": "admin_008",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you have any conflicts next week?",
+          "translation": "Apakah kamu ada konflik minggu depan?"
+        },
+        {
+          "num_id": "admin_009",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Wednesday afternoon is open for me.",
+          "translation": "Rabu sore kosong untuk saya."
+        },
+        {
+          "num_id": "admin_010",
+          "chapter": "Documentation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've updated the project documentation.",
+          "translation": "Saya sudah update dokumentasi project."
+        },
+        {
+          "num_id": "admin_011",
+          "chapter": "Documentation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Where should we store the SOPs?",
+          "translation": "Di mana kita simpan SOP-nya?"
+        },
+        {
+          "num_id": "admin_012",
+          "chapter": "Documentation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Let's keep them in the shared Google Drive.",
+          "translation": "Ayo simpan di Google Drive bersama."
+        },
+        {
+          "num_id": "admin_013",
+          "chapter": "Documentation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Please fill out the onboarding checklist.",
+          "translation": "Silakan isi checklist onboarding."
+        },
+        {
+          "num_id": "admin_014",
+          "chapter": "Documentation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "I need the standard operating procedures.",
+          "translation": "Saya butuh prosedur operasional standar."
+        },
+        {
+          "num_id": "admin_015",
+          "chapter": "Documentation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll send you the link to our knowledge base.",
+          "translation": "Saya akan kirim link ke knowledge base kami."
+        },
+        {
+          "num_id": "admin_016",
+          "chapter": "Documentation",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "All contracts need to be filed digitally.",
+          "translation": "Semua kontrak harus disimpan secara digital."
+        },
+        {
+          "num_id": "admin_017",
+          "chapter": "Documentation",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you sign the digital document via DocuSign?",
+          "translation": "Bisa kamu tanda tangan dokumen digital lewat DocuSign?"
+        },
+        {
+          "num_id": "admin_018",
+          "chapter": "Documentation",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Done! I've signed and returned it.",
+          "translation": "Selesai! Saya sudah tanda tangan dan kembalikan."
+        },
+        {
+          "num_id": "admin_019",
+          "chapter": "Correspondence",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll draft the response to the client.",
+          "translation": "Saya akan buat draft balasan untuk klien."
+        },
+        {
+          "num_id": "admin_020",
+          "chapter": "Correspondence",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you CC the project manager on this email?",
+          "translation": "Bisa kamu CC project manager di email ini?"
+        },
+        {
+          "num_id": "admin_021",
+          "chapter": "Correspondence",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Done. I've also included the team lead.",
+          "translation": "Selesai. Saya juga sudah sertakan team lead."
+        },
+        {
+          "num_id": "admin_022",
+          "chapter": "Correspondence",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We need to send a formal letter of intent.",
+          "translation": "Kita perlu mengirim surat niat resmi."
+        },
+        {
+          "num_id": "admin_023",
+          "chapter": "Correspondence",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The client is asking for a status update.",
+          "translation": "Klien meminta update status."
+        },
+        {
+          "num_id": "admin_024",
+          "chapter": "Correspondence",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll prepare a summary and send it today.",
+          "translation": "Saya akan siapkan ringkasan dan kirim hari ini."
+        },
+        {
+          "num_id": "admin_025",
+          "chapter": "Correspondence",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Please acknowledge receipt of this document.",
+          "translation": "Silakan konfirmasi penerimaan dokumen ini."
+        },
+        {
+          "num_id": "admin_026",
+          "chapter": "Correspondence",
+          "type": "dialogue",
+          "role": "A",
+          "en": "We should follow up on the proposal.",
+          "translation": "Kita harus follow up proposal-nya."
+        },
+        {
+          "num_id": "admin_027",
+          "chapter": "Correspondence",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll send a polite reminder tomorrow.",
+          "translation": "Saya akan kirim pengingat sopan besok."
+        },
+        {
+          "num_id": "admin_028",
+          "chapter": "Filing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "All invoices are filed under the finance folder.",
+          "translation": "Semua invoice disimpan di folder keuangan."
+        },
+        {
+          "num_id": "admin_029",
+          "chapter": "Filing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you organize the shared drive folders?",
+          "translation": "Bisa kamu atur folder di drive bersama?"
+        },
+        {
+          "num_id": "admin_030",
+          "chapter": "Filing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll create a clear folder structure.",
+          "translation": "Saya akan buat struktur folder yang jelas."
+        },
+        {
+          "num_id": "admin_031",
+          "chapter": "Filing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Please scan and upload the signed contract.",
+          "translation": "Silakan scan dan upload kontrak yang sudah ditandatangani."
+        },
+        {
+          "num_id": "admin_032",
+          "chapter": "Filing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How do you name your files for easy search?",
+          "translation": "Bagaimana kamu memberi nama file agar mudah dicari?"
+        },
+        {
+          "num_id": "admin_033",
+          "chapter": "Filing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I use the format: date_client_project.",
+          "translation": "Saya pakai format: tanggal_klien_project."
+        },
+        {
+          "num_id": "admin_034",
+          "chapter": "Filing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We need a backup system for critical files.",
+          "translation": "Kita butuh sistem backup untuk file penting."
+        },
+        {
+          "num_id": "admin_035",
+          "chapter": "Filing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Are all the expense receipts archived?",
+          "translation": "Apakah semua kuitansi pengeluaran sudah diarsipkan?"
+        },
+        {
+          "num_id": "admin_036",
+          "chapter": "Filing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, they're organized by month and category.",
+          "translation": "Ya, sudah diorganisir berdasarkan bulan dan kategori."
+        },
+        {
+          "num_id": "admin_037",
+          "chapter": "Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The weekly status report is due on Friday.",
+          "translation": "Laporan status mingguan harus selesai hari Jumat."
+        },
+        {
+          "num_id": "admin_038",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you compile the team's progress updates?",
+          "translation": "Bisa kamu kumpulkan update progres tim?"
+        },
+        {
+          "num_id": "admin_039",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll gather the data from everyone's Slack updates.",
+          "translation": "Saya akan ambil data dari update Slack semua orang."
+        },
+        {
+          "num_id": "admin_040",
+          "chapter": "Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've submitted the monthly activity report.",
+          "translation": "Saya sudah mengirim laporan aktivitas bulanan."
+        },
+        {
+          "num_id": "admin_041",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What format should the report follow?",
+          "translation": "Format apa yang harus diikuti laporannya?"
+        },
+        {
+          "num_id": "admin_042",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Use the standard template in the shared folder.",
+          "translation": "Pakai template standar di folder bersama."
+        },
+        {
+          "num_id": "admin_043",
+          "chapter": "Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The KPI dashboard is updated in real-time.",
+          "translation": "Dashboard KPI diperbarui secara real-time."
+        },
+        {
+          "num_id": "admin_044",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "When is the quarterly review meeting?",
+          "translation": "Kapan pertemuan review trimester?"
+        },
+        {
+          "num_id": "admin_045",
+          "chapter": "Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's next Monday at 9 AM.",
+          "translation": "Senin depan jam 9 pagi."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "name": "Web Design",
+      "scripts": [
+        {
+          "num_id": "webdesign_001",
+          "chapter": "Design Tools",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll create the mockup in Figma.",
+          "translation": "Saya akan buat mockup di Figma."
+        },
+        {
+          "num_id": "webdesign_002",
+          "chapter": "Design Tools",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Are you using Figma or Adobe XD for this project?",
+          "translation": "Kamu pakai Figma atau Adobe XD untuk project ini?"
+        },
+        {
+          "num_id": "webdesign_003",
+          "chapter": "Design Tools",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I prefer Figma for its collaboration features.",
+          "translation": "Saya lebih suka Figma untuk fitur kolaborasinya."
+        },
+        {
+          "num_id": "webdesign_004",
+          "chapter": "Design Tools",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let me export the assets in SVG format.",
+          "translation": "Saya akan ekspor aset dalam format SVG."
+        },
+        {
+          "num_id": "webdesign_005",
+          "chapter": "Design Tools",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you share the Figma prototype link?",
+          "translation": "Bisa share link prototype Figma-nya?"
+        },
+        {
+          "num_id": "webdesign_006",
+          "chapter": "Design Tools",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, I'll send the view-only link.",
+          "translation": "Tentu, saya akan kirim link view-only."
+        },
+        {
+          "num_id": "webdesign_007",
+          "chapter": "Design Tools",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I use Canva for quick social media designs.",
+          "translation": "Saya pakai Canva untuk desain media sosial cepat."
+        },
+        {
+          "num_id": "webdesign_008",
+          "chapter": "Design Tools",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What design system are you following?",
+          "translation": "Design system apa yang kamu ikuti?"
+        },
+        {
+          "num_id": "webdesign_009",
+          "chapter": "Design Tools",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'm building a custom design system in Figma.",
+          "translation": "Saya sedang membangun design system custom di Figma."
+        },
+        {
+          "num_id": "webdesign_010",
+          "chapter": "Client Communication",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll present the initial concepts on Friday.",
+          "translation": "Saya akan presentasikan konsep awal hari Jumat."
+        },
+        {
+          "num_id": "webdesign_011",
+          "chapter": "Client Communication",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's your design process for a new project?",
+          "translation": "Bagaimana proses desain kamu untuk project baru?"
+        },
+        {
+          "num_id": "webdesign_012",
+          "chapter": "Client Communication",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Research, wireframes, then high-fidelity mockups.",
+          "translation": "Riset, wireframe, lalu mockup high-fidelity."
+        },
+        {
+          "num_id": "webdesign_013",
+          "chapter": "Client Communication",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's schedule a walkthrough of the design.",
+          "translation": "Ayo jadwalkan walkthrough desainnya."
+        },
+        {
+          "num_id": "webdesign_014",
+          "chapter": "Client Communication",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you give me a timeline for the redesign?",
+          "translation": "Bisa beri saya timeline untuk redesain?"
+        },
+        {
+          "num_id": "webdesign_015",
+          "chapter": "Client Communication",
+          "type": "dialogue",
+          "role": "B",
+          "en": "About 3 weeks from concept to final delivery.",
+          "translation": "Sekitar 3 minggu dari konsep ke pengiriman final."
+        },
+        {
+          "num_id": "webdesign_016",
+          "chapter": "Client Communication",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll incorporate your feedback into the next revision.",
+          "translation": "Saya akan masukkan feedback Anda ke revisi berikutnya."
+        },
+        {
+          "num_id": "webdesign_017",
+          "chapter": "Client Communication",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The client wants a more modern look.",
+          "translation": "Klien ingin tampilan yang lebih modern."
+        },
+        {
+          "num_id": "webdesign_018",
+          "chapter": "Client Communication",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll update the style guide accordingly.",
+          "translation": "Saya akan update style guide sesuai permintaan."
+        },
+        {
+          "num_id": "webdesign_019",
+          "chapter": "Portfolio",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to update my portfolio website.",
+          "translation": "Saya perlu update website portfolio saya."
+        },
+        {
+          "num_id": "webdesign_020",
+          "chapter": "Portfolio",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the best way to showcase your work?",
+          "translation": "Cara terbaik untuk memamerkan karya kamu?"
+        },
+        {
+          "num_id": "webdesign_021",
+          "chapter": "Portfolio",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I use case studies with before-and-after shots.",
+          "translation": "Saya pakai studi kasus dengan foto sebelum dan sesudah."
+        },
+        {
+          "num_id": "webdesign_022",
+          "chapter": "Portfolio",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll add the new project to my Behance page.",
+          "translation": "Saya akan tambahkan project baru ke halaman Behance saya."
+        },
+        {
+          "num_id": "webdesign_023",
+          "chapter": "Portfolio",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you include client testimonials in your portfolio?",
+          "translation": "Kamu sertakan testimonial klien di portfolio?"
+        },
+        {
+          "num_id": "webdesign_024",
+          "chapter": "Portfolio",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, social proof is very important.",
+          "translation": "Ya, bukti sosial sangat penting."
+        },
+        {
+          "num_id": "webdesign_025",
+          "chapter": "Portfolio",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "My portfolio is hosted on Webflow.",
+          "translation": "Portfolio saya dihost di Webflow."
+        },
+        {
+          "num_id": "webdesign_026",
+          "chapter": "Portfolio",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How often should you update your portfolio?",
+          "translation": "Seberapa sering kamu harus update portfolio?"
+        },
+        {
+          "num_id": "webdesign_027",
+          "chapter": "Portfolio",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I try to update it quarterly with new projects.",
+          "translation": "Saya coba update tiap trimester dengan project baru."
+        },
+        {
+          "num_id": "webdesign_028",
+          "chapter": "Feedback",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Can you give me specific feedback on the layout?",
+          "translation": "Bisa beri feedback spesifik tentang layout-nya?"
+        },
+        {
+          "num_id": "webdesign_029",
+          "chapter": "Feedback",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The color palette feels a bit too bright.",
+          "translation": "Palet warnanya terasa sedikit terlalu terang."
+        },
+        {
+          "num_id": "webdesign_030",
+          "chapter": "Feedback",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll tone it down and use softer tones.",
+          "translation": "Saya akan redam dan pakai warna lebih lembut."
+        },
+        {
+          "num_id": "webdesign_031",
+          "chapter": "Feedback",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'd suggest making the CTA button more prominent.",
+          "translation": "Saya sarankan buat tombol CTA lebih menonjol."
+        },
+        {
+          "num_id": "webdesign_032",
+          "chapter": "Feedback",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The typography needs to be more readable.",
+          "translation": "Tipografi perlu lebih mudah dibaca."
+        },
+        {
+          "num_id": "webdesign_033",
+          "chapter": "Feedback",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll increase the font size and line height.",
+          "translation": "Saya akan perbesar ukuran font dan line height."
+        },
+        {
+          "num_id": "webdesign_034",
+          "chapter": "Feedback",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Your feedback has improved the design significantly.",
+          "translation": "Feedback Anda telah meningkatkan desain secara signifikan."
+        },
+        {
+          "num_id": "webdesign_035",
+          "chapter": "Feedback",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What do you think about the spacing?",
+          "translation": "Menurutmu bagaimana spacing-nya?"
+        },
+        {
+          "num_id": "webdesign_036",
+          "chapter": "Feedback",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It looks great, nice use of white space.",
+          "translation": "Terlihat bagus, penggunaan white space yang baik."
+        },
+        {
+          "num_id": "webdesign_037",
+          "chapter": "Specifications",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The design should be responsive across all devices.",
+          "translation": "Desain harus responsif di semua perangkat."
+        },
+        {
+          "num_id": "webdesign_038",
+          "chapter": "Specifications",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the required screen resolution?",
+          "translation": "Berapa resolusi layar yang dibutuhkan?"
+        },
+        {
+          "num_id": "webdesign_039",
+          "chapter": "Specifications",
+          "type": "dialogue",
+          "role": "B",
+          "en": "We need to support 1920x1080 down to 375px mobile.",
+          "translation": "Kita harus mendukung 1920x1080 hingga 375px mobile."
+        },
+        {
+          "num_id": "webdesign_040",
+          "chapter": "Specifications",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Please follow the brand guidelines strictly.",
+          "translation": "Silakan ikuti panduan brand secara ketat."
+        },
+        {
+          "num_id": "webdesign_041",
+          "chapter": "Specifications",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What file formats do you need for handoff?",
+          "translation": "Format file apa yang kamu butuhkan untuk handoff?"
+        },
+        {
+          "num_id": "webdesign_042",
+          "chapter": "Specifications",
+          "type": "dialogue",
+          "role": "B",
+          "en": "SVG for icons and PNG for images.",
+          "translation": "SVG untuk ikon dan PNG untuk gambar."
+        },
+        {
+          "num_id": "webdesign_043",
+          "chapter": "Specifications",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The accessibility standards must be WCAG 2.1 AA.",
+          "translation": "Standar aksesibilitas harus WCAG 2.1 AA."
+        },
+        {
+          "num_id": "webdesign_044",
+          "chapter": "Specifications",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Does this need to integrate with a CMS?",
+          "translation": "Apakah ini perlu terintegrasi dengan CMS?"
+        },
+        {
+          "num_id": "webdesign_045",
+          "chapter": "Specifications",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, the client wants WordPress integration.",
+          "translation": "Ya, klien ingin integrasi WordPress."
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "name": "SEO Specialist",
+      "scripts": [
+        {
+          "num_id": "seo_001",
+          "chapter": "Analytics",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Organic traffic increased by 25% this month.",
+          "translation": "Traffic organik meningkat 25% bulan ini."
+        },
+        {
+          "num_id": "seo_002",
+          "chapter": "Analytics",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What does the Google Analytics data show?",
+          "translation": "Apa data Google Analytics menunjukkan?"
+        },
+        {
+          "num_id": "seo_003",
+          "chapter": "Analytics",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Bounce rate is down and session duration is up.",
+          "translation": "Bounce rate turun dan durasi sesi naik."
+        },
+        {
+          "num_id": "seo_004",
+          "chapter": "Analytics",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll set up a custom dashboard in GA4.",
+          "translation": "Saya akan buat dashboard custom di GA4."
+        },
+        {
+          "num_id": "seo_005",
+          "chapter": "Analytics",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Which pages are getting the most traffic?",
+          "translation": "Halaman mana yang mendapat traffic paling banyak?"
+        },
+        {
+          "num_id": "seo_006",
+          "chapter": "Analytics",
+          "type": "dialogue",
+          "role": "B",
+          "en": "The blog posts about tutorials perform best.",
+          "translation": "Artikel blog tentang tutorial paling perform."
+        },
+        {
+          "num_id": "seo_007",
+          "chapter": "Analytics",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's track conversions from organic search.",
+          "translation": "Ayo lacak konversi dari pencarian organik."
+        },
+        {
+          "num_id": "seo_008",
+          "chapter": "Analytics",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you pull the monthly SEO report?",
+          "translation": "Bisa ambil laporan SEO bulanan?"
+        },
+        {
+          "num_id": "seo_009",
+          "chapter": "Analytics",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's ready. I'll share it on the dashboard.",
+          "translation": "Sudah siap. Saya akan bagikan di dashboard."
+        },
+        {
+          "num_id": "seo_010",
+          "chapter": "Keywords",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We should target long-tail keywords for better ranking.",
+          "translation": "Kita harus target keyword long-tail untuk ranking lebih baik."
+        },
+        {
+          "num_id": "seo_011",
+          "chapter": "Keywords",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What keyword research tools do you use?",
+          "translation": "Tools riset keyword apa yang kamu pakai?"
+        },
+        {
+          "num_id": "seo_012",
+          "chapter": "Keywords",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Ahrefs and Google Keyword Planner.",
+          "translation": "Ahrefs dan Google Keyword Planner."
+        },
+        {
+          "num_id": "seo_013",
+          "chapter": "Keywords",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The keyword difficulty is too high for new sites.",
+          "translation": "Kesulitan keyword terlalu tinggi untuk situs baru."
+        },
+        {
+          "num_id": "seo_014",
+          "chapter": "Keywords",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How many keywords should we target per page?",
+          "translation": "Berapa banyak keyword yang harus kita target per halaman?"
+        },
+        {
+          "num_id": "seo_015",
+          "chapter": "Keywords",
+          "type": "dialogue",
+          "role": "B",
+          "en": "One primary keyword and 3-5 secondary ones.",
+          "translation": "Satu keyword utama dan 3-5 keyword sekunder."
+        },
+        {
+          "num_id": "seo_016",
+          "chapter": "Keywords",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll optimize the meta descriptions with target keywords.",
+          "translation": "Saya akan optimasi meta deskripsi dengan keyword target."
+        },
+        {
+          "num_id": "seo_017",
+          "chapter": "Keywords",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the search intent behind these keywords?",
+          "translation": "Apa search intent di balik keyword-keyword ini?"
+        },
+        {
+          "num_id": "seo_018",
+          "chapter": "Keywords",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Mostly informational and commercial intent.",
+          "translation": "Kebanyakan intent informatif dan komersial."
+        },
+        {
+          "num_id": "seo_019",
+          "chapter": "Technical SEO",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The site needs a proper sitemap.xml.",
+          "translation": "Situs butuh sitemap.xml yang benar."
+        },
+        {
+          "num_id": "seo_020",
+          "chapter": "Technical SEO",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Is the website loading fast enough?",
+          "translation": "Apakah website cukup cepat dimuat?"
+        },
+        {
+          "num_id": "seo_021",
+          "chapter": "Technical SEO",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Core Web Vitals are passing on all pages.",
+          "translation": "Core Web Vitals lulus di semua halaman."
+        },
+        {
+          "num_id": "seo_022",
+          "chapter": "Technical SEO",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll fix the crawl errors in Search Console.",
+          "translation": "Saya akan perbaiki error crawling di Search Console."
+        },
+        {
+          "num_id": "seo_023",
+          "chapter": "Technical SEO",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do we need to implement structured data?",
+          "translation": "Apakah kita perlu menerapkan structured data?"
+        },
+        {
+          "num_id": "seo_024",
+          "chapter": "Technical SEO",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, Article schema will help with rich snippets.",
+          "translation": "Ya, schema Article akan membantu dengan rich snippet."
+        },
+        {
+          "num_id": "seo_025",
+          "chapter": "Technical SEO",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The site is now fully HTTPS with no mixed content.",
+          "translation": "Situs sekarang sepenuhnya HTTPS tanpa mixed content."
+        },
+        {
+          "num_id": "seo_026",
+          "chapter": "Technical SEO",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Are there any broken links on the site?",
+          "translation": "Apakah ada link rusak di situs?"
+        },
+        {
+          "num_id": "seo_027",
+          "chapter": "Technical SEO",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I found 12 and I'm redirecting them now.",
+          "translation": "Saya menemukan 12 dan saya sedang redirect sekarang."
+        },
+        {
+          "num_id": "seo_028",
+          "chapter": "SEO Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll prepare the monthly SEO performance report.",
+          "translation": "Saya akan menyiapkan laporan performa SEO bulanan."
+        },
+        {
+          "num_id": "seo_029",
+          "chapter": "SEO Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What metrics should be included in the report?",
+          "translation": "Metrik apa yang harus disertakan dalam laporan?"
+        },
+        {
+          "num_id": "seo_030",
+          "chapter": "SEO Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Traffic, rankings, backlinks, and conversions.",
+          "translation": "Traffic, ranking, backlink, dan konversi."
+        },
+        {
+          "num_id": "seo_031",
+          "chapter": "SEO Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We gained 15 new backlinks this month.",
+          "translation": "Kita mendapatkan 15 backlink baru bulan ini."
+        },
+        {
+          "num_id": "seo_032",
+          "chapter": "SEO Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How does our traffic compare to last month?",
+          "translation": "Bagaimana traffic kita dibandingkan bulan lalu?"
+        },
+        {
+          "num_id": "seo_033",
+          "chapter": "SEO Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's up 18% overall and 30% from organic.",
+          "translation": "Naik 18% secara keseluruhan dan 30% dari organik."
+        },
+        {
+          "num_id": "seo_034",
+          "chapter": "SEO Reporting",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The report is available on our shared Google Sheet.",
+          "translation": "Laporan tersedia di Google Sheet bersama kami."
+        },
+        {
+          "num_id": "seo_035",
+          "chapter": "SEO Reporting",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you visualize the data with charts?",
+          "translation": "Bisa kamu visualisasikan data dengan grafik?"
+        },
+        {
+          "num_id": "seo_036",
+          "chapter": "SEO Reporting",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll add line graphs and bar charts.",
+          "translation": "Saya akan tambahkan grafik garis dan batang."
+        },
+        {
+          "num_id": "seo_037",
+          "chapter": "SEO Strategy",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We need a content strategy for the blog.",
+          "translation": "Kita butuh strategi konten untuk blog."
+        },
+        {
+          "num_id": "seo_038",
+          "chapter": "SEO Strategy",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Should we focus on link building or content first?",
+          "translation": "Harusnya kita fokus link building atau konten dulu?"
+        },
+        {
+          "num_id": "seo_039",
+          "chapter": "SEO Strategy",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Content first, then build links to it.",
+          "translation": "Konten dulu, baru bangun link ke situ."
+        },
+        {
+          "num_id": "seo_040",
+          "chapter": "SEO Strategy",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Let's create a topic cluster strategy.",
+          "translation": "Ayo buat strategi topic cluster."
+        },
+        {
+          "num_id": "seo_041",
+          "chapter": "SEO Strategy",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How often should we publish new content?",
+          "translation": "Seberapa sering kita harus publish konten baru?"
+        },
+        {
+          "num_id": "seo_042",
+          "chapter": "SEO Strategy",
+          "type": "dialogue",
+          "role": "B",
+          "en": "At least two quality articles per week.",
+          "translation": "Minimal dua artikel berkualitas per minggu."
+        },
+        {
+          "num_id": "seo_043",
+          "chapter": "SEO Strategy",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "We should optimize existing content before creating new.",
+          "translation": "Kita harus optimasi konten yang ada sebelum buat baru."
+        },
+        {
+          "num_id": "seo_044",
+          "chapter": "SEO Strategy",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's our main SEO goal for this quarter?",
+          "translation": "Apa tujuan SEO utama kita trimester ini?"
+        },
+        {
+          "num_id": "seo_045",
+          "chapter": "SEO Strategy",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Increase organic traffic by 40% and rank top 5 for key terms.",
+          "translation": "Tingkatkan traffic organik 40% dan ranking top 5 untuk kata kunci utama."
+        }
+      ]
+    },
+    {
+      "id": "graphic-design",
+      "name": "Graphic Design",
+      "scripts": [
+        {
+          "num_id": "graphic-design_001",
+          "chapter": "Design Brief",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "Can you share the design brief for the new brand?",
+          "translation": "Bisa share design brief untuk brand baru?"
+        },
+        {
+          "num_id": "graphic-design_002",
+          "chapter": "Design Brief",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the target audience for this design?",
+          "translation": "Siapa target audiens untuk desain ini?"
+        },
+        {
+          "num_id": "graphic-design_003",
+          "chapter": "Design Brief",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Young professionals aged 25-35.",
+          "translation": "Profesional muda berusia 25-35 tahun."
+        },
+        {
+          "num_id": "graphic-design_004",
+          "chapter": "Design Brief",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need more details about the project goals.",
+          "translation": "Saya butuh detail lebih banyak tentang tujuan project."
+        },
+        {
+          "num_id": "graphic-design_005",
+          "chapter": "Design Brief",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you have any reference designs we like?",
+          "translation": "Apakah ada desain referensi yang kita suka?"
+        },
+        {
+          "num_id": "graphic-design_006",
+          "chapter": "Design Brief",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I've pinned some on our Pinterest board.",
+          "translation": "Ya, saya sudah pin beberapa di papan Pinterest kami."
+        },
+        {
+          "num_id": "graphic-design_007",
+          "chapter": "Design Brief",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll start with mood boards based on the brief.",
+          "translation": "Saya akan mulai dengan mood board berdasarkan brief."
+        },
+        {
+          "num_id": "graphic-design_008",
+          "chapter": "Design Brief",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the deadline for the first draft?",
+          "translation": "Berapa deadline untuk draft pertama?"
+        },
+        {
+          "num_id": "graphic-design_009",
+          "chapter": "Design Brief",
+          "type": "dialogue",
+          "role": "B",
+          "en": "We need it by end of next week.",
+          "translation": "Kita butuh akhir minggu depan."
+        },
+        {
+          "num_id": "graphic-design_010",
+          "chapter": "Branding",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll design a new logo for the company.",
+          "translation": "Saya akan desain logo baru untuk perusahaan."
+        },
+        {
+          "num_id": "graphic-design_011",
+          "chapter": "Branding",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What feeling should the brand convey?",
+          "translation": "Perasaan apa yang harus disampaikan brand?"
+        },
+        {
+          "num_id": "graphic-design_012",
+          "chapter": "Branding",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Professional, trustworthy, and innovative.",
+          "translation": "Profesional, terpercaya, dan inovatif."
+        },
+        {
+          "num_id": "graphic-design_013",
+          "chapter": "Branding",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll create a brand style guide.",
+          "translation": "Saya akan buat brand style guide."
+        },
+        {
+          "num_id": "graphic-design_014",
+          "chapter": "Branding",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Should the logo be minimalist or detailed?",
+          "translation": "Apakah logo harus minimalis atau detail?"
+        },
+        {
+          "num_id": "graphic-design_015",
+          "chapter": "Branding",
+          "type": "dialogue",
+          "role": "B",
+          "en": "We prefer a clean, modern look.",
+          "translation": "Kami lebih suka tampilan bersih dan modern."
+        },
+        {
+          "num_id": "graphic-design_016",
+          "chapter": "Branding",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The brand colors are blue and white.",
+          "translation": "Warna brand adalah biru dan putih."
+        },
+        {
+          "num_id": "graphic-design_017",
+          "chapter": "Branding",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can we see logo variations for different uses?",
+          "translation": "Bisa kita lihat variasi logo untuk penggunaan berbeda?"
+        },
+        {
+          "num_id": "graphic-design_018",
+          "chapter": "Branding",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll prepare versions for print and digital.",
+          "translation": "Saya akan siapkan versi untuk cetak dan digital."
+        },
+        {
+          "num_id": "graphic-design_019",
+          "chapter": "Typography",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I recommend using a sans-serif font for the UI.",
+          "translation": "Saya sarankan pakai font sans-serif untuk UI."
+        },
+        {
+          "num_id": "graphic-design_020",
+          "chapter": "Typography",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What font pairings work well together?",
+          "translation": "Pasangan font apa yang cocok bersama?"
+        },
+        {
+          "num_id": "graphic-design_021",
+          "chapter": "Typography",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Montserrat for headings and Open Sans for body.",
+          "translation": "Montserrat untuk judul dan Open Sans untuk body."
+        },
+        {
+          "num_id": "graphic-design_022",
+          "chapter": "Typography",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The line height should be 1.5 for readability.",
+          "translation": "Line height harus 1.5 untuk keterbacaan."
+        },
+        {
+          "num_id": "graphic-design_023",
+          "chapter": "Typography",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Should we use web-safe fonts or custom ones?",
+          "translation": "Harusnya kita pakai font web-safe atau custom?"
+        },
+        {
+          "num_id": "graphic-design_024",
+          "chapter": "Typography",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Google Fonts for performance, custom for brand.",
+          "translation": "Google Fonts untuk performa, custom untuk brand."
+        },
+        {
+          "num_id": "graphic-design_025",
+          "chapter": "Typography",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll set up a typography scale for consistency.",
+          "translation": "Saya akan buat skala tipografi untuk konsistensi."
+        },
+        {
+          "num_id": "graphic-design_026",
+          "chapter": "Typography",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The font size seems too small on mobile.",
+          "translation": "Ukuran font sepertinya terlalu kecil di mobile."
+        },
+        {
+          "num_id": "graphic-design_027",
+          "chapter": "Typography",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll bump it up to at least 16px.",
+          "translation": "Saya akan naikkan minimal 16px."
+        },
+        {
+          "num_id": "graphic-design_028",
+          "chapter": "Color Theory",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The color palette should match the brand identity.",
+          "translation": "Palet warna harus sesuai dengan identitas brand."
+        },
+        {
+          "num_id": "graphic-design_029",
+          "chapter": "Color Theory",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What colors evoke trust and reliability?",
+          "translation": "Warna apa yang memunculkan kepercayaan dan keandalan?"
+        },
+        {
+          "num_id": "graphic-design_030",
+          "chapter": "Color Theory",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Blue is the most common choice for trust.",
+          "translation": "Biru adalah pilihan paling umum untuk kepercayaan."
+        },
+        {
+          "num_id": "graphic-design_031",
+          "chapter": "Color Theory",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll use complementary colors for contrast.",
+          "translation": "Saya akan pakai warna komplementer untuk kontras."
+        },
+        {
+          "num_id": "graphic-design_032",
+          "chapter": "Color Theory",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Are these colors accessible for color-blind users?",
+          "translation": "Apakah warna ini aksesibel untuk pengguna buta warna?"
+        },
+        {
+          "num_id": "graphic-design_033",
+          "chapter": "Color Theory",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll check the contrast ratio with a tool.",
+          "translation": "Saya akan cek rasio kontras dengan tools."
+        },
+        {
+          "num_id": "graphic-design_034",
+          "chapter": "Color Theory",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've created a 5-color palette for the design.",
+          "translation": "Saya sudah buat palet 5 warna untuk desain."
+        },
+        {
+          "num_id": "graphic-design_035",
+          "chapter": "Color Theory",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can we see how it looks in light and dark mode?",
+          "translation": "Bisa kita lihat tampilan di light dan dark mode?"
+        },
+        {
+          "num_id": "graphic-design_036",
+          "chapter": "Color Theory",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll prepare mockups for both themes.",
+          "translation": "Saya akan siapkan mockup untuk kedua tema."
+        },
+        {
+          "num_id": "graphic-design_037",
+          "chapter": "Client Work",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll send the deliverables in the agreed formats.",
+          "translation": "Saya akan kirim hasil kerja dalam format yang disepakati."
+        },
+        {
+          "num_id": "graphic-design_038",
+          "chapter": "Client Work",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you provide the source files along with exports?",
+          "translation": "Bisa kamu berikan source file beserta ekspor?"
+        },
+        {
+          "num_id": "graphic-design_039",
+          "chapter": "Client Work",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I'll include AI, PSD, and SVG files.",
+          "translation": "Ya, saya akan sertakan file AI, PSD, dan SVG."
+        },
+        {
+          "num_id": "graphic-design_040",
+          "chapter": "Client Work",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've completed the third revision as requested.",
+          "translation": "Saya sudah selesaikan revisi ketiga sesuai permintaan."
+        },
+        {
+          "num_id": "graphic-design_041",
+          "chapter": "Client Work",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How many revision rounds are included?",
+          "translation": "Berapa ronde revisi yang termasuk?"
+        },
+        {
+          "num_id": "graphic-design_042",
+          "chapter": "Client Work",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Two rounds are standard, additional ones are charged.",
+          "translation": "Dua ronde standar, yang lebih dikenakan biaya."
+        },
+        {
+          "num_id": "graphic-design_043",
+          "chapter": "Client Work",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll watermark the preview images.",
+          "translation": "Saya akan beri watermark pada gambar preview."
+        },
+        {
+          "num_id": "graphic-design_044",
+          "chapter": "Client Work",
+          "type": "dialogue",
+          "role": "A",
+          "en": "When will the final files be ready?",
+          "translation": "Kapan file final akan siap?"
+        },
+        {
+          "num_id": "graphic-design_045",
+          "chapter": "Client Work",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll have everything ready by Wednesday.",
+          "translation": "Saya akan selesaikan semuanya hari Rabu."
+        }
+      ]
+    },
+    {
+      "id": "video-editing",
+      "name": "Video Editing",
+      "scripts": [
+        {
+          "num_id": "video-editing_001",
+          "chapter": "Editing Terms",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll do a rough cut first, then refine.",
+          "translation": "Saya akan buat rough cut dulu, lalu perbaiki."
+        },
+        {
+          "num_id": "video-editing_002",
+          "chapter": "Editing Terms",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you add some B-roll footage here?",
+          "translation": "Bisa kamu tambahkan footage B-roll di sini?"
+        },
+        {
+          "num_id": "video-editing_003",
+          "chapter": "Editing Terms",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, I'll overlay it with the interview.",
+          "translation": "Tentu, saya akan overlay dengan wawancara."
+        },
+        {
+          "num_id": "video-editing_004",
+          "chapter": "Editing Terms",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I need to color grade the footage.",
+          "translation": "Saya perlu color grade footage-nya."
+        },
+        {
+          "num_id": "video-editing_005",
+          "chapter": "Editing Terms",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the desired look and feel?",
+          "translation": "Tampilan dan nuansa yang diinginkan seperti apa?"
+        },
+        {
+          "num_id": "video-editing_006",
+          "chapter": "Editing Terms",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Warm tones, cinematic feel.",
+          "translation": "Nada hangat, nuansa sinematik."
+        },
+        {
+          "num_id": "video-editing_007",
+          "chapter": "Editing Terms",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The jump cuts need to be smoother.",
+          "translation": "Jump cut-nya perlu lebih halus."
+        },
+        {
+          "num_id": "video-editing_008",
+          "chapter": "Editing Terms",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can we add transitions between scenes?",
+          "translation": "Bisa kita tambahkan transisi antar adegan?"
+        },
+        {
+          "num_id": "video-editing_009",
+          "chapter": "Editing Terms",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll use subtle cross-dissolves.",
+          "translation": "Saya akan pakai cross-dissolve yang halus."
+        },
+        {
+          "num_id": "video-editing_010",
+          "chapter": "Client Brief",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "What's the target length for the video?",
+          "translation": "Panjang target video berapa?"
+        },
+        {
+          "num_id": "video-editing_011",
+          "chapter": "Client Brief",
+          "type": "dialogue",
+          "role": "A",
+          "en": "The client wants a 3-minute promotional video.",
+          "translation": "Klien ingin video promosi 3 menit."
+        },
+        {
+          "num_id": "video-editing_012",
+          "chapter": "Client Brief",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll keep it punchy with strong visuals.",
+          "translation": "Saya akan buat padat dengan visual kuat."
+        },
+        {
+          "num_id": "video-editing_013",
+          "chapter": "Client Brief",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll use the footage shot on location.",
+          "translation": "Saya akan pakai footage yang diambil di lokasi."
+        },
+        {
+          "num_id": "video-editing_014",
+          "chapter": "Client Brief",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you need the raw footage or edited clips?",
+          "translation": "Kamu butuh footage mentah atau klip yang sudah diedit?"
+        },
+        {
+          "num_id": "video-editing_015",
+          "chapter": "Client Brief",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Raw footage gives me more flexibility.",
+          "translation": "Footage mentah memberi saya lebih banyak fleksibilitas."
+        },
+        {
+          "num_id": "video-editing_016",
+          "chapter": "Client Brief",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll add subtitles in English and Indonesian.",
+          "translation": "Saya akan tambahkan subtitle dalam bahasa Inggris dan Indonesia."
+        },
+        {
+          "num_id": "video-editing_017",
+          "chapter": "Client Brief",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What resolution should the final export be?",
+          "translation": "Resolusi apa untuk ekspor final?"
+        },
+        {
+          "num_id": "video-editing_018",
+          "chapter": "Client Brief",
+          "type": "dialogue",
+          "role": "B",
+          "en": "4K for the main file, 1080p for social media.",
+          "translation": "4K untuk file utama, 1080p untuk media sosial."
+        },
+        {
+          "num_id": "video-editing_019",
+          "chapter": "Equipment",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I use a MacBook Pro for editing.",
+          "translation": "Saya pakai MacBook Pro untuk editing."
+        },
+        {
+          "num_id": "video-editing_020",
+          "chapter": "Equipment",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you use an external hard drive for storage?",
+          "translation": "Kamu pakai hard drive eksternal untuk penyimpanan?"
+        },
+        {
+          "num_id": "video-editing_021",
+          "chapter": "Equipment",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I have a 4TB SSD for all my projects.",
+          "translation": "Ya, saya punya SSD 4TB untuk semua project saya."
+        },
+        {
+          "num_id": "video-editing_022",
+          "chapter": "Equipment",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "A good microphone is essential for quality audio.",
+          "translation": "Mic yang bagus sangat penting untuk audio berkualitas."
+        },
+        {
+          "num_id": "video-editing_023",
+          "chapter": "Equipment",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What camera do you use for shooting?",
+          "translation": "Kamera apa yang kamu pakai untuk syuting?"
+        },
+        {
+          "num_id": "video-editing_024",
+          "chapter": "Equipment",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I use a Sony A7III for most projects.",
+          "translation": "Saya pakai Sony A7III untuk kebanyakan project."
+        },
+        {
+          "num_id": "video-editing_025",
+          "chapter": "Equipment",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I have a dual monitor setup for efficient editing.",
+          "translation": "Saya punya setup dual monitor untuk editing efisien."
+        },
+        {
+          "num_id": "video-editing_026",
+          "chapter": "Equipment",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How much RAM do you recommend for video editing?",
+          "translation": "Berapa RAM yang kamu rekomendasikan untuk editing video?"
+        },
+        {
+          "num_id": "video-editing_027",
+          "chapter": "Equipment",
+          "type": "dialogue",
+          "role": "B",
+          "en": "At least 32GB for smooth 4K editing.",
+          "translation": "Minimal 32GB untuk editing 4K yang lancar."
+        },
+        {
+          "num_id": "video-editing_028",
+          "chapter": "Software",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I primarily use Adobe Premiere Pro.",
+          "translation": "Saya terutama pakai Adobe Premiere Pro."
+        },
+        {
+          "num_id": "video-editing_029",
+          "chapter": "Software",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Have you tried DaVinci Resolve for color grading?",
+          "translation": "Sudah coba DaVinci Resolve untuk color grading?"
+        },
+        {
+          "num_id": "video-editing_030",
+          "chapter": "Software",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, it's excellent for color work.",
+          "translation": "Ya, sangat bagus untuk pekerjaan warna."
+        },
+        {
+          "num_id": "video-editing_031",
+          "chapter": "Software",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I use After Effects for motion graphics.",
+          "translation": "Saya pakai After Effects untuk motion graphics."
+        },
+        {
+          "num_id": "video-editing_032",
+          "chapter": "Software",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What plugins do you use for editing?",
+          "translation": "Plugin apa yang kamu pakai untuk editing?"
+        },
+        {
+          "num_id": "video-editing_033",
+          "chapter": "Software",
+          "type": "dialogue",
+          "role": "B",
+          "en": "FilmConvert for color and Neat Video for denoising.",
+          "translation": "FilmConvert untuk warna dan Neat Video untuk denoising."
+        },
+        {
+          "num_id": "video-editing_034",
+          "chapter": "Software",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll render the video in H.264 for compatibility.",
+          "translation": "Saya akan render video dalam H.264 untuk kompatibilitas."
+        },
+        {
+          "num_id": "video-editing_035",
+          "chapter": "Software",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you use proxy editing for large files?",
+          "translation": "Kamu pakai proxy editing untuk file besar?"
+        },
+        {
+          "num_id": "video-editing_036",
+          "chapter": "Software",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, it makes the editing process much smoother.",
+          "translation": "Ya, membuat proses editing jauh lebih lancar."
+        },
+        {
+          "num_id": "video-editing_037",
+          "chapter": "Delivery",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll upload the final video to Google Drive.",
+          "translation": "Saya akan upload video final ke Google Drive."
+        },
+        {
+          "num_id": "video-editing_038",
+          "chapter": "Delivery",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What format should the final deliverable be?",
+          "translation": "Format apa yang harus untuk hasil akhir?"
+        },
+        {
+          "num_id": "video-editing_039",
+          "chapter": "Delivery",
+          "type": "dialogue",
+          "role": "B",
+          "en": "MP4 H.264 with AAC audio.",
+          "translation": "MP4 H.264 dengan audio AAC."
+        },
+        {
+          "num_id": "video-editing_040",
+          "chapter": "Delivery",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll create separate versions for social platforms.",
+          "translation": "Saya akan buat versi terpisah untuk platform sosial."
+        },
+        {
+          "num_id": "video-editing_041",
+          "chapter": "Delivery",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do you provide a preview before final delivery?",
+          "translation": "Kamu berikan preview sebelum pengiriman final?"
+        },
+        {
+          "num_id": "video-editing_042",
+          "chapter": "Delivery",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I'll share a watermarked preview first.",
+          "translation": "Ya, saya akan share preview dengan watermark dulu."
+        },
+        {
+          "num_id": "video-editing_043",
+          "chapter": "Delivery",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The final file will be delivered via WeTransfer.",
+          "translation": "File final akan dikirim via WeTransfer."
+        },
+        {
+          "num_id": "video-editing_044",
+          "chapter": "Delivery",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you compress the file without losing quality?",
+          "translation": "Bisa kamu kompres file tanpa kehilangan kualitas?"
+        },
+        {
+          "num_id": "video-editing_045",
+          "chapter": "Delivery",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll optimize the bitrate for the best balance.",
+          "translation": "Saya akan optimasi bitrate untuk keseimbangan terbaik."
+        }
+      ]
+    },
+    {
+      "id": "virtual-assistant",
+      "name": "Virtual Assistant",
+      "scripts": [
+        {
+          "num_id": "virtual-assistant_001",
+          "chapter": "Email Management",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll sort your inbox by priority.",
+          "translation": "Saya akan urutkan inbox Anda berdasarkan prioritas."
+        },
+        {
+          "num_id": "virtual-assistant_002",
+          "chapter": "Email Management",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you draft a response to this client email?",
+          "translation": "Bisa kamu buat draft balasan untuk email klien ini?"
+        },
+        {
+          "num_id": "virtual-assistant_003",
+          "chapter": "Email Management",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, I'll have it ready in 10 minutes.",
+          "translation": "Tentu, saya akan selesaikan dalam 10 menit."
+        },
+        {
+          "num_id": "virtual-assistant_004",
+          "chapter": "Email Management",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've filtered the emails into categories.",
+          "translation": "Saya sudah filter email ke dalam kategori."
+        },
+        {
+          "num_id": "virtual-assistant_005",
+          "chapter": "Email Management",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How many unread emails do I have?",
+          "translation": "Berapa banyak email belum dibaca saya?"
+        },
+        {
+          "num_id": "virtual-assistant_006",
+          "chapter": "Email Management",
+          "type": "dialogue",
+          "role": "B",
+          "en": "There are 23 unread, but only 5 need action.",
+          "translation": "Ada 23 belum dibaca, tapi hanya 5 yang perlu tindakan."
+        },
+        {
+          "num_id": "virtual-assistant_007",
+          "chapter": "Email Management",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll set up email filters to reduce spam.",
+          "translation": "Saya akan atur filter email untuk kurangi spam."
+        },
+        {
+          "num_id": "virtual-assistant_008",
+          "chapter": "Email Management",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you follow up on the pending replies?",
+          "translation": "Bisa kamu follow up balasan yang tertunda?"
+        },
+        {
+          "num_id": "virtual-assistant_009",
+          "chapter": "Email Management",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Done, I've sent follow-ups to 3 contacts.",
+          "translation": "Selesai, saya sudah kirim follow-up ke 3 kontak."
+        },
+        {
+          "num_id": "virtual-assistant_010",
+          "chapter": "Scheduling",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll manage your Google Calendar.",
+          "translation": "Saya akan mengelola Google Calendar Anda."
+        },
+        {
+          "num_id": "virtual-assistant_011",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Do I have any meetings tomorrow?",
+          "translation": "Apakah saya ada meeting besok?"
+        },
+        {
+          "num_id": "virtual-assistant_012",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "B",
+          "en": "You have two: a standup at 9 AM and a client call at 2 PM.",
+          "translation": "Anda punya dua: standup jam 9 pagi dan panggilan klien jam 2 sore."
+        },
+        {
+          "num_id": "virtual-assistant_013",
+          "chapter": "Scheduling",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've blocked your focus time from 10-12.",
+          "translation": "Saya sudah blokir waktu fokus Anda dari jam 10-12."
+        },
+        {
+          "num_id": "virtual-assistant_014",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you schedule a meeting with the developer?",
+          "translation": "Bisa kamu jadwalkan meeting dengan developer?"
+        },
+        {
+          "num_id": "virtual-assistant_015",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Sure, what time works best for you?",
+          "translation": "Tentu, jam berapa yang paling cocok untuk Anda?"
+        },
+        {
+          "num_id": "virtual-assistant_016",
+          "chapter": "Scheduling",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll send calendar invites for all meetings.",
+          "translation": "Saya akan kirim undangan kalender untuk semua meeting."
+        },
+        {
+          "num_id": "virtual-assistant_017",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "A",
+          "en": "I need to reschedule my afternoon meetings.",
+          "translation": "Saya perlu reschedule meeting sore saya."
+        },
+        {
+          "num_id": "virtual-assistant_018",
+          "chapter": "Scheduling",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll move them to next week.",
+          "translation": "Saya akan pindahkan ke minggu depan."
+        },
+        {
+          "num_id": "virtual-assistant_019",
+          "chapter": "Data Entry",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll input all the contact information.",
+          "translation": "Saya akan masukkan semua informasi kontak."
+        },
+        {
+          "num_id": "virtual-assistant_020",
+          "chapter": "Data Entry",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you update the customer database?",
+          "translation": "Bisa kamu update database pelanggan?"
+        },
+        {
+          "num_id": "virtual-assistant_021",
+          "chapter": "Data Entry",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll add the 50 new entries today.",
+          "translation": "Saya akan tambahkan 50 entri baru hari ini."
+        },
+        {
+          "num_id": "virtual-assistant_022",
+          "chapter": "Data Entry",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll double-check all the data for accuracy.",
+          "translation": "Saya akan periksa ulang semua data untuk akurasi."
+        },
+        {
+          "num_id": "virtual-assistant_023",
+          "chapter": "Data Entry",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How fast can you enter these records?",
+          "translation": "Seberapa cepat kamu bisa masukkan catatan ini?"
+        },
+        {
+          "num_id": "virtual-assistant_024",
+          "chapter": "Data Entry",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I can handle about 200 entries per hour.",
+          "translation": "Saya bisa handle sekitar 200 entri per jam."
+        },
+        {
+          "num_id": "virtual-assistant_025",
+          "chapter": "Data Entry",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The spreadsheet has been updated.",
+          "translation": "Spreadsheet sudah diupdate."
+        },
+        {
+          "num_id": "virtual-assistant_026",
+          "chapter": "Data Entry",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you transfer this data to our CRM?",
+          "translation": "Bisa kamu transfer data ini ke CRM kami?"
+        },
+        {
+          "num_id": "virtual-assistant_027",
+          "chapter": "Data Entry",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I'll import it via CSV.",
+          "translation": "Ya, saya akan import lewat CSV."
+        },
+        {
+          "num_id": "virtual-assistant_028",
+          "chapter": "Customer Service",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll respond to customer inquiries promptly.",
+          "translation": "Saya akan merespons pertanyaan pelanggan dengan cepat."
+        },
+        {
+          "num_id": "virtual-assistant_029",
+          "chapter": "Customer Service",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you handle the live chat support?",
+          "translation": "Bisa kamu tangani live chat support?"
+        },
+        {
+          "num_id": "virtual-assistant_030",
+          "chapter": "Customer Service",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, I'll monitor it during business hours.",
+          "translation": "Ya, saya akan pantau selama jam kerja."
+        },
+        {
+          "num_id": "virtual-assistant_031",
+          "chapter": "Customer Service",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I've created FAQ templates for common questions.",
+          "translation": "Saya sudah buat template FAQ untuk pertanyaan umum."
+        },
+        {
+          "num_id": "virtual-assistant_032",
+          "chapter": "Customer Service",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How do you handle difficult customers?",
+          "translation": "Bagaimana kamu menangani pelanggan yang sulit?"
+        },
+        {
+          "num_id": "virtual-assistant_033",
+          "chapter": "Customer Service",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I stay calm, listen actively, and offer solutions.",
+          "translation": "Saya tetap tenang, mendengarkan aktif, dan tawarkan solusi."
+        },
+        {
+          "num_id": "virtual-assistant_034",
+          "chapter": "Customer Service",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "All tickets have been resolved.",
+          "translation": "Semua tiket sudah diselesaikan."
+        },
+        {
+          "num_id": "virtual-assistant_035",
+          "chapter": "Customer Service",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's our average response time?",
+          "translation": "Berapa waktu respons rata-rata kita?"
+        },
+        {
+          "num_id": "virtual-assistant_036",
+          "chapter": "Customer Service",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It's under 2 hours, which is great.",
+          "translation": "Di bawah 2 jam, yang sangat bagus."
+        },
+        {
+          "num_id": "virtual-assistant_037",
+          "chapter": "Social Media",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll schedule posts on all platforms.",
+          "translation": "Saya akan jadwalkan postingan di semua platform."
+        },
+        {
+          "num_id": "virtual-assistant_038",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you create content for our Instagram?",
+          "translation": "Bisa kamu buat konten untuk Instagram kami?"
+        },
+        {
+          "num_id": "virtual-assistant_039",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll prepare a week's worth of content.",
+          "translation": "Saya akan siapkan konten untuk satu minggu."
+        },
+        {
+          "num_id": "virtual-assistant_040",
+          "chapter": "Social Media",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll respond to comments and DMs.",
+          "translation": "Saya akan merespons komentar dan DM."
+        },
+        {
+          "num_id": "virtual-assistant_041",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What posting schedule do you recommend?",
+          "translation": "Jadwal posting apa yang kamu rekomendasikan?"
+        },
+        {
+          "num_id": "virtual-assistant_042",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Daily on Instagram, 3 times a week on LinkedIn.",
+          "translation": "Tiap hari di Instagram, 3 kali seminggu di LinkedIn."
+        },
+        {
+          "num_id": "virtual-assistant_043",
+          "chapter": "Social Media",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll use Buffer to manage all accounts.",
+          "translation": "Saya akan pakai Buffer untuk mengelola semua akun."
+        },
+        {
+          "num_id": "virtual-assistant_044",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you track our social media analytics?",
+          "translation": "Bisa kamu lacak analitik media sosial kami?"
+        },
+        {
+          "num_id": "virtual-assistant_045",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll provide a weekly report with key metrics.",
+          "translation": "Saya akan berikan laporan mingguan dengan metrik kunci."
+        }
+      ]
+    },
+    {
+      "id": "copywriting",
+      "name": "Copywriting",
+      "scripts": [
+        {
+          "num_id": "copywriting_001",
+          "chapter": "Sales Copy",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll write compelling sales copy for the landing page.",
+          "translation": "Saya akan tulis sales copy yang menarik untuk landing page."
+        },
+        {
+          "num_id": "copywriting_002",
+          "chapter": "Sales Copy",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the main benefit of this product?",
+          "translation": "Apa manfaat utama produk ini?"
+        },
+        {
+          "num_id": "copywriting_003",
+          "chapter": "Sales Copy",
+          "type": "dialogue",
+          "role": "B",
+          "en": "It saves developers 10 hours per week.",
+          "translation": "Ini menghemat waktu developer 10 jam per minggu."
+        },
+        {
+          "num_id": "copywriting_004",
+          "chapter": "Sales Copy",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The headline needs to grab attention immediately.",
+          "translation": "Headline harus menarik perhatian segera."
+        },
+        {
+          "num_id": "copywriting_005",
+          "chapter": "Sales Copy",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you write a call to action that converts?",
+          "translation": "Bisa kamu tulis call to action yang mengkonversi?"
+        },
+        {
+          "num_id": "copywriting_006",
+          "chapter": "Sales Copy",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll A/B test a few variations.",
+          "translation": "Saya akan A/B test beberapa variasi."
+        },
+        {
+          "num_id": "copywriting_007",
+          "chapter": "Sales Copy",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll focus on pain points and solutions.",
+          "translation": "Saya akan fokus pada titik masalah dan solusi."
+        },
+        {
+          "num_id": "copywriting_008",
+          "chapter": "Sales Copy",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What tone should the sales copy have?",
+          "translation": "Nada apa yang harus dimiliki sales copy?"
+        },
+        {
+          "num_id": "copywriting_009",
+          "chapter": "Sales Copy",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Professional but approachable.",
+          "translation": "Profesional tapi mudah didekati."
+        },
+        {
+          "num_id": "copywriting_010",
+          "chapter": "Landing Pages",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll optimize the landing page for conversions.",
+          "translation": "Saya akan optimasi landing page untuk konversi."
+        },
+        {
+          "num_id": "copywriting_011",
+          "chapter": "Landing Pages",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What elements should a high-converting page have?",
+          "translation": "Elemen apa yang harus dimiliki halaman konversi tinggi?"
+        },
+        {
+          "num_id": "copywriting_012",
+          "chapter": "Landing Pages",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Strong headline, social proof, and clear CTA.",
+          "translation": "Headline kuat, bukti sosial, dan CTA jelas."
+        },
+        {
+          "num_id": "copywriting_013",
+          "chapter": "Landing Pages",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "The hero section needs a powerful value proposition.",
+          "translation": "Bagian hero butuh value proposition yang kuat."
+        },
+        {
+          "num_id": "copywriting_014",
+          "chapter": "Landing Pages",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Should we include testimonials on the page?",
+          "translation": "Haruskah kita sertakan testimonial di halaman?"
+        },
+        {
+          "num_id": "copywriting_015",
+          "chapter": "Landing Pages",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Absolutely, they build trust immediately.",
+          "translation": "Pasti, mereka membangun kepercayaan segera."
+        },
+        {
+          "num_id": "copywriting_016",
+          "chapter": "Landing Pages",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll write the copy above the fold.",
+          "translation": "Saya akan tulis copy di atas fold."
+        },
+        {
+          "num_id": "copywriting_017",
+          "chapter": "Landing Pages",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How long should the landing page be?",
+          "translation": "Seberapa panjang landing page seharusnya?"
+        },
+        {
+          "num_id": "copywriting_018",
+          "chapter": "Landing Pages",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Long enough to address all objections.",
+          "translation": "Cukup panjang untuk mengatasi semua keberatan."
+        },
+        {
+          "num_id": "copywriting_019",
+          "chapter": "Email Marketing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll create an email drip campaign.",
+          "translation": "Saya akan buat kampanye email drip."
+        },
+        {
+          "num_id": "copywriting_020",
+          "chapter": "Email Marketing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's a good subject line for high open rates?",
+          "translation": "Apa subject line yang bagus untuk open rate tinggi?"
+        },
+        {
+          "num_id": "copywriting_021",
+          "chapter": "Email Marketing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Keep it short, personal, and curiosity-driven.",
+          "translation": "Buat singkat, personal, dan memancing rasa penasaran."
+        },
+        {
+          "num_id": "copywriting_022",
+          "chapter": "Email Marketing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll segment the email list for targeted messaging.",
+          "translation": "Saya akan segmentasi daftar email untuk pesan yang terarah."
+        },
+        {
+          "num_id": "copywriting_023",
+          "chapter": "Email Marketing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How many emails should we send per week?",
+          "translation": "Berapa banyak email yang harus kita kirim per minggu?"
+        },
+        {
+          "num_id": "copywriting_024",
+          "chapter": "Email Marketing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Two to three is the sweet spot.",
+          "translation": "Dua hingga tiga adalah titik ideal."
+        },
+        {
+          "num_id": "copywriting_025",
+          "chapter": "Email Marketing",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll write a welcome sequence for new subscribers.",
+          "translation": "Saya akan tulis urutan sambutan untuk subscriber baru."
+        },
+        {
+          "num_id": "copywriting_026",
+          "chapter": "Email Marketing",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you A/B test the email templates?",
+          "translation": "Bisa kamu A/B test template email?"
+        },
+        {
+          "num_id": "copywriting_027",
+          "chapter": "Email Marketing",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll test subject lines and CTA placement.",
+          "translation": "Saya akan test subject line dan penempatan CTA."
+        },
+        {
+          "num_id": "copywriting_028",
+          "chapter": "Social Media",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll write engaging captions for Instagram.",
+          "translation": "Saya akan tulis caption menarik untuk Instagram."
+        },
+        {
+          "num_id": "copywriting_029",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What kind of content performs best on LinkedIn?",
+          "translation": "Jenis konten apa yang paling perform di LinkedIn?"
+        },
+        {
+          "num_id": "copywriting_030",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Thought leadership posts with actionable tips.",
+          "translation": "Postingan pemimpin pemikiran dengan tips yang bisa dipraktikkan."
+        },
+        {
+          "num_id": "copywriting_031",
+          "chapter": "Social Media",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll create a content calendar for the month.",
+          "translation": "Saya akan buat content calendar untuk bulan ini."
+        },
+        {
+          "num_id": "copywriting_032",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Should we use hashtags in our posts?",
+          "translation": "Haruskah kita pakai hashtag di postingan?"
+        },
+        {
+          "num_id": "copywriting_033",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Yes, but only relevant ones, about 5-10.",
+          "translation": "Ya, tapi hanya yang relevan, sekitar 5-10."
+        },
+        {
+          "num_id": "copywriting_034",
+          "chapter": "Social Media",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll write thread content for Twitter/X.",
+          "translation": "Saya akan tulis konten thread untuk Twitter/X."
+        },
+        {
+          "num_id": "copywriting_035",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "A",
+          "en": "Can you write viral-worthy copy?",
+          "translation": "Bisa kamu tulis copy yang layak viral?"
+        },
+        {
+          "num_id": "copywriting_036",
+          "chapter": "Social Media",
+          "type": "dialogue",
+          "role": "B",
+          "en": "I'll write hooks that stop the scroll.",
+          "translation": "Saya akan tulis hook yang bikin orang berhenti scroll."
+        },
+        {
+          "num_id": "copywriting_037",
+          "chapter": "Advertising",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll write ad copy for Google Ads.",
+          "translation": "Saya akan tulis copy iklan untuk Google Ads."
+        },
+        {
+          "num_id": "copywriting_038",
+          "chapter": "Advertising",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's the character limit for Google Ads?",
+          "translation": "Berapa batas karakter untuk Google Ads?"
+        },
+        {
+          "num_id": "copywriting_039",
+          "chapter": "Advertising",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Headlines are 30 characters, descriptions 90.",
+          "translation": "Headline 30 karakter, deskripsi 90 karakter."
+        },
+        {
+          "num_id": "copywriting_040",
+          "chapter": "Advertising",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll create Facebook ad variations for A/B testing.",
+          "translation": "Saya akan buat variasi iklan Facebook untuk A/B testing."
+        },
+        {
+          "num_id": "copywriting_041",
+          "chapter": "Advertising",
+          "type": "dialogue",
+          "role": "A",
+          "en": "How do we write ads that convert?",
+          "translation": "Bagaimana kita tulis iklan yang mengkonversi?"
+        },
+        {
+          "num_id": "copywriting_042",
+          "chapter": "Advertising",
+          "type": "dialogue",
+          "role": "B",
+          "en": "Focus on benefits, use urgency, and clear CTA.",
+          "translation": "Fokus pada manfaat, gunakan urgensi, dan CTA jelas."
+        },
+        {
+          "num_id": "copywriting_043",
+          "chapter": "Advertising",
+          "type": "phrase",
+          "role": "Speaker",
+          "en": "I'll optimize the ad copy based on performance.",
+          "translation": "Saya akan optimasi copy iklan berdasarkan performa."
+        },
+        {
+          "num_id": "copywriting_044",
+          "chapter": "Advertising",
+          "type": "dialogue",
+          "role": "A",
+          "en": "What's our target cost per click?",
+          "translation": "Berapa target cost per click kita?"
+        },
+        {
+          "num_id": "copywriting_045",
+          "chapter": "Advertising",
+          "type": "dialogue",
+          "role": "B",
+          "en": "We're aiming for under 5,000 rupiah per click.",
+          "translation": "Kami mentok di bawah 5.000 rupiah per klik."
+        }
+      ]
+    },
+    {
+      "id": "software-engineering",
+      "name": "Software Engineering",
+      "scripts": [
+        {
+          "num_id": "se_001",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "Hi, I'm Cecep Azhar — a full-stack developer specializing in Go, HTMX, and AI agent systems.",
+          "translation": "Hai, saya Cecep Azhar — full-stack developer spesialisasi Go, HTMX, dan sistem AI agent."
+        },
+        {
+          "num_id": "se_002",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "I help businesses automate workflows and build scalable web platforms.",
+          "translation": "Saya bantu bisnis otomasi alur kerja dan bangun platform web scalable."
+        },
+        {
+          "num_id": "se_003",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "I've delivered 6+ products across 3 countries, available for new projects.",
+          "translation": "Saya sudah deliver 6+ produk di 3 negara, tersedia untuk proyek baru."
+        },
+        {
+          "num_id": "se_004",
+          "chapter": "1. Self-Introduction",
+          "type": "dialog",
+          "role": "you",
+          "en": "Hi, my name is Cecep Azhar. I'm a full-stack developer from Indonesia with X years of experience.",
+          "translation": "Hai, nama saya Cecep Azhar. Saya full-stack developer dari Indonesia dengan pengalaman X tahun."
+        },
+        {
+          "num_id": "se_005",
+          "chapter": "1. Self-Introduction",
+          "type": "dialog",
+          "role": "you",
+          "en": "My primary stack is Go with Echo, HTMX for frontend, and PostgreSQL.",
+          "translation": "Stack utama saya Go dengan Echo, HTMX untuk frontend, dan PostgreSQL."
+        },
+        {
+          "num_id": "se_006",
+          "chapter": "1. Self-Introduction",
+          "type": "dialog",
+          "role": "you",
+          "en": "I've been building AI agent systems that automate customer support and workflows.",
+          "translation": "Saya membangun sistem AI agent yang otomasi customer support dan alur kerja."
+        },
+        {
+          "num_id": "se_007",
+          "chapter": "1. Self-Introduction",
+          "type": "dialog",
+          "role": "you",
+          "en": "I run FathForce — we go from solo developer to a full agency powered by AI.",
+          "translation": "Saya jalankan FathForce — dari developer solo jadi agensi penuh didukung AI."
+        },
+        {
+          "num_id": "se_008",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "What do you do?",
+          "translation": "Apa yang kamu kerjakan?"
+        },
+        {
+          "num_id": "se_009",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "I build web apps and AI-powered tools for businesses.",
+          "translation": "Saya bangun aplikasi web dan tools AI untuk bisnis."
+        },
+        {
+          "num_id": "se_010",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "What's your tech stack?",
+          "translation": "Apa tech stack kamu?"
+        },
+        {
+          "num_id": "se_011",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "Go, Echo, HTMX, Tailwind, PostgreSQL, LLM-based AI agents.",
+          "translation": "Go, Echo, HTMX, Tailwind, PostgreSQL, AI agent berbasis LLM."
+        },
+        {
+          "num_id": "se_012",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "How long have you been doing this?",
+          "translation": "Sudah berapa lama?"
+        },
+        {
+          "num_id": "se_013",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "Over X years, focused on Go and AI for the past few.",
+          "translation": "Lebih dari X tahun, fokus Go dan AI beberapa tahun terakhir."
+        },
+        {
+          "num_id": "se_014",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "What projects have you worked on?",
+          "translation": "Proyek apa yang pernah dikerjakan?"
+        },
+        {
+          "num_id": "se_015",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "SaaS, e-commerce, WhatsApp bots, and custom AI agents.",
+          "translation": "SaaS, e-commerce, WhatsApp bot, dan AI agent custom."
+        },
+        {
+          "num_id": "se_016",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "Are you freelance?",
+          "translation": "Kamu freelance?"
+        },
+        {
+          "num_id": "se_017",
+          "chapter": "1. Self-Introduction",
+          "type": "phrase",
+          "role": "you",
+          "en": "I run my own agency. Also available for consulting.",
+          "translation": "Saya punya agensi sendiri. Juga tersedia konsultasi."
+        },
+        {
+          "num_id": "se_018",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "Tell me about yourself.",
+          "translation": "Ceritakan tentang diri kamu."
+        },
+        {
+          "num_id": "se_019",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "I'm a full-stack dev with X years specializing in Go, PostgreSQL, HTMX, and recently AI agent systems.",
+          "translation": "Saya full-stack dev X tahun spesialisasi Go, PostgreSQL, HTMX, dan terakhir sistem AI agent."
+        },
+        {
+          "num_id": "se_020",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "Why should we hire you?",
+          "translation": "Kenapa kami harus hire kamu?"
+        },
+        {
+          "num_id": "se_021",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "I bring end-to-end capability — DB design to deployment. I ship fast and communicate clearly.",
+          "translation": "Saya punya kemampuan end-to-end — desain DB sampai deployment. Cepat deliver, komunikasi jelas."
+        },
+        {
+          "num_id": "se_022",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "What's your strength?",
+          "translation": "Apa kelebihan kamu?"
+        },
+        {
+          "num_id": "se_023",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "I'm pragmatic — ship working software over over-engineering. Pick the right tools.",
+          "translation": "Saya pragmatis — deliver software yang works daripada over-engineering. Pilih tools tepat."
+        },
+        {
+          "num_id": "se_024",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "What's your weakness?",
+          "translation": "Apa kelemahan kamu?"
+        },
+        {
+          "num_id": "se_025",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "I sometimes over-optimize before validation. I've learned to ship first, optimize later.",
+          "translation": "Kadang over-optimize sebelum validasi. Saya sudah belajar deliver dulu, optimasi belakangan."
+        },
+        {
+          "num_id": "se_026",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "Tell me about a challenging project.",
+          "translation": "Ceritakan proyek yang menantang."
+        },
+        {
+          "num_id": "se_027",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "Multi-tenant SaaS, 10K+ daily users. Challenge: data isolation plus real-time. Solution: connection pooling, Redis, HTMX.",
+          "translation": "SaaS multi-tenant, 10K+ user per hari. Tantangan: isolasi data dan real-time. Solusi: pooling, Redis, HTMX."
+        },
+        {
+          "num_id": "se_028",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "How do you handle tight deadlines?",
+          "translation": "Bagaimana kamu handle deadline ketat?"
+        },
+        {
+          "num_id": "se_029",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "Break into small deliverables, prioritize MVP, communicate early if blocked.",
+          "translation": "Pecah jadi deliverable kecil, prioritaskan MVP, komunikasi awal kalau blocked."
+        },
+        {
+          "num_id": "se_030",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "Where do you see yourself in 5 years?",
+          "translation": "Di mana kamu dalam 5 tahun?"
+        },
+        {
+          "num_id": "se_031",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "Leading AI-powered product architecture. Bridging traditional software engineering with AI revolution.",
+          "translation": "Memimpin arsitektur produk AI. Menjembatani SE tradisional dengan revolusi AI."
+        },
+        {
+          "num_id": "se_032",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "What's your salary expectation?",
+          "translation": "Berapa ekspektasi gaji kamu?"
+        },
+        {
+          "num_id": "se_033",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "$2,500 to $3,500 per month full-time, or $50 to $80 per hour contract.",
+          "translation": "$2,500 sampai $3,500 per bulan full-time, atau $50 sampai $80 per jam kontrak."
+        },
+        {
+          "num_id": "se_034",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "interviewer",
+          "en": "Could you clarify the constraints? Speed, memory, or readability?",
+          "translation": "Bisa jelaskan constraint-nya? Kecepatan, memori, atau keterbacaan?"
+        },
+        {
+          "num_id": "se_035",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "Let me think. I'd identify the bottleneck, then compare approach A vs B.",
+          "translation": "Saya pikirkan. Saya identifikasi bottleneck, lalu bandingkan pendekatan A vs B."
+        },
+        {
+          "num_id": "se_036",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "Haven't used that library, but the concept is similar to X. I can learn quickly.",
+          "translation": "Belum pakai library itu, tapi konsepnya mirip X. Saya bisa cepat belajar."
+        },
+        {
+          "num_id": "se_037",
+          "chapter": "2. Job Interview",
+          "type": "phrase",
+          "role": "you",
+          "en": "Summary: I'd use X because of the reason. Does that align?",
+          "translation": "Ringkasan: Saya pakai X karena alasan. Sesuai?"
+        },
+        {
+          "num_id": "se_038",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "interviewer",
+          "en": "Can you walk me through your recent projects?",
+          "translation": "Bisa ceritakan proyek terakhir kamu?"
+        },
+        {
+          "num_id": "se_039",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "you",
+          "en": "My flagship project is GCC — all-in-one business platform with Go, Echo, HTMX, PostgreSQL. Handles CRM, project management, and AI capabilities for 200+ users.",
+          "translation": "Proyek unggulan saya GCC — platform bisnis all-in-one dengan Go, Echo, HTMX, PostgreSQL. Handle CRM, manajemen proyek, dan AI untuk 200+ pengguna."
+        },
+        {
+          "num_id": "se_040",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "you",
+          "en": "I also built FathStore headless e-commerce, ProTool internal dashboards, and several AI agents for customer support using LLMs and RAG pipelines.",
+          "translation": "Saya juga bangun FathStore e-commerce headless, ProTool dashboard internal, dan beberapa AI agent untuk customer support pakai LLM dan RAG."
+        },
+        {
+          "num_id": "se_041",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "you",
+          "en": "I'm proud that I reduced page load from 3.2 seconds to under 800 milliseconds by switching from React to HTMX and optimizing DB queries.",
+          "translation": "Saya bangga bisa kurangi page load dari 3,2 detik jadi di bawah 800 milidetik dengan migrasi React ke HTMX dan optimasi query DB."
+        },
+        {
+          "num_id": "se_042",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "interviewer",
+          "en": "What are your key strengths?",
+          "translation": "Apa kekuatan utama kamu?"
+        },
+        {
+          "num_id": "se_043",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "you",
+          "en": "First, fast learner — I went from zero to production AI agents in 6 weeks. Second, pragmatic — Go for performance, HTMX for simplicity. Third, full-stack solo — DB to Docker to Cloudflare, very efficient for small teams.",
+          "translation": "Pertama, cepat belajar — dari nol sampai AI agent production dalam 6 minggu. Kedua, pragmatis — Go untuk performa, HTMX untuk kesederhanaan. Ketiga, full-stack solo — DB sampai Docker sampai Cloudflare, sangat efisien untuk tim kecil."
+        },
+        {
+          "num_id": "se_044",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "interviewer",
+          "en": "What's your biggest weakness?",
+          "translation": "Apa kelemahan terbesar kamu?"
+        },
+        {
+          "num_id": "se_045",
+          "chapter": "3. Portfolio Discussion",
+          "type": "dialog",
+          "role": "you",
+          "en": "I tend to take on too many things — because I can do full-stack, I try to handle everything myself. I'm improving by delegating and building a small team. Also, I sometimes over-optimize before validation. Now I ship first, optimize later.",
+          "translation": "Saya cenderung ambil terlalu banyak — karena bisa full-stack, saya coba handle sendiri semua. Saya perbaiki dengan delegasi dan bangun tim kecil. Juga, kadang over-optimize sebelum validasi. Sekarang deliver dulu, optimasi belakangan."
+        },
+        {
+          "num_id": "se_046",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "hr",
+          "en": "What are your salary expectations?",
+          "translation": "Berapa ekspektasi gaji kamu?"
+        },
+        {
+          "num_id": "se_047",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "you",
+          "en": "Based on my SaaS experience, AI skills, and Go expertise, I'm looking at $2,500 to $3,500 per month.",
+          "translation": "Berdasarkan pengalaman SaaS, keahlian AI, dan keahlian Go, saya minta $2,500 sampai $3,500 per bulan."
+        },
+        {
+          "num_id": "se_048",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "hr",
+          "en": "That's above our budget. We were thinking around $2,000.",
+          "translation": "Itu di atas budget kami. Kami berpikir sekitar $2,000."
+        },
+        {
+          "num_id": "se_049",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "you",
+          "en": "I understand. However, I handle full-stack alone — backend, frontend, DB, DevOps, AI — no extra hires needed. The cost savings are significant.",
+          "translation": "Saya paham. Tapi saya handle full-stack sendiri — backend, frontend, DB, DevOps, AI — tanpa rekrut tambahan. Penghematannya signifikan."
+        },
+        {
+          "num_id": "se_050",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "you",
+          "en": "Could we start at $2,000 with a review after 3 months based on performance? If I deliver, we adjust to $2,500.",
+          "translation": "Bisa mulai $2,000 dengan review setelah 3 bulan berdasarkan performa? Kalau saya deliver, kita naikkan ke $2,500."
+        },
+        {
+          "num_id": "se_051",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "hr",
+          "en": "That works. $2,000 starting, performance review at 3 months.",
+          "translation": "Oke. Mulai $2,000, review performa di 3 bulan."
+        },
+        {
+          "num_id": "se_052",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "you",
+          "en": "Great. Can we document this in the offer letter?",
+          "translation": "Bagus. Bisa didokumentasikan di offer letter?"
+        },
+        {
+          "num_id": "se_053",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "client",
+          "en": "What's your hourly rate?",
+          "translation": "Berapa tarif per jam kamu?"
+        },
+        {
+          "num_id": "se_054",
+          "chapter": "4. Salary Negotiation",
+          "type": "dialog",
+          "role": "you",
+          "en": "$50 per hour. For longer engagement, 3 months or more, I can do $45 per hour. Or monthly retainer of $2,000 for up to 50 hours.",
+          "translation": "$50 per jam. Untuk kontrak panjang, 3 bulan atau lebih, bisa $45 per jam. Atau retainer bulanan $2,000 untuk maksimal 50 jam."
+        },
+        {
+          "num_id": "se_055",
+          "chapter": "4. Salary Negotiation",
+          "type": "phrase",
+          "role": "you",
+          "en": "My minimum for this type of work is $2,000 per month.",
+          "translation": "Minimum saya $2,000 per bulan."
+        },
+        {
+          "num_id": "se_056",
+          "chapter": "4. Salary Negotiation",
+          "type": "phrase",
+          "role": "you",
+          "en": "This reflects my X years and specialized Go plus AI skills.",
+          "translation": "Ini mencerminkan X tahun dan keahlian Go plus AI saya."
+        },
+        {
+          "num_id": "se_057",
+          "chapter": "4. Salary Negotiation",
+          "type": "phrase",
+          "role": "you",
+          "en": "My standard is $80 per hour, but I'm flexible for the right opportunity.",
+          "translation": "Standar saya $80 per jam, tapi fleksibel untuk peluang tepat."
+        },
+        {
+          "num_id": "se_058",
+          "chapter": "4. Salary Negotiation",
+          "type": "phrase",
+          "role": "you",
+          "en": "I include docs, deployment, and 30-day post-launch support.",
+          "translation": "Saya sertakan dokumentasi, deployment, dan support 30 hari pasca-launch."
+        },
+        {
+          "num_id": "se_059",
+          "chapter": "4. Salary Negotiation",
+          "type": "phrase",
+          "role": "you",
+          "en": "That's below my minimum. I need at least $2,000.",
+          "translation": "Itu di bawah minimum saya. Saya butuh minimal $2,000."
+        },
+        {
+          "num_id": "se_060",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I agree.",
+          "translation": "Saya setuju."
+        },
+        {
+          "num_id": "se_061",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I will deploy.",
+          "translation": "Saya akan deploy."
+        },
+        {
+          "num_id": "se_062",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I have a lot of experience.",
+          "translation": "Saya punya banyak pengalaman."
+        },
+        {
+          "num_id": "se_063",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "Explain it to me.",
+          "translation": "Jelaskan ke saya."
+        },
+        {
+          "num_id": "se_064",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I have been working since 2020.",
+          "translation": "Saya sudah kerja sejak 2020."
+        },
+        {
+          "num_id": "se_065",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "Discuss it.",
+          "translation": "Bahas itu."
+        },
+        {
+          "num_id": "se_066",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I'll get back to you.",
+          "translation": "Saya balas kamu."
+        },
+        {
+          "num_id": "se_067",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "Handle this.",
+          "translation": "Handle ini."
+        },
+        {
+          "num_id": "se_068",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I have built 6 products.",
+          "translation": "Saya sudah bangun 6 produk."
+        },
+        {
+          "num_id": "se_069",
+          "chapter": "5. Grammar Essentials",
+          "type": "grammar",
+          "role": "you",
+          "en": "I worked at Company X from 2020 to 2023.",
+          "translation": "Saya kerja di Company X dari 2020 sampai 2023."
+        },
+        {
+          "num_id": "se_070",
+          "chapter": "5. Grammar Essentials",
+          "type": "phrase",
+          "role": "you",
+          "en": "Rolling out new feature tomorrow.",
+          "translation": "Deploy fitur baru besok."
+        },
+        {
+          "num_id": "se_071",
+          "chapter": "5. Grammar Essentials",
+          "type": "phrase",
+          "role": "you",
+          "en": "Build broke down after commit.",
+          "translation": "Build gagal setelah commit."
+        },
+        {
+          "num_id": "se_072",
+          "chapter": "5. Grammar Essentials",
+          "type": "phrase",
+          "role": "you",
+          "en": "Figured out the race condition.",
+          "translation": "Sudah pecahkan race condition."
+        },
+        {
+          "num_id": "se_073",
+          "chapter": "5. Grammar Essentials",
+          "type": "phrase",
+          "role": "you",
+          "en": "I'll look into the memory leak.",
+          "translation": "Saya investigasi memory leak."
+        },
+        {
+          "num_id": "se_074",
+          "chapter": "5. Grammar Essentials",
+          "type": "phrase",
+          "role": "you",
+          "en": "Hand off to ops team.",
+          "translation": "Transfer ke tim ops."
+        },
+        {
+          "num_id": "se_075",
+          "chapter": "5. Grammar Essentials",
+          "type": "phrase",
+          "role": "you",
+          "en": "Came up with better architecture.",
+          "translation": "Ciptakan arsitektur yang lebih baik."
+        },
+        {
+          "num_id": "se_076",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Good morning everyone. Thank you for joining.",
+          "translation": "Selamat pagi semua. Terima kasih sudah bergabung."
+        },
+        {
+          "num_id": "se_077",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Today I'll cover three main areas.",
+          "translation": "Hari ini saya bahas 3 area utama."
+        },
+        {
+          "num_id": "se_078",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Now let's move on to performance results.",
+          "translation": "Sekarang lanjut ke hasil performa."
+        },
+        {
+          "num_id": "se_079",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "In simple terms, the server responds 3 times faster.",
+          "translation": "Dalam istilah sederhana, server merespon 3 kali lebih cepat."
+        },
+        {
+          "num_id": "se_080",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Think of it as a cache between app and database.",
+          "translation": "Anggap sebagai cache antara aplikasi dan database."
+        },
+        {
+          "num_id": "se_081",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Let me show you how this works in practice.",
+          "translation": "Saya tunjukkan bagaimana ini bekerja."
+        },
+        {
+          "num_id": "se_082",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "To wrap up, here are the key takeaways.",
+          "translation": "Untuk menutup, ini poin pentingnya."
+        },
+        {
+          "num_id": "se_083",
+          "chapter": "6. Presentation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Happy to take questions. I'll follow up on anything I can't answer now.",
+          "translation": "Senang jawab pertanyaan. Saya follow up yang belum bisa dijawab sekarang."
+        },
+        {
+          "num_id": "se_084",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "On track. API complete, frontend 80% done.",
+          "translation": "On track. API selesai, frontend 80%."
+        },
+        {
+          "num_id": "se_085",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "3 days behind due to auth integration.",
+          "translation": "Terlambat 3 hari karena integrasi auth."
+        },
+        {
+          "num_id": "se_086",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Blocked on X. Need API keys from client.",
+          "translation": "Blocked di X. Butuh API key dari klien."
+        },
+        {
+          "num_id": "se_087",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Ahead of schedule. Can pull forward the feature.",
+          "translation": "Lebih cepat. Bisa majukan fitur."
+        },
+        {
+          "num_id": "se_088",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Completed 12 out of 15 story points this sprint.",
+          "translation": "Selesaikan 12 dari 15 story point sprint ini."
+        },
+        {
+          "num_id": "se_089",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "What went well: CI/CD cut deploy time by 60%.",
+          "translation": "Yang baik: CI/CD potong waktu deploy 60%."
+        },
+        {
+          "num_id": "se_090",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "To improve: test coverage at 45%, target 70%.",
+          "translation": "Perbaikan: test coverage 45%, target 70%."
+        },
+        {
+          "num_id": "se_091",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Great error logging — very thorough.",
+          "translation": "Error logging bagus — sangat lengkap."
+        },
+        {
+          "num_id": "se_092",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Suggestion: extract logic into reusable service.",
+          "translation": "Saran: ekstrak logika jadi service reusable."
+        },
+        {
+          "num_id": "se_093",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "I'll own the task, ready by Thursday.",
+          "translation": "Saya ambil task, siap Kamis."
+        },
+        {
+          "num_id": "se_094",
+          "chapter": "7. Meeting & Project Evaluation",
+          "type": "phrase",
+          "role": "you",
+          "en": "Let's circle back Friday.",
+          "translation": "Mari follow up Jumat."
+        },
+        {
+          "num_id": "se_095",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "client",
+          "en": "What pain points are you trying to solve?",
+          "translation": "Masalah apa yang ingin dipecahkan?"
+        },
+        {
+          "num_id": "se_096",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "Here's my proposal for the initial scope.",
+          "translation": "Ini usulan saya untuk scope awal."
+        },
+        {
+          "num_id": "se_097",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "For this complexity: $5,000, timeline 6 weeks.",
+          "translation": "Untuk kompleksitas ini: $5,000, timeline 6 minggu."
+        },
+        {
+          "num_id": "se_098",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "Great idea. Let's add that as Phase 2.",
+          "translation": "Ide bagus. Tambah Fase 2."
+        },
+        {
+          "num_id": "se_099",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "Friendly reminder — Invoice number X was due on the date.",
+          "translation": "Reminder — Invoice nomor X jatuh tempo tanggal."
+        },
+        {
+          "num_id": "se_100",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "Need at least X weeks for quality delivery.",
+          "translation": "Butuh minimal X minggu untuk kualitas baik."
+        },
+        {
+          "num_id": "se_101",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "All deliverables complete. Here's the checklist.",
+          "translation": "Semua deliverable selesai. Ini checklist."
+        },
+        {
+          "num_id": "se_102",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "I offer 30-day post-launch support.",
+          "translation": "Saya tawarkan support 30 hari pasca-launch."
+        },
+        {
+          "num_id": "se_103",
+          "chapter": "8. Client Communication",
+          "type": "phrase",
+          "role": "you",
+          "en": "Would you provide a testimonial?",
+          "translation": "Bisa kasih testimoni?"
+        },
+        {
+          "num_id": "se_104",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "client",
+          "en": "We found your profile. Interested in remote work?",
+          "translation": "Kami temukan profil kamu. Tertarik kerja remote?"
+        },
+        {
+          "num_id": "se_105",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "you",
+          "en": "Absolutely! Working remotely for X years with clients in Indonesia, Singapore, and the US. Comfortable with async communication and timezone overlap.",
+          "translation": "Tentu! Kerja remote X tahun dengan klien di Indonesia, Singapura, dan AS. Nyaman komunikasi async dan timezone overlap."
+        },
+        {
+          "num_id": "se_106",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "you",
+          "en": "I use Slack, Notion, GitHub. Proactive with daily updates and thorough documentation.",
+          "translation": "Saya pakai Slack, Notion, GitHub. Proaktif update harian dan dokumentasi lengkap."
+        },
+        {
+          "num_id": "se_107",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "client",
+          "en": "We're in US Eastern Time. Can you work our hours?",
+          "translation": "Kami di AS Eastern Time. Bisa kerja jam kami?"
+        },
+        {
+          "num_id": "se_108",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "you",
+          "en": "I'm in WIB, UTC+7, 12 hours behind Eastern Time. Available 8 PM to 12 AM WIB equals your 8 AM to 12 PM Eastern. Flexible for important meetings.",
+          "translation": "Saya WIB, UTC+7, selisih 12 jam. Available jam 8 sampai 12 malam WIB sama dengan jam 8 sampai 12 pagi Eastern. Fleksibel untuk meeting penting."
+        },
+        {
+          "num_id": "se_109",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "client",
+          "en": "How do you handle payments?",
+          "translation": "Bagaimana cara bayar?"
+        },
+        {
+          "num_id": "se_110",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "you",
+          "en": "Monthly invoices with detailed hours. I accept Wise, PayPal, or bank transfer. For new clients: 30% deposit upfront, 70% on delivery. Net-15 terms.",
+          "translation": "Invoice bulanan dengan detail jam. Saya terima Wise, PayPal, atau transfer bank. Klien baru: deposit 30% di muka, 70% saat deliver. Net-15."
+        },
+        {
+          "num_id": "se_111",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "client",
+          "en": "What contract are you looking for?",
+          "translation": "Kontrak seperti apa yang kamu cari?"
+        },
+        {
+          "num_id": "se_112",
+          "chapter": "9. Remote Worker",
+          "type": "dialog",
+          "role": "you",
+          "en": "Monthly retainer — X hours per month, minimum 3-month commitment. 14-day notice to end. All code and IP transfers to you.",
+          "translation": "Monthly retainer — X jam per bulan, komitmen minimal 3 bulan. Pemberitahuan 14 hari untuk berhenti. Semua kode dan IP milik Anda."
+        },
+        {
+          "num_id": "se_113",
+          "chapter": "9. Remote Worker",
+          "type": "phrase",
+          "role": "you",
+          "en": "PR number 42 ready for review.",
+          "translation": "PR nomor 42 siap di-review."
+        },
+        {
+          "num_id": "se_114",
+          "chapter": "9. Remote Worker",
+          "type": "phrase",
+          "role": "you",
+          "en": "Heads down on API refactor. Update at end of day.",
+          "translation": "Fokus refactor API. Update akhir hari."
+        },
+        {
+          "num_id": "se_115",
+          "chapter": "9. Remote Worker",
+          "type": "phrase",
+          "role": "you",
+          "en": "Out of office tomorrow. Name covers urgent.",
+          "translation": "Tidak ada besok. Nama cover urgent."
+        },
+        {
+          "num_id": "se_116",
+          "chapter": "9. Remote Worker",
+          "type": "phrase",
+          "role": "you",
+          "en": "Escalating — production DB showing degradation.",
+          "translation": "Eskalasi — DB production mulai degradasi."
+        },
+        {
+          "num_id": "se_117",
+          "chapter": "9. Remote Worker",
+          "type": "phrase",
+          "role": "you",
+          "en": "Signing off. All tasks on track. See you tomorrow!",
+          "translation": "Selesai hari ini. Semua task on track. Sampai besok!"
+        },
+        {
+          "num_id": "se_118",
+          "chapter": "10. Quick Reference",
+          "type": "phrase",
+          "role": "you",
+          "en": "I believe this approach will work best.",
+          "translation": "Saya yakin pendekatan ini akan paling berhasil."
+        },
+        {
+          "num_id": "se_119",
+          "chapter": "10. Quick Reference",
+          "type": "phrase",
+          "role": "you",
+          "en": "Let me check.",
+          "translation": "Saya cek dulu."
+        },
+        {
+          "num_id": "se_120",
+          "chapter": "10. Quick Reference",
+          "type": "phrase",
+          "role": "you",
+          "en": "I architected and designed the system.",
+          "translation": "Saya mendesain dan membangun sistem."
+        }
+      ]
+    }
+  ]
+}

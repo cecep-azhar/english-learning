@@ -1,0 +1,366 @@
+{
+  "id": "seo",
+  "name": "SEO Specialist",
+  "scripts": [
+    {
+      "num_id": "seo_001",
+      "chapter": "Analytics",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Organic traffic increased by 25% this month.",
+      "translation": "Traffic organik meningkat 25% bulan ini."
+    },
+    {
+      "num_id": "seo_002",
+      "chapter": "Analytics",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What does the Google Analytics data show?",
+      "translation": "Apa data Google Analytics menunjukkan?"
+    },
+    {
+      "num_id": "seo_003",
+      "chapter": "Analytics",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Bounce rate is down and session duration is up.",
+      "translation": "Bounce rate turun dan durasi sesi naik."
+    },
+    {
+      "num_id": "seo_004",
+      "chapter": "Analytics",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll set up a custom dashboard in GA4.",
+      "translation": "Saya akan buat dashboard custom di GA4."
+    },
+    {
+      "num_id": "seo_005",
+      "chapter": "Analytics",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Which pages are getting the most traffic?",
+      "translation": "Halaman mana yang mendapat traffic paling banyak?"
+    },
+    {
+      "num_id": "seo_006",
+      "chapter": "Analytics",
+      "type": "dialogue",
+      "role": "B",
+      "en": "The blog posts about tutorials perform best.",
+      "translation": "Artikel blog tentang tutorial paling perform."
+    },
+    {
+      "num_id": "seo_007",
+      "chapter": "Analytics",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's track conversions from organic search.",
+      "translation": "Ayo lacak konversi dari pencarian organik."
+    },
+    {
+      "num_id": "seo_008",
+      "chapter": "Analytics",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you pull the monthly SEO report?",
+      "translation": "Bisa ambil laporan SEO bulanan?"
+    },
+    {
+      "num_id": "seo_009",
+      "chapter": "Analytics",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's ready. I'll share it on the dashboard.",
+      "translation": "Sudah siap. Saya akan bagikan di dashboard."
+    },
+    {
+      "num_id": "seo_010",
+      "chapter": "Keywords",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We should target long-tail keywords for better ranking.",
+      "translation": "Kita harus target keyword long-tail untuk ranking lebih baik."
+    },
+    {
+      "num_id": "seo_011",
+      "chapter": "Keywords",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What keyword research tools do you use?",
+      "translation": "Tools riset keyword apa yang kamu pakai?"
+    },
+    {
+      "num_id": "seo_012",
+      "chapter": "Keywords",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Ahrefs and Google Keyword Planner.",
+      "translation": "Ahrefs dan Google Keyword Planner."
+    },
+    {
+      "num_id": "seo_013",
+      "chapter": "Keywords",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The keyword difficulty is too high for new sites.",
+      "translation": "Kesulitan keyword terlalu tinggi untuk situs baru."
+    },
+    {
+      "num_id": "seo_014",
+      "chapter": "Keywords",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How many keywords should we target per page?",
+      "translation": "Berapa banyak keyword yang harus kita target per halaman?"
+    },
+    {
+      "num_id": "seo_015",
+      "chapter": "Keywords",
+      "type": "dialogue",
+      "role": "B",
+      "en": "One primary keyword and 3-5 secondary ones.",
+      "translation": "Satu keyword utama dan 3-5 keyword sekunder."
+    },
+    {
+      "num_id": "seo_016",
+      "chapter": "Keywords",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll optimize the meta descriptions with target keywords.",
+      "translation": "Saya akan optimasi meta deskripsi dengan keyword target."
+    },
+    {
+      "num_id": "seo_017",
+      "chapter": "Keywords",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the search intent behind these keywords?",
+      "translation": "Apa search intent di balik keyword-keyword ini?"
+    },
+    {
+      "num_id": "seo_018",
+      "chapter": "Keywords",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Mostly informational and commercial intent.",
+      "translation": "Kebanyakan intent informatif dan komersial."
+    },
+    {
+      "num_id": "seo_019",
+      "chapter": "Technical SEO",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The site needs a proper sitemap.xml.",
+      "translation": "Situs butuh sitemap.xml yang benar."
+    },
+    {
+      "num_id": "seo_020",
+      "chapter": "Technical SEO",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Is the website loading fast enough?",
+      "translation": "Apakah website cukup cepat dimuat?"
+    },
+    {
+      "num_id": "seo_021",
+      "chapter": "Technical SEO",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Core Web Vitals are passing on all pages.",
+      "translation": "Core Web Vitals lulus di semua halaman."
+    },
+    {
+      "num_id": "seo_022",
+      "chapter": "Technical SEO",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll fix the crawl errors in Search Console.",
+      "translation": "Saya akan perbaiki error crawling di Search Console."
+    },
+    {
+      "num_id": "seo_023",
+      "chapter": "Technical SEO",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do we need to implement structured data?",
+      "translation": "Apakah kita perlu menerapkan structured data?"
+    },
+    {
+      "num_id": "seo_024",
+      "chapter": "Technical SEO",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, Article schema will help with rich snippets.",
+      "translation": "Ya, schema Article akan membantu dengan rich snippet."
+    },
+    {
+      "num_id": "seo_025",
+      "chapter": "Technical SEO",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The site is now fully HTTPS with no mixed content.",
+      "translation": "Situs sekarang sepenuhnya HTTPS tanpa mixed content."
+    },
+    {
+      "num_id": "seo_026",
+      "chapter": "Technical SEO",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Are there any broken links on the site?",
+      "translation": "Apakah ada link rusak di situs?"
+    },
+    {
+      "num_id": "seo_027",
+      "chapter": "Technical SEO",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I found 12 and I'm redirecting them now.",
+      "translation": "Saya menemukan 12 dan saya sedang redirect sekarang."
+    },
+    {
+      "num_id": "seo_028",
+      "chapter": "SEO Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll prepare the monthly SEO performance report.",
+      "translation": "Saya akan menyiapkan laporan performa SEO bulanan."
+    },
+    {
+      "num_id": "seo_029",
+      "chapter": "SEO Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What metrics should be included in the report?",
+      "translation": "Metrik apa yang harus disertakan dalam laporan?"
+    },
+    {
+      "num_id": "seo_030",
+      "chapter": "SEO Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Traffic, rankings, backlinks, and conversions.",
+      "translation": "Traffic, ranking, backlink, dan konversi."
+    },
+    {
+      "num_id": "seo_031",
+      "chapter": "SEO Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We gained 15 new backlinks this month.",
+      "translation": "Kita mendapatkan 15 backlink baru bulan ini."
+    },
+    {
+      "num_id": "seo_032",
+      "chapter": "SEO Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How does our traffic compare to last month?",
+      "translation": "Bagaimana traffic kita dibandingkan bulan lalu?"
+    },
+    {
+      "num_id": "seo_033",
+      "chapter": "SEO Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's up 18% overall and 30% from organic.",
+      "translation": "Naik 18% secara keseluruhan dan 30% dari organik."
+    },
+    {
+      "num_id": "seo_034",
+      "chapter": "SEO Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The report is available on our shared Google Sheet.",
+      "translation": "Laporan tersedia di Google Sheet bersama kami."
+    },
+    {
+      "num_id": "seo_035",
+      "chapter": "SEO Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you visualize the data with charts?",
+      "translation": "Bisa kamu visualisasikan data dengan grafik?"
+    },
+    {
+      "num_id": "seo_036",
+      "chapter": "SEO Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll add line graphs and bar charts.",
+      "translation": "Saya akan tambahkan grafik garis dan batang."
+    },
+    {
+      "num_id": "seo_037",
+      "chapter": "SEO Strategy",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We need a content strategy for the blog.",
+      "translation": "Kita butuh strategi konten untuk blog."
+    },
+    {
+      "num_id": "seo_038",
+      "chapter": "SEO Strategy",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Should we focus on link building or content first?",
+      "translation": "Harusnya kita fokus link building atau konten dulu?"
+    },
+    {
+      "num_id": "seo_039",
+      "chapter": "SEO Strategy",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Content first, then build links to it.",
+      "translation": "Konten dulu, baru bangun link ke situ."
+    },
+    {
+      "num_id": "seo_040",
+      "chapter": "SEO Strategy",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's create a topic cluster strategy.",
+      "translation": "Ayo buat strategi topic cluster."
+    },
+    {
+      "num_id": "seo_041",
+      "chapter": "SEO Strategy",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How often should we publish new content?",
+      "translation": "Seberapa sering kita harus publish konten baru?"
+    },
+    {
+      "num_id": "seo_042",
+      "chapter": "SEO Strategy",
+      "type": "dialogue",
+      "role": "B",
+      "en": "At least two quality articles per week.",
+      "translation": "Minimal dua artikel berkualitas per minggu."
+    },
+    {
+      "num_id": "seo_043",
+      "chapter": "SEO Strategy",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We should optimize existing content before creating new.",
+      "translation": "Kita harus optimasi konten yang ada sebelum buat baru."
+    },
+    {
+      "num_id": "seo_044",
+      "chapter": "SEO Strategy",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's our main SEO goal for this quarter?",
+      "translation": "Apa tujuan SEO utama kita trimester ini?"
+    },
+    {
+      "num_id": "seo_045",
+      "chapter": "SEO Strategy",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Increase organic traffic by 40% and rank top 5 for key terms.",
+      "translation": "Tingkatkan traffic organik 40% dan ranking top 5 untuk kata kunci utama."
+    }
+  ]
+}

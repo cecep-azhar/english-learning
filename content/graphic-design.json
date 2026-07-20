@@ -1,0 +1,366 @@
+{
+  "id": "graphic-design",
+  "name": "Graphic Design",
+  "scripts": [
+    {
+      "num_id": "graphic-design_001",
+      "chapter": "Design Brief",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Can you share the design brief for the new brand?",
+      "translation": "Bisa share design brief untuk brand baru?"
+    },
+    {
+      "num_id": "graphic-design_002",
+      "chapter": "Design Brief",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the target audience for this design?",
+      "translation": "Siapa target audiens untuk desain ini?"
+    },
+    {
+      "num_id": "graphic-design_003",
+      "chapter": "Design Brief",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Young professionals aged 25-35.",
+      "translation": "Profesional muda berusia 25-35 tahun."
+    },
+    {
+      "num_id": "graphic-design_004",
+      "chapter": "Design Brief",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need more details about the project goals.",
+      "translation": "Saya butuh detail lebih banyak tentang tujuan project."
+    },
+    {
+      "num_id": "graphic-design_005",
+      "chapter": "Design Brief",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you have any reference designs we like?",
+      "translation": "Apakah ada desain referensi yang kita suka?"
+    },
+    {
+      "num_id": "graphic-design_006",
+      "chapter": "Design Brief",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I've pinned some on our Pinterest board.",
+      "translation": "Ya, saya sudah pin beberapa di papan Pinterest kami."
+    },
+    {
+      "num_id": "graphic-design_007",
+      "chapter": "Design Brief",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll start with mood boards based on the brief.",
+      "translation": "Saya akan mulai dengan mood board berdasarkan brief."
+    },
+    {
+      "num_id": "graphic-design_008",
+      "chapter": "Design Brief",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the deadline for the first draft?",
+      "translation": "Berapa deadline untuk draft pertama?"
+    },
+    {
+      "num_id": "graphic-design_009",
+      "chapter": "Design Brief",
+      "type": "dialogue",
+      "role": "B",
+      "en": "We need it by end of next week.",
+      "translation": "Kita butuh akhir minggu depan."
+    },
+    {
+      "num_id": "graphic-design_010",
+      "chapter": "Branding",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll design a new logo for the company.",
+      "translation": "Saya akan desain logo baru untuk perusahaan."
+    },
+    {
+      "num_id": "graphic-design_011",
+      "chapter": "Branding",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What feeling should the brand convey?",
+      "translation": "Perasaan apa yang harus disampaikan brand?"
+    },
+    {
+      "num_id": "graphic-design_012",
+      "chapter": "Branding",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Professional, trustworthy, and innovative.",
+      "translation": "Profesional, terpercaya, dan inovatif."
+    },
+    {
+      "num_id": "graphic-design_013",
+      "chapter": "Branding",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll create a brand style guide.",
+      "translation": "Saya akan buat brand style guide."
+    },
+    {
+      "num_id": "graphic-design_014",
+      "chapter": "Branding",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Should the logo be minimalist or detailed?",
+      "translation": "Apakah logo harus minimalis atau detail?"
+    },
+    {
+      "num_id": "graphic-design_015",
+      "chapter": "Branding",
+      "type": "dialogue",
+      "role": "B",
+      "en": "We prefer a clean, modern look.",
+      "translation": "Kami lebih suka tampilan bersih dan modern."
+    },
+    {
+      "num_id": "graphic-design_016",
+      "chapter": "Branding",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The brand colors are blue and white.",
+      "translation": "Warna brand adalah biru dan putih."
+    },
+    {
+      "num_id": "graphic-design_017",
+      "chapter": "Branding",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can we see logo variations for different uses?",
+      "translation": "Bisa kita lihat variasi logo untuk penggunaan berbeda?"
+    },
+    {
+      "num_id": "graphic-design_018",
+      "chapter": "Branding",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll prepare versions for print and digital.",
+      "translation": "Saya akan siapkan versi untuk cetak dan digital."
+    },
+    {
+      "num_id": "graphic-design_019",
+      "chapter": "Typography",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I recommend using a sans-serif font for the UI.",
+      "translation": "Saya sarankan pakai font sans-serif untuk UI."
+    },
+    {
+      "num_id": "graphic-design_020",
+      "chapter": "Typography",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What font pairings work well together?",
+      "translation": "Pasangan font apa yang cocok bersama?"
+    },
+    {
+      "num_id": "graphic-design_021",
+      "chapter": "Typography",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Montserrat for headings and Open Sans for body.",
+      "translation": "Montserrat untuk judul dan Open Sans untuk body."
+    },
+    {
+      "num_id": "graphic-design_022",
+      "chapter": "Typography",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The line height should be 1.5 for readability.",
+      "translation": "Line height harus 1.5 untuk keterbacaan."
+    },
+    {
+      "num_id": "graphic-design_023",
+      "chapter": "Typography",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Should we use web-safe fonts or custom ones?",
+      "translation": "Harusnya kita pakai font web-safe atau custom?"
+    },
+    {
+      "num_id": "graphic-design_024",
+      "chapter": "Typography",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Google Fonts for performance, custom for brand.",
+      "translation": "Google Fonts untuk performa, custom untuk brand."
+    },
+    {
+      "num_id": "graphic-design_025",
+      "chapter": "Typography",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll set up a typography scale for consistency.",
+      "translation": "Saya akan buat skala tipografi untuk konsistensi."
+    },
+    {
+      "num_id": "graphic-design_026",
+      "chapter": "Typography",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The font size seems too small on mobile.",
+      "translation": "Ukuran font sepertinya terlalu kecil di mobile."
+    },
+    {
+      "num_id": "graphic-design_027",
+      "chapter": "Typography",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll bump it up to at least 16px.",
+      "translation": "Saya akan naikkan minimal 16px."
+    },
+    {
+      "num_id": "graphic-design_028",
+      "chapter": "Color Theory",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The color palette should match the brand identity.",
+      "translation": "Palet warna harus sesuai dengan identitas brand."
+    },
+    {
+      "num_id": "graphic-design_029",
+      "chapter": "Color Theory",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What colors evoke trust and reliability?",
+      "translation": "Warna apa yang memunculkan kepercayaan dan keandalan?"
+    },
+    {
+      "num_id": "graphic-design_030",
+      "chapter": "Color Theory",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Blue is the most common choice for trust.",
+      "translation": "Biru adalah pilihan paling umum untuk kepercayaan."
+    },
+    {
+      "num_id": "graphic-design_031",
+      "chapter": "Color Theory",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll use complementary colors for contrast.",
+      "translation": "Saya akan pakai warna komplementer untuk kontras."
+    },
+    {
+      "num_id": "graphic-design_032",
+      "chapter": "Color Theory",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Are these colors accessible for color-blind users?",
+      "translation": "Apakah warna ini aksesibel untuk pengguna buta warna?"
+    },
+    {
+      "num_id": "graphic-design_033",
+      "chapter": "Color Theory",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll check the contrast ratio with a tool.",
+      "translation": "Saya akan cek rasio kontras dengan tools."
+    },
+    {
+      "num_id": "graphic-design_034",
+      "chapter": "Color Theory",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've created a 5-color palette for the design.",
+      "translation": "Saya sudah buat palet 5 warna untuk desain."
+    },
+    {
+      "num_id": "graphic-design_035",
+      "chapter": "Color Theory",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can we see how it looks in light and dark mode?",
+      "translation": "Bisa kita lihat tampilan di light dan dark mode?"
+    },
+    {
+      "num_id": "graphic-design_036",
+      "chapter": "Color Theory",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll prepare mockups for both themes.",
+      "translation": "Saya akan siapkan mockup untuk kedua tema."
+    },
+    {
+      "num_id": "graphic-design_037",
+      "chapter": "Client Work",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll send the deliverables in the agreed formats.",
+      "translation": "Saya akan kirim hasil kerja dalam format yang disepakati."
+    },
+    {
+      "num_id": "graphic-design_038",
+      "chapter": "Client Work",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you provide the source files along with exports?",
+      "translation": "Bisa kamu berikan source file beserta ekspor?"
+    },
+    {
+      "num_id": "graphic-design_039",
+      "chapter": "Client Work",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I'll include AI, PSD, and SVG files.",
+      "translation": "Ya, saya akan sertakan file AI, PSD, dan SVG."
+    },
+    {
+      "num_id": "graphic-design_040",
+      "chapter": "Client Work",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've completed the third revision as requested.",
+      "translation": "Saya sudah selesaikan revisi ketiga sesuai permintaan."
+    },
+    {
+      "num_id": "graphic-design_041",
+      "chapter": "Client Work",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How many revision rounds are included?",
+      "translation": "Berapa ronde revisi yang termasuk?"
+    },
+    {
+      "num_id": "graphic-design_042",
+      "chapter": "Client Work",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Two rounds are standard, additional ones are charged.",
+      "translation": "Dua ronde standar, yang lebih dikenakan biaya."
+    },
+    {
+      "num_id": "graphic-design_043",
+      "chapter": "Client Work",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll watermark the preview images.",
+      "translation": "Saya akan beri watermark pada gambar preview."
+    },
+    {
+      "num_id": "graphic-design_044",
+      "chapter": "Client Work",
+      "type": "dialogue",
+      "role": "A",
+      "en": "When will the final files be ready?",
+      "translation": "Kapan file final akan siap?"
+    },
+    {
+      "num_id": "graphic-design_045",
+      "chapter": "Client Work",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll have everything ready by Wednesday.",
+      "translation": "Saya akan selesaikan semuanya hari Rabu."
+    }
+  ]
+}

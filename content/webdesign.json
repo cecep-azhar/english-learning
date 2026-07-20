@@ -1,0 +1,366 @@
+{
+  "id": "webdesign",
+  "name": "Web Design",
+  "scripts": [
+    {
+      "num_id": "webdesign_001",
+      "chapter": "Design Tools",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll create the mockup in Figma.",
+      "translation": "Saya akan buat mockup di Figma."
+    },
+    {
+      "num_id": "webdesign_002",
+      "chapter": "Design Tools",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Are you using Figma or Adobe XD for this project?",
+      "translation": "Kamu pakai Figma atau Adobe XD untuk project ini?"
+    },
+    {
+      "num_id": "webdesign_003",
+      "chapter": "Design Tools",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I prefer Figma for its collaboration features.",
+      "translation": "Saya lebih suka Figma untuk fitur kolaborasinya."
+    },
+    {
+      "num_id": "webdesign_004",
+      "chapter": "Design Tools",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let me export the assets in SVG format.",
+      "translation": "Saya akan ekspor aset dalam format SVG."
+    },
+    {
+      "num_id": "webdesign_005",
+      "chapter": "Design Tools",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you share the Figma prototype link?",
+      "translation": "Bisa share link prototype Figma-nya?"
+    },
+    {
+      "num_id": "webdesign_006",
+      "chapter": "Design Tools",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, I'll send the view-only link.",
+      "translation": "Tentu, saya akan kirim link view-only."
+    },
+    {
+      "num_id": "webdesign_007",
+      "chapter": "Design Tools",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I use Canva for quick social media designs.",
+      "translation": "Saya pakai Canva untuk desain media sosial cepat."
+    },
+    {
+      "num_id": "webdesign_008",
+      "chapter": "Design Tools",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What design system are you following?",
+      "translation": "Design system apa yang kamu ikuti?"
+    },
+    {
+      "num_id": "webdesign_009",
+      "chapter": "Design Tools",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm building a custom design system in Figma.",
+      "translation": "Saya sedang membangun design system custom di Figma."
+    },
+    {
+      "num_id": "webdesign_010",
+      "chapter": "Client Communication",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll present the initial concepts on Friday.",
+      "translation": "Saya akan presentasikan konsep awal hari Jumat."
+    },
+    {
+      "num_id": "webdesign_011",
+      "chapter": "Client Communication",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's your design process for a new project?",
+      "translation": "Bagaimana proses desain kamu untuk project baru?"
+    },
+    {
+      "num_id": "webdesign_012",
+      "chapter": "Client Communication",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Research, wireframes, then high-fidelity mockups.",
+      "translation": "Riset, wireframe, lalu mockup high-fidelity."
+    },
+    {
+      "num_id": "webdesign_013",
+      "chapter": "Client Communication",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's schedule a walkthrough of the design.",
+      "translation": "Ayo jadwalkan walkthrough desainnya."
+    },
+    {
+      "num_id": "webdesign_014",
+      "chapter": "Client Communication",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you give me a timeline for the redesign?",
+      "translation": "Bisa beri saya timeline untuk redesain?"
+    },
+    {
+      "num_id": "webdesign_015",
+      "chapter": "Client Communication",
+      "type": "dialogue",
+      "role": "B",
+      "en": "About 3 weeks from concept to final delivery.",
+      "translation": "Sekitar 3 minggu dari konsep ke pengiriman final."
+    },
+    {
+      "num_id": "webdesign_016",
+      "chapter": "Client Communication",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll incorporate your feedback into the next revision.",
+      "translation": "Saya akan masukkan feedback Anda ke revisi berikutnya."
+    },
+    {
+      "num_id": "webdesign_017",
+      "chapter": "Client Communication",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The client wants a more modern look.",
+      "translation": "Klien ingin tampilan yang lebih modern."
+    },
+    {
+      "num_id": "webdesign_018",
+      "chapter": "Client Communication",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll update the style guide accordingly.",
+      "translation": "Saya akan update style guide sesuai permintaan."
+    },
+    {
+      "num_id": "webdesign_019",
+      "chapter": "Portfolio",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to update my portfolio website.",
+      "translation": "Saya perlu update website portfolio saya."
+    },
+    {
+      "num_id": "webdesign_020",
+      "chapter": "Portfolio",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the best way to showcase your work?",
+      "translation": "Cara terbaik untuk memamerkan karya kamu?"
+    },
+    {
+      "num_id": "webdesign_021",
+      "chapter": "Portfolio",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I use case studies with before-and-after shots.",
+      "translation": "Saya pakai studi kasus dengan foto sebelum dan sesudah."
+    },
+    {
+      "num_id": "webdesign_022",
+      "chapter": "Portfolio",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll add the new project to my Behance page.",
+      "translation": "Saya akan tambahkan project baru ke halaman Behance saya."
+    },
+    {
+      "num_id": "webdesign_023",
+      "chapter": "Portfolio",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you include client testimonials in your portfolio?",
+      "translation": "Kamu sertakan testimonial klien di portfolio?"
+    },
+    {
+      "num_id": "webdesign_024",
+      "chapter": "Portfolio",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, social proof is very important.",
+      "translation": "Ya, bukti sosial sangat penting."
+    },
+    {
+      "num_id": "webdesign_025",
+      "chapter": "Portfolio",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "My portfolio is hosted on Webflow.",
+      "translation": "Portfolio saya dihost di Webflow."
+    },
+    {
+      "num_id": "webdesign_026",
+      "chapter": "Portfolio",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How often should you update your portfolio?",
+      "translation": "Seberapa sering kamu harus update portfolio?"
+    },
+    {
+      "num_id": "webdesign_027",
+      "chapter": "Portfolio",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I try to update it quarterly with new projects.",
+      "translation": "Saya coba update tiap trimester dengan project baru."
+    },
+    {
+      "num_id": "webdesign_028",
+      "chapter": "Feedback",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Can you give me specific feedback on the layout?",
+      "translation": "Bisa beri feedback spesifik tentang layout-nya?"
+    },
+    {
+      "num_id": "webdesign_029",
+      "chapter": "Feedback",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The color palette feels a bit too bright.",
+      "translation": "Palet warnanya terasa sedikit terlalu terang."
+    },
+    {
+      "num_id": "webdesign_030",
+      "chapter": "Feedback",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll tone it down and use softer tones.",
+      "translation": "Saya akan redam dan pakai warna lebih lembut."
+    },
+    {
+      "num_id": "webdesign_031",
+      "chapter": "Feedback",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'd suggest making the CTA button more prominent.",
+      "translation": "Saya sarankan buat tombol CTA lebih menonjol."
+    },
+    {
+      "num_id": "webdesign_032",
+      "chapter": "Feedback",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The typography needs to be more readable.",
+      "translation": "Tipografi perlu lebih mudah dibaca."
+    },
+    {
+      "num_id": "webdesign_033",
+      "chapter": "Feedback",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll increase the font size and line height.",
+      "translation": "Saya akan perbesar ukuran font dan line height."
+    },
+    {
+      "num_id": "webdesign_034",
+      "chapter": "Feedback",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Your feedback has improved the design significantly.",
+      "translation": "Feedback Anda telah meningkatkan desain secara signifikan."
+    },
+    {
+      "num_id": "webdesign_035",
+      "chapter": "Feedback",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What do you think about the spacing?",
+      "translation": "Menurutmu bagaimana spacing-nya?"
+    },
+    {
+      "num_id": "webdesign_036",
+      "chapter": "Feedback",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It looks great, nice use of white space.",
+      "translation": "Terlihat bagus, penggunaan white space yang baik."
+    },
+    {
+      "num_id": "webdesign_037",
+      "chapter": "Specifications",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The design should be responsive across all devices.",
+      "translation": "Desain harus responsif di semua perangkat."
+    },
+    {
+      "num_id": "webdesign_038",
+      "chapter": "Specifications",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the required screen resolution?",
+      "translation": "Berapa resolusi layar yang dibutuhkan?"
+    },
+    {
+      "num_id": "webdesign_039",
+      "chapter": "Specifications",
+      "type": "dialogue",
+      "role": "B",
+      "en": "We need to support 1920x1080 down to 375px mobile.",
+      "translation": "Kita harus mendukung 1920x1080 hingga 375px mobile."
+    },
+    {
+      "num_id": "webdesign_040",
+      "chapter": "Specifications",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Please follow the brand guidelines strictly.",
+      "translation": "Silakan ikuti panduan brand secara ketat."
+    },
+    {
+      "num_id": "webdesign_041",
+      "chapter": "Specifications",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What file formats do you need for handoff?",
+      "translation": "Format file apa yang kamu butuhkan untuk handoff?"
+    },
+    {
+      "num_id": "webdesign_042",
+      "chapter": "Specifications",
+      "type": "dialogue",
+      "role": "B",
+      "en": "SVG for icons and PNG for images.",
+      "translation": "SVG untuk ikon dan PNG untuk gambar."
+    },
+    {
+      "num_id": "webdesign_043",
+      "chapter": "Specifications",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The accessibility standards must be WCAG 2.1 AA.",
+      "translation": "Standar aksesibilitas harus WCAG 2.1 AA."
+    },
+    {
+      "num_id": "webdesign_044",
+      "chapter": "Specifications",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Does this need to integrate with a CMS?",
+      "translation": "Apakah ini perlu terintegrasi dengan CMS?"
+    },
+    {
+      "num_id": "webdesign_045",
+      "chapter": "Specifications",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, the client wants WordPress integration.",
+      "translation": "Ya, klien ingin integrasi WordPress."
+    }
+  ]
+}

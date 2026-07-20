@@ -1,0 +1,366 @@
+{
+  "id": "virtual-assistant",
+  "name": "Virtual Assistant",
+  "scripts": [
+    {
+      "num_id": "virtual-assistant_001",
+      "chapter": "Email Management",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll sort your inbox by priority.",
+      "translation": "Saya akan urutkan inbox Anda berdasarkan prioritas."
+    },
+    {
+      "num_id": "virtual-assistant_002",
+      "chapter": "Email Management",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you draft a response to this client email?",
+      "translation": "Bisa kamu buat draft balasan untuk email klien ini?"
+    },
+    {
+      "num_id": "virtual-assistant_003",
+      "chapter": "Email Management",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, I'll have it ready in 10 minutes.",
+      "translation": "Tentu, saya akan selesaikan dalam 10 menit."
+    },
+    {
+      "num_id": "virtual-assistant_004",
+      "chapter": "Email Management",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've filtered the emails into categories.",
+      "translation": "Saya sudah filter email ke dalam kategori."
+    },
+    {
+      "num_id": "virtual-assistant_005",
+      "chapter": "Email Management",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How many unread emails do I have?",
+      "translation": "Berapa banyak email belum dibaca saya?"
+    },
+    {
+      "num_id": "virtual-assistant_006",
+      "chapter": "Email Management",
+      "type": "dialogue",
+      "role": "B",
+      "en": "There are 23 unread, but only 5 need action.",
+      "translation": "Ada 23 belum dibaca, tapi hanya 5 yang perlu tindakan."
+    },
+    {
+      "num_id": "virtual-assistant_007",
+      "chapter": "Email Management",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll set up email filters to reduce spam.",
+      "translation": "Saya akan atur filter email untuk kurangi spam."
+    },
+    {
+      "num_id": "virtual-assistant_008",
+      "chapter": "Email Management",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you follow up on the pending replies?",
+      "translation": "Bisa kamu follow up balasan yang tertunda?"
+    },
+    {
+      "num_id": "virtual-assistant_009",
+      "chapter": "Email Management",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Done, I've sent follow-ups to 3 contacts.",
+      "translation": "Selesai, saya sudah kirim follow-up ke 3 kontak."
+    },
+    {
+      "num_id": "virtual-assistant_010",
+      "chapter": "Scheduling",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll manage your Google Calendar.",
+      "translation": "Saya akan mengelola Google Calendar Anda."
+    },
+    {
+      "num_id": "virtual-assistant_011",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do I have any meetings tomorrow?",
+      "translation": "Apakah saya ada meeting besok?"
+    },
+    {
+      "num_id": "virtual-assistant_012",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "B",
+      "en": "You have two: a standup at 9 AM and a client call at 2 PM.",
+      "translation": "Anda punya dua: standup jam 9 pagi dan panggilan klien jam 2 sore."
+    },
+    {
+      "num_id": "virtual-assistant_013",
+      "chapter": "Scheduling",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've blocked your focus time from 10-12.",
+      "translation": "Saya sudah blokir waktu fokus Anda dari jam 10-12."
+    },
+    {
+      "num_id": "virtual-assistant_014",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you schedule a meeting with the developer?",
+      "translation": "Bisa kamu jadwalkan meeting dengan developer?"
+    },
+    {
+      "num_id": "virtual-assistant_015",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, what time works best for you?",
+      "translation": "Tentu, jam berapa yang paling cocok untuk Anda?"
+    },
+    {
+      "num_id": "virtual-assistant_016",
+      "chapter": "Scheduling",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll send calendar invites for all meetings.",
+      "translation": "Saya akan kirim undangan kalender untuk semua meeting."
+    },
+    {
+      "num_id": "virtual-assistant_017",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "A",
+      "en": "I need to reschedule my afternoon meetings.",
+      "translation": "Saya perlu reschedule meeting sore saya."
+    },
+    {
+      "num_id": "virtual-assistant_018",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll move them to next week.",
+      "translation": "Saya akan pindahkan ke minggu depan."
+    },
+    {
+      "num_id": "virtual-assistant_019",
+      "chapter": "Data Entry",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll input all the contact information.",
+      "translation": "Saya akan masukkan semua informasi kontak."
+    },
+    {
+      "num_id": "virtual-assistant_020",
+      "chapter": "Data Entry",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you update the customer database?",
+      "translation": "Bisa kamu update database pelanggan?"
+    },
+    {
+      "num_id": "virtual-assistant_021",
+      "chapter": "Data Entry",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll add the 50 new entries today.",
+      "translation": "Saya akan tambahkan 50 entri baru hari ini."
+    },
+    {
+      "num_id": "virtual-assistant_022",
+      "chapter": "Data Entry",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll double-check all the data for accuracy.",
+      "translation": "Saya akan periksa ulang semua data untuk akurasi."
+    },
+    {
+      "num_id": "virtual-assistant_023",
+      "chapter": "Data Entry",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How fast can you enter these records?",
+      "translation": "Seberapa cepat kamu bisa masukkan catatan ini?"
+    },
+    {
+      "num_id": "virtual-assistant_024",
+      "chapter": "Data Entry",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I can handle about 200 entries per hour.",
+      "translation": "Saya bisa handle sekitar 200 entri per jam."
+    },
+    {
+      "num_id": "virtual-assistant_025",
+      "chapter": "Data Entry",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The spreadsheet has been updated.",
+      "translation": "Spreadsheet sudah diupdate."
+    },
+    {
+      "num_id": "virtual-assistant_026",
+      "chapter": "Data Entry",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you transfer this data to our CRM?",
+      "translation": "Bisa kamu transfer data ini ke CRM kami?"
+    },
+    {
+      "num_id": "virtual-assistant_027",
+      "chapter": "Data Entry",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I'll import it via CSV.",
+      "translation": "Ya, saya akan import lewat CSV."
+    },
+    {
+      "num_id": "virtual-assistant_028",
+      "chapter": "Customer Service",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll respond to customer inquiries promptly.",
+      "translation": "Saya akan merespons pertanyaan pelanggan dengan cepat."
+    },
+    {
+      "num_id": "virtual-assistant_029",
+      "chapter": "Customer Service",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you handle the live chat support?",
+      "translation": "Bisa kamu tangani live chat support?"
+    },
+    {
+      "num_id": "virtual-assistant_030",
+      "chapter": "Customer Service",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I'll monitor it during business hours.",
+      "translation": "Ya, saya akan pantau selama jam kerja."
+    },
+    {
+      "num_id": "virtual-assistant_031",
+      "chapter": "Customer Service",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've created FAQ templates for common questions.",
+      "translation": "Saya sudah buat template FAQ untuk pertanyaan umum."
+    },
+    {
+      "num_id": "virtual-assistant_032",
+      "chapter": "Customer Service",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How do you handle difficult customers?",
+      "translation": "Bagaimana kamu menangani pelanggan yang sulit?"
+    },
+    {
+      "num_id": "virtual-assistant_033",
+      "chapter": "Customer Service",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I stay calm, listen actively, and offer solutions.",
+      "translation": "Saya tetap tenang, mendengarkan aktif, dan tawarkan solusi."
+    },
+    {
+      "num_id": "virtual-assistant_034",
+      "chapter": "Customer Service",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "All tickets have been resolved.",
+      "translation": "Semua tiket sudah diselesaikan."
+    },
+    {
+      "num_id": "virtual-assistant_035",
+      "chapter": "Customer Service",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's our average response time?",
+      "translation": "Berapa waktu respons rata-rata kita?"
+    },
+    {
+      "num_id": "virtual-assistant_036",
+      "chapter": "Customer Service",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's under 2 hours, which is great.",
+      "translation": "Di bawah 2 jam, yang sangat bagus."
+    },
+    {
+      "num_id": "virtual-assistant_037",
+      "chapter": "Social Media",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll schedule posts on all platforms.",
+      "translation": "Saya akan jadwalkan postingan di semua platform."
+    },
+    {
+      "num_id": "virtual-assistant_038",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you create content for our Instagram?",
+      "translation": "Bisa kamu buat konten untuk Instagram kami?"
+    },
+    {
+      "num_id": "virtual-assistant_039",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll prepare a week's worth of content.",
+      "translation": "Saya akan siapkan konten untuk satu minggu."
+    },
+    {
+      "num_id": "virtual-assistant_040",
+      "chapter": "Social Media",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll respond to comments and DMs.",
+      "translation": "Saya akan merespons komentar dan DM."
+    },
+    {
+      "num_id": "virtual-assistant_041",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What posting schedule do you recommend?",
+      "translation": "Jadwal posting apa yang kamu rekomendasikan?"
+    },
+    {
+      "num_id": "virtual-assistant_042",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Daily on Instagram, 3 times a week on LinkedIn.",
+      "translation": "Tiap hari di Instagram, 3 kali seminggu di LinkedIn."
+    },
+    {
+      "num_id": "virtual-assistant_043",
+      "chapter": "Social Media",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll use Buffer to manage all accounts.",
+      "translation": "Saya akan pakai Buffer untuk mengelola semua akun."
+    },
+    {
+      "num_id": "virtual-assistant_044",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you track our social media analytics?",
+      "translation": "Bisa kamu lacak analitik media sosial kami?"
+    },
+    {
+      "num_id": "virtual-assistant_045",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll provide a weekly report with key metrics.",
+      "translation": "Saya akan berikan laporan mingguan dengan metrik kunci."
+    }
+  ]
+}

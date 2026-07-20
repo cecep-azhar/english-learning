@@ -1,0 +1,366 @@
+{
+  "id": "video-editing",
+  "name": "Video Editing",
+  "scripts": [
+    {
+      "num_id": "video-editing_001",
+      "chapter": "Editing Terms",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll do a rough cut first, then refine.",
+      "translation": "Saya akan buat rough cut dulu, lalu perbaiki."
+    },
+    {
+      "num_id": "video-editing_002",
+      "chapter": "Editing Terms",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you add some B-roll footage here?",
+      "translation": "Bisa kamu tambahkan footage B-roll di sini?"
+    },
+    {
+      "num_id": "video-editing_003",
+      "chapter": "Editing Terms",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, I'll overlay it with the interview.",
+      "translation": "Tentu, saya akan overlay dengan wawancara."
+    },
+    {
+      "num_id": "video-editing_004",
+      "chapter": "Editing Terms",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to color grade the footage.",
+      "translation": "Saya perlu color grade footage-nya."
+    },
+    {
+      "num_id": "video-editing_005",
+      "chapter": "Editing Terms",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the desired look and feel?",
+      "translation": "Tampilan dan nuansa yang diinginkan seperti apa?"
+    },
+    {
+      "num_id": "video-editing_006",
+      "chapter": "Editing Terms",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Warm tones, cinematic feel.",
+      "translation": "Nada hangat, nuansa sinematik."
+    },
+    {
+      "num_id": "video-editing_007",
+      "chapter": "Editing Terms",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The jump cuts need to be smoother.",
+      "translation": "Jump cut-nya perlu lebih halus."
+    },
+    {
+      "num_id": "video-editing_008",
+      "chapter": "Editing Terms",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can we add transitions between scenes?",
+      "translation": "Bisa kita tambahkan transisi antar adegan?"
+    },
+    {
+      "num_id": "video-editing_009",
+      "chapter": "Editing Terms",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll use subtle cross-dissolves.",
+      "translation": "Saya akan pakai cross-dissolve yang halus."
+    },
+    {
+      "num_id": "video-editing_010",
+      "chapter": "Client Brief",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "What's the target length for the video?",
+      "translation": "Panjang target video berapa?"
+    },
+    {
+      "num_id": "video-editing_011",
+      "chapter": "Client Brief",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The client wants a 3-minute promotional video.",
+      "translation": "Klien ingin video promosi 3 menit."
+    },
+    {
+      "num_id": "video-editing_012",
+      "chapter": "Client Brief",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll keep it punchy with strong visuals.",
+      "translation": "Saya akan buat padat dengan visual kuat."
+    },
+    {
+      "num_id": "video-editing_013",
+      "chapter": "Client Brief",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll use the footage shot on location.",
+      "translation": "Saya akan pakai footage yang diambil di lokasi."
+    },
+    {
+      "num_id": "video-editing_014",
+      "chapter": "Client Brief",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you need the raw footage or edited clips?",
+      "translation": "Kamu butuh footage mentah atau klip yang sudah diedit?"
+    },
+    {
+      "num_id": "video-editing_015",
+      "chapter": "Client Brief",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Raw footage gives me more flexibility.",
+      "translation": "Footage mentah memberi saya lebih banyak fleksibilitas."
+    },
+    {
+      "num_id": "video-editing_016",
+      "chapter": "Client Brief",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll add subtitles in English and Indonesian.",
+      "translation": "Saya akan tambahkan subtitle dalam bahasa Inggris dan Indonesia."
+    },
+    {
+      "num_id": "video-editing_017",
+      "chapter": "Client Brief",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What resolution should the final export be?",
+      "translation": "Resolusi apa untuk ekspor final?"
+    },
+    {
+      "num_id": "video-editing_018",
+      "chapter": "Client Brief",
+      "type": "dialogue",
+      "role": "B",
+      "en": "4K for the main file, 1080p for social media.",
+      "translation": "4K untuk file utama, 1080p untuk media sosial."
+    },
+    {
+      "num_id": "video-editing_019",
+      "chapter": "Equipment",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I use a MacBook Pro for editing.",
+      "translation": "Saya pakai MacBook Pro untuk editing."
+    },
+    {
+      "num_id": "video-editing_020",
+      "chapter": "Equipment",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you use an external hard drive for storage?",
+      "translation": "Kamu pakai hard drive eksternal untuk penyimpanan?"
+    },
+    {
+      "num_id": "video-editing_021",
+      "chapter": "Equipment",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I have a 4TB SSD for all my projects.",
+      "translation": "Ya, saya punya SSD 4TB untuk semua project saya."
+    },
+    {
+      "num_id": "video-editing_022",
+      "chapter": "Equipment",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "A good microphone is essential for quality audio.",
+      "translation": "Mic yang bagus sangat penting untuk audio berkualitas."
+    },
+    {
+      "num_id": "video-editing_023",
+      "chapter": "Equipment",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What camera do you use for shooting?",
+      "translation": "Kamera apa yang kamu pakai untuk syuting?"
+    },
+    {
+      "num_id": "video-editing_024",
+      "chapter": "Equipment",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I use a Sony A7III for most projects.",
+      "translation": "Saya pakai Sony A7III untuk kebanyakan project."
+    },
+    {
+      "num_id": "video-editing_025",
+      "chapter": "Equipment",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I have a dual monitor setup for efficient editing.",
+      "translation": "Saya punya setup dual monitor untuk editing efisien."
+    },
+    {
+      "num_id": "video-editing_026",
+      "chapter": "Equipment",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How much RAM do you recommend for video editing?",
+      "translation": "Berapa RAM yang kamu rekomendasikan untuk editing video?"
+    },
+    {
+      "num_id": "video-editing_027",
+      "chapter": "Equipment",
+      "type": "dialogue",
+      "role": "B",
+      "en": "At least 32GB for smooth 4K editing.",
+      "translation": "Minimal 32GB untuk editing 4K yang lancar."
+    },
+    {
+      "num_id": "video-editing_028",
+      "chapter": "Software",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I primarily use Adobe Premiere Pro.",
+      "translation": "Saya terutama pakai Adobe Premiere Pro."
+    },
+    {
+      "num_id": "video-editing_029",
+      "chapter": "Software",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Have you tried DaVinci Resolve for color grading?",
+      "translation": "Sudah coba DaVinci Resolve untuk color grading?"
+    },
+    {
+      "num_id": "video-editing_030",
+      "chapter": "Software",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, it's excellent for color work.",
+      "translation": "Ya, sangat bagus untuk pekerjaan warna."
+    },
+    {
+      "num_id": "video-editing_031",
+      "chapter": "Software",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I use After Effects for motion graphics.",
+      "translation": "Saya pakai After Effects untuk motion graphics."
+    },
+    {
+      "num_id": "video-editing_032",
+      "chapter": "Software",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What plugins do you use for editing?",
+      "translation": "Plugin apa yang kamu pakai untuk editing?"
+    },
+    {
+      "num_id": "video-editing_033",
+      "chapter": "Software",
+      "type": "dialogue",
+      "role": "B",
+      "en": "FilmConvert for color and Neat Video for denoising.",
+      "translation": "FilmConvert untuk warna dan Neat Video untuk denoising."
+    },
+    {
+      "num_id": "video-editing_034",
+      "chapter": "Software",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll render the video in H.264 for compatibility.",
+      "translation": "Saya akan render video dalam H.264 untuk kompatibilitas."
+    },
+    {
+      "num_id": "video-editing_035",
+      "chapter": "Software",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you use proxy editing for large files?",
+      "translation": "Kamu pakai proxy editing untuk file besar?"
+    },
+    {
+      "num_id": "video-editing_036",
+      "chapter": "Software",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, it makes the editing process much smoother.",
+      "translation": "Ya, membuat proses editing jauh lebih lancar."
+    },
+    {
+      "num_id": "video-editing_037",
+      "chapter": "Delivery",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll upload the final video to Google Drive.",
+      "translation": "Saya akan upload video final ke Google Drive."
+    },
+    {
+      "num_id": "video-editing_038",
+      "chapter": "Delivery",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What format should the final deliverable be?",
+      "translation": "Format apa yang harus untuk hasil akhir?"
+    },
+    {
+      "num_id": "video-editing_039",
+      "chapter": "Delivery",
+      "type": "dialogue",
+      "role": "B",
+      "en": "MP4 H.264 with AAC audio.",
+      "translation": "MP4 H.264 dengan audio AAC."
+    },
+    {
+      "num_id": "video-editing_040",
+      "chapter": "Delivery",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll create separate versions for social platforms.",
+      "translation": "Saya akan buat versi terpisah untuk platform sosial."
+    },
+    {
+      "num_id": "video-editing_041",
+      "chapter": "Delivery",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you provide a preview before final delivery?",
+      "translation": "Kamu berikan preview sebelum pengiriman final?"
+    },
+    {
+      "num_id": "video-editing_042",
+      "chapter": "Delivery",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I'll share a watermarked preview first.",
+      "translation": "Ya, saya akan share preview dengan watermark dulu."
+    },
+    {
+      "num_id": "video-editing_043",
+      "chapter": "Delivery",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The final file will be delivered via WeTransfer.",
+      "translation": "File final akan dikirim via WeTransfer."
+    },
+    {
+      "num_id": "video-editing_044",
+      "chapter": "Delivery",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you compress the file without losing quality?",
+      "translation": "Bisa kamu kompres file tanpa kehilangan kualitas?"
+    },
+    {
+      "num_id": "video-editing_045",
+      "chapter": "Delivery",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll optimize the bitrate for the best balance.",
+      "translation": "Saya akan optimasi bitrate untuk keseimbangan terbaik."
+    }
+  ]
+}

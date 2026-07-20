@@ -1,0 +1,374 @@
+{
+  "id": "general",
+  "name": "General English",
+  "scripts": [
+    {
+      "num_id": "general_001",
+      "chapter": "Greetings",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Hi! Nice to meet you. I'm a remote developer.",
+      "translation": "Halo! Senang bertemu denganmu. Saya developer remote."
+    },
+    {
+      "num_id": "general_002",
+      "chapter": "Greetings",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How are you doing today?",
+      "translation": "Bagaimana kabarmu hari ini?"
+    },
+    {
+      "num_id": "general_003",
+      "chapter": "Greetings",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm doing great, thanks! Just finished a sprint.",
+      "translation": "Saya baik-baik saja, terima kasih! Baru selesai sprint."
+    },
+    {
+      "num_id": "general_004",
+      "chapter": "Greetings",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Good morning! Ready for the standup?",
+      "translation": "Selamat pagi! Siap untuk standup?"
+    },
+    {
+      "num_id": "general_005",
+      "chapter": "Greetings",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Long time no see! How's the new project?",
+      "translation": "Lama tidak bertemu! Bagaimana project barunya?"
+    },
+    {
+      "num_id": "general_006",
+      "chapter": "Greetings",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's going well! We're building a mobile app.",
+      "translation": "Berjalan lancar! Kami sedang membangun aplikasi mobile."
+    },
+    {
+      "num_id": "general_007",
+      "chapter": "Greetings",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "See you at the next meeting!",
+      "translation": "Sampai jumpa di pertemuan berikutnya!"
+    },
+    {
+      "num_id": "general_008",
+      "chapter": "Greetings",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What time zone are you in?",
+      "translation": "Kamu di timezone berapa?"
+    },
+    {
+      "num_id": "general_009",
+      "chapter": "Greetings",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm in GMT+7, same as Jakarta.",
+      "translation": "Saya di GMT+7, sama seperti Jakarta."
+    },
+    {
+      "num_id": "general_010",
+      "chapter": "Daily Conversation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I work from home most days.",
+      "translation": "Saya bekerja dari rumah kebanyakan hari."
+    },
+    {
+      "num_id": "general_011",
+      "chapter": "Daily Conversation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What do you do for a living?",
+      "translation": "Apa pekerjaan kamu?"
+    },
+    {
+      "num_id": "general_012",
+      "chapter": "Daily Conversation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm a full-stack developer working remotely.",
+      "translation": "Saya full-stack developer yang bekerja remote."
+    },
+    {
+      "num_id": "general_013",
+      "chapter": "Daily Conversation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "My internet connection is unstable today.",
+      "translation": "Koneksi internet saya tidak stabil hari ini."
+    },
+    {
+      "num_id": "general_014",
+      "chapter": "Daily Conversation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you prefer working in the morning or evening?",
+      "translation": "Kamu lebih suka kerja pagi atau malam?"
+    },
+    {
+      "num_id": "general_015",
+      "chapter": "Daily Conversation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm a night owl, so I code better after 8 PM.",
+      "translation": "Saya orang malam, jadi saya lebih produktif coding setelah jam 8 malam."
+    },
+    {
+      "num_id": "general_016",
+      "chapter": "Daily Conversation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let me share my screen.",
+      "translation": "Saya akan share layar saya."
+    },
+    {
+      "num_id": "general_017",
+      "chapter": "Daily Conversation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you hear me okay?",
+      "translation": "Apakah kamu bisa mendengar saya dengan jelas?"
+    },
+    {
+      "num_id": "general_018",
+      "chapter": "Daily Conversation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, loud and clear.",
+      "translation": "Ya, jelas sekali."
+    },
+    {
+      "num_id": "general_019",
+      "chapter": "Daily Conversation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to grab a coffee, be right back.",
+      "translation": "Saya perlu ambil kopi, sebentar ya."
+    },
+    {
+      "num_id": "general_020",
+      "chapter": "Travel",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'm traveling to Bali for a tech conference.",
+      "translation": "Saya akan pergi ke Bali untuk konferensi teknologi."
+    },
+    {
+      "num_id": "general_021",
+      "chapter": "Travel",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Where is the nearest coworking space?",
+      "translation": "Di mana coworking space terdekat?"
+    },
+    {
+      "num_id": "general_022",
+      "chapter": "Travel",
+      "type": "dialogue",
+      "role": "B",
+      "en": "There's one about 10 minutes from here.",
+      "translation": "Ada satu sekitar 10 menit dari sini."
+    },
+    {
+      "num_id": "general_023",
+      "chapter": "Travel",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to extend my hotel booking by two days.",
+      "translation": "Saya perlu memperpanjang booking hotel dua hari."
+    },
+    {
+      "num_id": "general_024",
+      "chapter": "Travel",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Is the WiFi good at your hotel?",
+      "translation": "Apakah WiFi bagus di hotel kamu?"
+    },
+    {
+      "num_id": "general_025",
+      "chapter": "Travel",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, it's fast enough for video calls.",
+      "translation": "Ya, cukup cepat untuk video call."
+    },
+    {
+      "num_id": "general_026",
+      "chapter": "Travel",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll be working from a cafe today.",
+      "translation": "Saya akan kerja dari cafe hari ini."
+    },
+    {
+      "num_id": "general_027",
+      "chapter": "Travel",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you recommend a good restaurant nearby?",
+      "translation": "Bisa rekomendasi restoran bagus di sekitar sini?"
+    },
+    {
+      "num_id": "general_028",
+      "chapter": "Travel",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, there's a great warung on the corner.",
+      "translation": "Tentu, ada warung bagus di pojokan."
+    },
+    {
+      "num_id": "general_029",
+      "chapter": "Food",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's order lunch via GoFood.",
+      "translation": "Ayo pesan makan siang lewat GoFood."
+    },
+    {
+      "num_id": "general_030",
+      "chapter": "Food",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What kind of food do you like?",
+      "translation": "Kamu suka makanan apa?"
+    },
+    {
+      "num_id": "general_031",
+      "chapter": "Food",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I love Indonesian food, especially nasi goreng.",
+      "translation": "Saya suka makanan Indonesia, terutama nasi goreng."
+    },
+    {
+      "num_id": "general_032",
+      "chapter": "Food",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I usually skip lunch when I'm deep in coding.",
+      "translation": "Saya biasanya lewatkan makan siang saat sedang fokus coding."
+    },
+    {
+      "num_id": "general_033",
+      "chapter": "Food",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you want to grab coffee after the meeting?",
+      "translation": "Mau ngopi setelah meeting?"
+    },
+    {
+      "num_id": "general_034",
+      "chapter": "Food",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure! I know a great coffee shop nearby.",
+      "translation": "Tentu! Saya tahu kedai kopi bagus di dekat sini."
+    },
+    {
+      "num_id": "general_035",
+      "chapter": "Food",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The food here is delicious and affordable.",
+      "translation": "Makanan di sini enak dan terjangkau."
+    },
+    {
+      "num_id": "general_036",
+      "chapter": "Food",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Are you vegetarian?",
+      "translation": "Kamu vegetarian?"
+    },
+    {
+      "num_id": "general_037",
+      "chapter": "Food",
+      "type": "dialogue",
+      "role": "B",
+      "en": "No, but I'm trying to eat healthier.",
+      "translation": "Tidak, tapi saya sedang mencoba makan lebih sehat."
+    },
+    {
+      "num_id": "general_038",
+      "chapter": "Shopping",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to buy a new keyboard.",
+      "translation": "Saya perlu membeli keyboard baru."
+    },
+    {
+      "num_id": "general_039",
+      "chapter": "Shopping",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Where did you buy your standing desk?",
+      "translation": "Di mana kamu beli meja berdiri kamu?"
+    },
+    {
+      "num_id": "general_040",
+      "chapter": "Shopping",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I ordered it from Tokopedia during the sale.",
+      "translation": "Saya pesan dari Tokopedia saat diskon."
+    },
+    {
+      "num_id": "general_041",
+      "chapter": "Shopping",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "How much does a good monitor cost?",
+      "translation": "Berapa harga monitor yang bagus?"
+    },
+    {
+      "num_id": "general_042",
+      "chapter": "Shopping",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you prefer mechanical or membrane keyboards?",
+      "translation": "Kamu lebih suka keyboard mekanis atau membran?"
+    },
+    {
+      "num_id": "general_043",
+      "chapter": "Shopping",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I prefer mechanical with blue switches.",
+      "translation": "Saya lebih suka mekanis dengan switch blue."
+    },
+    {
+      "num_id": "general_044",
+      "chapter": "Shopping",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let me check the reviews before buying.",
+      "translation": "Saya cek ulasannya dulu sebelum beli."
+    },
+    {
+      "num_id": "general_045",
+      "chapter": "Shopping",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Is there a warranty for this laptop?",
+      "translation": "Apakah ada garansi untuk laptop ini?"
+    },
+    {
+      "num_id": "general_046",
+      "chapter": "Shopping",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, it comes with a two-year warranty.",
+      "translation": "Ya, sudah termasuk garansi dua tahun."
+    }
+  ]
+}

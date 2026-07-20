@@ -1,0 +1,92 @@
+{
+  "categories": [
+    {
+      "id": "general",
+      "name": "General English",
+      "icon": "📚",
+      "description": "English dasar untuk kehidupan sehari-hari",
+      "color": "#6366f1",
+      "topics": ["greetings", "daily-conversation", "travel", "food", "shopping"]
+    },
+    {
+      "id": "business",
+      "name": "Business English",
+      "icon": "💼",
+      "description": "English untuk dunia bisnis dan korporat",
+      "color": "#8b5cf6",
+      "topics": ["meetings", "negotiation", "presentations", "networking", "email"]
+    },
+    {
+      "id": "finance",
+      "name": "Finance English",
+      "icon": "💰",
+      "description": "English untuk keuangan dan investasi",
+      "color": "#22c55e",
+      "topics": ["accounting", "investing", "banking", "budgeting", "reporting"]
+    },
+    {
+      "id": "admin",
+      "name": "Administration",
+      "icon": "📋",
+      "description": "English untuk administrasi dan perkantoran",
+      "color": "#f59e0b",
+      "topics": ["scheduling", "documentation", "correspondence", "filing", "reporting"]
+    },
+    {
+      "id": "web-design",
+      "name": "Web Design",
+      "icon": "🎨",
+      "description": "English untuk web designer dan UI/UX",
+      "color": "#ec4899",
+      "topics": ["design-tools", "client-communication", "portfolio", "feedback", "specifications"]
+    },
+    {
+      "id": "seo",
+      "name": "SEO Specialist",
+      "icon": "🔍",
+      "description": "English untuk SEO dan digital marketing",
+      "color": "#14b8a6",
+      "topics": ["analytics", "keywords", "technical-seo", "reporting", "strategy"]
+    },
+    {
+      "id": "design",
+      "name": "Graphic Design",
+      "icon": "🖌️",
+      "description": "English untuk desainer grafis",
+      "color": "#f97316",
+      "topics": ["design-brief", "branding", "typography", "color-theory", "client-work"]
+    },
+    {
+      "id": "video-editing",
+      "name": "Video Editing",
+      "icon": "🎬",
+      "description": "English untuk video editor",
+      "color": "#ef4444",
+      "topics": ["editing-terms", "client-brief", "equipment", "software", "delivery"]
+    },
+    {
+      "id": "virtual-assistant",
+      "name": "Virtual Assistant",
+      "icon": "🤖",
+      "description": "English untuk virtual assistant",
+      "color": "#06b6d4",
+      "topics": ["email-management", "scheduling", "data-entry", "customer-service", "social-media"]
+    },
+    {
+      "id": "copywriting",
+      "name": "Copywriting",
+      "icon": "✍️",
+      "description": "English untuk copywriter",
+      "color": "#a855f7",
+      "topics": ["sales-copy", "landing-pages", "email-marketing", "social-media", "advertising"]
+    },
+    {
+      "id": "software-engineering",
+      "name": "Software Engineering",
+      "icon": "💻",
+      "description": "English untuk software developer",
+      "color": "#3b82f6",
+      "topics": ["interview", "documentation", "code-review", "standup", "technical-discussion"]
+    }
+  ]
+}

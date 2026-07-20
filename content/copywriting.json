@@ -1,0 +1,366 @@
+{
+  "id": "copywriting",
+  "name": "Copywriting",
+  "scripts": [
+    {
+      "num_id": "copywriting_001",
+      "chapter": "Sales Copy",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll write compelling sales copy for the landing page.",
+      "translation": "Saya akan tulis sales copy yang menarik untuk landing page."
+    },
+    {
+      "num_id": "copywriting_002",
+      "chapter": "Sales Copy",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the main benefit of this product?",
+      "translation": "Apa manfaat utama produk ini?"
+    },
+    {
+      "num_id": "copywriting_003",
+      "chapter": "Sales Copy",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It saves developers 10 hours per week.",
+      "translation": "Ini menghemat waktu developer 10 jam per minggu."
+    },
+    {
+      "num_id": "copywriting_004",
+      "chapter": "Sales Copy",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The headline needs to grab attention immediately.",
+      "translation": "Headline harus menarik perhatian segera."
+    },
+    {
+      "num_id": "copywriting_005",
+      "chapter": "Sales Copy",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you write a call to action that converts?",
+      "translation": "Bisa kamu tulis call to action yang mengkonversi?"
+    },
+    {
+      "num_id": "copywriting_006",
+      "chapter": "Sales Copy",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll A/B test a few variations.",
+      "translation": "Saya akan A/B test beberapa variasi."
+    },
+    {
+      "num_id": "copywriting_007",
+      "chapter": "Sales Copy",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll focus on pain points and solutions.",
+      "translation": "Saya akan fokus pada titik masalah dan solusi."
+    },
+    {
+      "num_id": "copywriting_008",
+      "chapter": "Sales Copy",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What tone should the sales copy have?",
+      "translation": "Nada apa yang harus dimiliki sales copy?"
+    },
+    {
+      "num_id": "copywriting_009",
+      "chapter": "Sales Copy",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Professional but approachable.",
+      "translation": "Profesional tapi mudah didekati."
+    },
+    {
+      "num_id": "copywriting_010",
+      "chapter": "Landing Pages",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll optimize the landing page for conversions.",
+      "translation": "Saya akan optimasi landing page untuk konversi."
+    },
+    {
+      "num_id": "copywriting_011",
+      "chapter": "Landing Pages",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What elements should a high-converting page have?",
+      "translation": "Elemen apa yang harus dimiliki halaman konversi tinggi?"
+    },
+    {
+      "num_id": "copywriting_012",
+      "chapter": "Landing Pages",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Strong headline, social proof, and clear CTA.",
+      "translation": "Headline kuat, bukti sosial, dan CTA jelas."
+    },
+    {
+      "num_id": "copywriting_013",
+      "chapter": "Landing Pages",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The hero section needs a powerful value proposition.",
+      "translation": "Bagian hero butuh value proposition yang kuat."
+    },
+    {
+      "num_id": "copywriting_014",
+      "chapter": "Landing Pages",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Should we include testimonials on the page?",
+      "translation": "Haruskah kita sertakan testimonial di halaman?"
+    },
+    {
+      "num_id": "copywriting_015",
+      "chapter": "Landing Pages",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Absolutely, they build trust immediately.",
+      "translation": "Pasti, mereka membangun kepercayaan segera."
+    },
+    {
+      "num_id": "copywriting_016",
+      "chapter": "Landing Pages",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll write the copy above the fold.",
+      "translation": "Saya akan tulis copy di atas fold."
+    },
+    {
+      "num_id": "copywriting_017",
+      "chapter": "Landing Pages",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How long should the landing page be?",
+      "translation": "Seberapa panjang landing page seharusnya?"
+    },
+    {
+      "num_id": "copywriting_018",
+      "chapter": "Landing Pages",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Long enough to address all objections.",
+      "translation": "Cukup panjang untuk mengatasi semua keberatan."
+    },
+    {
+      "num_id": "copywriting_019",
+      "chapter": "Email Marketing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll create an email drip campaign.",
+      "translation": "Saya akan buat kampanye email drip."
+    },
+    {
+      "num_id": "copywriting_020",
+      "chapter": "Email Marketing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's a good subject line for high open rates?",
+      "translation": "Apa subject line yang bagus untuk open rate tinggi?"
+    },
+    {
+      "num_id": "copywriting_021",
+      "chapter": "Email Marketing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Keep it short, personal, and curiosity-driven.",
+      "translation": "Buat singkat, personal, dan memancing rasa penasaran."
+    },
+    {
+      "num_id": "copywriting_022",
+      "chapter": "Email Marketing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll segment the email list for targeted messaging.",
+      "translation": "Saya akan segmentasi daftar email untuk pesan yang terarah."
+    },
+    {
+      "num_id": "copywriting_023",
+      "chapter": "Email Marketing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How many emails should we send per week?",
+      "translation": "Berapa banyak email yang harus kita kirim per minggu?"
+    },
+    {
+      "num_id": "copywriting_024",
+      "chapter": "Email Marketing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Two to three is the sweet spot.",
+      "translation": "Dua hingga tiga adalah titik ideal."
+    },
+    {
+      "num_id": "copywriting_025",
+      "chapter": "Email Marketing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll write a welcome sequence for new subscribers.",
+      "translation": "Saya akan tulis urutan sambutan untuk subscriber baru."
+    },
+    {
+      "num_id": "copywriting_026",
+      "chapter": "Email Marketing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you A/B test the email templates?",
+      "translation": "Bisa kamu A/B test template email?"
+    },
+    {
+      "num_id": "copywriting_027",
+      "chapter": "Email Marketing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll test subject lines and CTA placement.",
+      "translation": "Saya akan test subject line dan penempatan CTA."
+    },
+    {
+      "num_id": "copywriting_028",
+      "chapter": "Social Media",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll write engaging captions for Instagram.",
+      "translation": "Saya akan tulis caption menarik untuk Instagram."
+    },
+    {
+      "num_id": "copywriting_029",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What kind of content performs best on LinkedIn?",
+      "translation": "Jenis konten apa yang paling perform di LinkedIn?"
+    },
+    {
+      "num_id": "copywriting_030",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Thought leadership posts with actionable tips.",
+      "translation": "Postingan pemimpin pemikiran dengan tips yang bisa dipraktikkan."
+    },
+    {
+      "num_id": "copywriting_031",
+      "chapter": "Social Media",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll create a content calendar for the month.",
+      "translation": "Saya akan buat content calendar untuk bulan ini."
+    },
+    {
+      "num_id": "copywriting_032",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Should we use hashtags in our posts?",
+      "translation": "Haruskah kita pakai hashtag di postingan?"
+    },
+    {
+      "num_id": "copywriting_033",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, but only relevant ones, about 5-10.",
+      "translation": "Ya, tapi hanya yang relevan, sekitar 5-10."
+    },
+    {
+      "num_id": "copywriting_034",
+      "chapter": "Social Media",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll write thread content for Twitter/X.",
+      "translation": "Saya akan tulis konten thread untuk Twitter/X."
+    },
+    {
+      "num_id": "copywriting_035",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you write viral-worthy copy?",
+      "translation": "Bisa kamu tulis copy yang layak viral?"
+    },
+    {
+      "num_id": "copywriting_036",
+      "chapter": "Social Media",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll write hooks that stop the scroll.",
+      "translation": "Saya akan tulis hook yang bikin orang berhenti scroll."
+    },
+    {
+      "num_id": "copywriting_037",
+      "chapter": "Advertising",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll write ad copy for Google Ads.",
+      "translation": "Saya akan tulis copy iklan untuk Google Ads."
+    },
+    {
+      "num_id": "copywriting_038",
+      "chapter": "Advertising",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the character limit for Google Ads?",
+      "translation": "Berapa batas karakter untuk Google Ads?"
+    },
+    {
+      "num_id": "copywriting_039",
+      "chapter": "Advertising",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Headlines are 30 characters, descriptions 90.",
+      "translation": "Headline 30 karakter, deskripsi 90 karakter."
+    },
+    {
+      "num_id": "copywriting_040",
+      "chapter": "Advertising",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll create Facebook ad variations for A/B testing.",
+      "translation": "Saya akan buat variasi iklan Facebook untuk A/B testing."
+    },
+    {
+      "num_id": "copywriting_041",
+      "chapter": "Advertising",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How do we write ads that convert?",
+      "translation": "Bagaimana kita tulis iklan yang mengkonversi?"
+    },
+    {
+      "num_id": "copywriting_042",
+      "chapter": "Advertising",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Focus on benefits, use urgency, and clear CTA.",
+      "translation": "Fokus pada manfaat, gunakan urgensi, dan CTA jelas."
+    },
+    {
+      "num_id": "copywriting_043",
+      "chapter": "Advertising",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll optimize the ad copy based on performance.",
+      "translation": "Saya akan optimasi copy iklan berdasarkan performa."
+    },
+    {
+      "num_id": "copywriting_044",
+      "chapter": "Advertising",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's our target cost per click?",
+      "translation": "Berapa target cost per click kita?"
+    },
+    {
+      "num_id": "copywriting_045",
+      "chapter": "Advertising",
+      "type": "dialogue",
+      "role": "B",
+      "en": "We're aiming for under 5,000 rupiah per click.",
+      "translation": "Kami mentok di bawah 5.000 rupiah per klik."
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "id": "finance",
+  "name": "Finance English",
+  "scripts": [
+    {
+      "num_id": "finance_001",
+      "chapter": "Accounting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to reconcile the monthly expenses.",
+      "translation": "Saya perlu merekonsiliasi pengeluaran bulanan."
+    },
+    {
+      "num_id": "finance_002",
+      "chapter": "Accounting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you send me the balance sheet?",
+      "translation": "Bisa kirim saya balance sheet-nya?"
+    },
+    {
+      "num_id": "finance_003",
+      "chapter": "Accounting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll prepare it by end of business today.",
+      "translation": "Saya akan siapkan sebelum akhir hari kerja."
+    },
+    {
+      "num_id": "finance_004",
+      "chapter": "Accounting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The profit and loss statement looks good.",
+      "translation": "Laporan laba rugi terlihat bagus."
+    },
+    {
+      "num_id": "finance_005",
+      "chapter": "Accounting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's our accounts receivable balance?",
+      "translation": "Berapa saldo accounts receivable kita?"
+    },
+    {
+      "num_id": "finance_006",
+      "chapter": "Accounting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's approximately two million rupiah.",
+      "translation": "Kurang lebih dua juta rupiah."
+    },
+    {
+      "num_id": "finance_007",
+      "chapter": "Accounting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll need the invoices sorted by date.",
+      "translation": "Saya perlu invoice diurutkan berdasarkan tanggal."
+    },
+    {
+      "num_id": "finance_008",
+      "chapter": "Accounting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Did we close the books for last month?",
+      "translation": "Sudahkah kita tutup buku bulan lalu?"
+    },
+    {
+      "num_id": "finance_009",
+      "chapter": "Accounting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, everything has been reconciled.",
+      "translation": "Ya, semuanya sudah direkonsiliasi."
+    },
+    {
+      "num_id": "finance_010",
+      "chapter": "Investing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'm diversifying my investment portfolio.",
+      "translation": "Saya sedang mendiversifikasi portofolio investasi saya."
+    },
+    {
+      "num_id": "finance_011",
+      "chapter": "Investing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Have you looked into index funds?",
+      "translation": "Sudahkah kamu melihat reksa dana indeks?"
+    },
+    {
+      "num_id": "finance_012",
+      "chapter": "Investing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I'm putting 30% of savings into them.",
+      "translation": "Ya, saya alokasikan 30% tabungan ke situ."
+    },
+    {
+      "num_id": "finance_013",
+      "chapter": "Investing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The return on investment was impressive this quarter.",
+      "translation": "Return on investment trimester ini mengesankan."
+    },
+    {
+      "num_id": "finance_014",
+      "chapter": "Investing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's your risk tolerance?",
+      "translation": "Seberapa besar toleransi risiko kamu?"
+    },
+    {
+      "num_id": "finance_015",
+      "chapter": "Investing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I prefer low-risk investments at this point.",
+      "translation": "Saya lebih suka investasi berisiko rendah saat ini."
+    },
+    {
+      "num_id": "finance_016",
+      "chapter": "Investing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Do you invest in stocks or crypto?",
+      "translation": "Kamu investasi di saham atau crypto?"
+    },
+    {
+      "num_id": "finance_017",
+      "chapter": "Investing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The stock market has been volatile lately.",
+      "translation": "Pasar saham akhir-akhir ini volatil."
+    },
+    {
+      "num_id": "finance_018",
+      "chapter": "Investing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm holding long-term and not panicking.",
+      "translation": "Saya hold jangka panjang dan tidak panik."
+    },
+    {
+      "num_id": "finance_019",
+      "chapter": "Banking",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I need to transfer funds to my business account.",
+      "translation": "Saya perlu mentransfer dana ke rekening bisnis saya."
+    },
+    {
+      "num_id": "finance_020",
+      "chapter": "Banking",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Which bank do you use for your freelance income?",
+      "translation": "Kamu pakai bank mana untuk penghasilan freelance?"
+    },
+    {
+      "num_id": "finance_021",
+      "chapter": "Banking",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I use Bank Mandiri for business and BCA for personal.",
+      "translation": "Saya pakai Bank Mandiri untuk bisnis dan BCA untuk pribadi."
+    },
+    {
+      "num_id": "finance_022",
+      "chapter": "Banking",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The international transfer takes 2-3 business days.",
+      "translation": "Transfer internasional membutuhkan 2-3 hari kerja."
+    },
+    {
+      "num_id": "finance_023",
+      "chapter": "Banking",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's the exchange rate for USD to IDR today?",
+      "translation": "Berapa kurs USD ke IDR hari ini?"
+    },
+    {
+      "num_id": "finance_024",
+      "chapter": "Banking",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's around fifteen thousand per dollar.",
+      "translation": "Sekitar lima belas ribu per dolar."
+    },
+    {
+      "num_id": "finance_025",
+      "chapter": "Banking",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll set up automatic bill payments.",
+      "translation": "Saya akan atur pembayaran tagihan otomatis."
+    },
+    {
+      "num_id": "finance_026",
+      "chapter": "Banking",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you have a business credit line?",
+      "translation": "Kamu punya credit line bisnis?"
+    },
+    {
+      "num_id": "finance_027",
+      "chapter": "Banking",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, it helps with cash flow management.",
+      "translation": "Ya, ini membantu manajemen arus kas."
+    },
+    {
+      "num_id": "finance_028",
+      "chapter": "Budgeting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'm creating a monthly budget for my startup.",
+      "translation": "Saya sedang membuat anggaran bulanan untuk startup saya."
+    },
+    {
+      "num_id": "finance_029",
+      "chapter": "Budgeting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What percentage of income goes to tools and software?",
+      "translation": "Berapa persen penghasilan untuk tools dan software?"
+    },
+    {
+      "num_id": "finance_030",
+      "chapter": "Budgeting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "About 15% covers all my subscriptions.",
+      "translation": "Sekitar 15% untuk semua langganan saya."
+    },
+    {
+      "num_id": "finance_031",
+      "chapter": "Budgeting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We need to cut costs somewhere.",
+      "translation": "Kita perlu mengurangi biaya di suatu tempat."
+    },
+    {
+      "num_id": "finance_032",
+      "chapter": "Budgeting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How do you track your expenses?",
+      "translation": "Bagaimana kamu melacak pengeluaran?"
+    },
+    {
+      "num_id": "finance_033",
+      "chapter": "Budgeting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I use a spreadsheet and update it weekly.",
+      "translation": "Saya pakai spreadsheet dan update tiap minggu."
+    },
+    {
+      "num_id": "finance_034",
+      "chapter": "Budgeting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We're under budget this month, which is great.",
+      "translation": "Kami di bawah anggaran bulan ini, bagus sekali."
+    },
+    {
+      "num_id": "finance_035",
+      "chapter": "Budgeting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Should we allocate more to marketing?",
+      "translation": "Haruskah kita alokasikan lebih banyak ke marketing?"
+    },
+    {
+      "num_id": "finance_036",
+      "chapter": "Budgeting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, but only for high-ROI channels.",
+      "translation": "Ya, tapi hanya untuk channel dengan ROI tinggi."
+    },
+    {
+      "num_id": "finance_037",
+      "chapter": "Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll prepare the quarterly financial report.",
+      "translation": "Saya akan menyiapkan laporan keuangan trimester."
+    },
+    {
+      "num_id": "finance_038",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you break down the revenue by source?",
+      "translation": "Bisa kamu rincikan pendapatan berdasarkan sumber?"
+    },
+    {
+      "num_id": "finance_039",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Freelance projects bring 60%, and SaaS is 40%.",
+      "translation": "Proyek freelance membawa 60%, dan SaaS 40%."
+    },
+    {
+      "num_id": "finance_040",
+      "chapter": "Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The cash flow report is ready for review.",
+      "translation": "Laporan arus kas sudah siap untuk direview."
+    },
+    {
+      "num_id": "finance_041",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What were our biggest expenses this quarter?",
+      "translation": "Apa pengeluaran terbesar kami trimester ini?"
+    },
+    {
+      "num_id": "finance_042",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Cloud hosting and contractor payments.",
+      "translation": "Cloud hosting dan pembayaran kontraktor."
+    },
+    {
+      "num_id": "finance_043",
+      "chapter": "Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll include charts in the presentation.",
+      "translation": "Saya akan sertakan grafik dalam presentasi."
+    },
+    {
+      "num_id": "finance_044",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "When is the board meeting to discuss finances?",
+      "translation": "Kapan rapat dewan untuk membahas keuangan?"
+    },
+    {
+      "num_id": "finance_045",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's scheduled for Friday at 10 AM.",
+      "translation": "Dijadwalkan hari Jumat jam 10 pagi."
+    }
+  ]
+}

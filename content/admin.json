@@ -1,0 +1,366 @@
+{
+  "id": "admin",
+  "name": "Administration",
+  "scripts": [
+    {
+      "num_id": "admin_001",
+      "chapter": "Scheduling",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let me check my calendar for availability.",
+      "translation": "Saya cek kalender saya dulu untuk ketersediaan."
+    },
+    {
+      "num_id": "admin_002",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can we reschedule the meeting to Thursday?",
+      "translation": "Bisa kita reschedule meeting ke hari Kamis?"
+    },
+    {
+      "num_id": "admin_003",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Thursday works for me. I'll update the invite.",
+      "translation": "Kamis cocok untuk saya. Saya akan update undangannya."
+    },
+    {
+      "num_id": "admin_004",
+      "chapter": "Scheduling",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've blocked off 2-4 PM for focused work.",
+      "translation": "Saya sudah blokir jam 2-4 sore untuk kerja fokus."
+    },
+    {
+      "num_id": "admin_005",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What time zone should we use for the meeting?",
+      "translation": "Time zone mana yang harus kita pakai untuk meeting?"
+    },
+    {
+      "num_id": "admin_006",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Let's use UTC to avoid confusion.",
+      "translation": "Ayo pakai UTC agar tidak bingung."
+    },
+    {
+      "num_id": "admin_007",
+      "chapter": "Scheduling",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll set up the recurring weekly sync.",
+      "translation": "Saya akan atur sinkronisasi mingguan berulang."
+    },
+    {
+      "num_id": "admin_008",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you have any conflicts next week?",
+      "translation": "Apakah kamu ada konflik minggu depan?"
+    },
+    {
+      "num_id": "admin_009",
+      "chapter": "Scheduling",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Wednesday afternoon is open for me.",
+      "translation": "Rabu sore kosong untuk saya."
+    },
+    {
+      "num_id": "admin_010",
+      "chapter": "Documentation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've updated the project documentation.",
+      "translation": "Saya sudah update dokumentasi project."
+    },
+    {
+      "num_id": "admin_011",
+      "chapter": "Documentation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Where should we store the SOPs?",
+      "translation": "Di mana kita simpan SOP-nya?"
+    },
+    {
+      "num_id": "admin_012",
+      "chapter": "Documentation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Let's keep them in the shared Google Drive.",
+      "translation": "Ayo simpan di Google Drive bersama."
+    },
+    {
+      "num_id": "admin_013",
+      "chapter": "Documentation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Please fill out the onboarding checklist.",
+      "translation": "Silakan isi checklist onboarding."
+    },
+    {
+      "num_id": "admin_014",
+      "chapter": "Documentation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "I need the standard operating procedures.",
+      "translation": "Saya butuh prosedur operasional standar."
+    },
+    {
+      "num_id": "admin_015",
+      "chapter": "Documentation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll send you the link to our knowledge base.",
+      "translation": "Saya akan kirim link ke knowledge base kami."
+    },
+    {
+      "num_id": "admin_016",
+      "chapter": "Documentation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "All contracts need to be filed digitally.",
+      "translation": "Semua kontrak harus disimpan secara digital."
+    },
+    {
+      "num_id": "admin_017",
+      "chapter": "Documentation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you sign the digital document via DocuSign?",
+      "translation": "Bisa kamu tanda tangan dokumen digital lewat DocuSign?"
+    },
+    {
+      "num_id": "admin_018",
+      "chapter": "Documentation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Done! I've signed and returned it.",
+      "translation": "Selesai! Saya sudah tanda tangan dan kembalikan."
+    },
+    {
+      "num_id": "admin_019",
+      "chapter": "Correspondence",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll draft the response to the client.",
+      "translation": "Saya akan buat draft balasan untuk klien."
+    },
+    {
+      "num_id": "admin_020",
+      "chapter": "Correspondence",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you CC the project manager on this email?",
+      "translation": "Bisa kamu CC project manager di email ini?"
+    },
+    {
+      "num_id": "admin_021",
+      "chapter": "Correspondence",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Done. I've also included the team lead.",
+      "translation": "Selesai. Saya juga sudah sertakan team lead."
+    },
+    {
+      "num_id": "admin_022",
+      "chapter": "Correspondence",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We need to send a formal letter of intent.",
+      "translation": "Kita perlu mengirim surat niat resmi."
+    },
+    {
+      "num_id": "admin_023",
+      "chapter": "Correspondence",
+      "type": "dialogue",
+      "role": "A",
+      "en": "The client is asking for a status update.",
+      "translation": "Klien meminta update status."
+    },
+    {
+      "num_id": "admin_024",
+      "chapter": "Correspondence",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll prepare a summary and send it today.",
+      "translation": "Saya akan siapkan ringkasan dan kirim hari ini."
+    },
+    {
+      "num_id": "admin_025",
+      "chapter": "Correspondence",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Please acknowledge receipt of this document.",
+      "translation": "Silakan konfirmasi penerimaan dokumen ini."
+    },
+    {
+      "num_id": "admin_026",
+      "chapter": "Correspondence",
+      "type": "dialogue",
+      "role": "A",
+      "en": "We should follow up on the proposal.",
+      "translation": "Kita harus follow up proposal-nya."
+    },
+    {
+      "num_id": "admin_027",
+      "chapter": "Correspondence",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll send a polite reminder tomorrow.",
+      "translation": "Saya akan kirim pengingat sopan besok."
+    },
+    {
+      "num_id": "admin_028",
+      "chapter": "Filing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "All invoices are filed under the finance folder.",
+      "translation": "Semua invoice disimpan di folder keuangan."
+    },
+    {
+      "num_id": "admin_029",
+      "chapter": "Filing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you organize the shared drive folders?",
+      "translation": "Bisa kamu atur folder di drive bersama?"
+    },
+    {
+      "num_id": "admin_030",
+      "chapter": "Filing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll create a clear folder structure.",
+      "translation": "Saya akan buat struktur folder yang jelas."
+    },
+    {
+      "num_id": "admin_031",
+      "chapter": "Filing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Please scan and upload the signed contract.",
+      "translation": "Silakan scan dan upload kontrak yang sudah ditandatangani."
+    },
+    {
+      "num_id": "admin_032",
+      "chapter": "Filing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "How do you name your files for easy search?",
+      "translation": "Bagaimana kamu memberi nama file agar mudah dicari?"
+    },
+    {
+      "num_id": "admin_033",
+      "chapter": "Filing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I use the format: date_client_project.",
+      "translation": "Saya pakai format: tanggal_klien_project."
+    },
+    {
+      "num_id": "admin_034",
+      "chapter": "Filing",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "We need a backup system for critical files.",
+      "translation": "Kita butuh sistem backup untuk file penting."
+    },
+    {
+      "num_id": "admin_035",
+      "chapter": "Filing",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Are all the expense receipts archived?",
+      "translation": "Apakah semua kuitansi pengeluaran sudah diarsipkan?"
+    },
+    {
+      "num_id": "admin_036",
+      "chapter": "Filing",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, they're organized by month and category.",
+      "translation": "Ya, sudah diorganisir berdasarkan bulan dan kategori."
+    },
+    {
+      "num_id": "admin_037",
+      "chapter": "Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The weekly status report is due on Friday.",
+      "translation": "Laporan status mingguan harus selesai hari Jumat."
+    },
+    {
+      "num_id": "admin_038",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you compile the team's progress updates?",
+      "translation": "Bisa kamu kumpulkan update progres tim?"
+    },
+    {
+      "num_id": "admin_039",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll gather the data from everyone's Slack updates.",
+      "translation": "Saya akan ambil data dari update Slack semua orang."
+    },
+    {
+      "num_id": "admin_040",
+      "chapter": "Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I've submitted the monthly activity report.",
+      "translation": "Saya sudah mengirim laporan aktivitas bulanan."
+    },
+    {
+      "num_id": "admin_041",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What format should the report follow?",
+      "translation": "Format apa yang harus diikuti laporannya?"
+    },
+    {
+      "num_id": "admin_042",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Use the standard template in the shared folder.",
+      "translation": "Pakai template standar di folder bersama."
+    },
+    {
+      "num_id": "admin_043",
+      "chapter": "Reporting",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "The KPI dashboard is updated in real-time.",
+      "translation": "Dashboard KPI diperbarui secara real-time."
+    },
+    {
+      "num_id": "admin_044",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "A",
+      "en": "When is the quarterly review meeting?",
+      "translation": "Kapan pertemuan review trimester?"
+    },
+    {
+      "num_id": "admin_045",
+      "chapter": "Reporting",
+      "type": "dialogue",
+      "role": "B",
+      "en": "It's next Monday at 9 AM.",
+      "translation": "Senin depan jam 9 pagi."
+    }
+  ]
+}

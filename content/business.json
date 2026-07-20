@@ -1,0 +1,366 @@
+{
+  "id": "business",
+  "name": "Business English",
+  "scripts": [
+    {
+      "num_id": "business_001",
+      "chapter": "Meetings",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's kick off the meeting with a quick update.",
+      "translation": "Ayo mulai meeting dengan update singkat."
+    },
+    {
+      "num_id": "business_002",
+      "chapter": "Meetings",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can everyone join the Zoom call?",
+      "translation": "Bisakah semua orang join Zoom call?"
+    },
+    {
+      "num_id": "business_003",
+      "chapter": "Meetings",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'm having audio issues, can you hear me now?",
+      "translation": "Saya ada masalah audio, bisa dengar saya sekarang?"
+    },
+    {
+      "num_id": "business_004",
+      "chapter": "Meetings",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's table this discussion for the next meeting.",
+      "translation": "Ayo tunda diskusi ini untuk meeting berikutnya."
+    },
+    {
+      "num_id": "business_005",
+      "chapter": "Meetings",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Who will take the meeting minutes?",
+      "translation": "Siapa yang akan mencatat hasil meeting?"
+    },
+    {
+      "num_id": "business_006",
+      "chapter": "Meetings",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'll handle it. I'll share the notes on Slack.",
+      "translation": "Saya yang tanggung. Saya akan bagikan catatannya di Slack."
+    },
+    {
+      "num_id": "business_007",
+      "chapter": "Meetings",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let's wrap up. Any final questions?",
+      "translation": "Ayo tutup. Ada pertanyaan terakhir?"
+    },
+    {
+      "num_id": "business_008",
+      "chapter": "Meetings",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can we schedule a follow-up for next week?",
+      "translation": "Bisa kita jadwalkan follow-up minggu depan?"
+    },
+    {
+      "num_id": "business_009",
+      "chapter": "Meetings",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, I'll send a calendar invite.",
+      "translation": "Tentu, saya akan kirim undangan kalender."
+    },
+    {
+      "num_id": "business_010",
+      "chapter": "Negotiation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "What's your best rate for this project?",
+      "translation": "Tarif terbaik kamu untuk project ini berapa?"
+    },
+    {
+      "num_id": "business_011",
+      "chapter": "Negotiation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "We need to find a middle ground on the budget.",
+      "translation": "Kita perlu menemukan titik tengah soal budget."
+    },
+    {
+      "num_id": "business_012",
+      "chapter": "Negotiation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I understand. Let me propose a flexible plan.",
+      "translation": "Saya mengerti. Saya usulkan rencana fleksibel."
+    },
+    {
+      "num_id": "business_013",
+      "chapter": "Negotiation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "That's below my minimum rate, unfortunately.",
+      "translation": "Itu di bawah tarif minimum saya, sayangnya."
+    },
+    {
+      "num_id": "business_014",
+      "chapter": "Negotiation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can we offer equity instead of full payment?",
+      "translation": "Bisa kami tawarkan ekuitas sebagai pengganti pembayaran penuh?"
+    },
+    {
+      "num_id": "business_015",
+      "chapter": "Negotiation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "I'd prefer a mix of cash and equity.",
+      "translation": "Saya lebih suka kombinasi cash dan ekuitas."
+    },
+    {
+      "num_id": "business_016",
+      "chapter": "Negotiation",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let me think about it and get back to you.",
+      "translation": "Biarkan saya pikirkan dan saya kabari nanti."
+    },
+    {
+      "num_id": "business_017",
+      "chapter": "Negotiation",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What's included in the scope of work?",
+      "translation": "Apa yang termasuk dalam cakupan kerja?"
+    },
+    {
+      "num_id": "business_018",
+      "chapter": "Negotiation",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Development, testing, and one month of support.",
+      "translation": "Pengembangan, testing, dan satu bulan support."
+    },
+    {
+      "num_id": "business_019",
+      "chapter": "Presentations",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Today I'll walk you through our tech stack.",
+      "translation": "Hari ini saya akan menjelaskan tech stack kami."
+    },
+    {
+      "num_id": "business_020",
+      "chapter": "Presentations",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you share the slide deck with the team?",
+      "translation": "Bisa share slide deck ke tim?"
+    },
+    {
+      "num_id": "business_021",
+      "chapter": "Presentations",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I've uploaded it to Google Drive.",
+      "translation": "Ya, saya sudah upload ke Google Drive."
+    },
+    {
+      "num_id": "business_022",
+      "chapter": "Presentations",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Let me demo the new feature.",
+      "translation": "Saya perlihatkan demo fitur baru."
+    },
+    {
+      "num_id": "business_023",
+      "chapter": "Presentations",
+      "type": "dialogue",
+      "role": "A",
+      "en": "What metrics will you be presenting?",
+      "translation": "Metrik apa yang akan kamu presentasikan?"
+    },
+    {
+      "num_id": "business_024",
+      "chapter": "Presentations",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Revenue growth, user retention, and churn rate.",
+      "translation": "Pertumbuhan pendapatan, retensi pengguna, dan churn rate."
+    },
+    {
+      "num_id": "business_025",
+      "chapter": "Presentations",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Any questions before I move to the next slide?",
+      "translation": "Ada pertanyaan sebelum saya lanjut ke slide berikutnya?"
+    },
+    {
+      "num_id": "business_026",
+      "chapter": "Presentations",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Your presentation was very clear, thank you.",
+      "translation": "Presentasimu sangat jelas, terima kasih."
+    },
+    {
+      "num_id": "business_027",
+      "chapter": "Presentations",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Thanks! I'll send the recording later.",
+      "translation": "Terima kasih! Saya akan kirim rekamannya nanti."
+    },
+    {
+      "num_id": "business_028",
+      "chapter": "Networking",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "What do you do for a living?",
+      "translation": "Apa pekerjaan kamu?"
+    },
+    {
+      "num_id": "business_029",
+      "chapter": "Networking",
+      "type": "dialogue",
+      "role": "A",
+      "en": "I'm a freelance developer specializing in React.",
+      "translation": "Saya developer freelance yang mengkhususkan diri di React."
+    },
+    {
+      "num_id": "business_030",
+      "chapter": "Networking",
+      "type": "dialogue",
+      "role": "B",
+      "en": "That's great! I'm looking for someone with those skills.",
+      "translation": "Bagus! Saya sedang mencari orang dengan keahlian itu."
+    },
+    {
+      "num_id": "business_031",
+      "chapter": "Networking",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Can I add you on LinkedIn?",
+      "translation": "Boleh saya tambah di LinkedIn?"
+    },
+    {
+      "num_id": "business_032",
+      "chapter": "Networking",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Do you attend any tech meetups?",
+      "translation": "Kamu ikut tech meetup nggak?"
+    },
+    {
+      "num_id": "business_033",
+      "chapter": "Networking",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I go to the Jakarta JS meetup every month.",
+      "translation": "Ya, saya datang ke Jakarta JS meetup tiap bulan."
+    },
+    {
+      "num_id": "business_034",
+      "chapter": "Networking",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'd love to collaborate on a project.",
+      "translation": "Saya ingin berkolaborasi dalam suatu project."
+    },
+    {
+      "num_id": "business_035",
+      "chapter": "Networking",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Here's my business card.",
+      "translation": "Ini kartu nama saya."
+    },
+    {
+      "num_id": "business_036",
+      "chapter": "Networking",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Thanks! I'll reach out to you on email.",
+      "translation": "Terima kasih! Saya akan hubungi kamu lewat email."
+    },
+    {
+      "num_id": "business_037",
+      "chapter": "Email",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "I'll send you the project proposal by EOD.",
+      "translation": "Saya akan kirim proposal project sebelum akhir hari."
+    },
+    {
+      "num_id": "business_038",
+      "chapter": "Email",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Did you receive my email about the deadline?",
+      "translation": "Apakah kamu menerima email saya tentang deadline?"
+    },
+    {
+      "num_id": "business_039",
+      "chapter": "Email",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Yes, I'll review it and reply by tomorrow.",
+      "translation": "Ya, saya akan review dan balas besok."
+    },
+    {
+      "num_id": "business_040",
+      "chapter": "Email",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Please find the attached invoice.",
+      "translation": "Silakan lihat lampiran invoice."
+    },
+    {
+      "num_id": "business_041",
+      "chapter": "Email",
+      "type": "dialogue",
+      "role": "A",
+      "en": "Can you CC me on that email thread?",
+      "translation": "Bisa kamu CC saya di thread email itu?"
+    },
+    {
+      "num_id": "business_042",
+      "chapter": "Email",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Sure, I've added you to the CC list.",
+      "translation": "Tentu, saya sudah tambahkan kamu ke CC."
+    },
+    {
+      "num_id": "business_043",
+      "chapter": "Email",
+      "type": "phrase",
+      "role": "Speaker",
+      "en": "Thanks for your prompt response.",
+      "translation": "Terima kasih atas respon cepatnya."
+    },
+    {
+      "num_id": "business_044",
+      "chapter": "Email",
+      "type": "dialogue",
+      "role": "A",
+      "en": "I'm following up on my previous email.",
+      "translation": "Saya follow up email saya sebelumnya."
+    },
+    {
+      "num_id": "business_045",
+      "chapter": "Email",
+      "type": "dialogue",
+      "role": "B",
+      "en": "Apologies for the late reply. Here's my feedback.",
+      "translation": "Maaf atas keterlambatan balasan. Ini feedback saya."
+    }
+  ]
+}
