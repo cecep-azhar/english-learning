@@ -431,6 +431,7 @@
           </div>
         </div>
         <button class="btn-start" id="startBtn">Start Learning &rarr;</button>
+        <a href="/quiz.html" class="btn-quiz" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--radius-lg);font-size:16px;font-weight:600;text-decoration:none;color:#fff;background:linear-gradient(135deg,#22c55e,#16a34a);transition:var(--transition);margin-left:12px;">🧠 Quiz Mode</a>
       </div>
 
       <div class="chapter-view hidden" id="chapterView">
@@ -500,8 +501,6 @@
     var loopPhase = 'en';
     var currentAudio = null;
     var loopCancelled = false;
-    var lineRepeatActive = false;
-    var lineRepeatNumId = null;
     var searchTimeout = null;
     var STORAGE_KEY = 'ff_english_progress';
     var chapterIcons = ['\u{1F44B}','\u{1F4BC}','\u{1F4C2}','\u{1F4B0}','\u{1F4DA}','\u{1F3A4}','\u{1F4CA}','\u{1F91D}','\u{1F30D}','\u{26A1}','\u{1F4DD}','\u{1F527}','\u{1F9EA}','\u{1F3AF}','\u{1F3C6}'];
@@ -777,12 +776,6 @@
     function toggleRepeat() {
       repeatMode = !repeatMode;
       document.getElementById('repeatToggle').classList.toggle('active', repeatMode);
-      if (!repeatMode && lineRepeatActive) {
-        stopCurrentAudio();
-        if (lineRepeatNumId) setLinePlaying(lineRepeatNumId, false);
-        document.getElementById('loopStatus').textContent = 'Ready to play';
-      }
-      showToast(repeatMode ? '🔁 Repeat ON — line will repeat' : 'Repeat OFF', 'info');
     }
 
     /* ==================== AUDIO ==================== */
@@ -792,8 +785,6 @@
         currentAudio.currentTime = 0;
         currentAudio = null;
       }
-      lineRepeatActive = false;
-      lineRepeatNumId = null;
     }
 
     function playLineAudio(numId, onEnd) {
@@ -834,31 +825,12 @@
 
     function playLine(numId) {
       if (isLooping) stopLoop();
-      // If clicking same line while repeat is active, stop it
-      if (lineRepeatActive && lineRepeatNumId === numId) {
-        stopCurrentAudio();
-        setLinePlaying(numId, false);
-        document.getElementById('loopStatus').textContent = 'Ready to play';
-        return;
-      }
-      stopCurrentAudio();
-      lineRepeatActive = repeatMode;
-      lineRepeatNumId = numId;
-      _playLineOnce(numId);
-    }
-
-    function _playLineOnce(numId) {
       setLinePlaying(numId, true);
-      document.getElementById('loopStatus').textContent = 'Playing line #' + numId + '...' + (repeatMode ? ' \uD83D\uDD01' : '');
+      document.getElementById('loopStatus').textContent = 'Playing line #' + numId + '...';
       playLineAudio(numId, function() {
         markComplete(numId);
-        if (lineRepeatActive && lineRepeatNumId === numId) {
-          // Repeat: play again after short pause
-          setTimeout(function() { _playLineOnce(numId); }, 800);
-        } else {
-          setLinePlaying(numId, false);
-          document.getElementById('loopStatus').textContent = 'Ready to play';
-        }
+        setLinePlaying(numId, false);
+        document.getElementById('loopStatus').textContent = 'Ready to play';
       });
     }
 
@@ -1044,5 +1016,9 @@
     /* ==================== START ==================== */
     init();
   </script>
+  <!-- Credit Footer -->
+  <footer style="text-align:center; padding:20px; font-size:12px; color:var(--text-muted);">
+    Created with ❤️ by Cecep Saeful Azhar Hidaya, ST
+  </footer>
 </body>
 </html>

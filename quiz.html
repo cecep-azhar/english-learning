@@ -1,0 +1,3387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - English for Software Engineers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0f1117;
+      --bg-secondary: #1a1d27;
+      --bg-tertiary: #242734;
+      --bg-card: #1e2130;
+      --bg-hover: #2a2d3d;
+      --accent-1: #6366f1;
+      --accent-2: #8b5cf6;
+      --accent-3: #a78bfa;
+      --accent-gradient: linear-gradient(135deg, #6366f1, #8b5cf6, #a78bfa);
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border-color: #2d3148;
+      --success: #22c55e;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
+      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+    ::-webkit-scrollbar-thumb { background: var(--accent-1); border-radius: 3px; }
+
+    /* HEADER */
+    .header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,17,23,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 12px; text-decoration: none;
+    }
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: var(--accent-gradient); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 800; color: white;
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-title { font-size: 15px; font-weight: 700; color: var(--text-primary); line-height: 1.2; }
+    .logo-subtitle { font-size: 11px; color: var(--accent-3); font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; }
+    .header-actions { display: flex; align-items: center; gap: 12px; }
+    .back-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm); padding: 8px 14px;
+      color: var(--text-secondary); font-size: 13px; font-weight: 500;
+      text-decoration: none; transition: var(--transition); font-family: inherit;
+    }
+    .back-btn:hover { color: var(--text-primary); border-color: var(--accent-1); }
+    .back-btn svg { width: 14px; height: 14px; }
+
+    /* MAIN CONTENT */
+    .main-content {
+      max-width: 1200px; margin: 0 auto; padding: 24px;
+    }
+
+    /* XP BAR */
+    .xp-bar {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 16px 20px;
+      margin-bottom: 24px; flex-wrap: wrap;
+    }
+    .xp-item {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .xp-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+    }
+    .xp-icon.xp { background: rgba(99,102,241,0.15); color: var(--accent-3); }
+    .xp-icon.streak { background: rgba(245,158,11,0.15); color: var(--warning); }
+    .xp-icon.score { background: rgba(34,197,94,0.15); color: var(--success); }
+    .xp-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .xp-value { font-size: 18px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+    .xp-separator { width: 1px; height: 32px; background: var(--border-color); }
+    .xp-bar-inner {
+      flex: 1; min-width: 120px; height: 6px; background: var(--bg-tertiary);
+      border-radius: 3px; overflow: hidden;
+    }
+    .xp-bar-fill {
+      height: 100%; background: var(--accent-gradient); border-radius: 3px;
+      transition: width 0.5s ease;
+    }
+    .xp-bar-text { font-size: 11px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
+
+    /* TABS */
+    .tabs-container {
+      display: flex; gap: 4px; margin-bottom: 24px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 4px;
+      overflow-x: auto; -webkit-overflow-scrolling: touch;
+    }
+    .tab-btn {
+      flex: 1; min-width: 0;
+      background: transparent; border: none; border-radius: var(--radius-sm);
+      padding: 10px 12px; cursor: pointer;
+      font-family: inherit; font-size: 12px; font-weight: 600;
+      color: var(--text-muted); transition: var(--transition);
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      white-space: nowrap;
+    }
+    .tab-btn:hover { color: var(--text-secondary); background: var(--bg-hover); }
+    .tab-btn.active {
+      background: var(--accent-gradient); color: white;
+      box-shadow: 0 2px 8px rgba(99,102,241,0.3);
+    }
+    .tab-btn svg { width: 18px; height: 18px; }
+
+    /* CHAPTER SELECTOR */
+    .chapter-selector {
+      margin-bottom: 24px;
+    }
+    .chapter-selector label {
+      font-size: 12px; font-weight: 600; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.5px;
+      display: block; margin-bottom: 8px;
+    }
+    .chapter-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 8px;
+    }
+    .chapter-btn {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm); padding: 10px 12px;
+      cursor: pointer; transition: var(--transition);
+      text-align: left; position: relative; overflow: hidden;
+    }
+    .chapter-btn:hover { border-color: var(--accent-1); background: var(--bg-hover); }
+    .chapter-btn.active {
+      border-color: var(--accent-1);
+      background: rgba(99,102,241,0.1);
+    }
+    .chapter-btn .ch-name {
+      font-size: 12px; font-weight: 600; color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .chapter-btn .ch-progress {
+      height: 3px; background: var(--bg-tertiary); border-radius: 2px;
+      overflow: hidden;
+    }
+    .chapter-btn .ch-progress-fill {
+      height: 100%; background: var(--accent-gradient); border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+    .chapter-btn .ch-count {
+      font-size: 10px; color: var(--text-muted); margin-top: 2px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* QUIZ AREA */
+    .quiz-area {
+      display: none;
+    }
+    .quiz-area.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .quiz-card {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg); padding: 32px;
+      margin-bottom: 24px; position: relative; overflow: hidden;
+    }
+    .quiz-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent-gradient);
+    }
+    .quiz-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+    }
+    .quiz-title {
+      font-size: 18px; font-weight: 700;
+    }
+    .quiz-progress-text {
+      font-size: 13px; color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .quiz-progress-bar {
+      width: 100%; height: 4px; background: var(--bg-tertiary);
+      border-radius: 2px; margin-bottom: 24px; overflow: hidden;
+    }
+    .quiz-progress-fill {
+      height: 100%; background: var(--accent-gradient);
+      border-radius: 2px; transition: width 0.4s ease;
+    }
+    .question-text {
+      font-size: 16px; font-weight: 600; color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .question-sub {
+      font-size: 14px; color: var(--text-secondary);
+      margin-bottom: 20px; line-height: 1.5;
+    }
+    .english-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px; background: var(--bg-tertiary);
+      border: 1px solid var(--border-color); border-radius: var(--radius-sm);
+      padding: 14px 18px; margin-bottom: 20px;
+      color: var(--accent-3); line-height: 1.6;
+    }
+    .audio-controls {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 20px;
+    }
+    .play-btn {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--accent-gradient); border: none;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: var(--transition); color: white; flex-shrink: 0;
+    }
+    .play-btn:hover { transform: scale(1.05); box-shadow: 0 2px 12px rgba(99,102,241,0.4); }
+    .play-btn:active { transform: scale(0.95); }
+    .play-btn svg { width: 20px; height: 20px; margin-left: 2px; }
+    .play-btn.playing {
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.4); }
+      50% { box-shadow: 0 0 0 8px rgba(99,102,241,0); }
+    }
+    .audio-lang-btns {
+      display: flex; gap: 6px;
+    }
+    .lang-btn {
+      padding: 6px 12px; border-radius: var(--radius-sm);
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      color: var(--text-muted); font-size: 11px; font-weight: 600;
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .lang-btn:hover { color: var(--text-secondary); border-color: var(--accent-1); }
+    .lang-btn.active { background: var(--accent-1); color: white; border-color: var(--accent-1); }
+
+    /* OPTIONS */
+    .options-grid {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .option-btn {
+      width: 100%; background: var(--bg-tertiary);
+      border: 1px solid var(--border-color); border-radius: var(--radius-md);
+      padding: 14px 18px; cursor: pointer;
+      text-align: left; font-family: inherit; font-size: 14px;
+      color: var(--text-primary); transition: var(--transition);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .option-btn:hover:not(.disabled) {
+      border-color: var(--accent-1); background: var(--bg-hover);
+    }
+    .option-btn .option-letter {
+      width: 28px; height: 28px; border-radius: 6px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; color: var(--text-muted);
+      flex-shrink: 0; font-family: 'JetBrains Mono', monospace;
+      transition: var(--transition);
+    }
+    .option-btn:hover:not(.disabled) .option-letter {
+      border-color: var(--accent-1); color: var(--accent-3);
+    }
+    .option-btn.correct {
+      border-color: var(--success); background: rgba(34,197,94,0.1);
+      animation: correctPulse 0.5s ease;
+    }
+    .option-btn.correct .option-letter {
+      background: var(--success); color: white; border-color: var(--success);
+    }
+    .option-btn.wrong {
+      border-color: var(--danger); background: rgba(239,68,68,0.1);
+      animation: wrongShake 0.4s ease;
+    }
+    .option-btn.wrong .option-letter {
+      background: var(--danger); color: white; border-color: var(--danger);
+    }
+    .option-btn.disabled { cursor: default; opacity: 0.6; }
+    .option-btn.disabled.correct { opacity: 1; }
+    @keyframes correctPulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.01); }
+      100% { transform: scale(1); }
+    }
+    @keyframes wrongShake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      75% { transform: translateX(4px); }
+    }
+
+    /* FILL BLANK */
+    .fill-input-area {
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+      margin-bottom: 20px;
+    }
+    .fill-input {
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm); padding: 10px 16px;
+      color: var(--text-primary); font-family: 'JetBrains Mono', monospace;
+      font-size: 14px; outline: none; transition: var(--transition);
+      width: 200px;
+    }
+    .fill-input:focus { border-color: var(--accent-1); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
+    .fill-input::placeholder { color: var(--text-muted); }
+    .fill-submit {
+      background: var(--accent-gradient); border: none;
+      border-radius: var(--radius-sm); padding: 10px 24px;
+      color: white; font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .fill-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+    .fill-hint {
+      font-size: 12px; color: var(--text-muted);
+      font-style: italic; margin-bottom: 16px;
+    }
+    .fill-blank-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px; line-height: 1.8; margin-bottom: 16px;
+    }
+    .fill-blank-text .blank {
+      display: inline-block;
+      border-bottom: 2px dashed var(--accent-1);
+      min-width: 100px; color: var(--accent-3);
+    }
+
+    /* FLASHCARD */
+    .flashcard-container {
+      perspective: 1000px; margin-bottom: 24px;
+    }
+    .flashcard {
+      width: 100%; min-height: 200px; position: relative;
+      cursor: pointer; transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .flashcard.flipped { transform: rotateY(180deg); }
+    .flashcard-face {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      backface-visibility: hidden;
+      border-radius: var(--radius-lg); padding: 32px;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center;
+      border: 1px solid var(--border-color);
+    }
+    .flashcard-front {
+      background: var(--bg-card);
+    }
+    .flashcard-back {
+      background: var(--bg-tertiary);
+      transform: rotateY(180deg);
+    }
+    .flashcard-word {
+      font-size: 24px; font-weight: 700; margin-bottom: 8px;
+    }
+    .flashcard-word-en {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px; font-weight: 700; margin-bottom: 8px;
+      color: var(--accent-3);
+    }
+    .flashcard-meaning {
+      font-size: 16px; color: var(--text-secondary);
+    }
+    .flashcard-hint {
+      font-size: 12px; color: var(--text-muted); margin-top: 16px;
+    }
+    .flashcard-controls {
+      display: flex; gap: 10px; justify-content: center;
+      margin-top: 16px;
+    }
+    .fc-btn {
+      padding: 10px 20px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color); background: var(--bg-card);
+      color: var(--text-secondary); font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .fc-btn:hover { color: var(--text-primary); border-color: var(--accent-1); }
+    .fc-btn.know { background: rgba(34,197,94,0.1); border-color: var(--success); color: var(--success); }
+    .fc-btn.know:hover { background: rgba(34,197,94,0.2); }
+    .fc-btn.dont-know { background: rgba(239,68,68,0.1); border-color: var(--danger); color: var(--danger); }
+    .fc-btn.dont-know:hover { background: rgba(239,68,68,0.2); }
+    .fc-btn.skip { background: var(--bg-tertiary); color: var(--text-muted); }
+
+    /* START QUIZ BUTTONS */
+    .start-quiz-area {
+      text-align: center; padding: 60px 20px;
+    }
+    .start-quiz-icon {
+      width: 80px; height: 80px; margin: 0 auto 24px;
+      background: var(--accent-gradient); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px;
+      animation: floatUp 2s ease-in-out infinite;
+    }
+    @keyframes floatUp {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .start-quiz-title {
+      font-size: 24px; font-weight: 700; margin-bottom: 8px;
+    }
+    .start-quiz-sub {
+      font-size: 14px; color: var(--text-secondary); margin-bottom: 24px;
+    }
+    .start-quiz-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent-gradient); border: none;
+      border-radius: var(--radius-md); padding: 14px 32px;
+      color: white; font-size: 15px; font-weight: 600;
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .start-quiz-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(99,102,241,0.4); }
+    .start-quiz-btn:active { transform: translateY(0); }
+
+    /* FEEDBACK OVERLAY */
+    .feedback-overlay {
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(15,17,23,0.7); z-index: 200;
+      align-items: center; justify-content: center;
+      animation: fadeIn 0.2s ease;
+    }
+    .feedback-overlay.show { display: flex; }
+    .feedback-box {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg); padding: 40px;
+      text-align: center; max-width: 400px; width: 90%;
+      animation: scaleIn 0.3s ease;
+    }
+    @keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .feedback-icon {
+      width: 64px; height: 64px; margin: 0 auto 16px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+    }
+    .feedback-icon.correct { background: rgba(34,197,94,0.15); }
+    .feedback-icon.wrong { background: rgba(239,68,68,0.15); }
+    .feedback-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+    .feedback-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+    .feedback-xp {
+      font-size: 13px; color: var(--accent-3); font-weight: 600;
+      font-family: 'JetBrains Mono', monospace; margin-top: 8px;
+    }
+
+    /* RESULTS */
+    .results-card {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg); padding: 40px; text-align: center;
+      margin-bottom: 24px;
+    }
+    .results-score {
+      font-size: 64px; font-weight: 800; font-family: 'JetBrains Mono', monospace;
+      background: var(--accent-gradient); -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 8px;
+    }
+    .results-label {
+      font-size: 14px; color: var(--text-muted); margin-bottom: 24px;
+    }
+    .results-stats {
+      display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .result-stat {
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .result-stat-value {
+      font-size: 24px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+    }
+    .result-stat-value.green { color: var(--success); }
+    .result-stat-value.red { color: var(--danger); }
+    .result-stat-value.yellow { color: var(--warning); }
+    .result-stat-label {
+      font-size: 11px; color: var(--text-muted); text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .results-actions {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    }
+    .results-btn {
+      padding: 10px 24px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color); background: var(--bg-tertiary);
+      color: var(--text-secondary); font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .results-btn:hover { color: var(--text-primary); border-color: var(--accent-1); }
+    .results-btn.primary {
+      background: var(--accent-gradient); color: white; border: none;
+    }
+    .results-btn.primary:hover { opacity: 0.9; }
+
+    /* LEADERBOARD */
+    .leaderboard {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg); padding: 24px;
+    }
+    .leaderboard-title {
+      font-size: 16px; font-weight: 700; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .leaderboard-list {
+      list-style: none;
+    }
+    .leaderboard-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px 0; border-bottom: 1px solid var(--border-color);
+    }
+    .leaderboard-item:last-child { border-bottom: none; }
+    .lb-rank {
+      width: 28px; height: 28px; border-radius: 6px;
+      background: var(--bg-tertiary); display: flex; align-items: center;
+      justify-content: center; font-size: 12px; font-weight: 700;
+      font-family: 'JetBrains Mono', monospace; color: var(--text-muted);
+      flex-shrink: 0;
+    }
+    .lb-rank.gold { background: rgba(245,158,11,0.15); color: var(--warning); }
+    .lb-rank.silver { background: rgba(148,163,184,0.15); color: var(--text-secondary); }
+    .lb-rank.bronze { background: rgba(180,83,9,0.15); color: #b45309; }
+    .lb-name { flex: 1; font-size: 13px; font-weight: 500; }
+    .lb-score {
+      font-size: 13px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-3);
+    }
+    .lb-date {
+      font-size: 11px; color: var(--text-muted);
+    }
+    .lb-empty {
+      text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px;
+    }
+
+    /* TOAST */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 12px 20px;
+      font-size: 13px; font-weight: 500; color: var(--text-primary);
+      box-shadow: var(--shadow-lg); z-index: 300;
+      transform: translateY(100px); opacity: 0;
+      transition: all 0.3s ease;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast.success { border-color: var(--success); }
+    .toast.warning { border-color: var(--warning); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .main-content { padding: 16px; }
+      .quiz-card { padding: 20px; }
+      .xp-bar { padding: 12px 14px; gap: 10px; }
+      .xp-value { font-size: 15px; }
+      .xp-separator { display: none; }
+      .chapter-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+      .tab-btn { padding: 8px 6px; font-size: 11px; }
+      .tab-btn svg { width: 16px; height: 16px; }
+      .results-score { font-size: 48px; }
+      .flashcard-word-en, .flashcard-word { font-size: 20px; }
+      .fill-input { width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .chapter-grid { grid-template-columns: 1fr 1fr; }
+      .header-inner { gap: 8px; }
+      .logo-title { font-size: 13px; }
+      .logo-subtitle { display: none; }
+    }
+    /* SPEAKING MODULE */
+    .speaking-sub-modes {
+      display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;
+    }
+    .speaking-mode-btn {
+      flex: 1; min-width: 120px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 16px;
+      cursor: pointer; transition: var(--transition);
+      text-align: center; font-family: inherit;
+    }
+    .speaking-mode-btn:hover { border-color: var(--accent-1); background: var(--bg-hover); }
+    .speaking-mode-btn.active {
+      border-color: var(--accent-1); background: rgba(99,102,241,0.15);
+      box-shadow: 0 2px 8px rgba(99,102,241,0.2);
+    }
+    .speaking-mode-btn .sm-icon { font-size: 28px; margin-bottom: 8px; }
+    .speaking-mode-btn .sm-title { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+    .speaking-mode-btn .sm-desc { font-size: 11px; color: var(--text-muted); line-height: 1.3; }
+
+    /* Mic Button */
+    .mic-btn {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--danger); border: none;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: var(--transition); color: white; flex-shrink: 0;
+      position: relative;
+    }
+    .mic-btn:hover { transform: scale(1.05); box-shadow: 0 4px 20px rgba(239,68,68,0.4); }
+    .mic-btn:active { transform: scale(0.95); }
+    .mic-btn.recording {
+      animation: micPulse 1.5s ease-in-out infinite;
+      background: #dc2626;
+    }
+    .mic-btn svg { width: 28px; height: 28px; }
+    .mic-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    @keyframes micPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.6); }
+      50% { box-shadow: 0 0 0 16px rgba(239,68,68,0); }
+    }
+
+    /* Waveform bars */
+    .waveform {
+      display: flex; align-items: center; gap: 3px; height: 40px; margin-left: 12px;
+    }
+    .waveform .bar {
+      width: 4px; height: 8px; background: var(--danger); border-radius: 2px;
+      animation: waveAnim 0.8s ease-in-out infinite;
+    }
+    .waveform .bar:nth-child(1) { animation-delay: 0s; }
+    .waveform .bar:nth-child(2) { animation-delay: 0.1s; }
+    .waveform .bar:nth-child(3) { animation-delay: 0.2s; }
+    .waveform .bar:nth-child(4) { animation-delay: 0.3s; }
+    .waveform .bar:nth-child(5) { animation-delay: 0.4s; }
+    @keyframes waveAnim {
+      0%, 100% { height: 8px; opacity: 0.5; }
+      50% { height: 32px; opacity: 1; }
+    }
+
+    /* Score Ring */
+    .score-ring {
+      position: relative; width: 120px; height: 120px; margin: 0 auto 16px;
+    }
+    .score-ring svg { width: 120px; height: 120px; transform: rotate(-90deg); }
+    .score-ring circle {
+      fill: none; stroke-width: 8; stroke-linecap: round;
+    }
+    .score-ring .ring-bg { stroke: var(--bg-tertiary); }
+    .score-ring .ring-fill {
+      stroke: var(--success); transition: stroke-dashoffset 1s ease;
+    }
+    .score-ring .ring-text {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      font-size: 24px; font-weight: 800; font-family: 'JetBrains Mono', monospace;
+      color: var(--text-primary);
+    }
+
+    /* Word Match Highlights */
+    .word-display {
+      display: flex; flex-wrap: wrap; gap: 6px; line-height: 2; margin-bottom: 16px;
+    }
+    .word-display .word {
+      padding: 4px 10px; border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace; font-size: 14px;
+      transition: var(--transition);
+    }
+    .word-display .word.match {
+      background: rgba(34,197,94,0.15); color: var(--success);
+      border: 1px solid rgba(34,197,94,0.3);
+    }
+    .word-display .word.mismatch {
+      background: rgba(239,68,68,0.15); color: var(--danger);
+      border: 1px solid rgba(239,68,68,0.3);
+    }
+    .word-display .word.unspoken {
+      background: rgba(100,116,139,0.1); color: var(--text-muted);
+      border: 1px dashed var(--border-color);
+    }
+
+    /* Script Line Card */
+    .script-line-card {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 12px;
+      transition: var(--transition);
+    }
+    .script-line-card.active-line {
+      border-color: var(--accent-1); background: rgba(99,102,241,0.08);
+    }
+    .script-line-card.completed-line {
+      border-color: var(--success); background: rgba(34,197,94,0.05);
+    }
+    .script-en { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .script-id { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+    .script-audio-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm); padding: 6px 12px;
+      color: var(--text-secondary); font-size: 11px; font-weight: 500;
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .script-audio-btn:hover { border-color: var(--accent-1); color: var(--text-primary); }
+    .script-audio-btn svg { width: 14px; height: 14px; }
+
+    /* Recording area */
+    .recording-area {
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px; gap: 8px;
+    }
+
+    /* Interim text */
+    .interim-text {
+      font-size: 14px; color: var(--accent-3); font-style: italic;
+      min-height: 24px; padding: 8px 16px;
+      background: var(--bg-tertiary); border-radius: var(--radius-sm);
+      border: 1px dashed var(--border-color); margin-bottom: 16px;
+      text-align: center;
+    }
+
+    /* Free Talk */
+    .freetalk-timer {
+      font-size: 48px; font-weight: 800; font-family: 'JetBrains Mono', monospace;
+      text-align: center; color: var(--text-primary); margin: 16px 0;
+    }
+    .freetalk-timer.warning { color: var(--warning); }
+    .freetalk-timer.danger { color: var(--danger); animation: timerBlink 0.5s step-end infinite; }
+    @keyframes timerBlink { 50% { opacity: 0.4; } }
+    .freetalk-topic {
+      text-align: center; font-size: 16px; font-weight: 600; color: var(--accent-3);
+      padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md);
+      margin-bottom: 16px; border: 1px solid var(--border-color);
+    }
+    .freetalk-stats {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 16px 0;
+    }
+    .freetalk-stat {
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm); padding: 12px 20px; text-align: center; min-width: 100px;
+    }
+    .freetalk-stat-value {
+      font-size: 20px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-3);
+    }
+    .freetalk-stat-label {
+      font-size: 11px; color: var(--text-muted); text-transform: uppercase;
+      letter-spacing: 0.5px; margin-top: 4px;
+    }
+
+    /* Conversation Simulator */
+    .conv-message {
+      display: flex; gap: 12px; margin-bottom: 16px; align-items: flex-start;
+    }
+    .conv-message.their .conv-bubble {
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 12px 16px;
+      max-width: 80%; font-size: 14px; color: var(--text-primary);
+    }
+    .conv-message.your .conv-bubble {
+      background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3);
+      border-radius: var(--radius-md); padding: 12px 16px;
+      max-width: 80%; font-size: 14px; color: var(--text-primary);
+      margin-left: auto;
+    }
+    .conv-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; flex-shrink: 0;
+    }
+    .conv-avatar.them { background: rgba(245,158,11,0.15); color: var(--warning); }
+    .conv-avatar.you { background: rgba(99,102,241,0.15); color: var(--accent-3); }
+    .conv-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .conv-response-area {
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 16px; margin-top: 16px;
+    }
+
+    /* Not supported message */
+    .speech-not-supported {
+      text-align: center; padding: 40px 20px; color: var(--text-muted);
+    }
+    .speech-not-supported .ns-icon { font-size: 48px; margin-bottom: 16px; }
+    .speech-not-supported .ns-text { font-size: 14px; line-height: 1.6; }
+
+    /* NO QUIZ YET */
+    .empty-state {
+      text-align: center; padding: 60px 20px; color: var(--text-muted);
+    }
+    .empty-state-icon { font-size: 48px; margin-bottom: 16px; }
+    .empty-state-text { font-size: 14px; }
+
+    /* ── SPEAKING MODULE ── */
+    .speaking-modes {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px; margin-bottom: 24px;
+    }
+    .speaking-mode-btn {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 20px; cursor: pointer;
+      text-align: center; transition: var(--transition); font-family: inherit;
+    }
+    .speaking-mode-btn:hover { border-color: var(--accent-1); transform: translateY(-2px); }
+    .speaking-mode-btn.active { border-color: var(--accent-1); background: rgba(99,102,241,0.1); }
+    .speaking-mode-icon { font-size: 32px; margin-bottom: 8px; }
+    .speaking-mode-title { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+    .speaking-mode-desc { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+
+    .mic-btn {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: var(--bg-tertiary); border: 3px solid var(--border-color);
+      cursor: pointer; transition: all 0.3s; display: flex;
+      align-items: center; justify-content: center; margin: 0 auto;
+      position: relative;
+    }
+    .mic-btn:hover { border-color: var(--accent-1); }
+    .mic-btn.recording {
+      background: var(--danger); border-color: var(--danger);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    .mic-btn svg { width: 32px; height: 32px; color: var(--text-secondary); transition: 0.3s; }
+    .mic-btn.recording svg { color: white; }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.4); }
+      50% { box-shadow: 0 0 0 20px rgba(239,68,68,0); }
+    }
+
+    .waveform {
+      display: flex; align-items: center; justify-content: center;
+      gap: 3px; height: 40px; margin: 16px auto; opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .waveform.active { opacity: 1; }
+    .waveform .bar {
+      width: 4px; background: var(--accent-1); border-radius: 2px;
+      animation: wave 0.8s ease-in-out infinite;
+    }
+    .waveform .bar:nth-child(1) { animation-delay: 0s; height: 10px; }
+    .waveform .bar:nth-child(2) { animation-delay: 0.1s; height: 20px; }
+    .waveform .bar:nth-child(3) { animation-delay: 0.2s; height: 30px; }
+    .waveform .bar:nth-child(4) { animation-delay: 0.3s; height: 20px; }
+    .waveform .bar:nth-child(5) { animation-delay: 0.4s; height: 10px; }
+    @keyframes wave {
+      0%, 100% { transform: scaleY(0.5); }
+      50% { transform: scaleY(1.5); }
+    }
+
+    .score-ring {
+      width: 120px; height: 120px; margin: 0 auto 16px; position: relative;
+    }
+    .score-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+    .score-ring circle {
+      fill: none; stroke-width: 8; stroke-linecap: round;
+    }
+    .score-ring .ring-bg { stroke: var(--bg-tertiary); }
+    .score-ring .ring-fill {
+      stroke: var(--success); transition: stroke-dashoffset 1s ease;
+    }
+    .score-ring .ring-text {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      font-size: 24px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+    }
+
+    .word-highlight { display: inline; padding: 2px 4px; border-radius: 3px; margin: 0 1px; }
+    .word-match { background: rgba(34,197,94,0.15); color: var(--success); }
+    .word-mismatch { background: rgba(239,68,68,0.15); color: var(--danger); }
+
+    .speech-line-item {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 8px;
+      display: flex; align-items: center; gap: 12px; transition: var(--transition);
+      cursor: pointer;
+    }
+    .speech-line-item:hover { border-color: var(--accent-1); }
+    .speech-line-item.active { border-color: var(--accent-1); background: rgba(99,102,241,0.08); }
+    .speech-line-item .line-num {
+      font-size: 11px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;
+      min-width: 28px;
+    }
+    .speech-line-item .line-en {
+      flex: 1; font-size: 13px; color: var(--text-primary); line-height: 1.5;
+    }
+    .speech-line-item .line-actions {
+      display: flex; gap: 8px; flex-shrink: 0;
+    }
+
+    .play-again-btn, .speed-btn {
+      padding: 6px 12px; border-radius: var(--radius-sm);
+      background: var(--bg-tertiary); border: 1px solid var(--border-color);
+      color: var(--text-secondary); font-size: 11px; cursor: pointer;
+      font-family: inherit; font-weight: 600; transition: var(--transition);
+    }
+    .play-again-btn:hover, .speed-btn:hover { border-color: var(--accent-1); color: var(--text-primary); }
+
+    .result-word-list {
+      display: flex; flex-wrap: wrap; gap: 4px; margin: 12px 0;
+    }
+
+    .free-talk-topic {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: var(--radius-md); padding: 20px; text-align: center;
+      margin-bottom: 16px;
+    }
+    .free-talk-topic .topic-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .free-talk-topic .topic-text { font-size: 18px; font-weight: 700; margin-top: 8px; color: var(--accent-3); }
+
+    .timer-display {
+      font-size: 32px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+      text-align: center; color: var(--text-primary); margin: 8px 0;
+    }
+
+    .conv-participant {
+      display: flex; gap: 12px; margin-bottom: 16px; align-items: flex-start;
+    }
+    .conv-participant.user { flex-direction: row-reverse; }
+    .conv-avatar {
+      width: 40px; height: 40px; border-radius: 50%; display: flex;
+      align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
+    }
+    .conv-avatar.system { background: rgba(99,102,241,0.15); }
+    .conv-avatar.user-avatar { background: rgba(34,197,94,0.15); }
+    .conv-bubble {
+      background: var(--bg-tertiary); border-radius: var(--radius-sm);
+      padding: 12px 16px; font-size: 13px; max-width: 80%; line-height: 1.5;
+    }
+    .conv-participant.user .conv-bubble { background: rgba(99,102,241,0.15); }
+
+    .no-support-msg {
+      text-align: center; padding: 40px 20px; color: var(--text-muted);
+    }
+    .no-support-msg .icon { font-size: 48px; margin-bottom: 12px; }
+
+    .practice-stats {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 12px; margin: 16px 0;
+    }
+    .stat-card {
+      background: var(--bg-tertiary); border-radius: var(--radius-sm);
+      padding: 12px; text-align: center;
+    }
+    .stat-card .stat-value { font-size: 20px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+    .stat-card .stat-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; margin-top: 4px; }
+
+    .needs-practice-word {
+      background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3);
+      border-radius: 4px; padding: 2px 6px; font-size: 12px; color: var(--warning);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">Q</div>
+        <div class="logo-text">
+          <div class="logo-title">Quiz System</div>
+          <div class="logo-subtitle">English for Engineers</div>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="/" class="back-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Kembali ke Pelajaran
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- XP BAR -->
+    <div class="xp-bar">
+      <div class="xp-item">
+        <div class="xp-icon xp">⚡</div>
+        <div>
+          <div class="xp-label">XP</div>
+          <div class="xp-value" id="totalXp">0</div>
+        </div>
+      </div>
+      <div class="xp-separator"></div>
+      <div class="xp-item">
+        <div class="xp-icon streak">🔥</div>
+        <div>
+          <div class="xp-label">Streak</div>
+          <div class="xp-value" id="streakCount">0</div>
+        </div>
+      </div>
+      <div class="xp-separator"></div>
+      <div class="xp-item">
+        <div class="xp-icon score">✓</div>
+        <div>
+          <div class="xp-label">Benar</div>
+          <div class="xp-value" id="totalCorrect">0</div>
+        </div>
+      </div>
+      <div class="xp-separator"></div>
+      <div style="flex:1; min-width:100px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+          <span style="font-size:11px;color:var(--text-muted);">Level</span>
+          <span style="font-size:11px;color:var(--text-muted);font-family:'JetBrains Mono',monospace;" id="levelText">1</span>
+        </div>
+        <div class="xp-bar-inner">
+          <div class="xp-bar-fill" id="xpBarFill" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs-container">
+      <button class="tab-btn active" data-tab="listening" onclick="switchTab('listening')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18V6a9 9 0 0118 0v12"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>
+        Mendengarkan
+      </button>
+      <button class="tab-btn" data-tab="reading" onclick="switchTab('reading')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        Membaca
+      </button>
+      <button class="tab-btn" data-tab="vocabulary" onclick="switchTab('vocabulary')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Kosakata
+      </button>
+      <button class="tab-btn" data-tab="fillblank" onclick="switchTab('fillblank')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        Isian Kosong
+      </button>
+      <button class="tab-btn" data-tab="speaking" onclick="switchTab('speaking')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>
+        🎤 Bicara
+      </button>
+    </div>
+
+    <!-- CHAPTER SELECTOR -->
+    <div class="chapter-selector">
+      <label>Pilih Chapter</label>
+      <div class="chapter-grid" id="chapterGrid"></div>
+    </div>
+
+    <!-- LISTENING QUIZ AREA -->
+    <div class="quiz-area active" id="listeningArea">
+      <div id="listeningContent">
+        <div class="empty-state">
+          <div class="empty-state-icon">🎧</div>
+          <div class="empty-state-text">Pilih chapter dan mulai kuis mendengarkan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- READING QUIZ AREA -->
+    <div class="quiz-area" id="readingArea">
+      <div id="readingContent">
+        <div class="empty-state">
+          <div class="empty-state-icon">📖</div>
+          <div class="empty-state-text">Pilih chapter dan mulai kuis membaca</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VOCABULARY AREA -->
+    <div class="quiz-area" id="vocabularyArea">
+      <div id="vocabularyContent">
+        <div class="empty-state">
+          <div class="empty-state-icon">📚</div>
+          <div class="empty-state-text">Pilih chapter dan mulai belajar kosakata</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILL BLANK AREA -->
+    <div class="quiz-area" id="fillblankArea">
+      <div id="fillblankContent">
+        <div class="empty-state">
+          <div class="empty-state-icon">✏️</div>
+          <div class="empty-state-text">Pilih chapter dan mulai kuis isian kosong</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPEAKING AREA -->
+    <div class="quiz-area" id="speakingArea">
+      <div id="speakingContent">
+        <div class="empty-state">
+          <div class="empty-state-icon">🎤</div>
+          <div class="empty-state-text">Pilih chapter dan mulai berlatih berbicara</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEADERBOARD -->
+    <div class="leaderboard" style="margin-top:24px;">
+      <div class="leaderboard-title">🏆 Papan Skor Lokal</div>
+      <ul class="leaderboard-list" id="leaderboardList"></ul>
+    </div>
+
+  </main>
+
+  <!-- FEEDBACK OVERLAY -->
+  <div class="feedback-overlay" id="feedbackOverlay">
+    <div class="feedback-box">
+      <div class="feedback-icon" id="feedbackIcon"></div>
+      <div class="feedback-title" id="feedbackTitle"></div>
+      <div class="feedback-detail" id="feedbackDetail"></div>
+      <div class="feedback-xp" id="feedbackXp"></div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+  (function() {
+    'use strict';
+
+    // ── STATE ──
+    let scripts = [];
+    let currentChapter = null;
+    let currentTab = 'listening';
+    let quizState = {};
+    let vocabMode = 'quiz'; // 'quiz' or 'flashcard'
+
+    // ── CHAPTERS ──
+    const CHAPTERS = [
+      { key: '1. Self-Introduction', short: 'Self-Intro', icon: '👋' },
+      { key: '2. Job Interview', short: 'Interview', icon: '💼' },
+      { key: '3. Portfolio Discussion', short: 'Portfolio', icon: '📂' },
+      { key: '4. Salary Negotiation', short: 'Salary', icon: '💰' },
+      { key: '5. Grammar Essentials', short: 'Grammar', icon: '📝' },
+      { key: '6. Presentation', short: 'Presentasi', icon: '🎤' },
+      { key: '7. Meeting & Project Evaluation', short: 'Meeting', icon: '🤝' },
+      { key: '8. Client Communication', short: 'Client', icon: '👥' },
+      { key: '9. Remote Worker', short: 'Remote', icon: '🌍' },
+      { key: '10. Quick Reference', short: 'Referensi', icon: '⚡' }
+    ];
+
+    // ── VOCABULARY DATA ──
+    const VOCAB = [
+      { en: 'full-stack', id: 'pengembang frontend dan backend', cat: 'tech' },
+      { en: 'scalable', id: 'dapat dikembangkan/diukur', cat: 'tech' },
+      { en: 'deploy', id: 'menerapkan/mengaktifkan', cat: 'tech' },
+      { en: 'automate', id: 'mengotomasi', cat: 'tech' },
+      { en: 'pipeline', id: 'alur/saluran data', cat: 'tech' },
+      { en: 'architecture', id: 'arsitektur/sistem', cat: 'tech' },
+      { en: 'refactor', id: 'menyusun ulang kode', cat: 'tech' },
+      { en: 'bottleneck', id: 'titik macet/penyumbat', cat: 'tech' },
+      { en: 'over-engineering', id: 'terlalu rumit dalam mendesain', cat: 'tech' },
+      { en: 'connection pooling', id: 'pool koneksi database', cat: 'tech' },
+      { en: 'end-to-end', id: 'dari awal sampai akhir', cat: 'phrase' },
+      { en: 'ship fast', id: 'cepat merilis/mengirim', cat: 'phrase' },
+      { en: 'ship working software', id: 'rilis software yang berfungsi', cat: 'phrase' },
+      { en: 'test coverage', id: 'cakupan pengujian', cat: 'tech' },
+      { en: 'CI/CD', id: 'integrasi dan pengiriman berkelanjutan', cat: 'tech' },
+      { en: 'headless', id: 'tanpa antarmuka visual', cat: 'tech' },
+      { en: 'multi-tenant', id: 'banyak pengguna terpisah', cat: 'tech' },
+      { en: 'real-time', id: 'waktu nyata', cat: 'tech' },
+      { en: 'deliverable', id: 'hasil yang harus diserahkan', cat: 'phrase' },
+      { en: 'MVP', id: 'produk minimum yang layak', cat: 'tech' },
+      { en: 'consulting', id: 'konsultasi', cat: 'phrase' },
+      { en: 'retainer', id: 'bayaran tetap bulanan', cat: 'phrase' },
+      { en: 'testimonial', id: 'testimoni/ulasan', cat: 'phrase' },
+      { en: 'scope', id: 'cakupan pekerjaan', cat: 'phrase' },
+      { en: 'pragmatic', id: 'praktis/realistis', cat: 'phrase' },
+      { en: 'proactive', id: 'proaktif/mengambil inisiatif', cat: 'phrase' },
+      { en: 'delegation', id: 'delegasi/tugas', cat: 'phrase' },
+      { en: 'async', id: 'asinkron/tidak bersamaan', cat: 'tech' },
+      { en: 'timezone overlap', id: 'tumpang tindih zona waktu', cat: 'phrase' },
+      { en: 'escalation', id: 'eskalsiasi/peningkatan', cat: 'phrase' },
+      { en: 'degradation', id: 'penurunan kualitas', cat: 'tech' },
+      { en: 'heuristic evaluation', id: 'evaluasi heuristik', cat: 'tech' },
+      { en: 'race condition', id: 'kondisi balapan/ketidakselarasan', cat: 'tech' },
+      { en: 'memory leak', id: 'kebocoran memori', cat: 'tech' },
+      { en: 'connection pooling', id: 'pool koneksi database', cat: 'tech' },
+      { en: 'pull request', id: 'permintaan tarik kode', cat: 'tech' },
+      { en: 'sprint', id: 'sprint/periode kerja', cat: 'tech' },
+      { en: 'story point', id: 'titik cerita/skala usaha', cat: 'tech' },
+      { en: 'backlog', id: 'daftar pekerjaan tertunda', cat: 'tech' },
+      { en: 'retrospective', id: 'retrospektif/evaluasi', cat: 'phrase' },
+      { en: 'post-launch', id: 'setelah peluncuran', cat: 'phrase' },
+      { en: 'hands down', id: 'tanpa keraguan', cat: 'phrase' },
+      { en: 'heads down', id: 'fokus penuh', cat: 'phrase' },
+      { en: 'circle back', id: 'kembali membahas', cat: 'phrase' },
+      { en: 'net-15', id: 'jatuh tempo 15 hari', cat: 'phrase' }
+    ];
+
+    // ── READING QUESTION TEMPLATES ──
+    const READING_TEMPLATES = [
+      { q: 'Apa arti kalimat ini dalam Bahasa Indonesia?', gen: (s) => s.translation },
+      { q: 'Frasa ini cocok digunakan dalam situasi...', gen: () => null },
+      { q: 'Apa respons yang tepat untuk kalimat ini?', gen: () => null }
+    ];
+
+    // ── STORAGE ──
+    function getProgress() {
+      try { return JSON.parse(localStorage.getItem('quiz_progress') || '{}'); }
+      catch { return {}; }
+    }
+    function saveProgress(p) { localStorage.setItem('quiz_progress', JSON.stringify(p)); }
+    function getLeaderboard() {
+      try { return JSON.parse(localStorage.getItem('quiz_leaderboard') || '[]'); }
+      catch { return []; }
+    }
+    function saveLeaderboard(lb) { localStorage.setItem('quiz_leaderboard', JSON.stringify(lb)); }
+
+    function updateStats() {
+      const p = getProgress();
+      document.getElementById('totalXp').textContent = (p.xp || 0).toLocaleString();
+      document.getElementById('streakCount').textContent = p.streak || 0;
+      document.getElementById('totalCorrect').textContent = p.totalCorrect || 0;
+      const level = Math.floor((p.xp || 0) / 100) + 1;
+      const xpInLevel = (p.xp || 0) % 100;
+      document.getElementById('levelText').textContent = 'Lv.' + level;
+      document.getElementById('xpBarFill').style.width = xpInLevel + '%';
+    }
+
+    function addXp(amount) {
+      const p = getProgress();
+      p.xp = (p.xp || 0) + amount;
+      p.totalCorrect = (p.totalCorrect || 0) + 1;
+      saveProgress(p);
+      updateStats();
+    }
+
+    function updateStreak() {
+      const p = getProgress();
+      const today = new Date().toDateString();
+      if (p.lastDate === today) return;
+      const yesterday = new Date(Date.now() - 86400000).toDateString();
+      if (p.lastDate === yesterday) {
+        p.streak = (p.streak || 0) + 1;
+      } else {
+        p.streak = 1;
+      }
+      p.lastDate = today;
+      saveProgress(p);
+      updateStats();
+    }
+
+    // ── TOAST ──
+    function showToast(msg, type) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.className = 'toast ' + (type || '') + ' show';
+      setTimeout(() => { t.classList.remove('show'); }, 2500);
+    }
+
+    // ── CHAPTER GRID ──
+    function renderChapterGrid() {
+      const grid = document.getElementById('chapterGrid');
+      grid.innerHTML = '';
+      const p = getProgress();
+      CHAPTERS.forEach((ch, i) => {
+        const chapterScripts = scripts.filter(s => s.chapter === ch.key);
+        const total = chapterScripts.length;
+        const completed = p[ch.key + '_completed'] || 0;
+        const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
+        const btn = document.createElement('button');
+        btn.className = 'chapter-btn' + (currentChapter === ch.key ? ' active' : '');
+        btn.innerHTML = `
+          <div class="ch-name">${ch.icon} ${ch.short}</div>
+          <div class="ch-progress"><div class="ch-progress-fill" style="width:${pct}%"></div></div>
+          <div class="ch-count">${completed}/${total}</div>
+        `;
+        btn.onclick = () => selectChapter(ch.key);
+        grid.appendChild(btn);
+      });
+    }
+
+    function selectChapter(key) {
+      currentChapter = key;
+      renderChapterGrid();
+      // Reset current quiz state
+      quizState = {};
+      // Show start button for current tab
+      renderCurrentTab();
+    }
+
+    // ── TAB SWITCHING ──
+    function switchTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tab === tab);
+      });
+      document.querySelectorAll('.quiz-area').forEach(a => a.classList.remove('active'));
+      document.getElementById(tab + 'Area').classList.add('active');
+      renderCurrentTab();
+    }
+
+    function renderCurrentTab() {
+      if (!currentChapter) {
+        renderEmptyState();
+        return;
+      }
+      const chScripts = scripts.filter(s => s.chapter === currentChapter);
+      if (chScripts.length === 0) return;
+
+      switch (currentTab) {
+        case 'listening': renderListeningQuiz(chScripts); break;
+        case 'reading': renderReadingQuiz(chScripts); break;
+        case 'vocabulary': renderVocabulary(chScripts); break;
+        case 'fillblank': renderFillBlank(chScripts); break;
+        case 'speaking': renderSpeaking(chScripts); break;
+      }
+    }
+
+    function renderEmptyState() {
+      ['listening', 'reading', 'vocabulary', 'fillblank', 'speaking'].forEach(tab => {
+        const el = document.getElementById(tab + 'Content');
+        const icons = { listening: '🎧', reading: '📖', vocabulary: '📚', fillblank: '✏️', speaking: '🎤' };
+        el.innerHTML = `<div class="empty-state"><div class="empty-state-icon">${icons[tab]}</div><div class="empty-state-text">Pilih chapter untuk memulai</div></div>`;
+      });
+    }
+
+    // ── LISTENING QUIZ ──
+    function renderListeningQuiz(chScripts) {
+      const container = document.getElementById('listeningContent');
+      if (!quizState.listening) {
+        // Show start screen
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="start-quiz-area">
+              <div class="start-quiz-icon">🎧</div>
+              <div class="start-quiz-title">Kuis Mendengarkan</div>
+              <div class="start-quiz-sub">Dengarkan audio dan tebak apa yang kamu dengar<br>Chapter: ${currentChapter}</div>
+              <button class="start-quiz-btn" onclick="startListeningQuiz()">
+                Mulai Kuis
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      const qs = quizState.listening;
+      if (qs.done) {
+        renderResults('listening', qs);
+        return;
+      }
+
+      const q = qs.questions[qs.current];
+      const progress = ((qs.current) / qs.questions.length) * 100;
+      const letters = ['A', 'B', 'C', 'D'];
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🎧 Mendengarkan</div>
+            <div class="quiz-progress-text">${qs.current + 1} / ${qs.questions.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${progress}%"></div></div>
+          <div class="question-text">Apa yang kamu dengar?</div>
+          <div class="question-sub">Klik tombol play untuk mendengarkan, lalu pilih jawaban yang benar.</div>
+          <div class="audio-controls">
+            <button class="play-btn" id="playBtn" onclick="playAudio('/audio/${q.num_id}.mp3', this)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </button>
+            <div class="audio-lang-btns">
+              <button class="lang-btn active" onclick="playAudio('/audio/${q.num_id}.mp3', document.getElementById('playBtn'))">🇮🇩 EN</button>
+            </div>
+          </div>
+          <div class="options-grid">
+            ${q.options.map((opt, i) => `
+              <button class="option-btn" onclick="selectListeningOption(${i}, ${q.correct})" data-idx="${i}">
+                <span class="option-letter">${letters[i]}</span>
+                <span>${opt}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // ── READING QUIZ ──
+    function renderReadingQuiz(chScripts) {
+      const container = document.getElementById('readingContent');
+      if (!quizState.reading) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="start-quiz-area">
+              <div class="start-quiz-icon">📖</div>
+              <div class="start-quiz-title">Kuis Membaca</div>
+              <div class="start-quiz-sub">Baca teks Inggris dan jawab pertanyaan pemahaman<br>Chapter: ${currentChapter}</div>
+              <button class="start-quiz-btn" onclick="startReadingQuiz()">
+                Mulai Kuis
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      const qs = quizState.reading;
+      if (qs.done) {
+        renderResults('reading', qs);
+        return;
+      }
+
+      const q = qs.questions[qs.current];
+      const progress = ((qs.current) / qs.questions.length) * 100;
+      const letters = ['A', 'B', 'C', 'D'];
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">📖 Membaca</div>
+            <div class="quiz-progress-text">${qs.current + 1} / ${qs.questions.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${progress}%"></div></div>
+          <div class="english-text">${q.en}</div>
+          <div class="question-text">${q.question}</div>
+          <div class="options-grid">
+            ${q.options.map((opt, i) => `
+              <button class="option-btn" onclick="selectReadingOption(${i}, ${q.correct})" data-idx="${i}">
+                <span class="option-letter">${letters[i]}</span>
+                <span>${opt}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // ── VOCABULARY ──
+    function renderVocabulary(chScripts) {
+      const container = document.getElementById('vocabularyContent');
+
+      if (!quizState.vocab) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="start-quiz-area">
+              <div class="start-quiz-icon">📚</div>
+              <div class="start-quiz-title">Kosakata Teknis</div>
+              <div class="start-quiz-sub">Pelajari istilah teknis dan frasa penting</div>
+              <div style="display:flex;gap:12px;justify-content:center;margin-top:16px;">
+                <button class="start-quiz-btn" onclick="startVocabQuiz()" style="font-size:13px;padding:12px 24px;">
+                  🎯 Mode Kuis
+                </button>
+                <button class="start-quiz-btn" onclick="startVocabFlashcard()" style="font-size:13px;padding:12px 24px;background:var(--bg-tertiary);border:1px solid var(--border-color);">
+                  🃏 Mode Flashcard
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      if (vocabMode === 'flashcard') {
+        renderFlashcard(container);
+      } else {
+        renderVocabQuiz(container);
+      }
+    }
+
+    function renderVocabQuiz(container) {
+      const qs = quizState.vocab;
+      if (qs.done) {
+        renderResults('vocabulary', qs);
+        return;
+      }
+
+      const q = qs.questions[qs.current];
+      const progress = ((qs.current) / qs.questions.length) * 100;
+      const letters = ['A', 'B', 'C', 'D'];
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">📚 Kosakata</div>
+            <div class="quiz-progress-text">${qs.current + 1} / ${qs.questions.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${progress}%"></div></div>
+          <div class="english-text" style="font-size:20px;text-align:center;">${q.prompt}</div>
+          <div class="question-text" style="text-align:center;">${q.question}</div>
+          <div class="options-grid">
+            ${q.options.map((opt, i) => `
+              <button class="option-btn" onclick="selectVocabOption(${i}, ${q.correct})" data-idx="${i}">
+                <span class="option-letter">${letters[i]}</span>
+                <span>${opt}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderFlashcard(container) {
+      const qs = quizState.vocab;
+      if (!qs || !qs.flashcards || qs.flashcards.length === 0) {
+        container.innerHTML = `<div class="empty-state"><div class="empty-state-icon">✅</div><div class="empty-state-text">Semua flashcard sudah dipelajari!</div>
+          <button class="start-quiz-btn" onclick="resetVocab()" style="margin-top:16px;">Ulangi</button></div>`;
+        return;
+      }
+      const fc = qs.flashcards[qs.fcIndex || 0];
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🃏 Flashcard</div>
+            <div class="quiz-progress-text">${(qs.fcIndex || 0) + 1} / ${qs.flashcards.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${((qs.fcIndex || 0) / qs.flashcards.length) * 100}%"></div></div>
+          <div class="flashcard-container" onclick="flipFlashcard()">
+            <div class="flashcard" id="flashcardEl">
+              <div class="flashcard-face flashcard-front">
+                <div class="flashcard-word-en">${fc.en}</div>
+                <div style="font-size:12px;color:var(--text-muted);margin-top:8px;">${fc.cat}</div>
+                <div class="flashcard-hint">Klik untuk membalik</div>
+              </div>
+              <div class="flashcard-face flashcard-back">
+                <div class="flashcard-meaning">${fc.id}</div>
+                <div class="flashcard-hint">Klik untuk kembali</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-controls">
+            <button class="fc-btn dont-know" onclick="vocabFeedback(false)">❌ Belum Tahu</button>
+            <button class="fc-btn skip" onclick="vocabNext()">⏭️ Lewati</button>
+            <button class="fc-btn know" onclick="vocabFeedback(true)">✅ Tahu</button>
+          </div>
+        </div>
+      `;
+    }
+
+    // ── FILL IN THE BLANK ──
+    function renderFillBlank(chScripts) {
+      const container = document.getElementById('fillblankContent');
+      if (!quizState.fillblank) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="start-quiz-area">
+              <div class="start-quiz-icon">✏️</div>
+              <div class="start-quiz-title">Isian Kosong</div>
+              <div class="start-quiz-sub">Lengkapi kata-kata yang hilang dari kalimat<br>Chapter: ${currentChapter}</div>
+              <button class="start-quiz-btn" onclick="startFillBlankQuiz()">
+                Mulai Kuis
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      const qs = quizState.fillblank;
+      if (qs.done) {
+        renderResults('fillblank', qs);
+        return;
+      }
+
+      const q = qs.questions[qs.current];
+      const progress = ((qs.current) / qs.questions.length) * 100;
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">✏️ Isian Kosong</div>
+            <div class="quiz-progress-text">${qs.current + 1} / ${qs.questions.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${progress}%"></div></div>
+          <div class="fill-blank-text">${q.displayText}</div>
+          <div class="question-text">Lengkapi kata yang hilang:</div>
+          <div class="fill-hint">Hint: ${q.hint}</div>
+          <div class="fill-input-area">
+            <input type="text" class="fill-input" id="fillInput" placeholder="Ketik jawaban..." autocomplete="off" onkeydown="if(event.key==='Enter')checkFillBlank()">
+            <button class="fill-submit" onclick="checkFillBlank()">Cek Jawaban</button>
+          </div>
+          <div id="fillFeedback"></div>
+        </div>
+      `;
+      setTimeout(() => { const inp = document.getElementById('fillInput'); if(inp) inp.focus(); }, 100);
+    }
+
+    // ── QUIZ GENERATORS ──
+    function shuffle(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function pickRandom(arr, n) {
+      return shuffle(arr).slice(0, n);
+    }
+
+    // LISTENING
+    window.startListeningQuiz = function() {
+      const chScripts = scripts.filter(s => s.chapter === currentChapter);
+      const picked = pickRandom(chScripts, Math.min(7, chScripts.length));
+      const questions = picked.map(s => {
+        const distractors = chScripts.filter(x => x.num_id !== s.num_id);
+        const wrongOpts = pickRandom(distractors, 3).map(x => x.en);
+        const opts = shuffle([s.en, ...wrongOpts]);
+        return {
+          num_id: s.num_id,
+          en: s.en,
+          options: opts,
+          correct: opts.indexOf(s.en)
+        };
+      });
+      quizState.listening = { questions, current: 0, score: 0, total: questions.length, done: false };
+      renderListeningQuiz(chScripts);
+    };
+
+    // READING
+    window.startReadingQuiz = function() {
+      const chScripts = scripts.filter(s => s.chapter === currentChapter);
+      const picked = pickRandom(chScripts, Math.min(8, chScripts.length));
+      const questions = picked.map(s => {
+        const questionType = Math.floor(Math.random() * 3);
+        let question, correctAnswer, options;
+        const otherScripts = scripts.filter(x => x.num_id !== s.num_id);
+
+        if (questionType === 0) {
+          // Meaning in Indonesian
+          question = 'Apa arti kalimat ini dalam Bahasa Indonesia?';
+          correctAnswer = s.translation;
+          const wrongTrans = pickRandom(otherScripts, 3).map(x => x.translation);
+          options = shuffle([s.translation, ...wrongTrans]);
+        } else if (questionType === 1) {
+          // Situation
+          question = 'Frasa ini paling cocok digunakan dalam situasi...';
+          const situations = getSituationForChapter(currentChapter);
+          correctAnswer = situations.correct;
+          options = shuffle([situations.correct, ...situations.wrong]);
+        } else {
+          // Response
+          question = 'Apa respons yang paling tepat?';
+          const resp = getResponseForScript(s, otherScripts);
+          correctAnswer = resp.correct;
+          options = shuffle([resp.correct, ...resp.wrong]);
+        }
+
+        return {
+          num_id: s.num_id,
+          en: s.en,
+          question,
+          options,
+          correct: options.indexOf(correctAnswer)
+        };
+      });
+      quizState.reading = { questions, current: 0, score: 0, total: questions.length, done: false };
+      renderReadingQuiz(chScripts);
+    };
+
+    function getSituationForChapter(chapter) {
+      const situationMap = {
+        '1. Self-Introduction': { correct: 'Saat pertemuan pertama dengan klien', wrong: ['Saat presentasi teknis', 'Saat negosiasi gaji', 'Saat code review'] },
+        '2. Job Interview': { correct: 'Saat wawancara kerja', wrong: ['Saat daily standup', 'Saat deployment', 'Saat debugging'] },
+        '3. Portfolio Discussion': { correct: 'Saat membahas proyek sebelumnya', wrong: ['Saat makan siang', 'Saat fix bug', 'Saat writing docs'] },
+        '4. Salary Negotiation': { correct: 'Saat membahas kompensasi', wrong: ['Saat pair programming', 'Saat sprint planning', 'Saat retrospective'] },
+        '5. Grammar Essentials': { correct: 'Dalam komunikasi sehari-hari', wrong: ['Hanya di email formal', 'Hanya saat presentasi', 'Hanya saat interview'] },
+        '6. Presentation': { correct: 'Saat presentasi ke tim', wrong: ['Saat 1-on-1', 'Saat debugging', 'Saat on-call'] },
+        '7. Meeting & Project Evaluation': { correct: 'Saat update proyek mingguan', wrong: ['Saat interview', 'Saat deployment', 'Saat liburan'] },
+        '8. Client Communication': { correct: 'Saat berkomunikasi dengan klien', wrong: ['Saat standup internal', 'Saat code review', 'Saat sprint'] },
+        '9. Remote Worker': { correct: 'Saat bekerja dari rumah', wrong: ['Saat di kantor', 'Saat conference', 'Saat training'] },
+        '10. Quick Reference': { correct: 'Situasi umum', wrong: ['Hanya formal', 'Hanya santai', 'Hanya tulisan'] }
+      };
+      return situationMap[chapter] || situationMap['5. Grammar Essentials'];
+    }
+
+    function getResponseForScript(s, others) {
+      const responseMap = {
+        'you': { correct: 'Terima kasih, saya akan coba.', wrong: ['Tidak masalah.', 'Saya tidak setuju.', 'Bisa diulang?'] },
+        'interviewer': { correct: s.translation, wrong: ['Ya, saya tahu.', 'Tidak, terima kasih.', 'Saya bingung.'] },
+        'hr': { correct: 'Bisa didiskusikan lebih lanjut.', wrong: ['Tidak bisa.', 'Setuju.', 'Saya tidak peduli.'] },
+        'client': { correct: 'Baik, saya akan persiapkan proposal.', wrong: ['Tidak bisa.', 'Saya tolak.', 'Nanti saja.'] }
+      };
+      return responseMap[s.role] || responseMap['you'];
+    }
+
+    // VOCABULARY
+    window.startVocabQuiz = function() {
+      vocabMode = 'quiz';
+      const picked = pickRandom(VOCAB, Math.min(10, VOCAB.length));
+      const questions = picked.map(v => {
+        const isIdToEn = Math.random() > 0.5;
+        let prompt, correctAnswer, options, question;
+        if (isIdToEn) {
+          prompt = v.id;
+          question = `Apa arti Bahasa Inggrisnya?`;
+          correctAnswer = v.en;
+          const wrongEn = pickRandom(VOCAB.filter(x => x.en !== v.en), 3).map(x => x.en);
+          options = shuffle([v.en, ...wrongEn]);
+        } else {
+          prompt = v.en;
+          question = `Apa arti dalam Bahasa Indonesia?`;
+          correctAnswer = v.id;
+          const wrongId = pickRandom(VOCAB.filter(x => x.id !== v.id), 3).map(x => x.id);
+          options = shuffle([v.id, ...wrongId]);
+        }
+        return { prompt, question, options, correct: options.indexOf(correctAnswer), vocabItem: v };
+      });
+      quizState.vocab = { questions, current: 0, score: 0, total: questions.length, done: false };
+      renderVocabulary(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    window.startVocabFlashcard = function() {
+      vocabMode = 'flashcard';
+      const shuffled = shuffle(VOCAB);
+      quizState.vocab = { flashcards: shuffled, fcIndex: 0, known: 0, total: shuffled.length, done: false };
+      renderVocabulary(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    // FILL IN THE BLANK
+    window.startFillBlankQuiz = function() {
+      const chScripts = scripts.filter(s => s.chapter === currentChapter);
+      const picked = pickRandom(chScripts, Math.min(8, chScripts.length));
+      const questions = picked.map(s => {
+        const words = s.en.split(/\s+/);
+        if (words.length < 3) {
+          // Short sentence - remove last word
+          const removed = words.pop();
+          return {
+            num_id: s.num_id,
+            en: s.en,
+            words: words,
+            removed: [removed],
+            displayText: words.join(' ') + ' <span class="blank">______</span>',
+            hint: removed.charAt(0) + '...'
+          };
+        }
+        // Pick 1-2 significant words to remove
+        const significantIdx = [];
+        for (let i = 0; i < words.length; i++) {
+          if (words[i].length > 3 && !['the','and','for','are','but','not','you','all','can','her','was','one','our','out'].includes(words[i].toLowerCase())) {
+            significantIdx.push(i);
+          }
+        }
+        if (significantIdx.length === 0) significantIdx.push(words.length - 1);
+        const removeCount = Math.min(2, significantIdx.length);
+        const toRemove = pickRandom(significantIdx, removeCount);
+        const removed = [];
+        const displayParts = [];
+        for (let i = 0; i < words.length; i++) {
+          if (toRemove.includes(i)) {
+            removed.push(words[i]);
+            displayParts.push('<span class="blank">______</span>');
+          } else {
+            displayParts.push(words[i]);
+          }
+        }
+        return {
+          num_id: s.num_id,
+          en: s.en,
+          words: words,
+          removed,
+          displayText: displayParts.join(' '),
+          hint: removed.map(r => r.charAt(0) + '...').join(', ')
+        };
+      });
+      quizState.fillblank = { questions, current: 0, score: 0, total: questions.length, done: false };
+      renderFillBlank(chScripts);
+    };
+
+    // ── ANSWER HANDLERS ──
+    window.selectListeningOption = function(selected, correct) {
+      const btns = document.querySelectorAll('.option-btn');
+      btns.forEach(b => b.classList.add('disabled'));
+      btns[correct].classList.add('correct');
+      if (selected !== correct) {
+        btns[selected].classList.add('wrong');
+      } else {
+        quizState.listening.score++;
+        addXp(10);
+      }
+      updateChapterProgress();
+      setTimeout(() => {
+        quizState.listening.current++;
+        if (quizState.listening.current >= quizState.listening.questions.length) {
+          quizState.listening.done = true;
+          saveQuizResult('listening', quizState.listening);
+        }
+        renderListeningQuiz(scripts.filter(s => s.chapter === currentChapter));
+      }, 2000);
+    };
+
+    window.selectReadingOption = function(selected, correct) {
+      const btns = document.querySelectorAll('.option-btn');
+      btns.forEach(b => b.classList.add('disabled'));
+      btns[correct].classList.add('correct');
+      if (selected !== correct) {
+        btns[selected].classList.add('wrong');
+      } else {
+        quizState.reading.score++;
+        addXp(10);
+      }
+      updateChapterProgress();
+      setTimeout(() => {
+        quizState.reading.current++;
+        if (quizState.reading.current >= quizState.reading.questions.length) {
+          quizState.reading.done = true;
+          saveQuizResult('reading', quizState.reading);
+        }
+        renderReadingQuiz(scripts.filter(s => s.chapter === currentChapter));
+      }, 2000);
+    };
+
+    window.selectVocabOption = function(selected, correct) {
+      const btns = document.querySelectorAll('.option-btn');
+      btns.forEach(b => b.classList.add('disabled'));
+      btns[correct].classList.add('correct');
+      if (selected !== correct) {
+        btns[selected].classList.add('wrong');
+      } else {
+        quizState.vocab.score++;
+        addXp(10);
+      }
+      updateChapterProgress();
+      setTimeout(() => {
+        quizState.vocab.current++;
+        if (quizState.vocab.current >= quizState.vocab.questions.length) {
+          quizState.vocab.done = true;
+          saveQuizResult('vocabulary', quizState.vocab);
+        }
+        renderVocabulary(scripts.filter(s => s.chapter === currentChapter));
+      }, 2000);
+    };
+
+    window.flipFlashcard = function() {
+      const el = document.getElementById('flashcardEl');
+      if (el) el.classList.toggle('flipped');
+    };
+
+    window.vocabFeedback = function(known) {
+      const qs = quizState.vocab;
+      if (known) qs.known = (qs.known || 0) + 1;
+      vocabNext();
+    };
+
+    window.vocabNext = function() {
+      const qs = quizState.vocab;
+      qs.fcIndex = (qs.fcIndex || 0) + 1;
+      if (qs.fcIndex >= qs.flashcards.length) {
+        qs.done = true;
+        renderVocabulary(scripts.filter(s => s.chapter === currentChapter));
+        return;
+      }
+      renderFlashcard(document.getElementById('vocabularyContent'));
+    };
+
+    window.resetVocab = function() {
+      quizState.vocab = null;
+      renderVocabulary(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    window.checkFillBlank = function() {
+      const input = document.getElementById('fillInput');
+      if (!input) return;
+      const userAnswer = input.value.trim();
+      const qs = quizState.fillblank;
+      const q = qs.questions[qs.current];
+      const fb = document.getElementById('fillFeedback');
+
+      // Accept any of the removed words (case-insensitive)
+      const accepted = q.removed.some(r => r.toLowerCase() === userAnswer.toLowerCase());
+
+      if (accepted) {
+        qs.score++;
+        addXp(10);
+        fb.innerHTML = `<div style="color:var(--success);font-weight:600;margin-top:8px;">✅ Benar! Jawaban: ${q.removed.join(' / ')}</div>`;
+      } else {
+        fb.innerHTML = `<div style="color:var(--danger);font-weight:600;margin-top:8px;">❌ Jawaban yang benar: <span style="color:var(--accent-3)">${q.removed.join(' / ')}</span></div>`;
+      }
+      updateChapterProgress();
+      setTimeout(() => {
+        qs.current++;
+        if (qs.current >= qs.questions.length) {
+          qs.done = true;
+          saveQuizResult('fillblank', qs);
+        }
+        renderFillBlank(scripts.filter(s => s.chapter === currentChapter));
+      }, 2000);
+    };
+
+    // ── SPEAKING MODULE ──
+    let speakingMode = 'practice'; // 'practice', 'freetalk', 'conversation'
+    let speechRecognition = null;
+    let isRecording = false;
+    let speakingLineIndex = 0;
+    let speakingResults = [];
+    let freeTalkTimer = null;
+    let freeTalkSeconds = 0;
+    let freeTalkTranscript = '';
+    let convIndex = 0;
+
+    // Check browser support
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const speechSupported = !!SpeechRecognition;
+
+    function renderSpeaking(chScripts) {
+      const container = document.getElementById('speakingContent');
+      if (!speechSupported) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="speech-not-supported">
+              <div class="ns-icon">🚫</div>
+              <div class="ns-text">
+                <strong>Browser tidak mendukung speech recognition</strong><br><br>
+                Gunakan browser berikut untuk fitur ini:<br>
+                • Google Chrome (Desktop/Android)<br>
+                • Microsoft Edge<br>
+                • Safari 14.5+ (iOS/macOS)
+              </div>
+            </div>
+          </div>`;
+        return;
+      }
+      container.innerHTML = `
+        <div class="speaking-sub-modes">
+          <button class="speaking-mode-btn ${speakingMode === 'practice' ? 'active' : ''}" onclick="switchSpeakingMode('practice')">
+            <div class="sm-icon">🎯</div>
+            <div class="sm-title">Latihan Ucapan</div>
+            <div class="sm-desc">Ucapkan kalimat dari skrip</div>
+          </button>
+          <button class="speaking-mode-btn ${speakingMode === 'freetalk' ? 'active' : ''}" onclick="switchSpeakingMode('freetalk')">
+            <div class="sm-icon">💬</div>
+            <div class="sm-title">Bebas Bicara</div>
+            <div class="sm-desc">Berbicara tentang topik bebas</div>
+          </button>
+          <button class="speaking-mode-btn ${speakingMode === 'conversation' ? 'active' : ''}" onclick="switchSpeakingMode('conversation')">
+            <div class="sm-icon">🤝</div>
+            <div class="sm-title">Simulasi Percakapan</div>
+            <div class="sm-desc">Simulasi percakapan dengan klien</div>
+          </button>
+        </div>
+        <div id="speakingModeContent"></div>
+      `;
+      renderSpeakingModeContent(chScripts);
+    }
+
+    window.switchSpeakingMode = function(mode) {
+      speakingMode = mode;
+      stopSpeechRecognition();
+      if (freeTalkTimer) { clearInterval(freeTalkTimer); freeTalkTimer = null; }
+      speakingLineIndex = 0;
+      speakingResults = [];
+      convIndex = 0;
+      renderSpeaking(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    function renderSpeakingModeContent(chScripts) {
+      const modeContent = document.getElementById('speakingModeContent');
+      if (!modeContent) return;
+      if (speakingMode === 'practice') renderSpeechPractice(modeContent, chScripts);
+      else if (speakingMode === 'freetalk') renderFreeTalk(modeContent);
+      else if (speakingMode === 'conversation') renderConversation(modeContent, chScripts);
+    }
+
+    // ── Speech Practice ──
+    function renderSpeechPractice(container, chScripts) {
+      if (speakingLineIndex >= chScripts.length) {
+        const totalScore = speakingResults.length > 0 
+          ? Math.round(speakingResults.reduce((a, b) => a + b, 0) / speakingResults.length) 
+          : 0;
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="results-card">
+              <div style="font-size:48px;margin-bottom:16px;">${totalScore >= 80 ? '🎉' : totalScore >= 60 ? '👍' : '💪'}</div>
+              <div class="results-score">${totalScore}%</div>
+              <div class="results-label">Latihan Ucapan Selesai — ${currentChapter}</div>
+              <div class="results-stats">
+                <div class="result-stat">
+                  <div class="result-stat-value green">${speakingResults.length}</div>
+                  <div class="result-stat-label">Kalimat</div>
+                </div>
+                <div class="result-stat">
+                  <div class="result-stat-value yellow">+${speakingResults.length * 15}</div>
+                  <div class="result-stat-label">XP</div>
+                </div>
+              </div>
+              <div class="results-actions">
+                <button class="results-btn primary" onclick="retrySpeaking()">🔄 Ulangi</button>
+                <button class="results-btn" onclick="nextMode()">➡️ Mode Lain</button>
+              </div>
+            </div>
+          </div>`;
+        return;
+      }
+
+      const s = chScripts[speakingLineIndex];
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🎯 Latihan Ucapan</div>
+            <div class="quiz-progress-text">${speakingLineIndex + 1} / ${chScripts.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${(speakingLineIndex / chScripts.length) * 100}%"></div></div>
+          
+          <div class="script-line-card active-line">
+            <div class="script-en">${s.en}</div>
+            <div class="script-id">${s.translation}</div>
+            <button class="script-audio-btn" onclick="playAudio('/audio/${s.num_id}.mp3', this)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+              Dengarkan
+            </button>
+          </div>
+
+          <div id="speakingResult"></div>
+          <div id="speakingInterim" class="interim-text"></div>
+          
+          <div class="recording-area">
+            <button class="mic-btn" id="practiceMicBtn" onclick="togglePracticeRecording('${s.en.replace(/'/g, "\\'")}')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </button>
+            <div class="waveform" id="practiceWaveform" style="display:none;">
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    window.togglePracticeRecording = function(expectedText) {
+      if (isRecording) {
+        stopSpeechRecognition();
+      } else {
+        startSpeechRecognition((transcript) => {
+          const result = compareWords(expectedText, transcript);
+          speakingResults.push(result.score);
+          showSpeakingResult(expectedText, transcript, result);
+          speakingLineIndex++;
+          addXp(15);
+          showToast(`+15 XP! Skor: ${result.score}%`, result.score >= 70 ? 'success' : 'warning');
+          setTimeout(() => {
+            renderSpeakingModeContent(scripts.filter(s => s.chapter === currentChapter));
+          }, 2500);
+        });
+      }
+    };
+
+    function showSpeakingResult(expected, transcript, result) {
+      const resultEl = document.getElementById('speakingResult');
+      const interimEl = document.getElementById('speakingInterim');
+      if (interimEl) interimEl.textContent = '';
+      
+      const ringCircumference = 2 * Math.PI * 50;
+      const ringOffset = ringCircumference * (1 - result.score / 100);
+      
+      let wordHtml = '';
+      result.details.forEach(d => {
+        if (d.status === 'match') {
+          wordHtml += `<span class="word match">${d.word}</span>`;
+        } else if (d.status === 'mismatch') {
+          wordHtml += `<span class="word mismatch">${d.word}</span>`;
+        } else {
+          wordHtml += `<span class="word unspoken">${d.word}</span>`;
+        }
+      });
+
+      resultEl.innerHTML = `
+        <div class="score-ring">
+          <svg viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="50"/>
+            <circle class="ring-fill" cx="60" cy="60" r="50" 
+              stroke-dasharray="${ringCircumference}" 
+              stroke-dashoffset="${ringOffset}"
+              style="stroke: ${result.score >= 70 ? 'var(--success)' : result.score >= 50 ? 'var(--warning)' : 'var(--danger)'}"/>
+          </svg>
+          <div class="ring-text">${result.score}%</div>
+        </div>
+        <div class="word-display">${wordHtml}</div>
+        <div style="text-align:center;font-size:13px;color:var(--text-muted);">
+          Kamu mengucapkan: "<span style="color:var(--accent-3)">${transcript}</span>"
+        </div>`;
+
+      const micBtn = document.getElementById('practiceMicBtn');
+      if (micBtn) micBtn.disabled = true;
+      const wf = document.getElementById('practiceWaveform');
+      if (wf) wf.style.display = 'none';
+    }
+
+    // ── Free Talk ──
+    const FREE_TALK_TOPICS = [
+      'Perkenalkan dirimu sebagai full-stack developer',
+      'Jelaskan proyek terbaikmu kepada interviewer',
+      'Ceritakan pengalaman bekerja remote',
+      'Jelaskan bagaimana kamu menangani deadline yang ketat',
+      'Ceritakan tentang tech stack yang kamu kuasai',
+      'Jelaskan bagaimana kamu menyelesaikan conflict di tim'
+    ];
+
+    function renderFreeTalk(container) {
+      const topic = FREE_TALK_TOPICS[Math.floor(Math.random() * FREE_TALK_TOPICS.length)];
+      const timeLeft = 30 - freeTalkSeconds;
+      const timerClass = timeLeft <= 5 ? 'danger' : timeLeft <= 10 ? 'warning' : '';
+      
+      if (!freeTalkTimer && freeTalkSeconds === 0) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="quiz-header">
+              <div class="quiz-title">💬 Bebas Bicara</div>
+            </div>
+            <div class="freetalk-topic" id="freetalkTopic">${topic}</div>
+            <div style="text-align:center;color:var(--text-muted);font-size:13px;margin-bottom:16px;">
+              Kamu punya 30 detik untuk berbicara tentang topik di atas.<br>
+              Klik mic untuk mulai!
+            </div>
+            <div id="freetalkInterim" class="interim-text"></div>
+            <div class="recording-area">
+              <button class="mic-btn" id="freetalkMicBtn" onclick="startFreeTalk('${topic.replace(/'/g, "\\'")}')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              </button>
+              <div class="waveform" id="freetalkWaveform" style="display:none;">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="freetalk-timer" id="freetalkTimer">00:30</div>
+          </div>`;
+        return;
+      }
+
+      const words = freeTalkTranscript.trim().split(/\s+/).filter(w => w.length > 0);
+      const wordCount = words.length;
+      const wpm = freeTalkSeconds > 0 ? Math.round((wordCount / freeTalkSeconds) * 60) : 0;
+      
+      let fluencyMsg = '';
+      if (wpm >= 120 && wpm <= 160) fluencyMsg = '🟢 Kecepatan bicara sangat bagus! Natural dan lancar.';
+      else if (wpm >= 80 && wpm < 120) fluencyMsg = '🟡 Cukup baik. Cobalah sedikit lebih cepat untuk terdengar lebih natural.';
+      else if (wpm > 160) fluencyMsg = '🟠 Terlalu cepat! Cobalah sedikit lebih pelan agar lebih jelas.';
+      else if (wpm > 0) fluencyMsg = '🔴 Terlalu lambat. Cobalah berbicara lebih percaya diri.';
+      else fluencyMsg = '⚪ Mulai berbicara untuk melihat hasilnya.';
+
+      const xpEarned = Math.max(0, Math.round(wordCount / 5) * 5);
+      
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">💬 Bebas Bicara</div>
+          </div>
+          <div class="freetalk-timer ${timerClass}" id="freetalkTimer">${String(Math.floor(timeLeft / 60)).padStart(2, '0')}:${String(timeLeft).padStart(2, '0')}</div>
+          <div class="recording-area">
+            <button class="mic-btn ${isRecording ? 'recording' : ''}" id="freetalkMicBtn" onclick="${isRecording ? 'stopFreeTalk()' : ''}" ${timeLeft <= 0 ? 'disabled' : ''}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </button>
+            <div class="waveform" id="freetalkWaveform" style="${isRecording ? '' : 'display:none;'}">
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+          </div>
+          <div id="freetalkInterim" class="interim-text">${freeTalkTranscript ? '' : ''}</div>
+          <div class="freetalk-stats">
+            <div class="freetalk-stat">
+              <div class="freetalk-stat-value">${wordCount}</div>
+              <div class="freetalk-stat-label">Kata</div>
+            </div>
+            <div class="freetalk-stat">
+              <div class="freetalk-stat-value">${wpm}</div>
+              <div class="freetalk-stat-label">WPM</div>
+            </div>
+            <div class="freetalk-stat">
+              <div class="freetalk-stat-value">+${xpEarned}</div>
+              <div class="freetalk-stat-label">XP</div>
+            </div>
+          </div>
+          <div style="padding:12px;background:var(--bg-tertiary);border-radius:var(--radius-sm);border:1px solid var(--border-color);margin-bottom:16px;">
+            <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">💡 Feedback Fluency</div>
+            <div style="font-size:13px;color:var(--text-secondary);">${fluencyMsg}</div>
+          </div>
+          <div style="background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:var(--radius-sm);padding:12px;">
+            <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">📝 Transkrip</div>
+            <div style="font-size:13px;color:var(--text-primary);font-family:'JetBrains Mono',monospace;line-height:1.8;">${freeTalkTranscript || '<span style="color:var(--text-muted);font-style:italic;">Belum ada transkrip...</span>'}</div>
+          </div>
+          ${timeLeft <= 0 ? `
+            <div style="text-align:center;margin-top:16px;">
+              <button class="start-quiz-btn" onclick="resetFreeTalk()">🔄 Coba Lagi</button>
+            </div>
+          ` : ''}
+        </div>`;
+    }
+
+    window.startFreeTalk = function(topic) {
+      freeTalkTranscript = '';
+      freeTalkSeconds = 0;
+      isRecording = true;
+      
+      const wf = document.getElementById('freetalkWaveform');
+      if (wf) wf.style.display = '';
+      const micBtn = document.getElementById('freetalkMicBtn');
+      if (micBtn) micBtn.classList.add('recording');
+
+      // Start recognition
+      speechRecognition = new SpeechRecognition();
+      speechRecognition.continuous = true;
+      speechRecognition.interimResults = true;
+      speechRecognition.lang = 'en-US';
+
+      speechRecognition.onresult = (event) => {
+        let interim = '';
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript;
+          if (event.results[i].isFinal) {
+            freeTalkTranscript += transcript + ' ';
+          } else {
+            interim += transcript;
+          }
+        }
+        const interimEl = document.getElementById('freetalkInterim');
+        if (interimEl) interimEl.textContent = interim || '';
+        // Re-render to update stats
+        renderFreeTalk(document.getElementById('speakingModeContent'));
+      };
+
+      speechRecognition.onerror = (e) => {
+        if (e.error !== 'no-speech') console.warn('Speech error:', e.error);
+      };
+
+      speechRecognition.onend = () => {
+        // Auto-restart if still recording
+        if (isRecording && freeTalkSeconds < 30) {
+          try { speechRecognition.start(); } catch(e) {}
+        }
+      };
+
+      try { speechRecognition.start(); } catch(e) {
+        showToast('Gagal memulai recognition', 'warning');
+        isRecording = false;
+        return;
+      }
+
+      freeTalkTimer = setInterval(() => {
+        freeTalkSeconds++;
+        const timeLeft = 30 - freeTalkSeconds;
+        const timerEl = document.getElementById('freetalkTimer');
+        if (timerEl) {
+          const mins = Math.floor(Math.max(0, timeLeft) / 60);
+          const secs = Math.max(0, timeLeft) % 60;
+          timerEl.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+          if (timeLeft <= 5) timerEl.className = 'freetalk-timer danger';
+          else if (timeLeft <= 10) timerEl.className = 'freetalk-timer warning';
+        }
+        if (freeTalkSeconds >= 30) {
+          stopFreeTalk();
+          const words = freeTalkTranscript.trim().split(/\s+/).filter(w => w.length > 0);
+          const xpEarned = Math.max(0, Math.round(words.length / 5) * 5);
+          if (xpEarned > 0) addXp(xpEarned);
+          showToast(`Bebas bicara selesai! +${xpEarned} XP`, 'success');
+        }
+        // Re-render periodically to update stats
+        if (freeTalkSeconds % 2 === 0) {
+          renderFreeTalk(document.getElementById('speakingModeContent'));
+        }
+      }, 1000);
+    };
+
+    window.stopFreeTalk = function() {
+      isRecording = false;
+      if (freeTalkTimer) { clearInterval(freeTalkTimer); freeTalkTimer = null; }
+      stopSpeechRecognition();
+      renderFreeTalk(document.getElementById('speakingModeContent'));
+    };
+
+    window.resetFreeTalk = function() {
+      freeTalkSeconds = 0;
+      freeTalkTranscript = '';
+      isRecording = false;
+      if (freeTalkTimer) { clearInterval(freeTalkTimer); freeTalkTimer = null; }
+      renderSpeaking(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    // ── Conversation Simulator ──
+    function renderConversation(container, chScripts) {
+      // Build conversation pairs from chapter scripts
+      const pairs = [];
+      for (let i = 0; i < chScripts.length - 1; i += 2) {
+        pairs.push({
+          their: chScripts[i],
+          your: chScripts[i + 1]
+        });
+      }
+      if (pairs.length === 0 && chScripts.length > 0) {
+        pairs.push({
+          their: chScripts[0],
+          your: chScripts.length > 1 ? chScripts[1] : chScripts[0]
+        });
+      }
+
+      if (convIndex >= pairs.length) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="results-card">
+              <div style="font-size:48px;margin-bottom:16px;">🎉</div>
+              <div class="results-score">Selesai!</div>
+              <div class="results-label">Simulasi Percakapan — ${currentChapter}</div>
+              <div class="results-actions">
+                <button class="results-btn primary" onclick="retryConversation()">🔄 Ulangi</button>
+                <button class="results-btn" onclick="nextMode()">➡️ Mode Lain</button>
+              </div>
+            </div>
+          </div>`;
+        return;
+      }
+
+      const pair = pairs[convIndex];
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🤝 Simulasi Percakapan</div>
+            <div class="quiz-progress-text">${convIndex + 1} / ${pairs.length}</div>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${(convIndex / pairs.length) * 100}%"></div></div>
+          
+          <div style="font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:16px;">Percakapan dengan ${pair.their.role || 'Partner'}</div>
+          
+          <div class="conv-message their">
+            <div class="conv-avatar them">${(pair.their.role || 'P')[0].toUpperCase()}</div>
+            <div>
+              <div class="conv-label">${(pair.their.role || 'Partner').toUpperCase()}</div>
+              <div class="conv-bubble">${pair.their.en}</div>
+              <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">${pair.their.translation}</div>
+            </div>
+          </div>
+
+          <div id="convUserMessage" style="min-height:48px;"></div>
+          <div id="convInterim" class="interim-text"></div>
+          
+          <div class="conv-response-area">
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">🎤 Ucapkan responsmu:</div>
+            <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;font-style:italic;">
+              Contoh: "${pair.your.en}"
+            </div>
+            <div class="recording-area">
+              <button class="mic-btn" id="convMicBtn" onclick="toggleConvRecording('${pair.your.en.replace(/'/g, "\\'")}')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              </button>
+              <div class="waveform" id="convWaveform" style="display:none;">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    window.toggleConvRecording = function(expectedText) {
+      if (isRecording) {
+        stopSpeechRecognition();
+      } else {
+        startSpeechRecognition((transcript) => {
+          const result = compareWords(expectedText, transcript);
+          const userMsgEl = document.getElementById('convUserMessage');
+          if (userMsgEl) {
+            let wordHtml = '';
+            result.details.forEach(d => {
+              const cls = d.status === 'match' ? 'match' : d.status === 'mismatch' ? 'mismatch' : 'unspoken';
+              wordHtml += `<span class="word ${cls}">${d.word}</span>`;
+            });
+            userMsgEl.innerHTML = `
+              <div class="conv-message your" style="display:flex;justify-content:flex-end;gap:12px;align-items:flex-start;">
+                <div>
+                  <div class="conv-label" style="text-align:right;">KAMU</div>
+                  <div class="conv-bubble">${wordHtml}</div>
+                  <div style="font-size:12px;color:var(--text-muted);margin-top:4px;text-align:right;">
+                    Skor: <span style="color:${result.score >= 70 ? 'var(--success)' : 'var(--warning)'}">${result.score}%</span>
+                  </div>
+                </div>
+                <div class="conv-avatar you">K</div>
+              </div>`;
+          }
+          addXp(15);
+          showToast(`+15 XP! Skor: ${result.score}%`, result.score >= 70 ? 'success' : 'warning');
+          convIndex++;
+          setTimeout(() => {
+            renderSpeakingModeContent(scripts.filter(s => s.chapter === currentChapter));
+          }, 3000);
+        });
+      }
+    };
+
+    window.retryConversation = function() {
+      convIndex = 0;
+      renderSpeaking(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    window.retrySpeaking = function() {
+      speakingLineIndex = 0;
+      speakingResults = [];
+      renderSpeaking(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    // ── Shared Speech Recognition Helpers ──
+    function startSpeechRecognition(onResult) {
+      if (isRecording) stopSpeechRecognition();
+      isRecording = true;
+
+      speechRecognition = new SpeechRecognition();
+      speechRecognition.continuous = true;
+      speechRecognition.interimResults = true;
+      speechRecognition.lang = 'en-US';
+
+      speechRecognition.onresult = (event) => {
+        let finalTranscript = '';
+        let interimTranscript = '';
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript;
+          if (event.results[i].isFinal) {
+            finalTranscript += transcript;
+          } else {
+            interimTranscript += transcript;
+          }
+        }
+        // Update interim display
+        const interimEl = document.getElementById('speakingInterim') || 
+                          document.getElementById('freetalkInterim') || 
+                          document.getElementById('convInterim');
+        if (interimEl && interimTranscript) interimEl.textContent = interimTranscript;
+        
+        if (finalTranscript) {
+          onResult(finalTranscript.trim());
+        }
+      };
+
+      speechRecognition.onerror = (e) => {
+        if (e.error === 'no-speech') return;
+        console.warn('Speech recognition error:', e.error);
+        if (e.error === 'not-allowed') {
+          showToast('Izinkan akses mikrofon di browser', 'warning');
+        }
+      };
+
+      speechRecognition.onend = () => {
+        if (isRecording) {
+          try { speechRecognition.start(); } catch(e) {}
+        }
+      };
+
+      try {
+        speechRecognition.start();
+        updateMicUI(true);
+      } catch(e) {
+        showToast('Gagal memulai speech recognition', 'warning');
+        isRecording = false;
+      }
+    }
+
+    function stopSpeechRecognition() {
+      isRecording = false;
+      if (speechRecognition) {
+        try { speechRecognition.stop(); } catch(e) {}
+        speechRecognition = null;
+      }
+      updateMicUI(false);
+    }
+
+    function updateMicUI(recording) {
+      document.querySelectorAll('.mic-btn').forEach(btn => {
+        if (recording) btn.classList.add('recording');
+        else btn.classList.remove('recording');
+      });
+      document.querySelectorAll('.waveform').forEach(wf => {
+        wf.style.display = recording ? '' : 'none';
+      });
+    }
+
+    function compareWords(expected, spoken) {
+      const expectedWords = expected.toLowerCase().replace(/[^\w\s]/g, '').split(/\s+/).filter(w => w);
+      const spokenWords = spoken.toLowerCase().replace(/[^\w\s]/g, '').split(/\s+/).filter(w => w);
+      
+      const details = [];
+      let matchCount = 0;
+      
+      // Simple word-by-word comparison using LCS-like approach
+      const maxLen = Math.max(expectedWords.length, spokenWords.length);
+      const spokenSet = new Set(spokenWords);
+      
+      for (let i = 0; i < expectedWords.length; i++) {
+        const expWord = expectedWords[i];
+        if (spokenSet.has(expWord) || spokenWords[i] === expWord) {
+          details.push({ word: expWord, status: 'match' });
+          matchCount++;
+        } else {
+          // Check if close enough (fuzzy)
+          const spokenAtPos = spokenWords[i] || '';
+          if (spokenAtPos && levenshtein(expWord, spokenAtPos) <= Math.max(1, Math.floor(expWord.length * 0.3))) {
+            details.push({ word: expWord, status: 'match' });
+            matchCount++;
+          } else {
+            details.push({ word: expWord, status: 'mismatch' });
+          }
+        }
+      }
+      
+      const score = expectedWords.length > 0 ? Math.round((matchCount / expectedWords.length) * 100) : 0;
+      return { score, details, matchCount, total: expectedWords.length };
+    }
+
+    function levenshtein(a, b) {
+      const matrix = [];
+      for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+      for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+      for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+          matrix[i][j] = b.charAt(i - 1) === a.charAt(j - 1)
+            ? matrix[i - 1][j - 1]
+            : Math.min(matrix[i - 1][j - 1] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j] + 1);
+        }
+      }
+      return matrix[b.length][a.length];
+    }
+
+    // ── AUDIO ──
+    window.playAudio = function(src, btn) {
+      if (window._audioEl) { window._audioEl.pause(); }
+      const audio = new Audio(src);
+      window._audioEl = audio;
+      btn.classList.add('playing');
+      audio.onended = () => { btn.classList.remove('playing'); };
+      audio.onerror = () => {
+        btn.classList.remove('playing');
+        showToast('Audio tidak tersedia', 'warning');
+      };
+      audio.play().catch(() => {
+        btn.classList.remove('playing');
+        showToast('Gagal memutar audio', 'warning');
+      });
+    };
+
+    // ── CHAPTER PROGRESS ──
+    function updateChapterProgress() {
+      const p = getProgress();
+      // Simple: increment completed count
+      if (currentChapter) {
+        p[currentChapter + '_completed'] = (p[currentChapter + '_completed'] || 0) + 1;
+        saveProgress(p);
+      }
+    }
+
+    // ── RESULTS ──
+    function renderResults(mode, qs) {
+      const pct = Math.round((qs.score / qs.total) * 100);
+      const container = document.getElementById(mode === 'vocabulary' ? 'vocabularyContent' :
+                         mode === 'listening' ? 'listeningContent' :
+                         mode === 'reading' ? 'readingContent' : 'fillblankContent');
+
+      const modeNames = { listening: '🎧 Mendengarkan', reading: '📖 Membaca', vocabulary: '📚 Kosakata', fillblank: '✏️ Isian Kosong' };
+      const modeKey = { listening: 'listening', reading: 'reading', vocabulary: 'vocabulary', fillblank: 'fillblank' };
+
+      container.innerHTML = `
+        <div class="results-card">
+          <div style="font-size:48px;margin-bottom:16px;">${pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '💪'}</div>
+          <div class="results-score">${pct}%</div>
+          <div class="results-label">${modeNames[mode]} — ${currentChapter}</div>
+          <div class="results-stats">
+            <div class="result-stat">
+              <div class="result-stat-value green">${qs.score}</div>
+              <div class="result-stat-label">Benar</div>
+            </div>
+            <div class="result-stat">
+              <div class="result-stat-value red">${qs.total - qs.score}</div>
+              <div class="result-stat-label">Salah</div>
+            </div>
+            <div class="result-stat">
+              <div class="result-stat-value yellow">+${qs.score * 10}</div>
+              <div class="result-stat-label">XP</div>
+            </div>
+          </div>
+          <div class="results-actions">
+            <button class="results-btn primary" onclick="retryQuiz('${mode}')">🔄 Ulangi</button>
+            <button class="results-btn" onclick="nextMode()">➡️ Mode Lain</button>
+          </div>
+        </div>
+      `;
+
+      // Add to leaderboard
+      const lb = getLeaderboard();
+      lb.push({
+        mode: modeNames[mode],
+        chapter: currentChapter,
+        score: pct,
+        xp: qs.score * 10,
+        date: new Date().toLocaleDateString('id-ID')
+      });
+      lb.sort((a, b) => b.score - a.score || b.xp - a.xp);
+      saveLeaderboard(lb.slice(0, 10));
+      renderLeaderboard();
+    }
+
+    window.retryQuiz = function(mode) {
+      quizState[mode] = null;
+      renderCurrentTab();
+    };
+
+    window.nextMode = function() {
+      const tabs = ['listening', 'reading', 'vocabulary', 'fillblank', 'speaking'];
+      const idx = tabs.indexOf(currentTab);
+      const next = tabs[(idx + 1) % tabs.length];
+      switchTab(next);
+    };
+
+    // ── LEADERBOARD ──
+    function renderLeaderboard() {
+      const lb = getLeaderboard();
+      const list = document.getElementById('leaderboardList');
+      if (lb.length === 0) {
+        list.innerHTML = '<div class="lb-empty">Belum ada skor. Mulai kuis untuk mengisi papan skor!</div>';
+        return;
+      }
+      list.innerHTML = lb.map((item, i) => {
+        const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+        return `
+          <li class="leaderboard-item">
+            <div class="lb-rank ${rankClass}">${i + 1}</div>
+            <div class="lb-name">${item.mode}</div>
+            <div class="lb-score">${item.score}%</div>
+            <div class="lb-date">${item.date}</div>
+          </li>
+        `;
+      }).join('');
+    }
+
+    // ── SPEAKING MODULE (Enhanced) ──
+    let currentSpeakingMode = 'recognition'; // recognition, pronunciation, freetalk, conversation
+    let recognition = null;
+    let mediaRecorder = null;
+    let audioChunks = [];
+    // isRecording, speechSupported already declared above
+
+    function renderSpeaking(chScripts) {
+      const container = document.getElementById('speakingContent');
+      if (!speechSupported) {
+        container.innerHTML = `
+          <div class="quiz-card">
+            <div class="no-support-msg">
+              <div class="icon">🎤</div>
+              <h3 style="margin-bottom:8px;">Speech Recognition Tidak Didukung</h3>
+              <p>Browser kamu tidak mendukung Web Speech API.<br>Coba gunakan <strong>Google Chrome</strong> atau <strong>Edge</strong> di desktop/mobile.</p>
+            </div>
+          </div>`;
+        return;
+      }
+
+      if (!quizState.speaking) {
+        quizState.speaking = { mode: currentSpeakingMode, currentLine: 0, scores: [], completed: false };
+      }
+      const qs = quizState.speaking;
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🎤 Berlatih Berbicara</div>
+            <div class="quiz-subtitle" style="font-size:12px;color:var(--text-muted);">Chapter: ${currentChapter}</div>
+          </div>
+          <div class="speaking-sub-modes">
+            <button class="speaking-mode-btn ${qs.mode==='recognition'?'active':''}" onclick="switchSpeakingMode('recognition')">
+              <div class="sm-icon">🎯</div>
+              <div class="sm-title">Speech Recognition</div>
+              <div class="sm-desc">Ucapkan kalimat & dapatkan skor</div>
+            </button>
+            <button class="speaking-mode-btn ${qs.mode==='pronunciation'?'active':''}" onclick="switchSpeakingMode('pronunciation')">
+              <div class="sm-icon">🗣️</div>
+              <div class="sm-title">Pronunciation Practice</div>
+              <div class="sm-desc">Latihan pengucapan per kata</div>
+            </button>
+            <button class="speaking-mode-btn ${qs.mode==='freetalk'?'active':''}" onclick="switchSpeakingMode('freetalk')">
+              <div class="sm-icon">💬</div>
+              <div class="sm-title">Free Talk</div>
+              <div class="sm-desc">Bebas bicara 30 detik</div>
+            </button>
+            <button class="speaking-mode-btn ${qs.mode==='conversation'?'active':''}" onclick="switchSpeakingMode('conversation')">
+              <div class="sm-icon">🤝</div>
+              <div class="sm-title">Conversation</div>
+              <div class="sm-desc">Praktik dialog nyata</div>
+            </button>
+          </div>
+        </div>
+        <div id="speakingModeContent"></div>
+      `;
+
+      renderSpeakingMode(chScripts, qs.mode);
+    }
+
+    window.switchSpeakingMode = function(mode) {
+      currentSpeakingMode = mode;
+      const qs = quizState.speaking;
+      if (qs) qs.mode = mode;
+      renderSpeaking(scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    function renderSpeakingMode(chScripts, mode) {
+      const mc = document.getElementById('speakingModeContent');
+      if (!mc) return;
+
+      switch(mode) {
+        case 'recognition': renderRecognitionMode(mc, chScripts); break;
+        case 'pronunciation': renderPronunciationMode(mc, chScripts); break;
+        case 'freetalk': renderFreeTalkMode(mc); break;
+        case 'conversation': renderConversationMode(mc, chScripts); break;
+      }
+    }
+
+    // ── SPEECH RECOGNITION MODE ──
+    function renderRecognitionMode(container, chScripts) {
+      const qs = quizState.speaking;
+      const lines = chScripts.filter(s => s.type === 'conversation' || s.type === 'narration');
+      if (lines.length === 0) {
+        container.innerHTML = '<div class="quiz-card"><div class="empty-state"><div class="empty-state-icon">📝</div><div class="empty-state-text">Tidak ada dialog di chapter ini</div></div></div>';
+        return;
+      }
+
+      const current = lines[qs.currentLine % lines.length];
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🎯 Speech Recognition</div>
+            <div style="font-size:12px;color:var(--text-muted);">Baris ${qs.currentLine + 1} / ${lines.length}</div>
+          </div>
+          <div class="script-line-card">
+            <div class="script-id">${current.role || 'Script'} #${current.num_id}</div>
+            <div class="script-en">${current.en}</div>
+            <div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">${current.translation || ''}</div>
+            <div style="margin-top:10px;">
+              <button class="script-audio-btn" onclick="window.playAudio('/audio/${current.num_id}.mp3', this)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Putar Audio
+              </button>
+            </div>
+          </div>
+          <div class="recording-area">
+            <button class="mic-btn" id="recogMicBtn" onclick="startRecognition('${escapeHtml(current.en)}')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/>
+                <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="23"/>
+                <line x1="8" y1="23" x2="16" y2="23"/>
+              </svg>
+            </button>
+            <div class="waveform" id="recogWaveform">
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+          </div>
+          <div class="interim-text" id="recogInterim">Tekan tombol mic dan mulai berbicara...</div>
+          <div id="recogResult"></div>
+          <div style="text-align:center;margin-top:16px;">
+            <button class="results-btn" onclick="nextRecognitionLine()">Lanjut →</button>
+          </div>
+        </div>
+      `;
+    }
+
+    window.startRecognition = function(expectedText) {
+      if (isRecording) { stopRecognition(); return; }
+      if (!speechSupported) return;
+
+      const micBtn = document.getElementById('recogMicBtn');
+      const waveform = document.getElementById('recogWaveform');
+      const interim = document.getElementById('recogInterim');
+      const result = document.getElementById('recogResult');
+
+      audioChunks = [];
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = true;
+      recognition.continuous = false;
+
+      // Also record audio for playback
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = e => { if (e.data.size > 0) audioChunks.push(e.data); };
+        mediaRecorder.onstop = () => {
+          stream.getTracks().forEach(t => t.stop());
+        };
+        mediaRecorder.start();
+
+        recognition.onresult = (event) => {
+          let interimText = '';
+          let finalText = '';
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            const transcript = event.results[i][0].transcript;
+            if (event.results[i].isFinal) {
+              finalText += transcript;
+            } else {
+              interimText += transcript;
+            }
+          }
+          if (interim) interim.textContent = interimText || 'Mendengarkan...';
+          if (finalText) {
+            const score = compareTexts(expectedText, finalText);
+            displayRecognitionResult(expectedText, finalText, score, result);
+            addXp(15);
+          }
+        };
+
+        recognition.onerror = (event) => {
+          console.error('Speech error:', event.error);
+          interim.textContent = 'Error: ' + event.error;
+          stopRecognitionUI(micBtn, waveform);
+        };
+
+        recognition.onend = () => {
+          if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
+          stopRecognitionUI(micBtn, waveform);
+        };
+
+        recognition.start();
+        isRecording = true;
+        micBtn.classList.add('recording');
+        waveform.classList.add('active');
+        interim.textContent = 'Mendengarkan...';
+        result.innerHTML = '';
+      }).catch(err => {
+        interim.textContent = 'Izin mikrofon ditolak. Berikan izin akses mikrofon.';
+      });
+    };
+
+    function stopRecognition() {
+      if (recognition) recognition.stop();
+      isRecording = false;
+    }
+
+    function stopRecognitionUI(micBtn, waveform) {
+      isRecording = false;
+      micBtn.classList.remove('recording');
+      waveform.classList.remove('active');
+    }
+
+    function compareTexts(expected, spoken) {
+      const normalize = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim();
+      const expectedWords = normalize(expected).split(/\s+/);
+      const spokenWords = normalize(spoken).split(/\s+/);
+      let matches = 0;
+      spokenWords.forEach(w => { if (expectedWords.includes(w)) matches++; });
+      const total = Math.max(expectedWords.length, 1);
+      return Math.round((matches / total) * 100);
+    }
+
+    function displayRecognitionResult(expected, spoken, score, container) {
+      const expectedWords = expected.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(/\s+/);
+      const spokenWords = spoken.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(/\s+/);
+
+      const scoreColor = score >= 90 ? 'var(--success)' : score >= 70 ? 'var(--accent-3)' : score >= 50 ? 'var(--warning)' : 'var(--danger)';
+      const scoreEmoji = score >= 90 ? '🌟 Excellent!' : score >= 70 ? '👍 Good!' : score >= 50 ? '📝 Keep practicing' : '💪 Try again';
+
+      // Word-level highlights
+      const spokenHighlighted = spokenWords.map(w => {
+        const match = expectedWords.includes(w);
+        return `<span class="word ${match ? 'match' : 'mismatch'}">${w}</span>`;
+      }).join(' ');
+
+      // Score ring
+      const circumference = 2 * Math.PI * 52;
+      const offset = circumference - (score / 100) * circumference;
+
+      container.innerHTML = `
+        <div style="margin-top:20px;">
+          <div class="score-ring">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52" stroke-dasharray="${circumference}" stroke-dashoffset="0"/>
+              <circle class="ring-fill" cx="60" cy="60" r="52" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" style="stroke:${scoreColor}"/>
+            </svg>
+            <div class="ring-text" style="color:${scoreColor}">${score}%</div>
+          </div>
+          <div style="text-align:center;font-size:16px;font-weight:600;margin-bottom:16px;">${scoreEmoji}</div>
+          <div style="margin-bottom:12px;">
+            <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;margin-bottom:4px;">Yang kamu ucapkan:</div>
+            <div class="word-display">${spokenHighlighted}</div>
+          </div>
+          <div style="text-align:center;">
+            <button class="play-again-btn" onclick="playRecordedAudio()">🔊 Putar Rekaman</button>
+          </div>
+        </div>
+      `;
+    }
+
+    window.playRecordedAudio = function() {
+      if (audioChunks.length === 0) return;
+      const blob = new Blob(audioChunks, { type: 'audio/webm' });
+      const url = URL.createObjectURL(blob);
+      const audio = new Audio(url);
+      audio.play().catch(() => showToast('Gagal memutar rekaman', 'warning'));
+    };
+
+    window.nextRecognitionLine = function() {
+      const qs = quizState.speaking;
+      qs.currentLine++;
+      const chScripts = scripts.filter(s => s.chapter === currentChapter);
+      const lines = chScripts.filter(s => s.type === 'conversation' || s.type === 'narration');
+      if (qs.currentLine >= lines.length) {
+        qs.currentLine = 0;
+        qs.completed = true;
+      }
+      renderSpeakingMode(chScripts, 'recognition');
+    };
+
+    // ── PRONUNCIATION MODE ──
+    function renderPronunciationMode(container, chScripts) {
+      const qs = quizState.speaking;
+      if (!qs.pronScores) qs.pronScores = {};
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🗣️ Pronunciation Practice</div>
+          </div>
+          <p style="font-size:13px;color:var(--text-secondary);margin-bottom:16px;">Klik baris untuk memilih, lalu rekam pengucapanmu. Bandingkan dengan audio referensi.</p>
+          <div id="pronLines"></div>
+          <div id="pronResult" style="margin-top:16px;"></div>
+        </div>
+      `;
+
+      const linesContainer = document.getElementById('pronLines');
+      chScripts.forEach((s, i) => {
+        const score = qs.pronScores[s.num_id];
+        const scoreHtml = score !== undefined ? `<span style="font-size:11px;color:${score>=70?'var(--success)':'var(--warning)'};margin-left:8px;">${score}%</span>` : '';
+        linesContainer.innerHTML += `
+          <div class="script-line-card" id="pronLine${i}">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="script-en" style="flex:1;">${s.en}</div>
+              <button class="script-audio-btn" onclick="window.playAudio('/audio/${s.num_id}.mp3', this)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Dengar
+              </button>
+              <button class="script-audio-btn" onclick="startPronunciation(${i}, '${s.num_id}', '${escapeHtml(s.en)}')" style="color:var(--danger);border-color:var(--danger);">
+                🎤 Rekam
+              </button>
+              ${scoreHtml}
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    window.startPronunciation = function(lineIndex, numId, expectedText) {
+      if (isRecording) { stopRecognition(); return; }
+      if (!speechSupported) return;
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.continuous = false;
+
+      audioChunks = [];
+
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = e => { if (e.data.size > 0) audioChunks.push(e.data); };
+        mediaRecorder.onstop = () => stream.getTracks().forEach(t => t.stop());
+        mediaRecorder.start();
+
+        recognition.onresult = (event) => {
+          const spoken = event.results[0][0].transcript;
+          const score = compareTexts(expectedText, spoken);
+          quizState.speaking.pronScores[numId] = score;
+          addXp(15);
+
+          const resultContainer = document.getElementById('pronResult');
+          const expectedWords = expectedText.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(/\s+/);
+          const spokenWords = spoken.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(/\s+/);
+
+          const spokenHtml = spokenWords.map(w => {
+            const match = expectedWords.includes(w);
+            return `<span class="word ${match ? 'match' : 'mismatch'}">${w}</span>`;
+          }).join(' ');
+
+          resultContainer.innerHTML = `
+            <div class="script-line-card" style="border-color:${score>=70?'var(--success)':'var(--warning)'}">
+              <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Kamu mengucapkan:</div>
+              <div class="word-display">${spokenHtml}</div>
+              <div style="font-size:14px;font-weight:700;color:${score>=70?'var(--success)':'var(--warning)'};margin-top:8px;">Skor: ${score}% ${score>=90?'🌟':score>=70?'👍':'📝'}</div>
+              <button class="play-again-btn" onclick="playRecordedAudio()" style="margin-top:8px;">🔊 Putar Rekaman</button>
+            </div>
+          `;
+          renderPronunciationMode(document.getElementById('speakingModeContent'), scripts.filter(s => s.chapter === currentChapter));
+        };
+
+        recognition.onerror = (event) => {
+          console.error('Pronunciation error:', event.error);
+          showToast('Error: ' + event.error, 'warning');
+        };
+
+        recognition.onend = () => {
+          if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
+        };
+
+        recognition.start();
+        isRecording = true;
+        showToast('🎤 Mendengarkan... ucapkan kalimat!', 'info');
+      }).catch(() => showToast('Izin mikrofon ditolak', 'warning'));
+    };
+
+    // ── FREE TALK MODE ──
+    const freeTalkTopics = [
+      "Introduce yourself as a software developer",
+      "Describe your current project to a colleague",
+      "Explain a technical concept to a non-technical person",
+      "Talk about your daily work routine",
+      "Describe a bug you recently fixed",
+      "Explain why you chose software engineering",
+      "Talk about your favorite programming language",
+      "Describe a feature you want to build"
+    ];
+
+    function renderFreeTalkMode(container) {
+      const topic = freeTalkTopics[Math.floor(Math.random() * freeTalkTopics.length)];
+      const qs = quizState.speaking;
+      if (!qs.freeTalk) qs.freeTalk = { topic, recording: false, done: false };
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">💬 Free Talk</div>
+          </div>
+          <div class="freetalk-topic">
+            <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;">Topik Hari Ini</div>
+            <div style="font-size:16px;font-weight:600;color:var(--accent-3);margin-top:8px;">${topic}</div>
+          </div>
+          <div class="freetalk-timer" id="freetalkTimer">30</div>
+          <div class="recording-area">
+            <button class="mic-btn" id="freetalkMicBtn" onclick="startFreeTalk()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/>
+                <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="23"/>
+                <line x1="8" y1="23" x2="16" y2="23"/>
+              </svg>
+            </button>
+            <div class="waveform" id="ftWaveform">
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+          </div>
+          <div class="interim-text" id="ftInterim">Tekan mic dan berbicara selama 30 detik</div>
+          <div id="ftResult"></div>
+          <div style="text-align:center;margin-top:16px;">
+            <button class="results-btn" onclick="newFreeTalkTopic()">🔄 Topik Baru</button>
+          </div>
+        </div>
+      `;
+    }
+
+    window.startFreeTalk = function() {
+      if (isRecording) { stopFreeTalk(); return; }
+      if (!speechSupported) return;
+
+      const micBtn = document.getElementById('freetalkMicBtn');
+      const waveform = document.getElementById('ftWaveform');
+      const timerEl = document.getElementById('freetalkTimer');
+      const interim = document.getElementById('ftInterim');
+
+      audioChunks = [];
+      let allTranscript = '';
+      let timeLeft = 30;
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = true;
+      recognition.continuous = true;
+
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = e => { if (e.data.size > 0) audioChunks.push(e.data); };
+        mediaRecorder.onstop = () => stream.getTracks().forEach(t => t.stop());
+        mediaRecorder.start();
+
+        recognition.onresult = (event) => {
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            if (event.results[i].isFinal) {
+              allTranscript += event.results[i][0].transcript + ' ';
+            }
+          }
+          interim.textContent = allTranscript || 'Mendengarkan...';
+        };
+
+        recognition.onerror = (event) => {
+          console.error('FreeTalk error:', event.error);
+          stopFreeTalkUI(micBtn, waveform);
+        };
+
+        recognition.onend = () => {
+          // Restart if still in time
+          if (isRecording && timeLeft > 0) {
+            try { recognition.start(); } catch(e) {}
+          }
+        };
+
+        recognition.start();
+        isRecording = true;
+        micBtn.classList.add('recording');
+        waveform.classList.add('active');
+        interim.textContent = 'Mendengarkan...';
+
+        const timer = setInterval(() => {
+          timeLeft--;
+          timerEl.textContent = timeLeft;
+          if (timeLeft <= 10) timerEl.classList.add('warning');
+          if (timeLeft <= 5) { timerEl.classList.remove('warning'); timerEl.classList.add('danger'); }
+          if (timeLeft <= 0) {
+            clearInterval(timer);
+            stopFreeTalk();
+            showFreeTalkResults(allTranscript);
+          }
+        }, 1000);
+
+        window._ftTimer = timer;
+      }).catch(() => showToast('Izin mikrofon ditolak', 'warning'));
+    };
+
+    function stopFreeTalk() {
+      if (recognition) try { recognition.stop(); } catch(e) {}
+      if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
+      const micBtn = document.getElementById('freetalkMicBtn');
+      const waveform = document.getElementById('ftWaveform');
+      stopFreeTalkUI(micBtn, waveform);
+    }
+
+    function stopFreeTalkUI(micBtn, waveform) {
+      isRecording = false;
+      if (micBtn) micBtn.classList.remove('recording');
+      if (waveform) waveform.classList.remove('active');
+    }
+
+    function showFreeTalkResults(transcript) {
+      const words = transcript.trim().split(/\s+/).filter(w => w.length > 0);
+      const wordCount = words.length;
+      const wpm = Math.round(wordCount / 0.5); // 30 seconds = 0.5 min
+      const uniqueWords = new Set(words.map(w => w.toLowerCase().replace(/[^a-z]/g, ''))).size;
+
+      addXp(15);
+
+      const resultEl = document.getElementById('ftResult');
+      resultEl.innerHTML = `
+        <div style="margin-top:20px;">
+          <div class="freetalk-stats">
+            <div class="freetalk-stat">
+              <div class="freetalk-stat-value">${wordCount}</div>
+              <div style="font-size:10px;color:var(--text-muted);">Total Kata</div>
+            </div>
+            <div class="freetalk-stat">
+              <div class="freetalk-stat-value">${wpm}</div>
+              <div style="font-size:10px;color:var(--text-muted);">Kata/menit</div>
+            </div>
+            <div class="freetalk-stat">
+              <div class="freetalk-stat-value">${uniqueWords}</div>
+              <div style="font-size:10px;color:var(--text-muted);">Kata Unik</div>
+            </div>
+          </div>
+          <div style="background:var(--bg-tertiary);border-radius:var(--radius-sm);padding:16px;margin-top:12px;">
+            <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px;">Transkrip:</div>
+            <div style="font-size:14px;color:var(--text-primary);line-height:1.6;">${transcript.trim() || '<em style="color:var(--text-muted)">Tidak ada ucapan terdeteksi</em>'}</div>
+          </div>
+          <div style="text-align:center;margin-top:12px;">
+            <button class="play-again-btn" onclick="playRecordedAudio()">🔊 Putar Rekaman</button>
+          </div>
+        </div>
+      `;
+    }
+
+    window.newFreeTalkTopic = function() {
+      quizState.speaking.freeTalk = null;
+      renderFreeTalkMode(document.getElementById('speakingModeContent'));
+    };
+
+    // ── CONVERSATION MODE ──
+    const conversations = [
+      {
+        title: "Job Interview",
+        lines: [
+          { speaker: "interviewer", text: "Tell me about yourself and your experience as a developer." },
+          { speaker: "user", text: "I'm a software developer with experience in web development." },
+          { speaker: "interviewer", text: "What programming languages are you proficient in?" },
+          { speaker: "user", text: "I'm proficient in JavaScript, Python, and TypeScript." },
+          { speaker: "interviewer", text: "Can you describe a challenging project you worked on?" },
+          { speaker: "user", text: "I worked on a real-time collaboration tool for remote teams." }
+        ]
+      },
+      {
+        title: "Client Meeting",
+        lines: [
+          { speaker: "client", text: "We need to update our website with new features." },
+          { speaker: "user", text: "Sure, can you tell me which features you'd like to add?" },
+          { speaker: "client", text: "We want a user dashboard and notification system." },
+          { speaker: "user", text: "I can build both. The dashboard will show key metrics." },
+          { speaker: "client", text: "How long will it take to complete?" },
+          { speaker: "user", text: "I estimate about two weeks for the first version." }
+        ]
+      },
+      {
+        title: "Standup Meeting",
+        lines: [
+          { speaker: "manager", text: "What did you accomplish yesterday?" },
+          { speaker: "user", text: "I finished the authentication module and fixed two bugs." },
+          { speaker: "manager", text: "What are you working on today?" },
+          { speaker: "user", text: "Today I'll implement the user profile feature." },
+          { speaker: "manager", text: "Are there any blockers?" },
+          { speaker: "user", text: "No blockers. Everything is on track for the sprint." }
+        ]
+      }
+    ];
+
+    function renderConversationMode(container, chScripts) {
+      const qs = quizState.speaking;
+      if (!qs.conv) qs.conv = { convIndex: 0, lineIndex: 0, recording: false };
+
+      const conv = conversations[qs.conv.convIndex % conversations.length];
+      const currentLine = conv.lines[qs.conv.lineIndex];
+
+      let dialogueHtml = '';
+      conv.lines.forEach((line, i) => {
+        if (i > qs.conv.lineIndex) return; // Only show completed lines
+        const isUser = line.speaker === 'user';
+        dialogueHtml += `
+          <div class="conv-participant ${isUser ? 'user' : ''}">
+            <div class="conv-avatar ${isUser ? 'user-avatar' : 'system'}">${isUser ? '👤' : '💼'}</div>
+            <div class="conv-bubble">${line.text}</div>
+          </div>
+        `;
+      });
+
+      const isWaitingForUser = currentLine && currentLine.speaker === 'user' && qs.conv.lineIndex < conv.lines.length;
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <div class="quiz-title">🤝 ${conv.title}</div>
+            <div style="font-size:12px;color:var(--text-muted);">Baris ${qs.conv.lineIndex + 1} / ${conv.lines.length}</div>
+          </div>
+          <div id="convDialogue" style="margin-bottom:16px;">${dialogueHtml}</div>
+          ${isWaitingForUser ? `
+            <div style="font-size:13px;color:var(--text-secondary);margin-bottom:8px;">Giliranmu berbicara:</div>
+            <div style="background:var(--bg-tertiary);padding:12px 16px;border-radius:var(--radius-sm);border-left:3px solid var(--accent-1);margin-bottom:16px;font-size:13px;color:var(--text-muted);">
+              💡 Petunjuk: ${currentLine.text}
+            </div>
+            <div class="recording-area">
+              <button class="mic-btn" id="convMicBtn" onclick="startConvRecording('${escapeHtml(currentLine.text)}')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/>
+                  <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                  <line x1="12" y1="19" x2="12" y2="23"/>
+                  <line x1="8" y1="23" x2="16" y2="23"/>
+                </svg>
+              </button>
+              <div class="waveform" id="convWaveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="interim-text" id="convInterim">Tekan mic dan ucapkan responsmu</div>
+            <div id="convResult"></div>
+          ` : `
+            ${qs.conv.lineIndex >= conv.lines.length ? `
+              <div style="text-align:center;padding:24px;">
+                <div style="font-size:32px;margin-bottom:8px;">🎉</div>
+                <div style="font-size:16px;font-weight:600;">Dialog Selesai!</div>
+                <button class="results-btn primary" onclick="nextConversation()" style="margin-top:12px;">Dialog Berikutnya →</button>
+              </div>
+            ` : `
+              <div style="text-align:center;padding:16px;">
+                <div style="font-size:13px;color:var(--text-muted);">Menunggu respons lawan bicara...</div>
+                <button class="results-btn" onclick="showNextConvLine()" style="margin-top:8px;">Tampilkan Respon Lawan →</button>
+              </div>
+            `}
+          `}
+        </div>
+      `;
+    }
+
+    window.showNextConvLine = function() {
+      const qs = quizState.speaking;
+      qs.conv.lineIndex++;
+      renderConversationMode(document.getElementById('speakingModeContent'), scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    window.startConvRecording = function(expectedText) {
+      if (isRecording) { stopRecognition(); return; }
+      if (!speechSupported) return;
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = true;
+      recognition.continuous = false;
+
+      audioChunks = [];
+
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = e => { if (e.data.size > 0) audioChunks.push(e.data); };
+        mediaRecorder.onstop = () => stream.getTracks().forEach(t => t.stop());
+        mediaRecorder.start();
+
+        recognition.onresult = (event) => {
+          let interimText = '';
+          let finalText = '';
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            if (event.results[i].isFinal) finalText += event.results[i][0].transcript;
+            else interimText += event.results[i][0].transcript;
+          }
+          const interim = document.getElementById('convInterim');
+          if (interim) interim.textContent = interimText || 'Mendengarkan...';
+
+          if (finalText) {
+            const score = compareTexts(expectedText, finalText);
+            addXp(15);
+            const result = document.getElementById('convResult');
+            const expectedWords = expectedText.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(/\s+/);
+            const spokenWords = finalText.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().split(/\s+/);
+            const spokenHtml = spokenWords.map(w => {
+              const match = expectedWords.includes(w);
+              return `<span class="word ${match ? 'match' : 'mismatch'}">${w}</span>`;
+            }).join(' ');
+
+            if (result) result.innerHTML = `
+              <div style="margin-top:12px;">
+                <div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">Yang kamu ucapkan:</div>
+                <div class="word-display">${spokenHtml}</div>
+                <div style="font-size:14px;font-weight:700;color:${score>=70?'var(--success)':'var(--warning)'};">Skor: ${score}% ${score>=90?'🌟':score>=70?'👍':'📝'}</div>
+              </div>
+            `;
+
+            // Auto-advance to show user's response in dialogue
+            setTimeout(() => {
+              const qs = quizState.speaking;
+              qs.conv.lineIndex++;
+              renderConversationMode(document.getElementById('speakingModeContent'), scripts.filter(s => s.chapter === currentChapter));
+            }, 2000);
+          }
+        };
+
+        recognition.onerror = (event) => {
+          console.error('Conv error:', event.error);
+          showToast('Error: ' + event.error, 'warning');
+        };
+
+        recognition.onend = () => {
+          if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
+        };
+
+        recognition.start();
+        isRecording = true;
+        const micBtn = document.getElementById('convMicBtn');
+        const waveform = document.getElementById('convWaveform');
+        if (micBtn) micBtn.classList.add('recording');
+        if (waveform) waveform.classList.add('active');
+      }).catch(() => showToast('Izin mikrofon ditolak', 'warning'));
+    };
+
+    window.nextConversation = function() {
+      const qs = quizState.speaking;
+      qs.conv.convIndex++;
+      qs.conv.lineIndex = 0;
+      renderConversationMode(document.getElementById('speakingModeContent'), scripts.filter(s => s.chapter === currentChapter));
+    };
+
+    // ── UTILITIES ──
+    function escapeHtml(str) {
+      return str.replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // ── INIT ──
+    async function init() {
+      try {
+        const resp = await fetch('/scripts.json');
+        const data = await resp.json();
+        scripts = data.scripts || [];
+      } catch (e) {
+        console.error('Failed to load scripts.json:', e);
+        // Fallback: use embedded minimal data
+        scripts = [];
+        showToast('Gagal memuat data. Pastikan scripts.json tersedia.', 'warning');
+      }
+      renderChapterGrid();
+      updateStats();
+      renderLeaderboard();
+      updateStreak();
+    }
+
+    // Make switchTab global
+    window.switchTab = switchTab;
+
+    init();
+  })();
+  </script>
+  <!-- Credit Footer -->
+  <footer style="text-align:center; padding:20px; font-size:12px; color:var(--text-muted);">
+    Created with ❤️ by Cecep Saeful Azhar Hidaya, ST
+  </footer>
+</body>
+</html>
