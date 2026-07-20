@@ -216,12 +216,12 @@ Nginx (Docker) → Static HTML + JS
 ### On-Page SEO
 ```html
 <!-- Meta tags -->
-<title>English for Software Engineers - Belajar Bahasa Inggris untuk Developer</title>
+<title>English for Remote Worker - Belajar Bahasa Inggris untuk Developer</title>
 <meta name="description" content="Platform belajar bahasa Inggris khusus full-stack developer. Listening, speaking, reading, writing untuk remote work. Gratis!">
 <meta name="keywords" content="english developer, bahasa inggris programmer, remote work english">
 
 <!-- Open Graph -->
-<meta property="og:title" content="English for Software Engineers">
+<meta property="og:title" content="English for Remote Worker">
 <meta property="og:description" content="Master English for interviews, meetings, and remote work">
 <meta property="og:image" content="/og-image.png">
 <meta property="og:url" content="https://english.ypc.my.id">
@@ -231,7 +231,7 @@ Nginx (Docker) → Static HTML + JS
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "English for Software Engineers",
+  "name": "English for Remote Worker",
   "url": "https://english.ypc.my.id",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web",

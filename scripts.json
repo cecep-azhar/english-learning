@@ -1,5 +1,5 @@
 {
-  "title": "English for Software Engineers v3 - Conversation Scripts",
+  "title": "English for Remote Worker v3 - Conversation Scripts",
   "total_items": 120,
   "scripts": [
     {"num_id": 1, "chapter": "1. Self-Introduction", "type": "phrase", "role": "you", "en": "Hi, I'm Cecep Azhar — a full-stack developer specializing in Go, HTMX, and AI agent systems.", "translation": "Hai, saya Cecep Azhar — full-stack developer spesialisasi Go, HTMX, dan sistem AI agent."},
