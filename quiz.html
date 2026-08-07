@@ -961,7 +961,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
-      <a href="/" class="logo">
+      <a href="/app" class="logo">
         <div class="logo-icon">Q</div>
         <div class="logo-text">
           <div class="logo-title">Quiz System</div>
@@ -969,7 +969,7 @@
         </div>
       </a>
       <div class="header-actions">
-        <a href="/" class="back-btn">
+        <a href="/app" class="back-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Kembali ke Pelajaran
         </a>
@@ -1118,6 +1118,7 @@
   <!-- TOAST -->
   <div class="toast" id="toast"></div>
 
+  <script src="/category-router.js"></script>
   <script>
   (function() {
     'use strict';
@@ -1128,20 +1129,34 @@
     let currentTab = 'listening';
     let quizState = {};
     let vocabMode = 'quiz'; // 'quiz' or 'flashcard'
+    let activeCategory = CategoryRouter.DEFAULT_CATEGORY;
+    let activeCategoryMeta = null;
 
     // ── CHAPTERS ──
-    const CHAPTERS = [
-      { key: '1. Self-Introduction', short: 'Self-Intro', icon: '👋' },
-      { key: '2. Job Interview', short: 'Interview', icon: '💼' },
-      { key: '3. Portfolio Discussion', short: 'Portfolio', icon: '📂' },
-      { key: '4. Salary Negotiation', short: 'Salary', icon: '💰' },
-      { key: '5. Grammar Essentials', short: 'Grammar', icon: '📝' },
-      { key: '6. Presentation', short: 'Presentasi', icon: '🎤' },
-      { key: '7. Meeting & Project Evaluation', short: 'Meeting', icon: '🤝' },
-      { key: '8. Client Communication', short: 'Client', icon: '👥' },
-      { key: '9. Remote Worker', short: 'Remote', icon: '🌍' },
-      { key: '10. Quick Reference', short: 'Referensi', icon: '⚡' }
-    ];
+    // Built from the loaded category's own chapter list (see buildChapters()) —
+    // each of the 11 categories has different chapter names, so this can't be hardcoded.
+    const CHAPTER_ICONS = ['👋','💼','📂','💰','📝','🎤','🤝','👥','🌍','⚡','📚','🔧'];
+    let CHAPTERS = [];
+
+    function buildChapters(list) {
+      const seen = [];
+      const order = [];
+      for (const s of list) {
+        if (!order.includes(s.chapter)) order.push(s.chapter);
+      }
+      order.forEach((name, i) => {
+        const short = name.replace(/^\d+\.\s*/, '');
+        seen.push({ key: name, short: short.length > 14 ? short.slice(0, 13) + '…' : short, icon: CHAPTER_ICONS[i % CHAPTER_ICONS.length] });
+      });
+      CHAPTERS = seen;
+    }
+
+    // Progress for chapter completion is namespaced per category — several
+    // categories share chapter names (e.g. "Reporting" in both admin and finance),
+    // and without the prefix their completion counts would collide.
+    function chapterProgressKey(chapterKey) {
+      return activeCategory + '::' + chapterKey + '_completed';
+    }
 
     // ── VOCABULARY DATA ──
     const VOCAB = [
@@ -1261,7 +1276,7 @@
       CHAPTERS.forEach((ch, i) => {
         const chapterScripts = scripts.filter(s => s.chapter === ch.key);
         const total = chapterScripts.length;
-        const completed = p[ch.key + '_completed'] || 0;
+        const completed = p[chapterProgressKey(ch.key)] || 0;
         const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
         const btn = document.createElement('button');
         btn.className = 'chapter-btn' + (currentChapter === ch.key ? ' active' : '');
@@ -2529,7 +2544,7 @@
       const p = getProgress();
       // Simple: increment completed count
       if (currentChapter) {
-        p[currentChapter + '_completed'] = (p[currentChapter + '_completed'] || 0) + 1;
+        p[chapterProgressKey(currentChapter)] = (p[chapterProgressKey(currentChapter)] || 0) + 1;
         saveProgress(p);
       }
     }
@@ -3355,22 +3370,72 @@
       return str.replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
 
+    // ── CATEGORY HEADER ──
+    function renderCategoryHeader() {
+      const titleEl = document.querySelector('.logo-title');
+      const subEl = document.querySelector('.logo-subtitle');
+      if (activeCategoryMeta) {
+        if (titleEl) titleEl.textContent = activeCategoryMeta.icon + ' ' + activeCategoryMeta.name;
+        if (subEl) subEl.textContent = 'Quiz — English for Remote Worker';
+
+        // Gate A5: Hide listening mode if no audio
+        const listeningTab = document.querySelector('.tab-btn[data-tab="listening"]');
+        if (listeningTab) {
+          if (activeCategoryMeta.hasAudio === false) {
+            listeningTab.style.display = 'none';
+            if (currentTab === 'listening') switchTab('reading');
+          } else {
+            listeningTab.style.display = '';
+          }
+        }
+      }
+    }
+
     // ── INIT ──
-    async function init() {
+    async function loadCategoryData() {
+      const grid = document.getElementById('chapterGrid');
       try {
-        const resp = await fetch('/scripts.json');
-        const data = await resp.json();
+        const data = await CategoryRouter.fetchCategoryContent(activeCategory);
         scripts = data.scripts || [];
+        buildChapters(scripts);
       } catch (e) {
-        console.error('Failed to load scripts.json:', e);
-        // Fallback: use embedded minimal data
+        console.error('Failed to load category content:', e);
         scripts = [];
-        showToast('Gagal memuat data. Pastikan scripts.json tersedia.', 'warning');
+        CHAPTERS = [];
+        grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;">' +
+          '<div class="empty-state-icon">⚠️</div>' +
+          '<div class="empty-state-text">Gagal memuat konten kategori.<br>' + e.message + '</div>' +
+          '<button id="retryLoadBtn" style="margin-top:12px;padding:10px 20px;border-radius:8px;border:none;background:var(--accent-1,#6366f1);color:#fff;cursor:pointer;font-family:inherit;font-size:13px;">Coba lagi</button>' +
+          '</div>';
+        const retryBtn = document.getElementById('retryLoadBtn');
+        if (retryBtn) retryBtn.addEventListener('click', loadCategoryData);
+        return;
       }
       renderChapterGrid();
       updateStats();
       renderLeaderboard();
       updateStreak();
+    }
+
+    async function init() {
+      const resolved = CategoryRouter.resolveCategory();
+      activeCategory = resolved.slug;
+
+      if (resolved.wasInvalid) {
+        showToast('Kategori "' + resolved.attempted + '" tidak dikenal, menampilkan Software Engineering', 'warning');
+      }
+
+      CategoryRouter.fetchCategoryMeta(activeCategory).then(function(meta) {
+        activeCategoryMeta = meta;
+        renderCategoryHeader();
+      }).catch(function() { /* header falls back to defaults silently */ });
+
+      const backLink = document.querySelector('.back-btn');
+      if (backLink) backLink.href = '/app?category=' + encodeURIComponent(activeCategory);
+      const logoLink = document.querySelector('a.logo');
+      if (logoLink) logoLink.href = '/app?category=' + encodeURIComponent(activeCategory);
+
+      await loadCategoryData();
     }
 
     // Make switchTab global

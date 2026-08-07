@@ -1,6 +1,12 @@
-# Ignore non-essential files in Docker build
-pdf_content.txt
-*.md
 .git
 .gitignore
-.env
+.dockerignore
+Dockerfile
+*.md
+notes/
+*.py
+pdf_content.txt
+.claude/
+.env*
+.DS_Store
+admin.html

@@ -899,73 +899,70 @@
                 <h2>Pilih Kategori yang Kamu Butuhkan</h2>
                 <p>Pilih bidang yang sesuai dengan karir kamu dan mulai belajar bahasa Inggris yang relevan.</p>
             </div>
-                <div class="category-card" style="--cat-color: #6366f1;">
-                    <div class="category-icon">📚</div>
-                    <h3>General English</h3>
-                    <p>English dasar untuk kehidupan sehari-hari</p>
-                    <a href="/app?category=general-english" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #3b82f6;">
-                    <div class="category-icon">💼</div>
-                    <h3>Business English</h3>
-                    <p>English untuk bisnis dan korporat</p>
-                    <a href="/app?category=business-english" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #10b981;">
-                    <div class="category-icon">💰</div>
-                    <h3>Finance English</h3>
-                    <p>English untuk keuangan dan investasi</p>
-                    <a href="/app?category=finance-english" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #f59e0b;">
-                    <div class="category-icon">📋</div>
-                    <h3>Administration</h3>
-                    <p>English untuk administrasi perkantoran</p>
-                    <a href="/app?category=administration" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #ec4899;">
-                    <div class="category-icon">🎨</div>
-                    <h3>Web Design</h3>
-                    <p>English untuk web designer dan UI/UX</p>
-                    <a href="/app?category=web-design" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #14b8a6;">
-                    <div class="category-icon">🔍</div>
-                    <h3>SEO Specialist</h3>
-                    <p>English untuk SEO dan digital marketing</p>
-                    <a href="/app?category=seo-specialist" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #8b5cf6;">
-                    <div class="category-icon">🖌️</div>
-                    <h3>Graphic Design</h3>
-                    <p>English untuk desainer grafis</p>
-                    <a href="/app?category=graphic-design" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #ef4444;">
-                    <div class="category-icon">🎬</div>
-                    <h3>Video Editing</h3>
-                    <p>English untuk video editor</p>
-                    <a href="/app?category=video-editing" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #06b6d4;">
-                    <div class="category-icon">🤖</div>
-                    <h3>Virtual Assistant</h3>
-                    <p>English untuk virtual assistant</p>
-                    <a href="/app?category=virtual-assistant" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #f97316;">
-                    <div class="category-icon">✍️</div>
-                    <h3>Copywriting</h3>
-                    <p>English untuk copywriter</p>
-                    <a href="/app?category=copywriting" class="btn btn-primary">Mulai Belajar</a>
-                </div>
-                <div class="category-card" style="--cat-color: #22c55e;">
-                    <div class="category-icon">💻</div>
-                    <h3>Software Engineering</h3>
-                    <p>English untuk software developer</p>
-                    <a href="/app?category=software-engineering" class="btn btn-primary">Mulai Belajar</a>
-                </div>
+            <div class="category-grid" id="categoryGrid">
+                <!-- Fallback SSR for SEO -->
+                <noscript>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;">
+                        <a href="/app?category=general" class="btn btn-primary">General English</a>
+                        <a href="/app?category=business" class="btn btn-primary">Business English</a>
+                        <a href="/app?category=finance" class="btn btn-primary">Finance English</a>
+                        <a href="/app?category=admin" class="btn btn-primary">Administration</a>
+                        <a href="/app?category=web-design" class="btn btn-primary">Web Design</a>
+                        <a href="/app?category=seo" class="btn btn-primary">SEO Specialist</a>
+                        <a href="/app?category=graphic-design" class="btn btn-primary">Graphic Design</a>
+                        <a href="/app?category=video-editing" class="btn btn-primary">Video Editing</a>
+                        <a href="/app?category=virtual-assistant" class="btn btn-primary">Virtual Assistant</a>
+                        <a href="/app?category=copywriting" class="btn btn-primary">Copywriting</a>
+                        <a href="/app?category=software-engineering" class="btn btn-primary">Software Engineering</a>
+                    </div>
+                </noscript>
             </div>
+
+            <template id="categoryCardTemplate">
+                <div class="category-card" style="--cat-color: var(--color);">
+                    <div class="category-icon"></div>
+                    <h3></h3>
+                    <p></p>
+                    <a href="#" class="btn btn-primary">Mulai Belajar</a>
+                </div>
+            </template>
+
+            <script>
+                fetch('/content/categories.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        const grid = document.getElementById('categoryGrid');
+                        const template = document.getElementById('categoryCardTemplate');
+                        data.categories.forEach((cat, i) => {
+                            const clone = template.content.cloneNode(true);
+                            const card = clone.querySelector('.category-card');
+                            card.style.setProperty('--color', cat.color || '#6366f1');
+                            card.querySelector('.category-icon').textContent = cat.icon;
+                            card.querySelector('h3').textContent = cat.name;
+
+                            // Audio gate from task A5
+                            const desc = clone.querySelector('p');
+                            if (cat.hasAudio === false) {
+                                desc.innerHTML = cat.description + '<br><span style="display:inline-block;margin-top:8px;font-size:11px;padding:2px 8px;border-radius:12px;background:rgba(245,158,11,0.15);color:var(--warning);">Audio segera hadir</span>';
+                            } else {
+                                desc.textContent = cat.description;
+                            }
+
+                            clone.querySelector('a').href = '/app?category=' + cat.id;
+
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            card.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50 * i);
+
+                            grid.appendChild(clone);
+                        });
+                    })
+                    .catch(err => console.error('Failed to load categories:', err));
+            </script>
         </div>
     </section>
 

@@ -1473,11 +1473,11 @@
       ]
     },
     {
-      "id": "webdesign",
+      "id": "web-design",
       "name": "Web Design",
       "scripts": [
         {
-          "num_id": "webdesign_001",
+          "num_id": "web-design_001",
           "chapter": "Design Tools",
           "type": "phrase",
           "role": "Speaker",
@@ -1485,7 +1485,7 @@
           "translation": "Saya akan buat mockup di Figma."
         },
         {
-          "num_id": "webdesign_002",
+          "num_id": "web-design_002",
           "chapter": "Design Tools",
           "type": "dialogue",
           "role": "A",
@@ -1493,7 +1493,7 @@
           "translation": "Kamu pakai Figma atau Adobe XD untuk project ini?"
         },
         {
-          "num_id": "webdesign_003",
+          "num_id": "web-design_003",
           "chapter": "Design Tools",
           "type": "dialogue",
           "role": "B",
@@ -1501,7 +1501,7 @@
           "translation": "Saya lebih suka Figma untuk fitur kolaborasinya."
         },
         {
-          "num_id": "webdesign_004",
+          "num_id": "web-design_004",
           "chapter": "Design Tools",
           "type": "phrase",
           "role": "Speaker",
@@ -1509,7 +1509,7 @@
           "translation": "Saya akan ekspor aset dalam format SVG."
         },
         {
-          "num_id": "webdesign_005",
+          "num_id": "web-design_005",
           "chapter": "Design Tools",
           "type": "dialogue",
           "role": "A",
@@ -1517,7 +1517,7 @@
           "translation": "Bisa share link prototype Figma-nya?"
         },
         {
-          "num_id": "webdesign_006",
+          "num_id": "web-design_006",
           "chapter": "Design Tools",
           "type": "dialogue",
           "role": "B",
@@ -1525,7 +1525,7 @@
           "translation": "Tentu, saya akan kirim link view-only."
         },
         {
-          "num_id": "webdesign_007",
+          "num_id": "web-design_007",
           "chapter": "Design Tools",
           "type": "phrase",
           "role": "Speaker",
@@ -1533,7 +1533,7 @@
           "translation": "Saya pakai Canva untuk desain media sosial cepat."
         },
         {
-          "num_id": "webdesign_008",
+          "num_id": "web-design_008",
           "chapter": "Design Tools",
           "type": "dialogue",
           "role": "A",
@@ -1541,7 +1541,7 @@
           "translation": "Design system apa yang kamu ikuti?"
         },
         {
-          "num_id": "webdesign_009",
+          "num_id": "web-design_009",
           "chapter": "Design Tools",
           "type": "dialogue",
           "role": "B",
@@ -1549,7 +1549,7 @@
           "translation": "Saya sedang membangun design system custom di Figma."
         },
         {
-          "num_id": "webdesign_010",
+          "num_id": "web-design_010",
           "chapter": "Client Communication",
           "type": "phrase",
           "role": "Speaker",
@@ -1557,7 +1557,7 @@
           "translation": "Saya akan presentasikan konsep awal hari Jumat."
         },
         {
-          "num_id": "webdesign_011",
+          "num_id": "web-design_011",
           "chapter": "Client Communication",
           "type": "dialogue",
           "role": "A",
@@ -1565,7 +1565,7 @@
           "translation": "Bagaimana proses desain kamu untuk project baru?"
         },
         {
-          "num_id": "webdesign_012",
+          "num_id": "web-design_012",
           "chapter": "Client Communication",
           "type": "dialogue",
           "role": "B",
@@ -1573,7 +1573,7 @@
           "translation": "Riset, wireframe, lalu mockup high-fidelity."
         },
         {
-          "num_id": "webdesign_013",
+          "num_id": "web-design_013",
           "chapter": "Client Communication",
           "type": "phrase",
           "role": "Speaker",
@@ -1581,7 +1581,7 @@
           "translation": "Ayo jadwalkan walkthrough desainnya."
         },
         {
-          "num_id": "webdesign_014",
+          "num_id": "web-design_014",
           "chapter": "Client Communication",
           "type": "dialogue",
           "role": "A",
@@ -1589,7 +1589,7 @@
           "translation": "Bisa beri saya timeline untuk redesain?"
         },
         {
-          "num_id": "webdesign_015",
+          "num_id": "web-design_015",
           "chapter": "Client Communication",
           "type": "dialogue",
           "role": "B",
@@ -1597,7 +1597,7 @@
           "translation": "Sekitar 3 minggu dari konsep ke pengiriman final."
         },
         {
-          "num_id": "webdesign_016",
+          "num_id": "web-design_016",
           "chapter": "Client Communication",
           "type": "phrase",
           "role": "Speaker",
@@ -1605,7 +1605,7 @@
           "translation": "Saya akan masukkan feedback Anda ke revisi berikutnya."
         },
         {
-          "num_id": "webdesign_017",
+          "num_id": "web-design_017",
           "chapter": "Client Communication",
           "type": "dialogue",
           "role": "A",
@@ -1613,7 +1613,7 @@
           "translation": "Klien ingin tampilan yang lebih modern."
         },
         {
-          "num_id": "webdesign_018",
+          "num_id": "web-design_018",
           "chapter": "Client Communication",
           "type": "dialogue",
           "role": "B",
@@ -1621,7 +1621,7 @@
           "translation": "Saya akan update style guide sesuai permintaan."
         },
         {
-          "num_id": "webdesign_019",
+          "num_id": "web-design_019",
           "chapter": "Portfolio",
           "type": "phrase",
           "role": "Speaker",
@@ -1629,7 +1629,7 @@
           "translation": "Saya perlu update website portfolio saya."
         },
         {
-          "num_id": "webdesign_020",
+          "num_id": "web-design_020",
           "chapter": "Portfolio",
           "type": "dialogue",
           "role": "A",
@@ -1637,7 +1637,7 @@
           "translation": "Cara terbaik untuk memamerkan karya kamu?"
         },
         {
-          "num_id": "webdesign_021",
+          "num_id": "web-design_021",
           "chapter": "Portfolio",
           "type": "dialogue",
           "role": "B",
@@ -1645,7 +1645,7 @@
           "translation": "Saya pakai studi kasus dengan foto sebelum dan sesudah."
         },
         {
-          "num_id": "webdesign_022",
+          "num_id": "web-design_022",
           "chapter": "Portfolio",
           "type": "phrase",
           "role": "Speaker",
@@ -1653,7 +1653,7 @@
           "translation": "Saya akan tambahkan project baru ke halaman Behance saya."
         },
         {
-          "num_id": "webdesign_023",
+          "num_id": "web-design_023",
           "chapter": "Portfolio",
           "type": "dialogue",
           "role": "A",
@@ -1661,7 +1661,7 @@
           "translation": "Kamu sertakan testimonial klien di portfolio?"
         },
         {
-          "num_id": "webdesign_024",
+          "num_id": "web-design_024",
           "chapter": "Portfolio",
           "type": "dialogue",
           "role": "B",
@@ -1669,7 +1669,7 @@
           "translation": "Ya, bukti sosial sangat penting."
         },
         {
-          "num_id": "webdesign_025",
+          "num_id": "web-design_025",
           "chapter": "Portfolio",
           "type": "phrase",
           "role": "Speaker",
@@ -1677,7 +1677,7 @@
           "translation": "Portfolio saya dihost di Webflow."
         },
         {
-          "num_id": "webdesign_026",
+          "num_id": "web-design_026",
           "chapter": "Portfolio",
           "type": "dialogue",
           "role": "A",
@@ -1685,7 +1685,7 @@
           "translation": "Seberapa sering kamu harus update portfolio?"
         },
         {
-          "num_id": "webdesign_027",
+          "num_id": "web-design_027",
           "chapter": "Portfolio",
           "type": "dialogue",
           "role": "B",
@@ -1693,7 +1693,7 @@
           "translation": "Saya coba update tiap trimester dengan project baru."
         },
         {
-          "num_id": "webdesign_028",
+          "num_id": "web-design_028",
           "chapter": "Feedback",
           "type": "phrase",
           "role": "Speaker",
@@ -1701,7 +1701,7 @@
           "translation": "Bisa beri feedback spesifik tentang layout-nya?"
         },
         {
-          "num_id": "webdesign_029",
+          "num_id": "web-design_029",
           "chapter": "Feedback",
           "type": "dialogue",
           "role": "A",
@@ -1709,7 +1709,7 @@
           "translation": "Palet warnanya terasa sedikit terlalu terang."
         },
         {
-          "num_id": "webdesign_030",
+          "num_id": "web-design_030",
           "chapter": "Feedback",
           "type": "dialogue",
           "role": "B",
@@ -1717,7 +1717,7 @@
           "translation": "Saya akan redam dan pakai warna lebih lembut."
         },
         {
-          "num_id": "webdesign_031",
+          "num_id": "web-design_031",
           "chapter": "Feedback",
           "type": "phrase",
           "role": "Speaker",
@@ -1725,7 +1725,7 @@
           "translation": "Saya sarankan buat tombol CTA lebih menonjol."
         },
         {
-          "num_id": "webdesign_032",
+          "num_id": "web-design_032",
           "chapter": "Feedback",
           "type": "dialogue",
           "role": "A",
@@ -1733,7 +1733,7 @@
           "translation": "Tipografi perlu lebih mudah dibaca."
         },
         {
-          "num_id": "webdesign_033",
+          "num_id": "web-design_033",
           "chapter": "Feedback",
           "type": "dialogue",
           "role": "B",
@@ -1741,7 +1741,7 @@
           "translation": "Saya akan perbesar ukuran font dan line height."
         },
         {
-          "num_id": "webdesign_034",
+          "num_id": "web-design_034",
           "chapter": "Feedback",
           "type": "phrase",
           "role": "Speaker",
@@ -1749,7 +1749,7 @@
           "translation": "Feedback Anda telah meningkatkan desain secara signifikan."
         },
         {
-          "num_id": "webdesign_035",
+          "num_id": "web-design_035",
           "chapter": "Feedback",
           "type": "dialogue",
           "role": "A",
@@ -1757,7 +1757,7 @@
           "translation": "Menurutmu bagaimana spacing-nya?"
         },
         {
-          "num_id": "webdesign_036",
+          "num_id": "web-design_036",
           "chapter": "Feedback",
           "type": "dialogue",
           "role": "B",
@@ -1765,7 +1765,7 @@
           "translation": "Terlihat bagus, penggunaan white space yang baik."
         },
         {
-          "num_id": "webdesign_037",
+          "num_id": "web-design_037",
           "chapter": "Specifications",
           "type": "phrase",
           "role": "Speaker",
@@ -1773,7 +1773,7 @@
           "translation": "Desain harus responsif di semua perangkat."
         },
         {
-          "num_id": "webdesign_038",
+          "num_id": "web-design_038",
           "chapter": "Specifications",
           "type": "dialogue",
           "role": "A",
@@ -1781,7 +1781,7 @@
           "translation": "Berapa resolusi layar yang dibutuhkan?"
         },
         {
-          "num_id": "webdesign_039",
+          "num_id": "web-design_039",
           "chapter": "Specifications",
           "type": "dialogue",
           "role": "B",
@@ -1789,7 +1789,7 @@
           "translation": "Kita harus mendukung 1920x1080 hingga 375px mobile."
         },
         {
-          "num_id": "webdesign_040",
+          "num_id": "web-design_040",
           "chapter": "Specifications",
           "type": "phrase",
           "role": "Speaker",
@@ -1797,7 +1797,7 @@
           "translation": "Silakan ikuti panduan brand secara ketat."
         },
         {
-          "num_id": "webdesign_041",
+          "num_id": "web-design_041",
           "chapter": "Specifications",
           "type": "dialogue",
           "role": "A",
@@ -1805,7 +1805,7 @@
           "translation": "Format file apa yang kamu butuhkan untuk handoff?"
         },
         {
-          "num_id": "webdesign_042",
+          "num_id": "web-design_042",
           "chapter": "Specifications",
           "type": "dialogue",
           "role": "B",
@@ -1813,7 +1813,7 @@
           "translation": "SVG untuk ikon dan PNG untuk gambar."
         },
         {
-          "num_id": "webdesign_043",
+          "num_id": "web-design_043",
           "chapter": "Specifications",
           "type": "phrase",
           "role": "Speaker",
@@ -1821,7 +1821,7 @@
           "translation": "Standar aksesibilitas harus WCAG 2.1 AA."
         },
         {
-          "num_id": "webdesign_044",
+          "num_id": "web-design_044",
           "chapter": "Specifications",
           "type": "dialogue",
           "role": "A",
@@ -1829,7 +1829,7 @@
           "translation": "Apakah ini perlu terintegrasi dengan CMS?"
         },
         {
-          "num_id": "webdesign_045",
+          "num_id": "web-design_045",
           "chapter": "Specifications",
           "type": "dialogue",
           "role": "B",
@@ -3673,7 +3673,7 @@
       "name": "Software Engineering",
       "scripts": [
         {
-          "num_id": "se_001",
+          "num_id": 1,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3681,7 +3681,7 @@
           "translation": "Hai, saya Cecep Azhar — full-stack developer spesialisasi Go, HTMX, dan sistem AI agent."
         },
         {
-          "num_id": "se_002",
+          "num_id": 2,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3689,7 +3689,7 @@
           "translation": "Saya bantu bisnis otomasi alur kerja dan bangun platform web scalable."
         },
         {
-          "num_id": "se_003",
+          "num_id": 3,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3697,7 +3697,7 @@
           "translation": "Saya sudah deliver 6+ produk di 3 negara, tersedia untuk proyek baru."
         },
         {
-          "num_id": "se_004",
+          "num_id": 4,
           "chapter": "1. Self-Introduction",
           "type": "dialog",
           "role": "you",
@@ -3705,7 +3705,7 @@
           "translation": "Hai, nama saya Cecep Azhar. Saya full-stack developer dari Indonesia dengan pengalaman X tahun."
         },
         {
-          "num_id": "se_005",
+          "num_id": 5,
           "chapter": "1. Self-Introduction",
           "type": "dialog",
           "role": "you",
@@ -3713,7 +3713,7 @@
           "translation": "Stack utama saya Go dengan Echo, HTMX untuk frontend, dan PostgreSQL."
         },
         {
-          "num_id": "se_006",
+          "num_id": 6,
           "chapter": "1. Self-Introduction",
           "type": "dialog",
           "role": "you",
@@ -3721,7 +3721,7 @@
           "translation": "Saya membangun sistem AI agent yang otomasi customer support dan alur kerja."
         },
         {
-          "num_id": "se_007",
+          "num_id": 7,
           "chapter": "1. Self-Introduction",
           "type": "dialog",
           "role": "you",
@@ -3729,7 +3729,7 @@
           "translation": "Saya jalankan FathForce — dari developer solo jadi agensi penuh didukung AI."
         },
         {
-          "num_id": "se_008",
+          "num_id": 8,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "interviewer",
@@ -3737,7 +3737,7 @@
           "translation": "Apa yang kamu kerjakan?"
         },
         {
-          "num_id": "se_009",
+          "num_id": 9,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3745,7 +3745,7 @@
           "translation": "Saya bangun aplikasi web dan tools AI untuk bisnis."
         },
         {
-          "num_id": "se_010",
+          "num_id": 10,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "interviewer",
@@ -3753,7 +3753,7 @@
           "translation": "Apa tech stack kamu?"
         },
         {
-          "num_id": "se_011",
+          "num_id": 11,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3761,7 +3761,7 @@
           "translation": "Go, Echo, HTMX, Tailwind, PostgreSQL, AI agent berbasis LLM."
         },
         {
-          "num_id": "se_012",
+          "num_id": 12,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "interviewer",
@@ -3769,7 +3769,7 @@
           "translation": "Sudah berapa lama?"
         },
         {
-          "num_id": "se_013",
+          "num_id": 13,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3777,7 +3777,7 @@
           "translation": "Lebih dari X tahun, fokus Go dan AI beberapa tahun terakhir."
         },
         {
-          "num_id": "se_014",
+          "num_id": 14,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "interviewer",
@@ -3785,7 +3785,7 @@
           "translation": "Proyek apa yang pernah dikerjakan?"
         },
         {
-          "num_id": "se_015",
+          "num_id": 15,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3793,7 +3793,7 @@
           "translation": "SaaS, e-commerce, WhatsApp bot, dan AI agent custom."
         },
         {
-          "num_id": "se_016",
+          "num_id": 16,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "interviewer",
@@ -3801,7 +3801,7 @@
           "translation": "Kamu freelance?"
         },
         {
-          "num_id": "se_017",
+          "num_id": 17,
           "chapter": "1. Self-Introduction",
           "type": "phrase",
           "role": "you",
@@ -3809,7 +3809,7 @@
           "translation": "Saya punya agensi sendiri. Juga tersedia konsultasi."
         },
         {
-          "num_id": "se_018",
+          "num_id": 18,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3817,7 +3817,7 @@
           "translation": "Ceritakan tentang diri kamu."
         },
         {
-          "num_id": "se_019",
+          "num_id": 19,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3825,7 +3825,7 @@
           "translation": "Saya full-stack dev X tahun spesialisasi Go, PostgreSQL, HTMX, dan terakhir sistem AI agent."
         },
         {
-          "num_id": "se_020",
+          "num_id": 20,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3833,7 +3833,7 @@
           "translation": "Kenapa kami harus hire kamu?"
         },
         {
-          "num_id": "se_021",
+          "num_id": 21,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3841,7 +3841,7 @@
           "translation": "Saya punya kemampuan end-to-end — desain DB sampai deployment. Cepat deliver, komunikasi jelas."
         },
         {
-          "num_id": "se_022",
+          "num_id": 22,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3849,7 +3849,7 @@
           "translation": "Apa kelebihan kamu?"
         },
         {
-          "num_id": "se_023",
+          "num_id": 23,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3857,7 +3857,7 @@
           "translation": "Saya pragmatis — deliver software yang works daripada over-engineering. Pilih tools tepat."
         },
         {
-          "num_id": "se_024",
+          "num_id": 24,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3865,7 +3865,7 @@
           "translation": "Apa kelemahan kamu?"
         },
         {
-          "num_id": "se_025",
+          "num_id": 25,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3873,7 +3873,7 @@
           "translation": "Kadang over-optimize sebelum validasi. Saya sudah belajar deliver dulu, optimasi belakangan."
         },
         {
-          "num_id": "se_026",
+          "num_id": 26,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3881,7 +3881,7 @@
           "translation": "Ceritakan proyek yang menantang."
         },
         {
-          "num_id": "se_027",
+          "num_id": 27,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3889,7 +3889,7 @@
           "translation": "SaaS multi-tenant, 10K+ user per hari. Tantangan: isolasi data dan real-time. Solusi: pooling, Redis, HTMX."
         },
         {
-          "num_id": "se_028",
+          "num_id": 28,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3897,7 +3897,7 @@
           "translation": "Bagaimana kamu handle deadline ketat?"
         },
         {
-          "num_id": "se_029",
+          "num_id": 29,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3905,7 +3905,7 @@
           "translation": "Pecah jadi deliverable kecil, prioritaskan MVP, komunikasi awal kalau blocked."
         },
         {
-          "num_id": "se_030",
+          "num_id": 30,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3913,7 +3913,7 @@
           "translation": "Di mana kamu dalam 5 tahun?"
         },
         {
-          "num_id": "se_031",
+          "num_id": 31,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3921,7 +3921,7 @@
           "translation": "Memimpin arsitektur produk AI. Menjembatani SE tradisional dengan revolusi AI."
         },
         {
-          "num_id": "se_032",
+          "num_id": 32,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3929,7 +3929,7 @@
           "translation": "Berapa ekspektasi gaji kamu?"
         },
         {
-          "num_id": "se_033",
+          "num_id": 33,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3937,7 +3937,7 @@
           "translation": "$2,500 sampai $3,500 per bulan full-time, atau $50 sampai $80 per jam kontrak."
         },
         {
-          "num_id": "se_034",
+          "num_id": 34,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "interviewer",
@@ -3945,7 +3945,7 @@
           "translation": "Bisa jelaskan constraint-nya? Kecepatan, memori, atau keterbacaan?"
         },
         {
-          "num_id": "se_035",
+          "num_id": 35,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3953,7 +3953,7 @@
           "translation": "Saya pikirkan. Saya identifikasi bottleneck, lalu bandingkan pendekatan A vs B."
         },
         {
-          "num_id": "se_036",
+          "num_id": 36,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3961,7 +3961,7 @@
           "translation": "Belum pakai library itu, tapi konsepnya mirip X. Saya bisa cepat belajar."
         },
         {
-          "num_id": "se_037",
+          "num_id": 37,
           "chapter": "2. Job Interview",
           "type": "phrase",
           "role": "you",
@@ -3969,7 +3969,7 @@
           "translation": "Ringkasan: Saya pakai X karena alasan. Sesuai?"
         },
         {
-          "num_id": "se_038",
+          "num_id": 38,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "interviewer",
@@ -3977,7 +3977,7 @@
           "translation": "Bisa ceritakan proyek terakhir kamu?"
         },
         {
-          "num_id": "se_039",
+          "num_id": 39,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "you",
@@ -3985,7 +3985,7 @@
           "translation": "Proyek unggulan saya GCC — platform bisnis all-in-one dengan Go, Echo, HTMX, PostgreSQL. Handle CRM, manajemen proyek, dan AI untuk 200+ pengguna."
         },
         {
-          "num_id": "se_040",
+          "num_id": 40,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "you",
@@ -3993,7 +3993,7 @@
           "translation": "Saya juga bangun FathStore e-commerce headless, ProTool dashboard internal, dan beberapa AI agent untuk customer support pakai LLM dan RAG."
         },
         {
-          "num_id": "se_041",
+          "num_id": 41,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "you",
@@ -4001,7 +4001,7 @@
           "translation": "Saya bangga bisa kurangi page load dari 3,2 detik jadi di bawah 800 milidetik dengan migrasi React ke HTMX dan optimasi query DB."
         },
         {
-          "num_id": "se_042",
+          "num_id": 42,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "interviewer",
@@ -4009,7 +4009,7 @@
           "translation": "Apa kekuatan utama kamu?"
         },
         {
-          "num_id": "se_043",
+          "num_id": 43,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "you",
@@ -4017,7 +4017,7 @@
           "translation": "Pertama, cepat belajar — dari nol sampai AI agent production dalam 6 minggu. Kedua, pragmatis — Go untuk performa, HTMX untuk kesederhanaan. Ketiga, full-stack solo — DB sampai Docker sampai Cloudflare, sangat efisien untuk tim kecil."
         },
         {
-          "num_id": "se_044",
+          "num_id": 44,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "interviewer",
@@ -4025,7 +4025,7 @@
           "translation": "Apa kelemahan terbesar kamu?"
         },
         {
-          "num_id": "se_045",
+          "num_id": 45,
           "chapter": "3. Portfolio Discussion",
           "type": "dialog",
           "role": "you",
@@ -4033,7 +4033,7 @@
           "translation": "Saya cenderung ambil terlalu banyak — karena bisa full-stack, saya coba handle sendiri semua. Saya perbaiki dengan delegasi dan bangun tim kecil. Juga, kadang over-optimize sebelum validasi. Sekarang deliver dulu, optimasi belakangan."
         },
         {
-          "num_id": "se_046",
+          "num_id": 46,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "hr",
@@ -4041,7 +4041,7 @@
           "translation": "Berapa ekspektasi gaji kamu?"
         },
         {
-          "num_id": "se_047",
+          "num_id": 47,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "you",
@@ -4049,7 +4049,7 @@
           "translation": "Berdasarkan pengalaman SaaS, keahlian AI, dan keahlian Go, saya minta $2,500 sampai $3,500 per bulan."
         },
         {
-          "num_id": "se_048",
+          "num_id": 48,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "hr",
@@ -4057,7 +4057,7 @@
           "translation": "Itu di atas budget kami. Kami berpikir sekitar $2,000."
         },
         {
-          "num_id": "se_049",
+          "num_id": 49,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "you",
@@ -4065,7 +4065,7 @@
           "translation": "Saya paham. Tapi saya handle full-stack sendiri — backend, frontend, DB, DevOps, AI — tanpa rekrut tambahan. Penghematannya signifikan."
         },
         {
-          "num_id": "se_050",
+          "num_id": 50,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "you",
@@ -4073,7 +4073,7 @@
           "translation": "Bisa mulai $2,000 dengan review setelah 3 bulan berdasarkan performa? Kalau saya deliver, kita naikkan ke $2,500."
         },
         {
-          "num_id": "se_051",
+          "num_id": 51,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "hr",
@@ -4081,7 +4081,7 @@
           "translation": "Oke. Mulai $2,000, review performa di 3 bulan."
         },
         {
-          "num_id": "se_052",
+          "num_id": 52,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "you",
@@ -4089,7 +4089,7 @@
           "translation": "Bagus. Bisa didokumentasikan di offer letter?"
         },
         {
-          "num_id": "se_053",
+          "num_id": 53,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "client",
@@ -4097,7 +4097,7 @@
           "translation": "Berapa tarif per jam kamu?"
         },
         {
-          "num_id": "se_054",
+          "num_id": 54,
           "chapter": "4. Salary Negotiation",
           "type": "dialog",
           "role": "you",
@@ -4105,7 +4105,7 @@
           "translation": "$50 per jam. Untuk kontrak panjang, 3 bulan atau lebih, bisa $45 per jam. Atau retainer bulanan $2,000 untuk maksimal 50 jam."
         },
         {
-          "num_id": "se_055",
+          "num_id": 55,
           "chapter": "4. Salary Negotiation",
           "type": "phrase",
           "role": "you",
@@ -4113,7 +4113,7 @@
           "translation": "Minimum saya $2,000 per bulan."
         },
         {
-          "num_id": "se_056",
+          "num_id": 56,
           "chapter": "4. Salary Negotiation",
           "type": "phrase",
           "role": "you",
@@ -4121,7 +4121,7 @@
           "translation": "Ini mencerminkan X tahun dan keahlian Go plus AI saya."
         },
         {
-          "num_id": "se_057",
+          "num_id": 57,
           "chapter": "4. Salary Negotiation",
           "type": "phrase",
           "role": "you",
@@ -4129,7 +4129,7 @@
           "translation": "Standar saya $80 per jam, tapi fleksibel untuk peluang tepat."
         },
         {
-          "num_id": "se_058",
+          "num_id": 58,
           "chapter": "4. Salary Negotiation",
           "type": "phrase",
           "role": "you",
@@ -4137,7 +4137,7 @@
           "translation": "Saya sertakan dokumentasi, deployment, dan support 30 hari pasca-launch."
         },
         {
-          "num_id": "se_059",
+          "num_id": 59,
           "chapter": "4. Salary Negotiation",
           "type": "phrase",
           "role": "you",
@@ -4145,7 +4145,7 @@
           "translation": "Itu di bawah minimum saya. Saya butuh minimal $2,000."
         },
         {
-          "num_id": "se_060",
+          "num_id": 60,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4153,7 +4153,7 @@
           "translation": "Saya setuju."
         },
         {
-          "num_id": "se_061",
+          "num_id": 61,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4161,7 +4161,7 @@
           "translation": "Saya akan deploy."
         },
         {
-          "num_id": "se_062",
+          "num_id": 62,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4169,7 +4169,7 @@
           "translation": "Saya punya banyak pengalaman."
         },
         {
-          "num_id": "se_063",
+          "num_id": 63,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4177,7 +4177,7 @@
           "translation": "Jelaskan ke saya."
         },
         {
-          "num_id": "se_064",
+          "num_id": 64,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4185,7 +4185,7 @@
           "translation": "Saya sudah kerja sejak 2020."
         },
         {
-          "num_id": "se_065",
+          "num_id": 65,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4193,7 +4193,7 @@
           "translation": "Bahas itu."
         },
         {
-          "num_id": "se_066",
+          "num_id": 66,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4201,7 +4201,7 @@
           "translation": "Saya balas kamu."
         },
         {
-          "num_id": "se_067",
+          "num_id": 67,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4209,7 +4209,7 @@
           "translation": "Handle ini."
         },
         {
-          "num_id": "se_068",
+          "num_id": 68,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4217,7 +4217,7 @@
           "translation": "Saya sudah bangun 6 produk."
         },
         {
-          "num_id": "se_069",
+          "num_id": 69,
           "chapter": "5. Grammar Essentials",
           "type": "grammar",
           "role": "you",
@@ -4225,7 +4225,7 @@
           "translation": "Saya kerja di Company X dari 2020 sampai 2023."
         },
         {
-          "num_id": "se_070",
+          "num_id": 70,
           "chapter": "5. Grammar Essentials",
           "type": "phrase",
           "role": "you",
@@ -4233,7 +4233,7 @@
           "translation": "Deploy fitur baru besok."
         },
         {
-          "num_id": "se_071",
+          "num_id": 71,
           "chapter": "5. Grammar Essentials",
           "type": "phrase",
           "role": "you",
@@ -4241,7 +4241,7 @@
           "translation": "Build gagal setelah commit."
         },
         {
-          "num_id": "se_072",
+          "num_id": 72,
           "chapter": "5. Grammar Essentials",
           "type": "phrase",
           "role": "you",
@@ -4249,7 +4249,7 @@
           "translation": "Sudah pecahkan race condition."
         },
         {
-          "num_id": "se_073",
+          "num_id": 73,
           "chapter": "5. Grammar Essentials",
           "type": "phrase",
           "role": "you",
@@ -4257,7 +4257,7 @@
           "translation": "Saya investigasi memory leak."
         },
         {
-          "num_id": "se_074",
+          "num_id": 74,
           "chapter": "5. Grammar Essentials",
           "type": "phrase",
           "role": "you",
@@ -4265,7 +4265,7 @@
           "translation": "Transfer ke tim ops."
         },
         {
-          "num_id": "se_075",
+          "num_id": 75,
           "chapter": "5. Grammar Essentials",
           "type": "phrase",
           "role": "you",
@@ -4273,7 +4273,7 @@
           "translation": "Ciptakan arsitektur yang lebih baik."
         },
         {
-          "num_id": "se_076",
+          "num_id": 76,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4281,7 +4281,7 @@
           "translation": "Selamat pagi semua. Terima kasih sudah bergabung."
         },
         {
-          "num_id": "se_077",
+          "num_id": 77,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4289,7 +4289,7 @@
           "translation": "Hari ini saya bahas 3 area utama."
         },
         {
-          "num_id": "se_078",
+          "num_id": 78,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4297,7 +4297,7 @@
           "translation": "Sekarang lanjut ke hasil performa."
         },
         {
-          "num_id": "se_079",
+          "num_id": 79,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4305,7 +4305,7 @@
           "translation": "Dalam istilah sederhana, server merespon 3 kali lebih cepat."
         },
         {
-          "num_id": "se_080",
+          "num_id": 80,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4313,7 +4313,7 @@
           "translation": "Anggap sebagai cache antara aplikasi dan database."
         },
         {
-          "num_id": "se_081",
+          "num_id": 81,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4321,7 +4321,7 @@
           "translation": "Saya tunjukkan bagaimana ini bekerja."
         },
         {
-          "num_id": "se_082",
+          "num_id": 82,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4329,7 +4329,7 @@
           "translation": "Untuk menutup, ini poin pentingnya."
         },
         {
-          "num_id": "se_083",
+          "num_id": 83,
           "chapter": "6. Presentation",
           "type": "phrase",
           "role": "you",
@@ -4337,7 +4337,7 @@
           "translation": "Senang jawab pertanyaan. Saya follow up yang belum bisa dijawab sekarang."
         },
         {
-          "num_id": "se_084",
+          "num_id": 84,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4345,7 +4345,7 @@
           "translation": "On track. API selesai, frontend 80%."
         },
         {
-          "num_id": "se_085",
+          "num_id": 85,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4353,7 +4353,7 @@
           "translation": "Terlambat 3 hari karena integrasi auth."
         },
         {
-          "num_id": "se_086",
+          "num_id": 86,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4361,7 +4361,7 @@
           "translation": "Blocked di X. Butuh API key dari klien."
         },
         {
-          "num_id": "se_087",
+          "num_id": 87,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4369,7 +4369,7 @@
           "translation": "Lebih cepat. Bisa majukan fitur."
         },
         {
-          "num_id": "se_088",
+          "num_id": 88,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4377,7 +4377,7 @@
           "translation": "Selesaikan 12 dari 15 story point sprint ini."
         },
         {
-          "num_id": "se_089",
+          "num_id": 89,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4385,7 +4385,7 @@
           "translation": "Yang baik: CI/CD potong waktu deploy 60%."
         },
         {
-          "num_id": "se_090",
+          "num_id": 90,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4393,7 +4393,7 @@
           "translation": "Perbaikan: test coverage 45%, target 70%."
         },
         {
-          "num_id": "se_091",
+          "num_id": 91,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4401,7 +4401,7 @@
           "translation": "Error logging bagus — sangat lengkap."
         },
         {
-          "num_id": "se_092",
+          "num_id": 92,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4409,7 +4409,7 @@
           "translation": "Saran: ekstrak logika jadi service reusable."
         },
         {
-          "num_id": "se_093",
+          "num_id": 93,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4417,7 +4417,7 @@
           "translation": "Saya ambil task, siap Kamis."
         },
         {
-          "num_id": "se_094",
+          "num_id": 94,
           "chapter": "7. Meeting & Project Evaluation",
           "type": "phrase",
           "role": "you",
@@ -4425,7 +4425,7 @@
           "translation": "Mari follow up Jumat."
         },
         {
-          "num_id": "se_095",
+          "num_id": 95,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "client",
@@ -4433,7 +4433,7 @@
           "translation": "Masalah apa yang ingin dipecahkan?"
         },
         {
-          "num_id": "se_096",
+          "num_id": 96,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4441,7 +4441,7 @@
           "translation": "Ini usulan saya untuk scope awal."
         },
         {
-          "num_id": "se_097",
+          "num_id": 97,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4449,7 +4449,7 @@
           "translation": "Untuk kompleksitas ini: $5,000, timeline 6 minggu."
         },
         {
-          "num_id": "se_098",
+          "num_id": 98,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4457,7 +4457,7 @@
           "translation": "Ide bagus. Tambah Fase 2."
         },
         {
-          "num_id": "se_099",
+          "num_id": 99,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4465,7 +4465,7 @@
           "translation": "Reminder — Invoice nomor X jatuh tempo tanggal."
         },
         {
-          "num_id": "se_100",
+          "num_id": 100,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4473,7 +4473,7 @@
           "translation": "Butuh minimal X minggu untuk kualitas baik."
         },
         {
-          "num_id": "se_101",
+          "num_id": 101,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4481,7 +4481,7 @@
           "translation": "Semua deliverable selesai. Ini checklist."
         },
         {
-          "num_id": "se_102",
+          "num_id": 102,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4489,7 +4489,7 @@
           "translation": "Saya tawarkan support 30 hari pasca-launch."
         },
         {
-          "num_id": "se_103",
+          "num_id": 103,
           "chapter": "8. Client Communication",
           "type": "phrase",
           "role": "you",
@@ -4497,7 +4497,7 @@
           "translation": "Bisa kasih testimoni?"
         },
         {
-          "num_id": "se_104",
+          "num_id": 104,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "client",
@@ -4505,7 +4505,7 @@
           "translation": "Kami temukan profil kamu. Tertarik kerja remote?"
         },
         {
-          "num_id": "se_105",
+          "num_id": 105,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "you",
@@ -4513,7 +4513,7 @@
           "translation": "Tentu! Kerja remote X tahun dengan klien di Indonesia, Singapura, dan AS. Nyaman komunikasi async dan timezone overlap."
         },
         {
-          "num_id": "se_106",
+          "num_id": 106,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "you",
@@ -4521,7 +4521,7 @@
           "translation": "Saya pakai Slack, Notion, GitHub. Proaktif update harian dan dokumentasi lengkap."
         },
         {
-          "num_id": "se_107",
+          "num_id": 107,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "client",
@@ -4529,7 +4529,7 @@
           "translation": "Kami di AS Eastern Time. Bisa kerja jam kami?"
         },
         {
-          "num_id": "se_108",
+          "num_id": 108,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "you",
@@ -4537,7 +4537,7 @@
           "translation": "Saya WIB, UTC+7, selisih 12 jam. Available jam 8 sampai 12 malam WIB sama dengan jam 8 sampai 12 pagi Eastern. Fleksibel untuk meeting penting."
         },
         {
-          "num_id": "se_109",
+          "num_id": 109,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "client",
@@ -4545,7 +4545,7 @@
           "translation": "Bagaimana cara bayar?"
         },
         {
-          "num_id": "se_110",
+          "num_id": 110,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "you",
@@ -4553,7 +4553,7 @@
           "translation": "Invoice bulanan dengan detail jam. Saya terima Wise, PayPal, atau transfer bank. Klien baru: deposit 30% di muka, 70% saat deliver. Net-15."
         },
         {
-          "num_id": "se_111",
+          "num_id": 111,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "client",
@@ -4561,7 +4561,7 @@
           "translation": "Kontrak seperti apa yang kamu cari?"
         },
         {
-          "num_id": "se_112",
+          "num_id": 112,
           "chapter": "9. Remote Worker",
           "type": "dialog",
           "role": "you",
@@ -4569,7 +4569,7 @@
           "translation": "Monthly retainer — X jam per bulan, komitmen minimal 3 bulan. Pemberitahuan 14 hari untuk berhenti. Semua kode dan IP milik Anda."
         },
         {
-          "num_id": "se_113",
+          "num_id": 113,
           "chapter": "9. Remote Worker",
           "type": "phrase",
           "role": "you",
@@ -4577,7 +4577,7 @@
           "translation": "PR nomor 42 siap di-review."
         },
         {
-          "num_id": "se_114",
+          "num_id": 114,
           "chapter": "9. Remote Worker",
           "type": "phrase",
           "role": "you",
@@ -4585,7 +4585,7 @@
           "translation": "Fokus refactor API. Update akhir hari."
         },
         {
-          "num_id": "se_115",
+          "num_id": 115,
           "chapter": "9. Remote Worker",
           "type": "phrase",
           "role": "you",
@@ -4593,7 +4593,7 @@
           "translation": "Tidak ada besok. Nama cover urgent."
         },
         {
-          "num_id": "se_116",
+          "num_id": 116,
           "chapter": "9. Remote Worker",
           "type": "phrase",
           "role": "you",
@@ -4601,7 +4601,7 @@
           "translation": "Eskalasi — DB production mulai degradasi."
         },
         {
-          "num_id": "se_117",
+          "num_id": 117,
           "chapter": "9. Remote Worker",
           "type": "phrase",
           "role": "you",
@@ -4609,7 +4609,7 @@
           "translation": "Selesai hari ini. Semua task on track. Sampai besok!"
         },
         {
-          "num_id": "se_118",
+          "num_id": 118,
           "chapter": "10. Quick Reference",
           "type": "phrase",
           "role": "you",
@@ -4617,7 +4617,7 @@
           "translation": "Saya yakin pendekatan ini akan paling berhasil."
         },
         {
-          "num_id": "se_119",
+          "num_id": 119,
           "chapter": "10. Quick Reference",
           "type": "phrase",
           "role": "you",
@@ -4625,7 +4625,7 @@
           "translation": "Saya cek dulu."
         },
         {
-          "num_id": "se_120",
+          "num_id": 120,
           "chapter": "10. Quick Reference",
           "type": "phrase",
           "role": "you",

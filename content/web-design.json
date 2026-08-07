@@ -1,9 +1,9 @@
 {
-  "id": "webdesign",
+  "id": "web-design",
   "name": "Web Design",
   "scripts": [
     {
-      "num_id": "webdesign_001",
+      "num_id": "web-design_001",
       "chapter": "Design Tools",
       "type": "phrase",
       "role": "Speaker",
@@ -11,7 +11,7 @@
       "translation": "Saya akan buat mockup di Figma."
     },
     {
-      "num_id": "webdesign_002",
+      "num_id": "web-design_002",
       "chapter": "Design Tools",
       "type": "dialogue",
       "role": "A",
@@ -19,7 +19,7 @@
       "translation": "Kamu pakai Figma atau Adobe XD untuk project ini?"
     },
     {
-      "num_id": "webdesign_003",
+      "num_id": "web-design_003",
       "chapter": "Design Tools",
       "type": "dialogue",
       "role": "B",
@@ -27,7 +27,7 @@
       "translation": "Saya lebih suka Figma untuk fitur kolaborasinya."
     },
     {
-      "num_id": "webdesign_004",
+      "num_id": "web-design_004",
       "chapter": "Design Tools",
       "type": "phrase",
       "role": "Speaker",
@@ -35,7 +35,7 @@
       "translation": "Saya akan ekspor aset dalam format SVG."
     },
     {
-      "num_id": "webdesign_005",
+      "num_id": "web-design_005",
       "chapter": "Design Tools",
       "type": "dialogue",
       "role": "A",
@@ -43,7 +43,7 @@
       "translation": "Bisa share link prototype Figma-nya?"
     },
     {
-      "num_id": "webdesign_006",
+      "num_id": "web-design_006",
       "chapter": "Design Tools",
       "type": "dialogue",
       "role": "B",
@@ -51,7 +51,7 @@
       "translation": "Tentu, saya akan kirim link view-only."
     },
     {
-      "num_id": "webdesign_007",
+      "num_id": "web-design_007",
       "chapter": "Design Tools",
       "type": "phrase",
       "role": "Speaker",
@@ -59,7 +59,7 @@
       "translation": "Saya pakai Canva untuk desain media sosial cepat."
     },
     {
-      "num_id": "webdesign_008",
+      "num_id": "web-design_008",
       "chapter": "Design Tools",
       "type": "dialogue",
       "role": "A",
@@ -67,7 +67,7 @@
       "translation": "Design system apa yang kamu ikuti?"
     },
     {
-      "num_id": "webdesign_009",
+      "num_id": "web-design_009",
       "chapter": "Design Tools",
       "type": "dialogue",
       "role": "B",
@@ -75,7 +75,7 @@
       "translation": "Saya sedang membangun design system custom di Figma."
     },
     {
-      "num_id": "webdesign_010",
+      "num_id": "web-design_010",
       "chapter": "Client Communication",
       "type": "phrase",
       "role": "Speaker",
@@ -83,7 +83,7 @@
       "translation": "Saya akan presentasikan konsep awal hari Jumat."
     },
     {
-      "num_id": "webdesign_011",
+      "num_id": "web-design_011",
       "chapter": "Client Communication",
       "type": "dialogue",
       "role": "A",
@@ -91,7 +91,7 @@
       "translation": "Bagaimana proses desain kamu untuk project baru?"
     },
     {
-      "num_id": "webdesign_012",
+      "num_id": "web-design_012",
       "chapter": "Client Communication",
       "type": "dialogue",
       "role": "B",
@@ -99,7 +99,7 @@
       "translation": "Riset, wireframe, lalu mockup high-fidelity."
     },
     {
-      "num_id": "webdesign_013",
+      "num_id": "web-design_013",
       "chapter": "Client Communication",
       "type": "phrase",
       "role": "Speaker",
@@ -107,7 +107,7 @@
       "translation": "Ayo jadwalkan walkthrough desainnya."
     },
     {
-      "num_id": "webdesign_014",
+      "num_id": "web-design_014",
       "chapter": "Client Communication",
       "type": "dialogue",
       "role": "A",
@@ -115,7 +115,7 @@
       "translation": "Bisa beri saya timeline untuk redesain?"
     },
     {
-      "num_id": "webdesign_015",
+      "num_id": "web-design_015",
       "chapter": "Client Communication",
       "type": "dialogue",
       "role": "B",
@@ -123,7 +123,7 @@
       "translation": "Sekitar 3 minggu dari konsep ke pengiriman final."
     },
     {
-      "num_id": "webdesign_016",
+      "num_id": "web-design_016",
       "chapter": "Client Communication",
       "type": "phrase",
       "role": "Speaker",
@@ -131,7 +131,7 @@
       "translation": "Saya akan masukkan feedback Anda ke revisi berikutnya."
     },
     {
-      "num_id": "webdesign_017",
+      "num_id": "web-design_017",
       "chapter": "Client Communication",
       "type": "dialogue",
       "role": "A",
@@ -139,7 +139,7 @@
       "translation": "Klien ingin tampilan yang lebih modern."
     },
     {
-      "num_id": "webdesign_018",
+      "num_id": "web-design_018",
       "chapter": "Client Communication",
       "type": "dialogue",
       "role": "B",
@@ -147,7 +147,7 @@
       "translation": "Saya akan update style guide sesuai permintaan."
     },
     {
-      "num_id": "webdesign_019",
+      "num_id": "web-design_019",
       "chapter": "Portfolio",
       "type": "phrase",
       "role": "Speaker",
@@ -155,7 +155,7 @@
       "translation": "Saya perlu update website portfolio saya."
     },
     {
-      "num_id": "webdesign_020",
+      "num_id": "web-design_020",
       "chapter": "Portfolio",
       "type": "dialogue",
       "role": "A",
@@ -163,7 +163,7 @@
       "translation": "Cara terbaik untuk memamerkan karya kamu?"
     },
     {
-      "num_id": "webdesign_021",
+      "num_id": "web-design_021",
       "chapter": "Portfolio",
       "type": "dialogue",
       "role": "B",
@@ -171,7 +171,7 @@
       "translation": "Saya pakai studi kasus dengan foto sebelum dan sesudah."
     },
     {
-      "num_id": "webdesign_022",
+      "num_id": "web-design_022",
       "chapter": "Portfolio",
       "type": "phrase",
       "role": "Speaker",
@@ -179,7 +179,7 @@
       "translation": "Saya akan tambahkan project baru ke halaman Behance saya."
     },
     {
-      "num_id": "webdesign_023",
+      "num_id": "web-design_023",
       "chapter": "Portfolio",
       "type": "dialogue",
       "role": "A",
@@ -187,7 +187,7 @@
       "translation": "Kamu sertakan testimonial klien di portfolio?"
     },
     {
-      "num_id": "webdesign_024",
+      "num_id": "web-design_024",
       "chapter": "Portfolio",
       "type": "dialogue",
       "role": "B",
@@ -195,7 +195,7 @@
       "translation": "Ya, bukti sosial sangat penting."
     },
     {
-      "num_id": "webdesign_025",
+      "num_id": "web-design_025",
       "chapter": "Portfolio",
       "type": "phrase",
       "role": "Speaker",
@@ -203,7 +203,7 @@
       "translation": "Portfolio saya dihost di Webflow."
     },
     {
-      "num_id": "webdesign_026",
+      "num_id": "web-design_026",
       "chapter": "Portfolio",
       "type": "dialogue",
       "role": "A",
@@ -211,7 +211,7 @@
       "translation": "Seberapa sering kamu harus update portfolio?"
     },
     {
-      "num_id": "webdesign_027",
+      "num_id": "web-design_027",
       "chapter": "Portfolio",
       "type": "dialogue",
       "role": "B",
@@ -219,7 +219,7 @@
       "translation": "Saya coba update tiap trimester dengan project baru."
     },
     {
-      "num_id": "webdesign_028",
+      "num_id": "web-design_028",
       "chapter": "Feedback",
       "type": "phrase",
       "role": "Speaker",
@@ -227,7 +227,7 @@
       "translation": "Bisa beri feedback spesifik tentang layout-nya?"
     },
     {
-      "num_id": "webdesign_029",
+      "num_id": "web-design_029",
       "chapter": "Feedback",
       "type": "dialogue",
       "role": "A",
@@ -235,7 +235,7 @@
       "translation": "Palet warnanya terasa sedikit terlalu terang."
     },
     {
-      "num_id": "webdesign_030",
+      "num_id": "web-design_030",
       "chapter": "Feedback",
       "type": "dialogue",
       "role": "B",
@@ -243,7 +243,7 @@
       "translation": "Saya akan redam dan pakai warna lebih lembut."
     },
     {
-      "num_id": "webdesign_031",
+      "num_id": "web-design_031",
       "chapter": "Feedback",
       "type": "phrase",
       "role": "Speaker",
@@ -251,7 +251,7 @@
       "translation": "Saya sarankan buat tombol CTA lebih menonjol."
     },
     {
-      "num_id": "webdesign_032",
+      "num_id": "web-design_032",
       "chapter": "Feedback",
       "type": "dialogue",
       "role": "A",
@@ -259,7 +259,7 @@
       "translation": "Tipografi perlu lebih mudah dibaca."
     },
     {
-      "num_id": "webdesign_033",
+      "num_id": "web-design_033",
       "chapter": "Feedback",
       "type": "dialogue",
       "role": "B",
@@ -267,7 +267,7 @@
       "translation": "Saya akan perbesar ukuran font dan line height."
     },
     {
-      "num_id": "webdesign_034",
+      "num_id": "web-design_034",
       "chapter": "Feedback",
       "type": "phrase",
       "role": "Speaker",
@@ -275,7 +275,7 @@
       "translation": "Feedback Anda telah meningkatkan desain secara signifikan."
     },
     {
-      "num_id": "webdesign_035",
+      "num_id": "web-design_035",
       "chapter": "Feedback",
       "type": "dialogue",
       "role": "A",
@@ -283,7 +283,7 @@
       "translation": "Menurutmu bagaimana spacing-nya?"
     },
     {
-      "num_id": "webdesign_036",
+      "num_id": "web-design_036",
       "chapter": "Feedback",
       "type": "dialogue",
       "role": "B",
@@ -291,7 +291,7 @@
       "translation": "Terlihat bagus, penggunaan white space yang baik."
     },
     {
-      "num_id": "webdesign_037",
+      "num_id": "web-design_037",
       "chapter": "Specifications",
       "type": "phrase",
       "role": "Speaker",
@@ -299,7 +299,7 @@
       "translation": "Desain harus responsif di semua perangkat."
     },
     {
-      "num_id": "webdesign_038",
+      "num_id": "web-design_038",
       "chapter": "Specifications",
       "type": "dialogue",
       "role": "A",
@@ -307,7 +307,7 @@
       "translation": "Berapa resolusi layar yang dibutuhkan?"
     },
     {
-      "num_id": "webdesign_039",
+      "num_id": "web-design_039",
       "chapter": "Specifications",
       "type": "dialogue",
       "role": "B",
@@ -315,7 +315,7 @@
       "translation": "Kita harus mendukung 1920x1080 hingga 375px mobile."
     },
     {
-      "num_id": "webdesign_040",
+      "num_id": "web-design_040",
       "chapter": "Specifications",
       "type": "phrase",
       "role": "Speaker",
@@ -323,7 +323,7 @@
       "translation": "Silakan ikuti panduan brand secara ketat."
     },
     {
-      "num_id": "webdesign_041",
+      "num_id": "web-design_041",
       "chapter": "Specifications",
       "type": "dialogue",
       "role": "A",
@@ -331,7 +331,7 @@
       "translation": "Format file apa yang kamu butuhkan untuk handoff?"
     },
     {
-      "num_id": "webdesign_042",
+      "num_id": "web-design_042",
       "chapter": "Specifications",
       "type": "dialogue",
       "role": "B",
@@ -339,7 +339,7 @@
       "translation": "SVG untuk ikon dan PNG untuk gambar."
     },
     {
-      "num_id": "webdesign_043",
+      "num_id": "web-design_043",
       "chapter": "Specifications",
       "type": "phrase",
       "role": "Speaker",
@@ -347,7 +347,7 @@
       "translation": "Standar aksesibilitas harus WCAG 2.1 AA."
     },
     {
-      "num_id": "webdesign_044",
+      "num_id": "web-design_044",
       "chapter": "Specifications",
       "type": "dialogue",
       "role": "A",
@@ -355,7 +355,7 @@
       "translation": "Apakah ini perlu terintegrasi dengan CMS?"
     },
     {
-      "num_id": "webdesign_045",
+      "num_id": "web-design_045",
       "chapter": "Specifications",
       "type": "dialogue",
       "role": "B",

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(grep -oE \"\\(Rp|IDR\\)[^<,;\\\\\"]{0,20}\" pricing.html)",
+      "Skill(claude-api)",
+      "Bash(grep -n \"categoryFile\\\\|catFile\\\\|\\\\.json\\\\`\\\\|fileMap\" index.html quiz.html)",
+      "Bash(grep -oE \">[A-Z][A-Za-z ]{4,40}<\" admin.html)",
+      "Bash(python3 *)",
+      "Bash(sort -t: -k1 -n)",
+      "Bash(grep -v \"^\\\\s*$\")",
+      "Bash(go version *)",
+      "Bash(templ version *)"
+    ]
+  }
+}

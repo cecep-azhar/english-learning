@@ -1,5 +1,5 @@
 # PRD: English for Remote Full-Stack Developer
-## FathForce Academy — english.ypc.my.id
+## FathForce Academy — english.tool.biz.id
 
 **Author:** Cecep Saeful Azhar Hidaya, ST
 **Version:** 1.0
@@ -876,7 +876,7 @@ tunnel: f6fb19b8-cb9e-47b5-a134-b77045459cff
 credentials-file: /root/.cloudflared/f6fb19b8-cb9e-47b5-a134-b77045459cff.json
 
 ingress:
-  - hostname: english.ypc.my.id
+  - hostname: english.tool.biz.id
     service: http://localhost:3002
   - service: http_status:404
 ```

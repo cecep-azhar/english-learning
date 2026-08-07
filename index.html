@@ -378,6 +378,7 @@
         </div>
       </a>
       <div class="header-actions">
+        <span id="categoryBadge" style="display:none;background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:6px 14px;font-size:12px;font-weight:600;color:var(--text-secondary);"></span>
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
@@ -488,6 +489,7 @@
 
   <div class="toast" id="toast"></div>
 
+  <script src="/category-router.js"></script>
   <script>
     /* ==================== STATE ==================== */
     var appData = null;
@@ -502,6 +504,8 @@
     var currentAudio = null;
     var loopCancelled = false;
     var searchTimeout = null;
+    var activeCategory = CategoryRouter.DEFAULT_CATEGORY;
+    var activeCategoryMeta = null;
     var STORAGE_KEY = 'ff_english_progress';
     var chapterIcons = ['\u{1F44B}','\u{1F4BC}','\u{1F4C2}','\u{1F4B0}','\u{1F4DA}','\u{1F3A4}','\u{1F4CA}','\u{1F91D}','\u{1F30D}','\u{26A1}','\u{1F4DD}','\u{1F527}','\u{1F9EA}','\u{1F3AF}','\u{1F3C6}'];
 
@@ -555,11 +559,51 @@
 
     /* ==================== INIT ==================== */
     function init() {
-      fetch('scripts.json')
-        .then(function(resp) {
-          if (!resp.ok) throw new Error('Failed to load scripts.json');
-          return resp.json();
-        })
+      var resolved = CategoryRouter.resolveCategory();
+      activeCategory = resolved.slug;
+      STORAGE_KEY = activeCategory === CategoryRouter.DEFAULT_CATEGORY
+        ? 'ff_english_progress'
+        : 'ff_english_progress_' + activeCategory;
+
+      loadCategoryData();
+
+      if (resolved.wasInvalid) {
+        showToast('Kategori "' + resolved.attempted + '" tidak dikenal, menampilkan Software Engineering', 'warning');
+      }
+
+      CategoryRouter.fetchCategoryMeta(activeCategory).then(function(meta) {
+        activeCategoryMeta = meta;
+        renderCategoryHeader();
+      }).catch(function() { /* header falls back to defaults silently */ });
+
+      var quizLink = document.querySelector('.btn-quiz');
+      if (quizLink) quizLink.href = '/quiz?category=' + encodeURIComponent(activeCategory);
+    }
+
+    function renderCategoryHeader() {
+      var badge = document.getElementById('categoryBadge');
+      if (badge) {
+        if (activeCategoryMeta) {
+          badge.textContent = activeCategoryMeta.icon + ' ' + activeCategoryMeta.name;
+          badge.style.display = '';
+        } else {
+          badge.style.display = 'none';
+        }
+      }
+      if (activeCategoryMeta) {
+        var titleEl = document.getElementById('totalChapters') && document.querySelector('.welcome-title');
+        var descEl = document.querySelector('.welcome-desc');
+        if (titleEl) titleEl.textContent = activeCategoryMeta.icon + ' ' + activeCategoryMeta.name;
+        if (descEl) descEl.textContent = activeCategoryMeta.description || descEl.textContent;
+      }
+    }
+
+    function loadCategoryData() {
+      document.getElementById('loadingScreen').classList.remove('hidden');
+      document.getElementById('loadingScreen').innerHTML = '<div class="spinner"></div>Loading conversations...';
+      document.getElementById('welcomeScreen').classList.add('hidden');
+
+      CategoryRouter.fetchCategoryContent(activeCategory)
         .then(function(data) {
           appData = data;
           extractChapters();
@@ -571,9 +615,11 @@
         .catch(function(err) {
           var el = document.getElementById('loadingScreen');
           el.innerHTML = '<div style="color:var(--danger);text-align:center;">' +
-            '<p style="font-size:18px;margin-bottom:8px;">&#x26A0;&#xFE0F; Failed to load data</p>' +
+            '<p style="font-size:18px;margin-bottom:8px;">&#x26A0;&#xFE0F; Gagal memuat konten</p>' +
             '<p style="font-size:13px;color:var(--text-muted);">' + err.message + '</p>' +
-            '<p style="font-size:13px;color:var(--text-muted);margin-top:8px;">Ensure scripts.json is in the same directory.</p></div>';
+            '<button id="retryLoadBtn" style="margin-top:12px;padding:10px 20px;border-radius:8px;border:none;background:var(--accent-1);color:#fff;cursor:pointer;font-family:inherit;font-size:13px;">Coba lagi</button></div>';
+          var retryBtn = document.getElementById('retryLoadBtn');
+          if (retryBtn) retryBtn.addEventListener('click', loadCategoryData);
         });
     }
 
@@ -688,6 +734,10 @@
         templates: 'Templates'
       };
 
+      var hasAudio = !activeCategoryMeta || activeCategoryMeta.hasAudio !== false;
+      var loopCtrl = document.querySelector('.loop-controls');
+      if (loopCtrl) loopCtrl.style.display = hasAudio ? '' : 'none';
+
       for (var g = 0; g < groupOrder.length; g++) {
         var typeName = groupOrder[g];
         var items = groups[typeName];
@@ -709,11 +759,15 @@
           var roleClass = item.role || 'you';
           var roleLabel = roleClass === 'you' ? 'You' : roleClass === 'interviewer' ? 'Interviewer' : roleClass;
 
+          var playBtnHtml = hasAudio
+            ? '<button class="play-line-btn" data-play-id="' + item.num_id + '" title="Play">' +
+                '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>'
+            : '';
+
           card.innerHTML =
             '<div class="line-row" data-num-id="' + item.num_id + '">' +
               '<div class="line-actions">' +
-                '<button class="play-line-btn" data-play-id="' + item.num_id + '" title="Play">' +
-                  '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>' +
+                playBtnHtml +
                 '<span class="line-number">#' + item.num_id + '</span>' +
               '</div>' +
               '<div class="line-content">' +

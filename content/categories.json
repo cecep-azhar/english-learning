@@ -2,90 +2,112 @@
   "categories": [
     {
       "id": "general",
+      "slug": "general",
       "name": "General English",
       "icon": "📚",
       "description": "English dasar untuk kehidupan sehari-hari",
       "color": "#6366f1",
+      "hasAudio": false,
       "topics": ["greetings", "daily-conversation", "travel", "food", "shopping"]
     },
     {
       "id": "business",
+      "slug": "business",
       "name": "Business English",
       "icon": "💼",
       "description": "English untuk dunia bisnis dan korporat",
       "color": "#8b5cf6",
+      "hasAudio": false,
       "topics": ["meetings", "negotiation", "presentations", "networking", "email"]
     },
     {
       "id": "finance",
+      "slug": "finance",
       "name": "Finance English",
       "icon": "💰",
       "description": "English untuk keuangan dan investasi",
       "color": "#22c55e",
+      "hasAudio": false,
       "topics": ["accounting", "investing", "banking", "budgeting", "reporting"]
     },
     {
       "id": "admin",
+      "slug": "admin",
       "name": "Administration",
       "icon": "📋",
       "description": "English untuk administrasi dan perkantoran",
       "color": "#f59e0b",
+      "hasAudio": false,
       "topics": ["scheduling", "documentation", "correspondence", "filing", "reporting"]
     },
     {
       "id": "web-design",
+      "slug": "web-design",
       "name": "Web Design",
       "icon": "🎨",
       "description": "English untuk web designer dan UI/UX",
       "color": "#ec4899",
+      "hasAudio": false,
       "topics": ["design-tools", "client-communication", "portfolio", "feedback", "specifications"]
     },
     {
       "id": "seo",
+      "slug": "seo",
       "name": "SEO Specialist",
       "icon": "🔍",
       "description": "English untuk SEO dan digital marketing",
       "color": "#14b8a6",
+      "hasAudio": false,
       "topics": ["analytics", "keywords", "technical-seo", "reporting", "strategy"]
     },
     {
-      "id": "design",
+      "id": "graphic-design",
+      "slug": "graphic-design",
       "name": "Graphic Design",
       "icon": "🖌️",
       "description": "English untuk desainer grafis",
       "color": "#f97316",
+      "hasAudio": false,
       "topics": ["design-brief", "branding", "typography", "color-theory", "client-work"]
     },
     {
       "id": "video-editing",
+      "slug": "video-editing",
       "name": "Video Editing",
       "icon": "🎬",
       "description": "English untuk video editor",
       "color": "#ef4444",
+      "hasAudio": false,
       "topics": ["editing-terms", "client-brief", "equipment", "software", "delivery"]
     },
     {
       "id": "virtual-assistant",
+      "slug": "virtual-assistant",
       "name": "Virtual Assistant",
       "icon": "🤖",
       "description": "English untuk virtual assistant",
       "color": "#06b6d4",
+      "hasAudio": false,
       "topics": ["email-management", "scheduling", "data-entry", "customer-service", "social-media"]
     },
     {
       "id": "copywriting",
+      "slug": "copywriting",
       "name": "Copywriting",
       "icon": "✍️",
       "description": "English untuk copywriter",
       "color": "#a855f7",
+      "hasAudio": false,
       "topics": ["sales-copy", "landing-pages", "email-marketing", "social-media", "advertising"]
     },
     {
       "id": "software-engineering",
+      "slug": "software-engineering",
       "name": "Software Engineering",
       "icon": "💻",
       "description": "English untuk software developer",
       "color": "#3b82f6",
+      "hasAudio": true,
       "topics": ["interview", "documentation", "code-review", "standup", "technical-discussion"]
     }
   ]
